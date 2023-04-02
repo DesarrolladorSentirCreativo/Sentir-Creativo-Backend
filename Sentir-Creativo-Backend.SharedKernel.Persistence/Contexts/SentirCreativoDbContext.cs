@@ -1,5 +1,7 @@
+using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Sentir_Creativo_Backend.Audiencias.Domain.Entities;
+using Sentir_Creativo_Backend.SharedKernel.Domain;
 
 namespace Sentir_Creativo_Backend.SharedKernel.Persistence.Contexts;
 
@@ -10,9 +12,27 @@ public class SentirCreativoDbContext : DbContext
         
     }
 
+    public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
+    {
+        foreach (var entry in ChangeTracker.Entries<BaseEntity<int>>())
+        {
+            switch (entry.State)
+            {
+                case EntityState.Added:
+                    entry.Entity.CreatedAt = DateTime.Now;
+                    break;
+                case EntityState.Modified:
+                    entry.Entity.UpdatedAt = DateTime.Now;
+                    break;
+            }
+        }
+
+        return base.SaveChangesAsync(cancellationToken);
+    }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        
+        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
     }
     
     public DbSet<Antiguedad>? Antiguedades { get; set; }
