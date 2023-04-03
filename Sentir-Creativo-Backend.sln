@@ -16,6 +16,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.SharedKernel.Persistence", "Sentir-Creativo-Backend.SharedKernel.Persistence\Sentir-Creativo-Backend.SharedKernel.Persistence.csproj", "{EB2295AE-D5DD-48B9-B76F-BD35C4378928}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{761DDF45-DBA3-4B0D-B017-B2ED4AD0F3DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Audiencias.Persistence", "Sentir-Creativo-Backend.Audiencias.Persistence\Sentir-Creativo-Backend.Audiencias.Persistence.csproj", "{5CEB1617-171E-4BC1-AF73-B21C34C37B6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{B07E1A41-1AB1-4C1A-B4E8-1B338C84E4F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.SharedKernel.Application", "Sentir-Creativo-Backend.SharedKernel.Application\Sentir-Creativo-Backend.SharedKernel.Application.csproj", "{C117FD0C-E4DE-49E1-B8F7-D786779CB7C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{E1D41E1E-0232-4DED-A84B-9830E053F762}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Audiencias.Application", "Sentir-Creativo-Backend.Audiencias.Application\Sentir-Creativo-Backend.Audiencias.Application.csproj", "{1F6290FB-CB76-4CD4-9877-1D6114D142B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{06AAA3CE-4606-44C2-8B5D-2079427EAB08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.API", "Sentir-Creativo-Backend.API\Sentir-Creativo-Backend.API.csproj", "{4E3F1377-1762-408D-A713-D2B664C5FCA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Application.Mappers", "Sentir-Creativo-Backend.Application.Mappers\Sentir-Creativo-Backend.Application.Mappers.csproj", "{2E777CDA-2412-4B82-9FFB-58E64D6CD5B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +52,26 @@ Global
 		{EB2295AE-D5DD-48B9-B76F-BD35C4378928}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB2295AE-D5DD-48B9-B76F-BD35C4378928}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB2295AE-D5DD-48B9-B76F-BD35C4378928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CEB1617-171E-4BC1-AF73-B21C34C37B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CEB1617-171E-4BC1-AF73-B21C34C37B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CEB1617-171E-4BC1-AF73-B21C34C37B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CEB1617-171E-4BC1-AF73-B21C34C37B6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C117FD0C-E4DE-49E1-B8F7-D786779CB7C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C117FD0C-E4DE-49E1-B8F7-D786779CB7C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C117FD0C-E4DE-49E1-B8F7-D786779CB7C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C117FD0C-E4DE-49E1-B8F7-D786779CB7C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F6290FB-CB76-4CD4-9877-1D6114D142B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F6290FB-CB76-4CD4-9877-1D6114D142B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F6290FB-CB76-4CD4-9877-1D6114D142B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F6290FB-CB76-4CD4-9877-1D6114D142B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E3F1377-1762-408D-A713-D2B664C5FCA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E3F1377-1762-408D-A713-D2B664C5FCA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E3F1377-1762-408D-A713-D2B664C5FCA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E3F1377-1762-408D-A713-D2B664C5FCA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E777CDA-2412-4B82-9FFB-58E64D6CD5B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E777CDA-2412-4B82-9FFB-58E64D6CD5B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E777CDA-2412-4B82-9FFB-58E64D6CD5B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E777CDA-2412-4B82-9FFB-58E64D6CD5B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F5C20100-5D65-46B9-A6E4-189600B5E697} = {48983950-6EF6-4237-B1D5-58BB6EEB86C1}
@@ -42,5 +80,13 @@ Global
 		{99D13963-4B2B-47FC-9879-7BE73D96F13B} = {365E73BC-9E46-4ECB-BC0D-787A1BFF9FDE}
 		{9CA28628-E0BB-46EA-8450-DBEDBD788228} = {E0387F40-EB30-46D1-8858-F6AAC9E6AA48}
 		{EB2295AE-D5DD-48B9-B76F-BD35C4378928} = {9CA28628-E0BB-46EA-8450-DBEDBD788228}
+		{761DDF45-DBA3-4B0D-B017-B2ED4AD0F3DF} = {48983950-6EF6-4237-B1D5-58BB6EEB86C1}
+		{5CEB1617-171E-4BC1-AF73-B21C34C37B6C} = {761DDF45-DBA3-4B0D-B017-B2ED4AD0F3DF}
+		{B07E1A41-1AB1-4C1A-B4E8-1B338C84E4F2} = {E0387F40-EB30-46D1-8858-F6AAC9E6AA48}
+		{C117FD0C-E4DE-49E1-B8F7-D786779CB7C8} = {B07E1A41-1AB1-4C1A-B4E8-1B338C84E4F2}
+		{E1D41E1E-0232-4DED-A84B-9830E053F762} = {48983950-6EF6-4237-B1D5-58BB6EEB86C1}
+		{1F6290FB-CB76-4CD4-9877-1D6114D142B6} = {E1D41E1E-0232-4DED-A84B-9830E053F762}
+		{4E3F1377-1762-408D-A713-D2B664C5FCA5} = {06AAA3CE-4606-44C2-8B5D-2079427EAB08}
+		{2E777CDA-2412-4B82-9FFB-58E64D6CD5B4} = {B07E1A41-1AB1-4C1A-B4E8-1B338C84E4F2}
 	EndGlobalSection
 EndGlobal

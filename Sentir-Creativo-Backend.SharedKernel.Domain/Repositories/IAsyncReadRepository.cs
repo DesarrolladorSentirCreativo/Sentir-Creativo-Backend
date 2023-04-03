@@ -1,4 +1,5 @@
 using System.Linq.Expressions;
+using Sentir_Creativo_Backend.SharedKernel.Domain.Contracts;
 
 namespace Sentir_Creativo_Backend.SharedKernel.Domain.Repositories;
 
@@ -17,5 +18,9 @@ public interface IAsyncReadRepository<T, TId> where T : BaseEntity<TId>
 
     Task<T?> GetByIdAsync(TId id);
     
+    Task<T> GetByIdWithSpec(ISpecification<T> spec);
 
+    Task<IReadOnlyList<T>> GetAllWithSpec(ISpecification<T> spec);
+
+    Task<int> CountAsync(ISpecification<T> spec);
 }

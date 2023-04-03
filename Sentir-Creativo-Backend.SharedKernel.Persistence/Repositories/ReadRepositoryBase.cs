@@ -1,8 +1,10 @@
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using Sentir_Creativo_Backend.SharedKernel.Domain;
+using Sentir_Creativo_Backend.SharedKernel.Domain.Contracts;
 using Sentir_Creativo_Backend.SharedKernel.Domain.Repositories;
 using Sentir_Creativo_Backend.SharedKernel.Persistence.Contexts;
+using Sentir_Creativo_Backend.SharedKernel.Persistence.Specifications;
 
 namespace Sentir_Creativo_Backend.SharedKernel.Persistence.Repositories;
 
@@ -65,5 +67,25 @@ public abstract class ReadRepositoryBase<T,TId> : IAsyncReadRepository<T,TId> wh
     public async Task<T?> GetByIdAsync(TId id)
     {
         return await _context.Set<T>().FindAsync(id);
+    }
+
+    public async Task<T> GetByIdWithSpec(ISpecification<T> spec)
+    {
+        return await ApplySpecification(spec).FirstOrDefaultAsync();
+    }
+
+    public async Task<IReadOnlyList<T>> GetAllWithSpec(ISpecification<T> spec)
+    {
+        return await ApplySpecification(spec).ToListAsync();
+    }
+
+    public async Task<int> CountAsync(ISpecification<T> spec)
+    {
+        return await ApplySpecification(spec).CountAsync();
+    }
+
+    public IQueryable<T> ApplySpecification(ISpecification<T> spec)
+    {
+        return SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), spec);
     }
 }
