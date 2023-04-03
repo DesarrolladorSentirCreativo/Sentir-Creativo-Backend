@@ -10,7 +10,7 @@ public static class DependencyContainer
      public static IServiceCollection AddPersistenceServices(this IServiceCollection services,
           IConfiguration configuration)
      {
-          var connectionMysqlString = configuration.GetConnectionString("MySlConnection");
+          var connectionMysqlString = configuration.GetConnectionString("MySqlConnection");
 
           services.AddDbContext<SentirCreativoDbContext>(options =>
                options.UseMySql(connectionMysqlString, ServerVersion.AutoDetect(connectionMysqlString)));

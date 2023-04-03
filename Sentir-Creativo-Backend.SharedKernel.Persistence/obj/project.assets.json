@@ -1052,6 +1052,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.EntityFrameworkCore >= 7.0.4",
+      "Microsoft.EntityFrameworkCore.Relational >= 7.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.4",
       "Pomelo.EntityFrameworkCore.MySql >= 7.0.0",
       "Sentir-Creativo-Backend.Audiencias.Domain >= 1.0.0"
@@ -1107,6 +1108,10 @@
         "targetAlias": "net7.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.4, )"
+          },
+          "Microsoft.EntityFrameworkCore.Relational": {
             "target": "Package",
             "version": "[7.0.4, )"
           },

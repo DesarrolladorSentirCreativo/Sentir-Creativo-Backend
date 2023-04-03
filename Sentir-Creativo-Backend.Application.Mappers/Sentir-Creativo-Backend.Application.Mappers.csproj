@@ -13,4 +13,9 @@
       <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Sentir-Creativo-Backend.Audiencias.Application\Sentir-Creativo-Backend.Audiencias.Application.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.Audiencias.Domain\Sentir-Creativo-Backend.Audiencias.Domain.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -8,12 +8,16 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="MediatR" Version="10.0.1" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.4" />
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Sentir-Creativo-Backend.Application.Mappers\Sentir-Creativo-Backend.Application.Mappers.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.Audiencias.Application\Sentir-Creativo-Backend.Audiencias.Application.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.Audiencias.Persistence\Sentir-Creativo-Backend.Audiencias.Persistence.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.SharedKernel.Application\Sentir-Creativo-Backend.SharedKernel.Application.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.SharedKernel.Persistence\Sentir-Creativo-Backend.SharedKernel.Persistence.csproj" />
     </ItemGroup>

@@ -8,8 +8,7 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddMappingServices(this IServiceCollection services, IConfiguration configuration)
     {
-        var mapperConfig = new MapperConfiguration(mc => mc.AddProfile(new MappingProfile()));
-        services.AddSingleton(mapperConfig);
+        services.AddAutoMapper(typeof(MappingProfile));
         
         return services;
     }
