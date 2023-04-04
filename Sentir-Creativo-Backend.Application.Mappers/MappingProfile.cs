@@ -1,5 +1,7 @@
 using AutoMapper;
 using Sentir_Creativo_Backend.Audiencias.Application.Audiencias.Features.ViewModel;
+using Sentir_Creativo_Backend.Audiencias.Application.Cercanias.Features.ViewModels;
+using Sentir_Creativo_Backend.Audiencias.Application.EstadosAudiencias.Features.ViewModels;
 using Sentir_Creativo_Backend.Audiencias.Application.Origenes.Features.ViewModels;
 using Sentir_Creativo_Backend.Audiencias.Application.Prefijos.Features.ViewModel;
 using Sentir_Creativo_Backend.Audiencias.Domain.Entities;
@@ -19,5 +21,7 @@ public class MappingProfile : Profile
             .ForMember(p => p.Antiguedad, x => x.MapFrom(a => a.Antiguedad!.Nombre));;
         CreateMap<Prefijo, SelectPrefijoViewModel>();
         CreateMap<Origen, SelectOrigenViewModel>();
+        CreateMap<EstadoAudiencia, SelectEstadoAudienciaViewModel>();
+        CreateMap<Cercania, SelectCercaniaViewModel>();
     }
 }

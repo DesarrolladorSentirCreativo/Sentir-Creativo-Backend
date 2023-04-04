@@ -9,6 +9,7 @@ public class EstadoAudiencia : BaseEntity<int>
     public string? Color { get; set; }
     public string? Image { get; set; }
     public string? Icon { get; set; }
+    public bool Activo { get; set; }
     
     public virtual ICollection<Audiencia>? Audiencias { get; set; }
 }
