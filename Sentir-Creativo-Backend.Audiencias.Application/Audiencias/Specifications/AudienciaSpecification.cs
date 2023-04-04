@@ -6,15 +6,14 @@ namespace Sentir_Creativo_Backend.Audiencias.Application.Audiencias.Specificatio
 public class AudienciaSpecification : BaseSpecification<Audiencia>
 {
     public AudienciaSpecification(AudienciaSpecificationParams audienciaParams) : base(
-        x => string.IsNullOrEmpty(audienciaParams.Search) || x.Nombre!.Contains(audienciaParams.Search) 
-                                                          || x.Apellido!.Contains(audienciaParams.Search) ||
-                                                          x.Departamento!.Contains(audienciaParams.Search)
-                                                          || x.Antiguedad!.Nombre.Contains(audienciaParams.Search) ||
-                                                          x.Email!.Contains(audienciaParams.Search)
-                                                          || x.Organizacion!.Nombre.Contains(audienciaParams.Search) ||
-                                                          x.Prefijo!.Nombre.Contains(audienciaParams.Search)
-                                                          || x.Profesion!.Contains(audienciaParams.Search) ||
-                                                          x.Cercania!.Nombre.Contains(audienciaParams.Search))
+        x => 
+            string.IsNullOrEmpty(audienciaParams.Search) || x.Nombre!.Contains(audienciaParams.Search) 
+                                                         || x.Apellido!.Contains(audienciaParams.Search) || x.Departamento!.Contains(audienciaParams.Search)
+                                                         || x.Antiguedad!.Nombre.Contains(audienciaParams.Search) || x.Email!.Contains(audienciaParams.Search) 
+                                                         || x.Organizacion!.Nombre.Contains(audienciaParams.Search) || x.Prefijo!.Nombre.Contains(audienciaParams.Search) 
+                                                         || x.Profesion!.Contains(audienciaParams.Search) || x.Cercania!.Nombre.Contains(audienciaParams.Search)
+                                                         || x.Email2!.Contains(audienciaParams.Search) || x.Celular!.Contains(audienciaParams.Search)
+                                                         || x.Cargo!.Contains(audienciaParams.Search) || x.DocumentoIdentidad!.Contains(audienciaParams.Search))
     {
         AddInclude(p => p.Antiguedad!);
         AddInclude(p => p.Organizacion!);
@@ -34,6 +33,12 @@ public class AudienciaSpecification : BaseSpecification<Audiencia>
                     break;
                 case "nombreDesc": 
                     AddOrderByDescending(p => p.Nombre!);
+                    break;
+                case "apellidoAsc": 
+                    AddOrderBy(p => p.Apellido!);
+                    break;
+                case "apellidoDesc": 
+                    AddOrderByDescending(p => p.Apellido!);
                     break;
                 default:
                     AddOrderBy(p => p.Id);

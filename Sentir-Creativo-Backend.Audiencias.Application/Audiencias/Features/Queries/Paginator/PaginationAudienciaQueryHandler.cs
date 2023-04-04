@@ -3,7 +3,7 @@ using MediatR;
 using Sentir_Creativo_Backend.Audiencias.Application.Audiencias.Features.ViewModel;
 using Sentir_Creativo_Backend.Audiencias.Application.Audiencias.Specifications;
 using Sentir_Creativo_Backend.Audiencias.Domain.Entities;
-using Sentir_Creativo_Backend.Audiencias.Domain.Repositories;
+using Sentir_Creativo_Backend.Audiencias.Domain.Repositories.Audiencias;
 using Sentir_Creativo_Backend.SharedKernel.Application.Features.ViewModels;
 
 namespace Sentir_Creativo_Backend.Audiencias.Application.Audiencias.Features.Queries.Paginator;
