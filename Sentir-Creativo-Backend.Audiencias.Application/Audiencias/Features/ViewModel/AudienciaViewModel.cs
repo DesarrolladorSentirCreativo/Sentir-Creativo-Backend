@@ -28,4 +28,5 @@ public class AudienciaViewModel
     public string? Origen { get; set; }
     public string? Organizacion { get; set; }
     public DateTime? PublishedAt { get; set; }
+    public bool Activo { get; set; }
 }

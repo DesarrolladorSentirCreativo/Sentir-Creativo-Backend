@@ -15,8 +15,8 @@ public class PaginationAudienciaQueryHandler : IRequestHandler<PaginationAudienc
 
     public PaginationAudienciaQueryHandler(IAudienciaReadRepository audienciaReadRepository, IMapper mapper)
     {
-        this._audienciaReadRepository = audienciaReadRepository;
-        this._mapper = mapper;
+        _audienciaReadRepository = audienciaReadRepository;
+        _mapper = mapper;
     }
     
     

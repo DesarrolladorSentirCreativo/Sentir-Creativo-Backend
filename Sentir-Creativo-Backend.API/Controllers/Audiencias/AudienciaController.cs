@@ -1,6 +1,7 @@
 using System.Net;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Sentir_Creativo_Backend.Audiencias.Application.Audiencias.Features.Commands.Creator;
 using Sentir_Creativo_Backend.Audiencias.Application.Audiencias.Features.Queries.Paginator;
 using Sentir_Creativo_Backend.Audiencias.Application.Audiencias.Features.ViewModel;
 using Sentir_Creativo_Backend.SharedKernel.Application.Features.ViewModels;
@@ -27,5 +28,13 @@ public class AudienciaController : ControllerBase
         var paginationAudiencia = await _mediator.Send(paginationAudienciaParams);
         return Ok(paginationAudiencia);
     }
+    
+    [HttpPost(Name = "CreateAudiencia")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> CreateDirector([FromBody] CreateAudienciaCommand command)
+    {
+        return await _mediator.Send(command);
+    }
+
 
 }

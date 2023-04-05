@@ -33,6 +33,7 @@ public class AudienciaConfiguration :IEntityTypeConfiguration<Audiencia>
         builder.Property(p => p.Email2).HasMaxLength(255).HasColumnName("email2");
         builder.Property(p => p.DocumentoIdentidad).HasMaxLength(255).HasColumnName("documentoIdentidad");
         builder.Property(p => p.Destacado).HasColumnName("destacado");
+        builder.Property(p => p.Activo).HasColumnName("activo");
 
     }
 }

@@ -20,6 +20,7 @@ public class SentirCreativoDbContext : DbContext
             {
                 case EntityState.Added:
                     entry.Entity.CreatedAt = DateTime.Now;
+                    entry.Entity.UpdatedAt = DateTime.Now;
                     break;
                 case EntityState.Modified:
                     entry.Entity.UpdatedAt = DateTime.Now;

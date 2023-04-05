@@ -1,4 +1,5 @@
 using MediatR;
+using Sentir_Creativo_Backend.API.Middlewares;
 using Sentir_Creativo_Backend.Application.Mappers;
 using Sentir_Creativo_Backend.Audiencias.Application.Audiencias.Features.Queries.Paginator;
 using Sentir_Creativo_Backend.Audiencias.Persistence;
@@ -31,6 +32,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseHttpsRedirection();
 

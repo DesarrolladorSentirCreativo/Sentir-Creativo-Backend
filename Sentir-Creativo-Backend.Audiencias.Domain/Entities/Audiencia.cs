@@ -21,6 +21,7 @@ public class Audiencia : BaseEntity<int>
     public string? Email2 { get; set; }
     public bool? Destacado { get; set; }
     public string? DocumentoIdentidad  { get; set; }
+    public bool Activo { get; set; }
 
     //relaciones
     public virtual Motivacion? Motivacion { get; set; }

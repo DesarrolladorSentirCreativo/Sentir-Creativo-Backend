@@ -1,4 +1,5 @@
 using AutoMapper;
+using Sentir_Creativo_Backend.Audiencias.Application.Audiencias.Features.Commands.Creator;
 using Sentir_Creativo_Backend.Audiencias.Application.Audiencias.Features.ViewModel;
 using Sentir_Creativo_Backend.Audiencias.Application.Cercanias.Features.ViewModels;
 using Sentir_Creativo_Backend.Audiencias.Application.EstadosAudiencias.Features.ViewModels;
@@ -23,5 +24,6 @@ public class MappingProfile : Profile
         CreateMap<Origen, SelectOrigenViewModel>();
         CreateMap<EstadoAudiencia, SelectEstadoAudienciaViewModel>();
         CreateMap<Cercania, SelectCercaniaViewModel>();
+        CreateMap<CreateAudienciaCommand, Audiencia>();
     }
 }
