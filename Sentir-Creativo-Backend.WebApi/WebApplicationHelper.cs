@@ -2,7 +2,10 @@ using Sentir_Creativo_Backend.Audiencias.IoC;
 using Sentir_Creativo_Backend.SharedKernel.IoC;
 using Sentir_Creativo_Backend.WebApi.Audiencias.Antiguedades;
 using Sentir_Creativo_Backend.WebApi.Audiencias.Cercanias;
+using Sentir_Creativo_Backend.WebApi.Audiencias.Motivaciones;
+using Sentir_Creativo_Backend.WebApi.Audiencias.Organizaciones;
 using Sentir_Creativo_Backend.WebApi.Audiencias.Origenes;
+using Sentir_Creativo_Backend.WebApi.Audiencias.Prefijos;
 
 namespace Sentir_Creativo_Backend.WebApi;
 
@@ -40,6 +43,9 @@ public static class WebApplicationHelper
         app.UseOrigenEndpoints();
         app.UseAntiguedadEndpoints();
         app.UseCercaniaEndpoints();
+        app.UseMotivacionEndpoints();
+        app.UsePrefijoEndpoints();
+        app.UseOrganizacionEndpoints();
 
         return app;
     }

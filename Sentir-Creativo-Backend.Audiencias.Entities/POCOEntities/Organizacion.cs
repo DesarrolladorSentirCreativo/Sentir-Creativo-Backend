@@ -13,6 +13,7 @@ public class Organizacion : BaseEntity<int>
     public string? Email { get; set; }
     public int? RubroId { get; set; }
     public string? Telefono { get; set; }
+    public bool Activo { get; set; }
     
     public virtual Rubro? Rubro { get; set; }
     public virtual ICollection<Audiencia> Audiencias { get; set; } 

@@ -8,6 +8,8 @@ public class PrefijoConfiguration:IEntityTypeConfiguration<Prefijo>
 {
     public void Configure(EntityTypeBuilder<Prefijo> builder)
     {
+        builder.ToTable("prefijos");
+        
         builder.HasKey(p => p.Id).HasName("id");
         builder.Property(p => p.Nombre).HasMaxLength(50).IsRequired().HasColumnName("nombre");
         builder.Property(p => p.PublishedAt).HasColumnName("published_at");
