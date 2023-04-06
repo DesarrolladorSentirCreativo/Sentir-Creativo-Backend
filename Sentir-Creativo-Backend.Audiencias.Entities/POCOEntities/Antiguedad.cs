@@ -5,6 +5,7 @@ namespace Sentir_Creativo_Backend.Audiencias.Entities.POCOEntities;
 public class Antiguedad: BaseEntity<int>
 {
     public string Nombre { get; set; }
+    public bool Activo { get; set; }
     
     public virtual ICollection<Audiencia>? Audiencias { get; set; }
 }
