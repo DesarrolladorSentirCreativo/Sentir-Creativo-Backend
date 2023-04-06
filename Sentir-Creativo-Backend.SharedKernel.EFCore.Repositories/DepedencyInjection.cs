@@ -14,10 +14,13 @@ public static class DepedencyInjection
     {
         var connectionMysqlString = configuration.GetConnectionString("MySqlConnection");
 
+        
         services.AddDbContext<SentirCreativoDbContext>(options =>
             options.UseMySql(connectionMysqlString, ServerVersion.AutoDetect(connectionMysqlString)));
 
         services.AddScoped<IUnitOfWork, UnitOfWork>();
+        services.AddScoped(typeof(IReadRepository<,>), typeof(BaseReadRepository<,>));
+        services.AddScoped(typeof(IWriteRepository<,>), typeof(BaseWriteRepository<,>));
         return services;
     }
 }
