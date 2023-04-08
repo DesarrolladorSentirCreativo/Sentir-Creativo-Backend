@@ -27,8 +27,5 @@ public class OrganizacionConfiguration : IEntityTypeConfiguration<Organizacion>
         builder.Property(p => p.UpdatedBy).HasColumnName("updated_by");
         builder.Property(p => p.Activo).HasColumnName("activo");
         
-        builder.HasMany(p => p.Audiencias)
-            .WithOne(p => p.Organizacion)
-            .HasForeignKey(p => p.OrganizacionId);
     }
 }

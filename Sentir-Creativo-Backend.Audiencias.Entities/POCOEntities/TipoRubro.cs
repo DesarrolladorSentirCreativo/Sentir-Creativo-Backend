@@ -5,6 +5,10 @@ namespace Sentir_Creativo_Backend.Audiencias.Entities.POCOEntities;
 public class TipoRubro: BaseEntity<int>
 {
     public string Nombre  { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public int? CreatedBy { get; set; }
+    public DateTime UpdatedAt { get; set; }
+    public DateTime? PublishedAt { get; set; }
+    public int? UpdatedBy { get; set; }
     
-    public virtual ICollection<Rubro> Rubros { get; set; }
 }

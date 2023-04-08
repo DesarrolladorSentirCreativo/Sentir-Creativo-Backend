@@ -17,6 +17,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Sentir-Creativo-Backend.Audiencias.BusinessObject\Sentir-Creativo-Backend.Audiencias.BusinessObject.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.Audiencias.Entities\Sentir-Creativo-Backend.Audiencias.Entities.csproj" />
     </ItemGroup>
 

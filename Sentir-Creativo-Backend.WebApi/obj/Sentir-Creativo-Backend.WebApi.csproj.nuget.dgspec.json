@@ -4,14 +4,14 @@
     "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.WebApi\\Sentir-Creativo-Backend.WebApi.csproj": {}
   },
   "projects": {
-    "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencia.BusinessObject\\Sentir-Creativo-Backend.Audiencia.BusinessObject.csproj": {
+    "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.BusinessObject\\Sentir-Creativo-Backend.Audiencias.BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencia.BusinessObject\\Sentir-Creativo-Backend.Audiencia.BusinessObject.csproj",
-        "projectName": "Sentir-Creativo-Backend.Audiencia.BusinessObject",
-        "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencia.BusinessObject\\Sentir-Creativo-Backend.Audiencia.BusinessObject.csproj",
+        "projectUniqueName": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.BusinessObject\\Sentir-Creativo-Backend.Audiencias.BusinessObject.csproj",
+        "projectName": "Sentir-Creativo-Backend.Audiencias.BusinessObject",
+        "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.BusinessObject\\Sentir-Creativo-Backend.Audiencias.BusinessObject.csproj",
         "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencia.BusinessObject\\obj\\",
+        "outputPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -35,6 +35,9 @@
             "projectReferences": {
               "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.Entities\\Sentir-Creativo-Backend.Audiencias.Entities.csproj": {
                 "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.Entities\\Sentir-Creativo-Backend.Audiencias.Entities.csproj"
+              },
+              "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.Entities\\Sentir-Creativo-Backend.Bitacoras.Entities.csproj": {
+                "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.Entities\\Sentir-Creativo-Backend.Bitacoras.Entities.csproj"
               },
               "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj": {
                 "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj"
@@ -100,8 +103,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencia.BusinessObject\\Sentir-Creativo-Backend.Audiencia.BusinessObject.csproj": {
-                "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencia.BusinessObject\\Sentir-Creativo-Backend.Audiencia.BusinessObject.csproj"
+              "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.BusinessObject\\Sentir-Creativo-Backend.Audiencias.BusinessObject.csproj": {
+                "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.BusinessObject\\Sentir-Creativo-Backend.Audiencias.BusinessObject.csproj"
               }
             }
           }
@@ -170,6 +173,9 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.BusinessObject\\Sentir-Creativo-Backend.Audiencias.BusinessObject.csproj": {
+                "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.BusinessObject\\Sentir-Creativo-Backend.Audiencias.BusinessObject.csproj"
+              },
               "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.Entities\\Sentir-Creativo-Backend.Audiencias.Entities.csproj": {
                 "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.Entities\\Sentir-Creativo-Backend.Audiencias.Entities.csproj"
               }
@@ -390,8 +396,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencia.BusinessObject\\Sentir-Creativo-Backend.Audiencia.BusinessObject.csproj": {
-                "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencia.BusinessObject\\Sentir-Creativo-Backend.Audiencia.BusinessObject.csproj"
+              "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.BusinessObject\\Sentir-Creativo-Backend.Audiencias.BusinessObject.csproj": {
+                "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.BusinessObject\\Sentir-Creativo-Backend.Audiencias.BusinessObject.csproj"
               }
             }
           }
@@ -460,8 +466,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencia.BusinessObject\\Sentir-Creativo-Backend.Audiencia.BusinessObject.csproj": {
-                "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencia.BusinessObject\\Sentir-Creativo-Backend.Audiencia.BusinessObject.csproj"
+              "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.BusinessObject\\Sentir-Creativo-Backend.Audiencias.BusinessObject.csproj": {
+                "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.BusinessObject\\Sentir-Creativo-Backend.Audiencias.BusinessObject.csproj"
               },
               "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.Entities\\Sentir-Creativo-Backend.Audiencias.Entities.csproj": {
                 "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.Entities\\Sentir-Creativo-Backend.Audiencias.Entities.csproj"

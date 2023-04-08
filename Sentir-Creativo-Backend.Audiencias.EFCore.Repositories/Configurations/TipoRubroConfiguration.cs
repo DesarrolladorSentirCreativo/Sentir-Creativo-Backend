@@ -18,8 +18,5 @@ public class TipoRubroConfiguration: IEntityTypeConfiguration<TipoRubro>
         builder.Property(p => p.CreatedBy).HasColumnName("created_by");
         builder.Property(p => p.UpdatedBy).HasColumnName("updated_by");
         
-        builder.HasMany(p => p.Rubros)
-            .WithOne(p => p.TipoRubro)
-            .HasForeignKey(p => p.TipoRubroId);
     }
 }

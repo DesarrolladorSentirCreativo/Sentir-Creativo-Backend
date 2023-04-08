@@ -14,7 +14,11 @@ public class Organizacion : BaseEntity<int>
     public int? RubroId { get; set; }
     public string? Telefono { get; set; }
     public bool Activo { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public int? CreatedBy { get; set; }
+    public DateTime UpdatedAt { get; set; }
+    public DateTime? PublishedAt { get; set; }
+    public int? UpdatedBy { get; set; }
     
     public virtual Rubro? Rubro { get; set; }
-    public virtual ICollection<Audiencia> Audiencias { get; set; } 
 }

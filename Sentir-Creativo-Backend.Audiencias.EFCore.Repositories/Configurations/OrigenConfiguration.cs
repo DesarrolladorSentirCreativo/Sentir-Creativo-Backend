@@ -19,8 +19,5 @@ public class OrigenConfiguration: IEntityTypeConfiguration<Origen>
         builder.Property(p => p.UpdatedBy).HasColumnName("updated_by");
         builder.Property(p => p.Activo).HasColumnName("activo");
         
-        builder.HasMany(p => p.Audiencias)
-            .WithOne(p => p.Origen)
-            .HasForeignKey(p => p.OrigenId);
     }
 }

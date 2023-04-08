@@ -22,9 +22,6 @@ public class EstadoAudienciaConfiguration: IEntityTypeConfiguration<EstadoAudien
         builder.Property(p => p.CreatedBy).HasColumnName("created_by");
         builder.Property(p => p.UpdatedBy).HasColumnName("updated_by");
         builder.Property(p => p.Activo).HasColumnName("activo");
-
-        builder.HasMany(p => p.Audiencias)
-            .WithOne(p => p.EstadoAudiencia)
-            .HasForeignKey(p => p.EstadoId);
+        
     }
 }

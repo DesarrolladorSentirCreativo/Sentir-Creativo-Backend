@@ -1,8 +1,8 @@
-using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Sentir_Creativo_Backend.Audiencias.EFCore.Repositories.Configurations;
+using Sentir_Creativo_Backend.Audiencias.Entities.POCOEntities;
 using Sentir_Creativo_Backend.Bitacoras.EFCore.Repositories.Configurations;
-using Sentir_Creativo_Backend.SharedKernel.Entities.POCOEntities;
+using Sentir_Creativo_Backend.Bitacoras.Entities.POCOEntities;
 
 namespace Sentir_Creativo_Backend.SharedKernel.EFCore.Repositories.Contexts;
 
@@ -12,26 +12,7 @@ public class SentirCreativoDbContext : DbContext
     {
             
     }
-
-    public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
-    {
-        foreach (var entry in ChangeTracker.Entries<BaseEntity<int>>())
-        {
-            switch (entry.State)
-            {
-                case EntityState.Added:
-                    entry.Entity.CreatedAt = DateTime.Now;
-                    entry.Entity.UpdatedAt = DateTime.Now;
-                    break;
-                case EntityState.Modified:
-                    entry.Entity.UpdatedAt = DateTime.Now;
-                    break;
-            }
-        }
-
-        return base.SaveChangesAsync(cancellationToken);
-    }
-
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfiguration(new BitacoraConfiguration());
@@ -47,4 +28,15 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new TipoRubroConfiguration());
     }
     
+    DbSet<Bitacora> Bitacoras { get; set; }
+    DbSet<Antiguedad> Antiguedades { get; set; }
+    DbSet<Audiencias.Entities.POCOEntities.Audiencia> Audiencias { get; set; }
+    DbSet<Cercania> Cercanias { get; set; }
+    DbSet<EstadoAudiencia> EstadosAudiencias { get; set; }
+    DbSet<Motivacion> Motivaciones { get; set; }
+    DbSet<Organizacion> Organizaciones { get; set; }
+    DbSet<Origen> Origenes { get; set; }
+    DbSet<Prefijo> Prefijos { get; set; }
+    DbSet<Rubro> Rubros { get; set; }
+    DbSet<TipoRubro> TiposRubros { get; set; }
 }

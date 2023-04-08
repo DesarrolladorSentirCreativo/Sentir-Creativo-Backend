@@ -19,8 +19,5 @@ public class PrefijoConfiguration:IEntityTypeConfiguration<Prefijo>
         builder.Property(p => p.UpdatedBy).HasColumnName("updated_by");
         builder.Property(p => p.Activo).HasColumnName("activo");
         
-        builder.HasMany(p => p.Audiencias)
-            .WithOne(p => p.Prefijo)
-            .HasForeignKey(p => p.PrefijoId);
     }
 }

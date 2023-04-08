@@ -10,6 +10,9 @@ public class EstadoAudiencia : BaseEntity<int>
     public string? Image { get; set; }
     public string? Icon { get; set; }
     public bool Activo { get; set; }
-    
-    public virtual ICollection<Audiencia>? Audiencias { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public int? CreatedBy { get; set; }
+    public DateTime UpdatedAt { get; set; }
+    public DateTime? PublishedAt { get; set; }
+    public int? UpdatedBy { get; set; }
 }

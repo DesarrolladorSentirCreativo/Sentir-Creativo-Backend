@@ -1,12 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Sentir_Creativo_Backend.Audiencias.Entities.POCOEntities;
 
 namespace Sentir_Creativo_Backend.Audiencias.EFCore.Repositories.Configurations;
 
-public class AudienciaConfiguration :IEntityTypeConfiguration<Audiencia>
+public class AudienciaConfiguration :IEntityTypeConfiguration<Entities.POCOEntities.Audiencia>
 {
-    public void Configure(EntityTypeBuilder<Audiencia> builder)
+    public void Configure(EntityTypeBuilder<Entities.POCOEntities.Audiencia> builder)
     {
         builder.ToTable("audiencias");
         
@@ -34,6 +33,34 @@ public class AudienciaConfiguration :IEntityTypeConfiguration<Audiencia>
         builder.Property(p => p.DocumentoIdentidad).HasMaxLength(255).HasColumnName("documentoIdentidad");
         builder.Property(p => p.Destacado).HasColumnName("destacado");
         builder.Property(p => p.Activo).HasColumnName("activo");
+        
+        builder.HasOne(u => u.Cercania)
+            .WithOne()
+            .HasForeignKey<Entities.POCOEntities.Audiencia>("CercaniaId");
+        
+        builder.HasOne(u => u.EstadoAudiencia)
+            .WithOne()
+            .HasForeignKey<Entities.POCOEntities.Audiencia>("EstadoId");
+        
+        builder.HasOne(u => u.Antiguedad)
+            .WithOne()
+            .HasForeignKey<Entities.POCOEntities.Audiencia>("AntiguedadId");
+        
+        builder.HasOne(u => u.Motivacion)
+            .WithOne()
+            .HasForeignKey<Entities.POCOEntities.Audiencia>("MotivacionId");
+        
+        builder.HasOne(u => u.Cercania)
+            .WithOne()
+            .HasForeignKey<Entities.POCOEntities.Audiencia>("CercaniaId");
+        
+        builder.HasOne(u => u.Origen)
+            .WithOne()
+            .HasForeignKey<Entities.POCOEntities.Audiencia>("OrigenId");
+        
+        builder.HasOne(u => u.Prefijo)
+            .WithOne()
+            .HasForeignKey<Entities.POCOEntities.Audiencia>("PrefijoId");
 
     }
 }
