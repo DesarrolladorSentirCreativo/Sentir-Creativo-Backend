@@ -328,12 +328,70 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Senitr-Creativo-Backend.Comentarios.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Senitr-Creativo-Backend.Comentarios.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Senitr-Creativo-Backend.Comentarios.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Archivos.BusinessObject/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.Archivos.BusinessObject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.Archivos.BusinessObject.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Archivos.EFCore.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.4",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.4",
+          "Sentir-Creativo-Backend.Archivos.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.Archivos.EFCore.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.Archivos.EFCore.Repositories.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Archivos.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Sentir-Creativo-Backend.Archivos.BusinessObject": "1.0.0",
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.Archivos.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.Archivos.Entities.dll": {}
+        }
+      },
       "Sentir-Creativo-Backend.Audiencias.BusinessObject/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Senitr-Creativo-Backend.Comentarios.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Archivos.Entities": "1.0.0",
           "Sentir-Creativo-Backend.Audiencias.Entities": "1.0.0",
           "Sentir-Creativo-Backend.Bitacoras.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.CuponDescuentos.Entities": "1.0.0",
           "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
         },
         "compile": {
@@ -460,6 +518,49 @@
           "bin/placeholder/Sentir-Creativo-Backend.Bitacoras.Entities.dll": {}
         }
       },
+      "Sentir-Creativo-Backend.Comentarios.EFCore.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.4",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.4",
+          "Senitr-Creativo-Backend.Comentarios.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.Comentarios.EFCore.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.Comentarios.EFCore.Repositories.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.4",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.4",
+          "Sentir-Creativo-Backend.CuponDescuentos.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.CuponDescuentos.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.CuponDescuentos.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.CuponDescuentos.Entities.dll": {}
+        }
+      },
       "Sentir-Creativo-Backend.SharedKernel.EFCore.Repositories/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -467,9 +568,12 @@
           "Microsoft.EntityFrameworkCore": "7.0.4",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.4",
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0",
+          "Sentir-Creativo-Backend.Archivos.EFCore.Repositories": "1.0.0",
           "Sentir-Creativo-Backend.Audiencias.EFCore.Repositories": "1.0.0",
           "Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories": "1.0.0",
           "Sentir-Creativo-Backend.Bitacoras.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Comentarios.EFCore.Repositories": "1.0.0",
+          "Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories": "1.0.0",
           "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
         },
         "compile": {
@@ -997,6 +1101,26 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
+    "Senitr-Creativo-Backend.Comentarios.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Senitr-Creativo-Backend.Comentarios.Entities/Senitr-Creativo-Backend.Comentarios.Entities.csproj",
+      "msbuildProject": "../Senitr-Creativo-Backend.Comentarios.Entities/Senitr-Creativo-Backend.Comentarios.Entities.csproj"
+    },
+    "Sentir-Creativo-Backend.Archivos.BusinessObject/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.Archivos.BusinessObject/Sentir-Creativo-Backend.Archivos.BusinessObject.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.Archivos.BusinessObject/Sentir-Creativo-Backend.Archivos.BusinessObject.csproj"
+    },
+    "Sentir-Creativo-Backend.Archivos.EFCore.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.Archivos.EFCore.Repositories/Sentir-Creativo-Backend.Archivos.EFCore.Repositories.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.Archivos.EFCore.Repositories/Sentir-Creativo-Backend.Archivos.EFCore.Repositories.csproj"
+    },
+    "Sentir-Creativo-Backend.Archivos.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.Archivos.Entities/Sentir-Creativo-Backend.Archivos.Entities.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.Archivos.Entities/Sentir-Creativo-Backend.Archivos.Entities.csproj"
+    },
     "Sentir-Creativo-Backend.Audiencias.BusinessObject/1.0.0": {
       "type": "project",
       "path": "../Sentir-Creativo-Backend.Audiencias.BusinessObject/Sentir-Creativo-Backend.Audiencias.BusinessObject.csproj",
@@ -1041,6 +1165,21 @@
       "type": "project",
       "path": "../Sentir-Creativo-Backend.Bitacoras.Entities/Sentir-Creativo-Backend.Bitacoras.Entities.csproj",
       "msbuildProject": "../Sentir-Creativo-Backend.Bitacoras.Entities/Sentir-Creativo-Backend.Bitacoras.Entities.csproj"
+    },
+    "Sentir-Creativo-Backend.Comentarios.EFCore.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.Comentarios.EFCore.Repositories/Sentir-Creativo-Backend.Comentarios.EFCore.Repositories.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.Comentarios.EFCore.Repositories/Sentir-Creativo-Backend.Comentarios.EFCore.Repositories.csproj"
+    },
+    "Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories/Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories/Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.csproj"
+    },
+    "Sentir-Creativo-Backend.CuponDescuentos.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.CuponDescuentos.Entities/Sentir-Creativo-Backend.CuponDescuentos.Entities.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.CuponDescuentos.Entities/Sentir-Creativo-Backend.CuponDescuentos.Entities.csproj"
     },
     "Sentir-Creativo-Backend.SharedKernel.EFCore.Repositories/1.0.0": {
       "type": "project",

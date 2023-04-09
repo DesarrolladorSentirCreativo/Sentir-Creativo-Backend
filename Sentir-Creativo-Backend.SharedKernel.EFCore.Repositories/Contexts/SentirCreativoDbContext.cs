@@ -1,8 +1,15 @@
 using Microsoft.EntityFrameworkCore;
+using Senitr_Creativo_Backend.Comentarios.Entities.POCOEntities;
+using Sentir_Creativo_Backend.Archivos.EFCore.Repositories.Configurations;
+using Sentir_Creativo_Backend.Archivos.Entities.POCOEntities;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.POCOEntities;
 using Sentir_Creativo_Backend.Audiencias.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.Audiencias.Entities.POCOEntities;
 using Sentir_Creativo_Backend.Bitacoras.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.Bitacoras.Entities.POCOEntities;
+using Sentir_Creativo_Backend.Comentarios.EFCore.Repositories.Configurations;
+using Sentir_Creativo_Backend.CuponDescuentos.EFCore.Repositories.Configurations;
+using Sentir_Creativo_Backend.CuponDescuentos.Entities.POCOEntities;
 
 namespace Sentir_Creativo_Backend.SharedKernel.EFCore.Repositories.Contexts;
 
@@ -26,6 +33,14 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new PrefijoConfiguration());
         modelBuilder.ApplyConfiguration(new RubroConfiguration());
         modelBuilder.ApplyConfiguration(new TipoRubroConfiguration());
+        modelBuilder.ApplyConfiguration(new BitacoraAudienciaConfiguration());
+        modelBuilder.ApplyConfiguration(new CuponDescuentoConfiguration());
+        modelBuilder.ApplyConfiguration(new TipoArchivoConfiguration());
+        modelBuilder.ApplyConfiguration(new AudienciaCuponDescuentoConfiguration());
+        modelBuilder.ApplyConfiguration(new ComentarioConfiguration());
+        modelBuilder.ApplyConfiguration(new AudienciaComentarioConfiguration());
+        modelBuilder.ApplyConfiguration(new ArchivoConfiguration());
+        modelBuilder.ApplyConfiguration(new AudienciaArchivoConfiguration());
     }
     
     DbSet<Bitacora> Bitacoras { get; set; }
@@ -39,4 +54,13 @@ public class SentirCreativoDbContext : DbContext
     DbSet<Prefijo> Prefijos { get; set; }
     DbSet<Rubro> Rubros { get; set; }
     DbSet<TipoRubro> TiposRubros { get; set; }
+    DbSet<AudienciaBitacora> AudienciaBitacoras { get; set; }
+    DbSet<CuponDescuento> CuponDescuentos { get; set; }
+    DbSet<AudienciaCuponDescuento> AudienciaCuponDescuentos { get; set; }
+    DbSet<Archivo> Archivos { get; set; }
+    DbSet<AudienciaArchivo> AudienciaArchivos { get; set; }
+    DbSet<TipoArchivo> TipoArchivos { get; set; }
+    DbSet<Comentario> Comentarios { get; set; }
+    DbSet<AudienciaComentario> AudienciaComentarios { get; set; }
+
 }

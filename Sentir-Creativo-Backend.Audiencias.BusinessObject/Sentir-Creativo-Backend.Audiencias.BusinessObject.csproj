@@ -12,8 +12,11 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Senitr-Creativo-Backend.Comentarios.Entities\Senitr-Creativo-Backend.Comentarios.Entities.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.Archivos.Entities\Sentir-Creativo-Backend.Archivos.Entities.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.Audiencias.Entities\Sentir-Creativo-Backend.Audiencias.Entities.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.Bitacoras.Entities\Sentir-Creativo-Backend.Bitacoras.Entities.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.CuponDescuentos.Entities\Sentir-Creativo-Backend.CuponDescuentos.Entities.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.SharedKernel.Entities\Sentir-Creativo-Backend.SharedKernel.Entities.csproj" />
     </ItemGroup>
 
