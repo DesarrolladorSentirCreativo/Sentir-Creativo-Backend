@@ -8,7 +8,7 @@ public class PublicoObjetivoConfiguration : IEntityTypeConfiguration<PublicoObje
 {
     public void Configure(EntityTypeBuilder<PublicoObjetivo> builder)
     {
-        builder.ToTable("cupon_descuentos");
+        builder.ToTable("publico_objetivos");
         
         builder.HasKey(p => p.Id).HasName("id");
         builder.Property(p => p.Nombre).HasMaxLength(255).HasColumnName("nombre");

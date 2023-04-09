@@ -1,17 +1,20 @@
 using Microsoft.Extensions.DependencyInjection;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Antiguedades.Select;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.GetById;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Cercanias.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Motivaciones.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Origenes.SelectOrigen;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Prefijos.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Antiguedades;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Audiencias;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Cercanias;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Motivaciones;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Organizaciones;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Origenes;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Prefijos;
 using Sentir_Creativo_Backend.Audiencias.Presenters.Antiguedades;
+using Sentir_Creativo_Backend.Audiencias.Presenters.Audiencias;
 using Sentir_Creativo_Backend.Audiencias.Presenters.Cercanias;
 using Sentir_Creativo_Backend.Audiencias.Presenters.Motivaciones;
 using Sentir_Creativo_Backend.Audiencias.Presenters.Organizaciones;
@@ -47,6 +50,10 @@ public static class DependencyContainer
         services.AddScoped<SelectOrganizacionPresenter>();
         services.AddScoped<ISelectOrganizacionPresenter>(provider => provider.GetService<SelectOrganizacionPresenter>());
         services.AddScoped<ISelectOrganizacionOutputPort>(provider => provider.GetService<SelectOrganizacionPresenter>());
+
+        services.AddScoped<GetByIdAudienciaPresenter>();
+        services.AddScoped<IGetByIdAudienciaPresenter>(provider => provider.GetService<GetByIdAudienciaPresenter>());
+        services.AddScoped<IGetByIdAudienciaOutputPort>(provider => provider.GetService<GetByIdAudienciaPresenter>());
         
         return services;
     }

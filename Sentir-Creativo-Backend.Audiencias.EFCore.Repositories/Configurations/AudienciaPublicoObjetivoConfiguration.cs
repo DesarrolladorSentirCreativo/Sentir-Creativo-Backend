@@ -16,10 +16,10 @@ public class AudienciaPublicoObjetivoConfiguration : IEntityTypeConfiguration<Au
 
         builder.HasOne(u => u.Audiencia)
             .WithOne()
-            .HasForeignKey<AudienciaArchivo>("AudienciaId");
+            .HasForeignKey<AudienciaPublicoObjetivo>("AudienciaId");
         
         builder.HasOne(u => u.PublicoObjetivo)
             .WithOne()
-            .HasForeignKey<AudienciaArchivo>("PublicoObjetivoId");
+            .HasForeignKey<AudienciaPublicoObjetivo>("PublicoObjetivoId");
     }
 }

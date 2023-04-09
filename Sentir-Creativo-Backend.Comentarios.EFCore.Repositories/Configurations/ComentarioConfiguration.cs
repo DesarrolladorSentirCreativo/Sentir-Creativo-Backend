@@ -11,7 +11,7 @@ public class ComentarioConfiguration : IEntityTypeConfiguration<Comentario>
         builder.ToTable("comentarios");
         
         builder.HasKey(p => p.Id).HasName("id");
-        builder.Property(p => p.Descripcion).HasColumnName("nombre");
+        builder.Property(p => p.Descripcion).HasColumnName("comentario");
         builder.Property(p => p.PublishedAt).HasColumnName("published_at");
         builder.Property(p => p.CreatedAt).HasColumnName("created_at");
         builder.Property(p => p.UpdatedAt).HasColumnName("updated_at");

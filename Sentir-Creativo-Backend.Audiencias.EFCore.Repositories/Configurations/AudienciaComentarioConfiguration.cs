@@ -17,10 +17,10 @@ public class AudienciaComentarioConfiguration : IEntityTypeConfiguration<Audienc
             
         builder.HasOne(u => u.Audiencia)
             .WithOne()
-            .HasForeignKey<AudienciaArchivo>("AudienciaId");
+            .HasForeignKey<AudienciaComentario>("AudienciaId");
         
         builder.HasOne(u => u.Comentario)
             .WithOne()
-            .HasForeignKey<AudienciaArchivo>("ComentarioId");
+            .HasForeignKey<AudienciaComentario>("ComentarioId");
     }
 }
