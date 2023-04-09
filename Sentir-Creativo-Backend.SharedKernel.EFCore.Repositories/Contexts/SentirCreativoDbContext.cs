@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using Senitr_Creativo_Backend.Comentarios.Entities.POCOEntities;
 using Sentir_Creativo_Backend.Archivos.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.Archivos.Entities.POCOEntities;
+using Sentir_Creativo_Backend.Areas.EFCore.Repositories.Configurations;
+using Sentir_Creativo_Backend.Areas.Entities.POCOEntities;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.POCOEntities;
 using Sentir_Creativo_Backend.Audiencias.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.Audiencias.Entities.POCOEntities;
@@ -10,6 +12,8 @@ using Sentir_Creativo_Backend.Bitacoras.Entities.POCOEntities;
 using Sentir_Creativo_Backend.Comentarios.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.CuponDescuentos.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.CuponDescuentos.Entities.POCOEntities;
+using Sentir_Creativo_Backend.Proyectos.EFCore.Repositories.Configurations;
+using Sentir_Creativo_Backend.Proyectos.Entities.POCOEntities;
 using Sentir_Creativo_Backend.PublicoObjetivos.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.PublicoObjetivos.Entities.POCOEntities;
 
@@ -45,6 +49,8 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new AudienciaArchivoConfiguration());
         modelBuilder.ApplyConfiguration(new PublicoObjetivoConfiguration());
         modelBuilder.ApplyConfiguration(new AudienciaPublicoObjetivoConfiguration());
+        modelBuilder.ApplyConfiguration(new AreaConfiguration());
+        modelBuilder.ApplyConfiguration(new TipoProyectoConfiguration());
     }
     
     DbSet<Bitacora> Bitacoras { get; set; }
@@ -68,5 +74,7 @@ public class SentirCreativoDbContext : DbContext
     DbSet<AudienciaComentario> AudienciaComentarios { get; set; }
     DbSet<PublicoObjetivo> PublicosObjetivos { get; set; }
     DbSet<AudienciaPublicoObjetivo> AudienciaPublicosObjetivos { get; set; }
+    DbSet<Area> Areas { get; set; }
+    DbSet<TipoProyecto> TiposProyectos { get; set; }
 
 }

@@ -19,11 +19,13 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Sentir-Creativo-Backend.Archivos.EFCore.Repositories\Sentir-Creativo-Backend.Archivos.EFCore.Repositories.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.Areas.EFCore.Repositories\Sentir-Creativo-Backend.Areas.EFCore.Repositories.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.Audiencias.EFCore.Repositories\Sentir-Creativo-Backend.Audiencias.EFCore.Repositories.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.Bitacoras.Entities\Sentir-Creativo-Backend.Bitacoras.Entities.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.Comentarios.EFCore.Repositories\Sentir-Creativo-Backend.Comentarios.EFCore.Repositories.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.Proyectos.EFCore.Repositories\Sentir-Creativo-Backend.Proyectos.EFCore.Repositories.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.PublicoObjetivos.EFCore.Repositories\Sentir-Creativo-Backend.PublicoObjetivos.EFCore.Repositories.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.SharedKernel.Entities\Sentir-Creativo-Backend.SharedKernel.Entities.csproj" />
     </ItemGroup>
