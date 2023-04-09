@@ -7,11 +7,11 @@ public class TipoProyecto : BaseEntity<int>
 {
     public string? Nombre { get; set; }
     public string? Icon { get; set; }
-    public int AreaId { get; set; }
+    public int? AreaId { get; set; }
     public bool Activo { get; set; }
-    public DateTime CreatedAt { get; set; }
+    public DateTime? CreatedAt { get; set; }
     public int? CreatedBy { get; set; }
-    public DateTime UpdatedAt { get; set; }
+    public DateTime? UpdatedAt { get; set; }
     public DateTime? PublishedAt { get; set; }
     public int? UpdatedBy { get; set; }
     

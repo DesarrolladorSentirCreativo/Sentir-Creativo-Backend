@@ -9,6 +9,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Sentir-Creativo-Backend.Audiencias.IoC\Sentir-Creativo-Backend.Audiencias.IoC.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.Proyectos.IoC\Sentir-Creativo-Backend.Proyectos.IoC.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.SharedKernel.IoC\Sentir-Creativo-Backend.SharedKernel.IoC.csproj" />
     </ItemGroup>
 
