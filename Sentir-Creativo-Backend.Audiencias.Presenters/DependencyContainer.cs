@@ -1,6 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Antiguedades.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.GetById;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.Pagination;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Cercanias.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Motivaciones.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.Select;
@@ -54,6 +55,11 @@ public static class DependencyContainer
         services.AddScoped<GetByIdAudienciaPresenter>();
         services.AddScoped<IGetByIdAudienciaPresenter>(provider => provider.GetService<GetByIdAudienciaPresenter>());
         services.AddScoped<IGetByIdAudienciaOutputPort>(provider => provider.GetService<GetByIdAudienciaPresenter>());
+        
+        services.AddScoped<PaginationAudienciaPresenter>();
+        services.AddScoped<IPaginationAudienciaPresenter>(provider => provider.GetService<PaginationAudienciaPresenter>());
+        services.AddScoped<IPaginationAudienciaOuputPort>(provider => provider.GetService<PaginationAudienciaPresenter>());
+        
         
         return services;
     }

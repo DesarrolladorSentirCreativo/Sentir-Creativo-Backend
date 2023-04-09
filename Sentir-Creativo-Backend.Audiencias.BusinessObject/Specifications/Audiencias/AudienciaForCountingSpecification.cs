@@ -4,7 +4,7 @@ namespace Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.Audien
 
 public class AudienciaForCountingSpecification : BaseSpecification<Sentir_Creativo_Backend.Audiencias.Entities.POCOEntities.Audiencia>
 {
-    public AudienciaForCountingSpecification(AudienciaSpecificationParams audienciaParams) : base(
+    public AudienciaForCountingSpecification(AudienciaPaginationSpecificationParams audienciaParams) : base(
         x => string.IsNullOrEmpty(audienciaParams.Search) || x.Nombre!.Contains(audienciaParams.Search) 
                                                           || x.Apellido!.Contains(audienciaParams.Search) || x.Departamento!.Contains(audienciaParams.Search)
                                                           || x.Antiguedad!.Nombre.Contains(audienciaParams.Search) || x.Email!.Contains(audienciaParams.Search) 

@@ -27,6 +27,7 @@ public static class DependencyContainer
         services.AddScoped<ISelectPrefijoController, SelectPrefijoController>();
         services.AddScoped<ISelectOrganizacionController, SelectOrganizacionController>();
         services.AddScoped<IGetByIdAudienciaController, GetByIdAudienciaController>();
+        services.AddScoped<IPaginationAudienciaController, PaginationAudienciaController>();
         
         return services;
     }

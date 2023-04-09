@@ -2,9 +2,9 @@ using Sentir_Creativo_Backend.SharedKernel.Entities.Specifications;
 
 namespace Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.Audiencias;
 
-public class AudienciaSpecification: BaseSpecification<Sentir_Creativo_Backend.Audiencias.Entities.POCOEntities.Audiencia>
+public class AudienciaPaginationSpecification: BaseSpecification<Sentir_Creativo_Backend.Audiencias.Entities.POCOEntities.Audiencia>
 {
-    public AudienciaSpecification(AudienciaSpecificationParams audienciaParams) : base(
+    public AudienciaPaginationSpecification(AudienciaPaginationSpecificationParams audienciaParams) : base(
         x => 
             string.IsNullOrEmpty(audienciaParams.Search) || x.Nombre!.Contains(audienciaParams.Search) 
                                                          || x.Apellido!.Contains(audienciaParams.Search) || x.Departamento!.Contains(audienciaParams.Search)
