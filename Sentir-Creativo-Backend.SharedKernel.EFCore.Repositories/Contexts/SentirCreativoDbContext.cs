@@ -10,6 +10,8 @@ using Sentir_Creativo_Backend.Bitacoras.Entities.POCOEntities;
 using Sentir_Creativo_Backend.Comentarios.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.CuponDescuentos.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.CuponDescuentos.Entities.POCOEntities;
+using Sentir_Creativo_Backend.PublicoObjetivos.EFCore.Repositories.Configurations;
+using Sentir_Creativo_Backend.PublicoObjetivos.Entities.POCOEntities;
 
 namespace Sentir_Creativo_Backend.SharedKernel.EFCore.Repositories.Contexts;
 
@@ -41,6 +43,8 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new AudienciaComentarioConfiguration());
         modelBuilder.ApplyConfiguration(new ArchivoConfiguration());
         modelBuilder.ApplyConfiguration(new AudienciaArchivoConfiguration());
+        modelBuilder.ApplyConfiguration(new PublicoObjetivoConfiguration());
+        modelBuilder.ApplyConfiguration(new AudienciaPublicoObjetivoConfiguration());
     }
     
     DbSet<Bitacora> Bitacoras { get; set; }
@@ -62,5 +66,7 @@ public class SentirCreativoDbContext : DbContext
     DbSet<TipoArchivo> TipoArchivos { get; set; }
     DbSet<Comentario> Comentarios { get; set; }
     DbSet<AudienciaComentario> AudienciaComentarios { get; set; }
+    DbSet<PublicoObjetivo> PublicosObjetivos { get; set; }
+    DbSet<AudienciaPublicoObjetivo> AudienciaPublicosObjetivos { get; set; }
 
 }

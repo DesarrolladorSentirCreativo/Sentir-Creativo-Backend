@@ -24,6 +24,7 @@
       <ProjectReference Include="..\Sentir-Creativo-Backend.Bitacoras.Entities\Sentir-Creativo-Backend.Bitacoras.Entities.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.Comentarios.EFCore.Repositories\Sentir-Creativo-Backend.Comentarios.EFCore.Repositories.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.PublicoObjetivos.EFCore.Repositories\Sentir-Creativo-Backend.PublicoObjetivos.EFCore.Repositories.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.SharedKernel.Entities\Sentir-Creativo-Backend.SharedKernel.Entities.csproj" />
     </ItemGroup>
 
