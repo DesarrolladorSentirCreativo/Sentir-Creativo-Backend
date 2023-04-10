@@ -51,6 +51,7 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new AudienciaPublicoObjetivoConfiguration());
         modelBuilder.ApplyConfiguration(new AreaConfiguration());
         modelBuilder.ApplyConfiguration(new TipoProyectoConfiguration());
+        modelBuilder.ApplyConfiguration(new EstadoProyectoConfiguration());
     }
     
     DbSet<Bitacora> Bitacoras { get; set; }
@@ -76,5 +77,6 @@ public class SentirCreativoDbContext : DbContext
     DbSet<AudienciaPublicoObjetivo> AudienciaPublicosObjetivos { get; set; }
     DbSet<Area> Areas { get; set; }
     DbSet<TipoProyecto> TiposProyectos { get; set; }
+    DbSet<EstadoProyecto> EstadoProyectos { get; set; }
 
 }
