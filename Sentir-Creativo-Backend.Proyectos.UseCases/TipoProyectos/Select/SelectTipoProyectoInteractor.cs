@@ -1,4 +1,4 @@
-using Sentir_Creativo_Backend.Proyectos.BusinessObject.Contracts.Ports;
+using Sentir_Creativo_Backend.Proyectos.BusinessObject.Contracts.Ports.TipoProyectos;
 using Sentir_Creativo_Backend.Proyectos.BusinessObject.Specifications.TipoProyectos;
 using Sentir_Creativo_Backend.Proyectos.BusinessObject.ViewModels.TiposProyectos;
 using Sentir_Creativo_Backend.Proyectos.Entities.POCOEntities;

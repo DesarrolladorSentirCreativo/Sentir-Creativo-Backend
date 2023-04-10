@@ -8,6 +8,7 @@ using Sentir_Creativo_Backend.WebApi.Audiencias.Motivaciones;
 using Sentir_Creativo_Backend.WebApi.Audiencias.Organizaciones;
 using Sentir_Creativo_Backend.WebApi.Audiencias.Origenes;
 using Sentir_Creativo_Backend.WebApi.Audiencias.Prefijos;
+using Sentir_Creativo_Backend.WebApi.Proyectos.EstadoProyectos;
 using Sentir_Creativo_Backend.WebApi.Proyectos.TipoProyectos;
 
 namespace Sentir_Creativo_Backend.WebApi;
@@ -52,6 +53,7 @@ public static class WebApplicationHelper
         app.UseOrganizacionEndpoints();
         app.UseAudienciaEndpoints();
         app.UseTipoProyectoEndpoints();
+        app.UseEstadoProyectoEndpoints();
 
         return app;
     }
