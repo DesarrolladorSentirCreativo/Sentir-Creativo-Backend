@@ -9,13 +9,19 @@ using Sentir_Creativo_Backend.Audiencias.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.Audiencias.Entities.POCOEntities;
 using Sentir_Creativo_Backend.Bitacoras.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.Bitacoras.Entities.POCOEntities;
+using Sentir_Creativo_Backend.Colecciones.EFCore.Repositories.Configurations;
+using Sentir_Creativo_Backend.Colecciones.Entities.POCOEntities;
 using Sentir_Creativo_Backend.Comentarios.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.CuponDescuentos.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.CuponDescuentos.Entities.POCOEntities;
+using Sentir_Creativo_Backend.Difusiones.Entities.POCOEntities;
+using Sentir_Creativo_Backend.Plantillas.EFCore.Repositories.Configurations;
+using Sentir_Creativo_Backend.Plantillas.Entities.POCOEntities;
 using Sentir_Creativo_Backend.Proyectos.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.Proyectos.Entities.POCOEntities;
 using Sentir_Creativo_Backend.PublicoObjetivos.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.PublicoObjetivos.Entities.POCOEntities;
+using Sentir_Cretivo_Backend.Difusiones.EFCore.Repositories.Configuraciones;
 
 namespace Sentir_Creativo_Backend.SharedKernel.EFCore.Repositories.Contexts;
 
@@ -52,6 +58,10 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new AreaConfiguration());
         modelBuilder.ApplyConfiguration(new TipoProyectoConfiguration());
         modelBuilder.ApplyConfiguration(new EstadoProyectoConfiguration());
+        modelBuilder.ApplyConfiguration(new PlantillaConfiguration());
+        modelBuilder.ApplyConfiguration(new ColeccionConfiguration());
+        modelBuilder.ApplyConfiguration(new PlataformaConfiguration());
+        modelBuilder.ApplyConfiguration(new DifusionConfiguration());
     }
     
     DbSet<Bitacora> Bitacoras { get; set; }
@@ -78,5 +88,9 @@ public class SentirCreativoDbContext : DbContext
     DbSet<Area> Areas { get; set; }
     DbSet<TipoProyecto> TiposProyectos { get; set; }
     DbSet<EstadoProyecto> EstadoProyectos { get; set; }
+    DbSet<Plantilla> Plantillas { get; set; } 
+    DbSet<Coleccion> Colecciones { get; set; }
+    DbSet<Plataforma> Plataformas { get; set; }
+    DbSet<Difusion> Difusiones { get; set; }
 
 }
