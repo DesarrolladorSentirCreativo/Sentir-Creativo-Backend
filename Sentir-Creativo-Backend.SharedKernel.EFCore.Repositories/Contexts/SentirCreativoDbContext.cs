@@ -21,6 +21,8 @@ using Sentir_Creativo_Backend.Proyectos.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.Proyectos.Entities.POCOEntities;
 using Sentir_Creativo_Backend.PublicoObjetivos.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.PublicoObjetivos.Entities.POCOEntities;
+using Sentir_Creativo_Backend.Servicios.EFCore.Repositories.Configurations;
+using Sentir_Creativo_Backend.Servicios.Entities.POCOEntities;
 using Sentir_Cretivo_Backend.Difusiones.EFCore.Repositories.Configuraciones;
 
 namespace Sentir_Creativo_Backend.SharedKernel.EFCore.Repositories.Contexts;
@@ -63,6 +65,7 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new PlataformaConfiguration());
         modelBuilder.ApplyConfiguration(new DifusionConfiguration());
         modelBuilder.ApplyConfiguration(new AudienciaDifusionConfiguration());
+        modelBuilder.ApplyConfiguration(new EstadoServicioConfiguration());
     }
     
     DbSet<Bitacora> Bitacoras { get; set; }
@@ -94,5 +97,6 @@ public class SentirCreativoDbContext : DbContext
     DbSet<Plataforma> Plataformas { get; set; }
     DbSet<Difusion> Difusiones { get; set; }
     DbSet<AudienciaDifusion> AudienciaDifusiones { get; set; }
+    DbSet<EstadoServicio> EstadoServicios { get; set; }
 
 }

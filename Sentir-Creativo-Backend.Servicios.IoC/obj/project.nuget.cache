@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "MewJkK0D5L/cGjg427rTmRLb4Y9MD/7ksEvGbL4VCmQW8LfkqkBYuASHmu4H/1t2tGe4fJOhop9AxqevEIB+mA==",
+  "success": true,
+  "projectFilePath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Servicios.IoC\\Sentir-Creativo-Backend.Servicios.IoC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\angel\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

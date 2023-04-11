@@ -596,6 +596,34 @@
           "bin/placeholder/Sentir-Creativo-Backend.PublicoObjetivos.Entities.dll": {}
         }
       },
+      "Sentir-Creativo-Backend.Servicios.EFCore.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.4",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.4",
+          "Sentir-Creativo-Backend.Servicios.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.Servicios.EFCore.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.Servicios.EFCore.Repositories.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Servicios.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.Servicios.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.Servicios.Entities.dll": {}
+        }
+      },
       "Sentir-Creativo-Backend.SharedKernel.EFCore.Repositories/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -614,6 +642,7 @@
           "Sentir-Creativo-Backend.Plantillas.EFCore.Repositories": "1.0.0",
           "Sentir-Creativo-Backend.Proyectos.EFCore.Repositories": "1.0.0",
           "Sentir-Creativo-Backend.PublicoObjetivos.EFCore.Repositories": "1.0.0",
+          "Sentir-Creativo-Backend.Servicios.EFCore.Repositories": "1.0.0",
           "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0",
           "Sentir-Cretivo-Backend.Difusiones.EFCore.Repositories": "1.0.0"
         },
@@ -1161,6 +1190,16 @@
       "type": "project",
       "path": "../Sentir-Creativo-Backend.PublicoObjetivos.Entities/Sentir-Creativo-Backend.PublicoObjetivos.Entities.csproj",
       "msbuildProject": "../Sentir-Creativo-Backend.PublicoObjetivos.Entities/Sentir-Creativo-Backend.PublicoObjetivos.Entities.csproj"
+    },
+    "Sentir-Creativo-Backend.Servicios.EFCore.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.Servicios.EFCore.Repositories/Sentir-Creativo-Backend.Servicios.EFCore.Repositories.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.Servicios.EFCore.Repositories/Sentir-Creativo-Backend.Servicios.EFCore.Repositories.csproj"
+    },
+    "Sentir-Creativo-Backend.Servicios.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.Servicios.Entities/Sentir-Creativo-Backend.Servicios.Entities.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.Servicios.Entities/Sentir-Creativo-Backend.Servicios.Entities.csproj"
     },
     "Sentir-Creativo-Backend.SharedKernel.EFCore.Repositories/1.0.0": {
       "type": "project",
