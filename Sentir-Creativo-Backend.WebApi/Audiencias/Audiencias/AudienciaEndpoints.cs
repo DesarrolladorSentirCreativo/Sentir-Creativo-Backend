@@ -28,6 +28,14 @@ public static class AudienciaEndpoints
                 }))
         );
 
+        app.MapGet("/audiencias/difusion/{id}", async (HttpContext context, int id, ISearchAudienciasDifusionController controller) =>
+        {
+            // Obtener el ID de la URL
+            var idSegment = context.Request.RouteValues["id"].ToString();
+            int itemId = int.Parse(idSegment);
+
+            return Results.Ok(await controller.Handle(itemId));
+        });
 
         return app;
     }

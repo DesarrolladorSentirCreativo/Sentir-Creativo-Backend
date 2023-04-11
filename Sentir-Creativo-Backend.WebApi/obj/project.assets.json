@@ -420,6 +420,7 @@
           "Sentir-Creativo-Backend.Audiencias.Entities": "1.0.0",
           "Sentir-Creativo-Backend.Bitacoras.Entities": "1.0.0",
           "Sentir-Creativo-Backend.CuponDescuentos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Difusiones.Entities": "1.0.0",
           "Sentir-Creativo-Backend.PublicoObjetivos.Entities": "1.0.0",
           "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
         },

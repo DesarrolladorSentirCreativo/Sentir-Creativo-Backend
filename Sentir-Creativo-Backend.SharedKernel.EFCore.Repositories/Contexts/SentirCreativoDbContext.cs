@@ -62,6 +62,7 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new ColeccionConfiguration());
         modelBuilder.ApplyConfiguration(new PlataformaConfiguration());
         modelBuilder.ApplyConfiguration(new DifusionConfiguration());
+        modelBuilder.ApplyConfiguration(new AudienciaDifusionConfiguration());
     }
     
     DbSet<Bitacora> Bitacoras { get; set; }
@@ -92,5 +93,6 @@ public class SentirCreativoDbContext : DbContext
     DbSet<Coleccion> Colecciones { get; set; }
     DbSet<Plataforma> Plataformas { get; set; }
     DbSet<Difusion> Difusiones { get; set; }
+    DbSet<AudienciaDifusion> AudienciaDifusiones { get; set; }
 
 }
