@@ -3,9 +3,9 @@ using Sentir_Creativo_Backend.SharedKernel.Entities.Specifications;
 
 namespace Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.Audiencias;
 
-public class AudienciaDifusionIdAudienciaSpecification : BaseSpecification<AudienciaDifusion>
+public class AudienciaDifusionIdDifusionSpecification : BaseSpecification<AudienciaDifusion>
 {
-    public AudienciaDifusionIdAudienciaSpecification(int difusionId) : base(x => x.DifusionId == difusionId)
+    public AudienciaDifusionIdDifusionSpecification(int difusionId) : base(x => x.DifusionId == difusionId)
     {
         AddInclude(p => p.Audiencia!);
         AddInclude(p => p.Difusion!);

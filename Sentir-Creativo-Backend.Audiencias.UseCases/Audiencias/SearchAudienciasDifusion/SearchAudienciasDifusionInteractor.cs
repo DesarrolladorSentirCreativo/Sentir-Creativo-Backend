@@ -30,7 +30,7 @@ public class SearchAudienciasDifusionInteractor : ISearchAudienciasDifusionInput
 
         var difusion = await _readDifusionRepository.GetByIdWithSpec(spec);
         
-        var specAudienciaDifusion = new AudienciaDifusionIdAudienciaSpecification(difusionId);
+        var specAudienciaDifusion = new AudienciaDifusionIdDifusionSpecification(difusionId);
 
         var audienciasDifusion = await _readAudienciaDifusionRepository.GetAllWithSpec(specAudienciaDifusion);
 

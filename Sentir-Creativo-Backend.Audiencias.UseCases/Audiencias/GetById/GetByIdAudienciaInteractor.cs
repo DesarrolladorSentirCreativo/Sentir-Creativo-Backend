@@ -5,8 +5,10 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.AudienciaA
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.AudienciaBitacoras;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.AudienciaComentarios;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.AudienciaCuponDescuentos;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.AudienciaDifusiones;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.Audiencias;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Audiencias;
+using Sentir_Creativo_Backend.Difusiones.Entities.ViewModels;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
 
 namespace Sentir_Creativo_Backend.Audiencias.UseCases.Audiencias.GetById;
@@ -18,6 +20,7 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
     private readonly IReadRepository<AudienciaComentario, int> _audienciaComentarioReadRepository;
     private readonly IReadRepository<AudienciaArchivo,int> _audienciaArchivoReadRepository;
     private readonly IReadRepository<AudienciaCuponDescuento,int> _audienciaCuponDescuentoReadRepository;
+    private readonly IReadRepository<AudienciaDifusion,int> _audienciaDifusionReadRepository;
     private readonly IGetByIdAudienciaOutputPort _outputPort;
 
     public GetByIdAudienciaInteractor(
@@ -27,6 +30,7 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
         IReadRepository<AudienciaComentario, int> audienciaComentarioRedRepository,
         IReadRepository<AudienciaArchivo,int> audienciaArchivoReadRepository,
         IReadRepository<AudienciaCuponDescuento,int> audienciaCuponDescuentoObjetivoReadRepository,
+        IReadRepository<AudienciaDifusion,int> audienciaDifusionReadRepository,
         IGetByIdAudienciaOutputPort outputPort)
     {
         _audienciaReadRepository =  audienciaRedRepository;
@@ -34,6 +38,7 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
         _audienciaComentarioReadRepository = audienciaComentarioRedRepository;
         _audienciaArchivoReadRepository = audienciaArchivoReadRepository;
         _audienciaCuponDescuentoReadRepository = audienciaCuponDescuentoObjetivoReadRepository;
+        _audienciaDifusionReadRepository = audienciaDifusionReadRepository;
         _outputPort = outputPort;
     }
     
@@ -84,8 +89,31 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
             .Select(p => 
                 new CuponDescuentoViewModel() { Id = p.Id, Codigo = p.CuponDescuento!.Codigo })
             .ToList()
+            .ToList()
             .AsReadOnly();
-
+        
+        //obtener las difusiones que tengan esta audiencia
+        var specAudienciaDifusion = new AudienciaDifusionesIdAudienciaSpecification(audienciaId);
+        var audienciasDifusiones = await _audienciaDifusionReadRepository.GetAllWithSpec(specAudienciaDifusion);
+        
+        IReadOnlyList<DifusionViewModel> audienciaDifusionesViewModels = audienciasDifusiones
+            .Select(p => 
+                new DifusionViewModel() 
+                    { Id = p.Difusion!.Id, 
+                        Nombre = p.Difusion!.Nombre ,
+                       Descripcion = p.Difusion!.Descripcion,
+                       PublishedAt = p.Difusion!.PublishedAt,
+                       Activo = p.Difusion!.Activo,
+                       PlataformaId = p.Difusion!.PlataformaId,
+                       CuponDescuentoId = p.Difusion!.CuponDescuentoId,
+                       ColeccionId = p.Difusion!.ColeccionId,
+                       Slogan = p.Difusion!.Slogan,
+                       Asunto = p.Difusion!.Asunto,
+                       PreHeader = p.Difusion!.PreHeader,
+                       PlantillaId = p.Difusion!.PlantillaId,
+                    })
+            .ToList()
+            .AsReadOnly();
 
 
         var audienciaViewModel = new GetByIdAudienciaViewModel
@@ -113,6 +141,7 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
             Comentarios = comentariosViewModels,
             Archivos = archivosViewModels,
             CuponDescuentos = cuponDescuentosViewModels,
+            Difusiones = audienciaDifusionesViewModels
             
         };
 

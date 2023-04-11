@@ -1,3 +1,5 @@
+using Sentir_Creativo_Backend.Difusiones.Entities.ViewModels;
+
 namespace Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Audiencias;
 
 public class GetByIdAudienciaViewModel
@@ -26,5 +28,6 @@ public class GetByIdAudienciaViewModel
     public IReadOnlyList<BitacoraViewModel> Bitacoras { get; set; }
     public IReadOnlyList<ComentarioViewModel> Comentarios { get; set; }
     public IReadOnlyList<ArchivoViewModel> Archivos { get; set; }
+    public IReadOnlyList<DifusionViewModel> Difusiones { get; set; }
 
 }
