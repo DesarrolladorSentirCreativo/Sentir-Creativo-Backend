@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Contracts\Ports\PublicoObjetivos" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Sentir-Creativo-Backend.PublicoObjetivos.Entities\Sentir-Creativo-Backend.PublicoObjetivos.Entities.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.SharedKernel.Entities\Sentir-Creativo-Backend.SharedKernel.Entities.csproj" />
+    </ItemGroup>
+
+</Project>

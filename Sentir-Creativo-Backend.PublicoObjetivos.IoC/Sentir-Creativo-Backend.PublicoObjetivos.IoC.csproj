@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Sentir_Creativo_Backend.PublicoObjetivos.IoC</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Sentir-Creativo-Backend.PublicoObjetivos.Controllers\Sentir-Creativo-Backend.PublicoObjetivos.Controllers.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.csproj" />
+    </ItemGroup>
+
+</Project>

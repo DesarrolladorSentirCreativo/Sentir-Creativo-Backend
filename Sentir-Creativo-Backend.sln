@@ -212,6 +212,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositorie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Cretivo-Backend.Difusiones.EFCore.Repositories", "Sentir-Cretivo-Backend.Difusiones.EFCore.Repositories\Sentir-Cretivo-Backend.Difusiones.EFCore.Repositories.csproj", "{9DFAC48C-07F2-42FC-8D5A-2BF60E735D24}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application Business Rules", "2.Application Business Rules", "{E4CD32CD-21A7-457A-BA2D-C964DF5BF1D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.PublicoObjectivos.BusinessObject", "Sentir-Creativo-Backend.PublicoObjectivos.BusinessObject\Sentir-Creativo-Backend.PublicoObjectivos.BusinessObject.csproj", "{80F557D6-D901-42D1-B2BF-28BE284E7B0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.PublicoObjetivos.UseCases", "Sentir-Creativo-Backend.PublicoObjetivos.UseCases\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.csproj", "{464E33DC-5C18-4E9D-A310-3A048709D3E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{C3CC37E5-FACF-4C6B-BFE1-48D122A690EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.PublicoObjetivos.Presenters", "Sentir-Creativo-Backend.PublicoObjetivos.Presenters\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.csproj", "{A1FF8046-462E-4461-AB6A-E0E3D51E6DD2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{4564CEB5-F51D-44B0-BCD5-E172ED0B4B2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.PublicoObjetivos.Controllers", "Sentir-Creativo-Backend.PublicoObjetivos.Controllers\Sentir-Creativo-Backend.PublicoObjetivos.Controllers.csproj", "{D269290F-BCC4-4FB1-99B0-4D358E604CE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.PublicoObjetivos.IoC", "Sentir-Creativo-Backend.PublicoObjetivos.IoC\Sentir-Creativo-Backend.PublicoObjetivos.IoC.csproj", "{C56B1DE5-3E69-48D5-A165-D4AC6FE1B279}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -366,6 +382,26 @@ Global
 		{9DFAC48C-07F2-42FC-8D5A-2BF60E735D24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DFAC48C-07F2-42FC-8D5A-2BF60E735D24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DFAC48C-07F2-42FC-8D5A-2BF60E735D24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80F557D6-D901-42D1-B2BF-28BE284E7B0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80F557D6-D901-42D1-B2BF-28BE284E7B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80F557D6-D901-42D1-B2BF-28BE284E7B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80F557D6-D901-42D1-B2BF-28BE284E7B0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{464E33DC-5C18-4E9D-A310-3A048709D3E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{464E33DC-5C18-4E9D-A310-3A048709D3E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{464E33DC-5C18-4E9D-A310-3A048709D3E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{464E33DC-5C18-4E9D-A310-3A048709D3E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1FF8046-462E-4461-AB6A-E0E3D51E6DD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1FF8046-462E-4461-AB6A-E0E3D51E6DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1FF8046-462E-4461-AB6A-E0E3D51E6DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1FF8046-462E-4461-AB6A-E0E3D51E6DD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D269290F-BCC4-4FB1-99B0-4D358E604CE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D269290F-BCC4-4FB1-99B0-4D358E604CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D269290F-BCC4-4FB1-99B0-4D358E604CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D269290F-BCC4-4FB1-99B0-4D358E604CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C56B1DE5-3E69-48D5-A165-D4AC6FE1B279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C56B1DE5-3E69-48D5-A165-D4AC6FE1B279}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C56B1DE5-3E69-48D5-A165-D4AC6FE1B279}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C56B1DE5-3E69-48D5-A165-D4AC6FE1B279}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AF9EBC78-BCD3-42E7-9477-9E398DD192D0} = {B94285CE-73E8-4F56-BCBD-F359734ED5A3}
@@ -473,5 +509,13 @@ Global
 		{1AB42549-6643-4834-A3E5-FE057D8DB30E} = {35B67273-F98B-4C6A-B65D-D8155289088A}
 		{B074E030-1B04-4D3F-A8E7-45E5A148B9AE} = {1AB42549-6643-4834-A3E5-FE057D8DB30E}
 		{9DFAC48C-07F2-42FC-8D5A-2BF60E735D24} = {B074E030-1B04-4D3F-A8E7-45E5A148B9AE}
+		{E4CD32CD-21A7-457A-BA2D-C964DF5BF1D5} = {677C5B80-E55D-45B3-82AE-4BDFE7AB01F3}
+		{80F557D6-D901-42D1-B2BF-28BE284E7B0F} = {E4CD32CD-21A7-457A-BA2D-C964DF5BF1D5}
+		{464E33DC-5C18-4E9D-A310-3A048709D3E0} = {E4CD32CD-21A7-457A-BA2D-C964DF5BF1D5}
+		{C3CC37E5-FACF-4C6B-BFE1-48D122A690EE} = {4841FD5D-4B33-4691-9D79-2212FC6110F5}
+		{A1FF8046-462E-4461-AB6A-E0E3D51E6DD2} = {C3CC37E5-FACF-4C6B-BFE1-48D122A690EE}
+		{4564CEB5-F51D-44B0-BCD5-E172ED0B4B2E} = {4841FD5D-4B33-4691-9D79-2212FC6110F5}
+		{D269290F-BCC4-4FB1-99B0-4D358E604CE8} = {4564CEB5-F51D-44B0-BCD5-E172ED0B4B2E}
+		{C56B1DE5-3E69-48D5-A165-D4AC6FE1B279} = {4841FD5D-4B33-4691-9D79-2212FC6110F5}
 	EndGlobalSection
 EndGlobal

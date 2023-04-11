@@ -1,5 +1,6 @@
 using Sentir_Creativo_Backend.Audiencias.IoC;
 using Sentir_Creativo_Backend.Proyectos.IoC;
+using Sentir_Creativo_Backend.PublicoObjetivos.IoC;
 using Sentir_Creativo_Backend.SharedKernel.IoC;
 using Sentir_Creativo_Backend.WebApi.Audiencias.Antiguedades;
 using Sentir_Creativo_Backend.WebApi.Audiencias.Audiencias;
@@ -10,6 +11,7 @@ using Sentir_Creativo_Backend.WebApi.Audiencias.Origenes;
 using Sentir_Creativo_Backend.WebApi.Audiencias.Prefijos;
 using Sentir_Creativo_Backend.WebApi.Proyectos.EstadoProyectos;
 using Sentir_Creativo_Backend.WebApi.Proyectos.TipoProyectos;
+using Sentir_Creativo_Backend.WebApi.PublicoObjetivos;
 
 namespace Sentir_Creativo_Backend.WebApi;
 
@@ -23,7 +25,8 @@ public static class WebApplicationHelper
         builder.Services.AddSharedKernelRepositoriesServices(builder.Configuration);
         builder.Services.AddAudienciasServices();
         builder.Services.AddProyectosServices();
-
+        builder.Services.AddPublicoObjetivosServices();
+        
         builder.Services.AddCors(options =>
         {
             options.AddDefaultPolicy(config =>
@@ -54,6 +57,7 @@ public static class WebApplicationHelper
         app.UseAudienciaEndpoints();
         app.UseTipoProyectoEndpoints();
         app.UseEstadoProyectoEndpoints();
+        app.UsePublicoObjetivoEndpoints();
 
         return app;
     }
