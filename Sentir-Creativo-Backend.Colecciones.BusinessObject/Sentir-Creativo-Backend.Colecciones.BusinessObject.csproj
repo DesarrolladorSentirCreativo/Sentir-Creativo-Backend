@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Sentir_Creativo_Backend.Colecciones.BusinessObject</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Sentir-Creativo-Backend.Colecciones.Entities\Sentir-Creativo-Backend.Colecciones.Entities.csproj" />
+    </ItemGroup>
+
+</Project>
