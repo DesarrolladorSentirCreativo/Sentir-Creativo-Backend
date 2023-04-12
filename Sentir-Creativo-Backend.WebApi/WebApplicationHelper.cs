@@ -1,9 +1,11 @@
+using Sentir_Creativo_Backend.Areas.IoC;
 using Sentir_Creativo_Backend.Audiencias.IoC;
 using Sentir_Creativo_Backend.Colecciones.IoC;
 using Sentir_Creativo_Backend.Proyectos.IoC;
 using Sentir_Creativo_Backend.PublicoObjetivos.IoC;
 using Sentir_Creativo_Backend.Servicios.IoC;
 using Sentir_Creativo_Backend.SharedKernel.IoC;
+using Sentir_Creativo_Backend.WebApi.Areas.Areas;
 using Sentir_Creativo_Backend.WebApi.Audiencias.Antiguedades;
 using Sentir_Creativo_Backend.WebApi.Audiencias.Audiencias;
 using Sentir_Creativo_Backend.WebApi.Audiencias.Cercanias;
@@ -33,6 +35,7 @@ public static class WebApplicationHelper
         builder.Services.AddPublicoObjetivosServices();
         builder.Services.AddServiciosServices();
         builder.Services.AddColeccionesServices();
+        builder.Services.AddAreasServices();
 
         builder.Services.AddCors(options =>
         {
@@ -68,6 +71,7 @@ public static class WebApplicationHelper
         app.UseServicioEndpoints();
         app.UseColeccionEndpoints();
         app.UseFormatoEndpoints();
+        app.UseAreaEndpoints();
 
         return app;
     }

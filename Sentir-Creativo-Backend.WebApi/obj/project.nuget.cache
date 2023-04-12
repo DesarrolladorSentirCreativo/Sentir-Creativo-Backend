@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "xYBoy3741UFBaSLOMnxtE1PNCtTXXxAMDIfeCFRSNtYh7LW2PSh+gJUoFkdby9Es6JqP9Q5HS3fU+z9QWXX5hA==",
+  "dgSpecHash": "gBqjcr8r1w7nQcVdkdYc2gKByGkw4F00dRkCkOiCoO6EzNrM5PPxq7BkYqfufq7ivUlXR6JrXW+BPZDy+XENzA==",
   "success": true,
   "projectFilePath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.WebApi\\Sentir-Creativo-Backend.WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\angel\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\angel\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.2\\fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.4\\microsoft.entityframeworkcore.7.0.4.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.4\\microsoft.entityframeworkcore.abstractions.7.0.4.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.4\\microsoft.entityframeworkcore.analyzers.7.0.4.nupkg.sha512",

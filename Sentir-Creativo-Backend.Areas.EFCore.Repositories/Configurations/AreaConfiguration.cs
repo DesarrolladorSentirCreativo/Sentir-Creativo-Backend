@@ -13,7 +13,7 @@ public class AreaConfiguration : IEntityTypeConfiguration<Area>
         builder.HasKey(p => p.Id).HasName("id");
         builder.Property(p => p.Nombre).HasMaxLength(255).HasColumnName("nombre");
         builder.Property(p => p.Icono).HasMaxLength(255).HasColumnName("icono");
-        builder.Property(p => p.Descripcion).HasMaxLength(255).HasColumnName("description");
+        builder.Property(p => p.Descripcion).HasMaxLength(255).HasColumnName("descripcion");
         builder.Property(p => p.ColorPrimario).HasMaxLength(255).HasColumnName("colorPrimario");
         builder.Property(p => p.ColorSecundario).HasMaxLength(255).HasColumnName("colorSecundario");
         builder.Property(p=> p.Focus).HasMaxLength(255).HasColumnName("focus");

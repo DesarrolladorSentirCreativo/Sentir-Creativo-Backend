@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ispF1aeQZKglSCthmBIA/p6zY6rDg5SJswy8kJMj8oLNWaJ7yxkftf8sBhHRGq8p6y+oPnLaC//JlNOXOgugXQ==",
+  "dgSpecHash": "jcLvyocmmleKe9unNyivCO4wCQuwUySjeuA9wy87IWirtP038zUjI51+ZW+mj/wjb0nHtTj+2CjVYBpi6Fnn9w==",
   "success": true,
   "projectFilePath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.UseCases\\Sentir-Creativo-Backend.Audiencias.UseCases.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\angel\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\angel\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.2\\fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512"
   ],
