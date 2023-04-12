@@ -16,6 +16,7 @@ using Sentir_Creativo_Backend.WebApi.Proyectos.EstadoProyectos;
 using Sentir_Creativo_Backend.WebApi.Proyectos.TipoProyectos;
 using Sentir_Creativo_Backend.WebApi.PublicoObjetivos;
 using Sentir_Creativo_Backend.WebApi.Servicios.EstadoServicios;
+using Sentir_Creativo_Backend.WebApi.Servicios.Formatos;
 
 namespace Sentir_Creativo_Backend.WebApi;
 
@@ -66,6 +67,7 @@ public static class WebApplicationHelper
         app.UsePublicoObjetivoEndpoints();
         app.UseServicioEndpoints();
         app.UseColeccionEndpoints();
+        app.UseFormatoEndpoints();
 
         return app;
     }
