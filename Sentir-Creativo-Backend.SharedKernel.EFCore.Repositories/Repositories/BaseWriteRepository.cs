@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using Sentir_Creativo_Backend.SharedKernel.EFCore.Repositories.Contexts;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
@@ -50,5 +51,11 @@ public class BaseWriteRepository<T> : IWriteRepository<T> where T: BaseEntity<in
     public void DeleteEntity(T entity)
     {
         _context.Set<T>().Remove(entity);
+    }
+
+    public void DeleteWhere(Expression<Func<T, bool>> where)
+    {
+        var entitiesToDelete = _context.Set<T>().Where(where);
+        _context.Set<T>().RemoveRange(entitiesToDelete);
     }
 }

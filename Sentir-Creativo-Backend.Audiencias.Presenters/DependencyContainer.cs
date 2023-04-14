@@ -4,6 +4,7 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencia
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.GetById;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.Pagination;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.SearchAudienciaDifusiones;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.Update;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Cercanias.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Motivaciones.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.Select;
@@ -69,6 +70,10 @@ public static class DependencyContainer
         services.AddScoped<CreateAudienciaPresenter>();
         services.AddScoped<ICreateAudienciaPresenter>(provider => provider.GetService<CreateAudienciaPresenter>());
         services.AddScoped<ICreateAudienciaOutputPort>(provider => provider.GetService<CreateAudienciaPresenter>());
+        
+        services.AddScoped<UpdateAudienciaPresenter>();
+        services.AddScoped<IUpdateAudienciaPresenter>(provider => provider.GetService<UpdateAudienciaPresenter>());
+        services.AddScoped<IUpdateAudienciaOutputPort>(provider => provider.GetService<UpdateAudienciaPresenter>());
         
         return services;
     }

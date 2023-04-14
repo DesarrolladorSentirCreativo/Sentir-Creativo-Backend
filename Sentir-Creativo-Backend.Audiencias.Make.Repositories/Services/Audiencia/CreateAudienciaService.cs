@@ -11,12 +11,10 @@ namespace Sentir_Creativo_Backend.Audiencias.Make.Repositories.Services.Audienci
 public class CreateAudienciaService : ICreateAudienciaService
 {
     private readonly HttpClient _httpClient;
-    private ILogger<CreateAudienciaService> _logger;
-    
-    public CreateAudienciaService(HttpClient httpClient, ILogger<CreateAudienciaService> logger)
+
+    public CreateAudienciaService(HttpClient httpClient)
     {
         _httpClient = httpClient;
-        _logger = logger;
     }
     
     public async ValueTask Handle(CreateAudienciaViewModel viewModel)
@@ -53,7 +51,5 @@ public class CreateAudienciaService : ICreateAudienciaService
         
         var url = "https://hook.us1.make.com/c5z60wuhoslgkerkhv1cj2z3we6tro8u" + queryString;
         var response = await _httpClient.GetAsync(url);
-        
-        _logger.LogInformation(response.StatusCode.ToString());
     }
 }

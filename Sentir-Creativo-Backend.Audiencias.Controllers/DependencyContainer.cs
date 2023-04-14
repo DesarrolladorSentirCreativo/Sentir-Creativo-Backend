@@ -31,6 +31,7 @@ public static class DependencyContainer
         services.AddScoped<IPaginationAudienciaController, PaginationAudienciaController>();
         services.AddScoped<ISearchAudienciasDifusionController, SearchAudienciasDifusionController>();
         services.AddScoped<ICreateAudienciaController, CreateAudienciaController>();
+        services.AddScoped<IUpdateAudienciaController, UpdateAudienciaController>();
         
         return services;
     }

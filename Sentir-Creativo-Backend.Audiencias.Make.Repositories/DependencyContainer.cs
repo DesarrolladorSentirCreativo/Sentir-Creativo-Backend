@@ -9,6 +9,7 @@ public static class DependencyContainer
     public static IServiceCollection AddAudienciasMakeServices(this IServiceCollection services)
     {
         services.AddScoped<ICreateAudienciaService, CreateAudienciaService>();
+        services.AddScoped<IUpdateAudienciaService, UpdateAudienciaService>();
         
         return services;
     }

@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using Sentir_Creativo_Backend.SharedKernel.Entities.POCOEntities;
 
 namespace Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
@@ -10,4 +11,5 @@ public interface IWriteRepository<T> where T : BaseEntity<int>
     void AddEntity(T entity);
     void UpdateEntity(T entity);
     void DeleteEntity(T entity);
+    void DeleteWhere(Expression<Func<T, bool>> where);
 }

@@ -4,7 +4,9 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Services;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.DTO.Audiencias;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.POCOEntities;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Audiencias;
+using Sentir_Creativo_Backend.CuponDescuentos.Entities.Mappings;
 using Sentir_Creativo_Backend.CuponDescuentos.Entities.ViewModels;
+using Sentir_Creativo_Backend.Difusiones.Entities.Mappings;
 using Sentir_Creativo_Backend.Difusiones.Entities.ViewModels;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
 using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
@@ -92,19 +94,11 @@ public class CreateAudienciaInteractor : ICreateAudienciaInputPort
         {
             throw new Exception("No se pudo insertar el record de audiencias");
         }
-        
-        
-        IReadOnlyList<IdCuponDescuentoViewModel> idCuponDescuentos = dto.CuponDescuentos
-            .Select(p => 
-                new IdCuponDescuentoViewModel() { CuponDescuentoId = p.CuponDescuentoId })
-            .ToList()
-            .AsReadOnly();
-        
-        IReadOnlyList<IdDifusionViewModel> idDifusiones = dto.Difusiones
-            .Select(p => 
-                new IdDifusionViewModel() { DifusionId = p.DifusionId })
-            .ToList()
-            .AsReadOnly();
+
+
+        var idCuponDescuentos = CuponDescuentoMapping.Handle(dto.CuponDescuentos);
+
+        var idDifusiones = DifusionMapping.Handle(dto.Difusiones);
         
         //mandamos la audiencia al web hook de make
         await _createAudienciaService.Handle(new CreateAudienciaViewModel()

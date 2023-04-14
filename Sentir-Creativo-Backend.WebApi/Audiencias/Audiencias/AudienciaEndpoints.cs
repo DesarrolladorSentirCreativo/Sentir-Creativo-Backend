@@ -41,6 +41,9 @@ public static class AudienciaEndpoints
         app.MapPost("/audiencias", async (CreateAudienciaDto dto, ICreateAudienciaController controller) =>
             Results.Ok(await controller.Handle(dto)));
 
+        app.MapPut("/audiencias", async (UpdateAudienciaDto dto, IUpdateAudienciaController controller) =>
+            Results.Ok(await controller.Handle(dto)));
+
         return app;
     }
 }
