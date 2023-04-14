@@ -20,7 +20,7 @@ public static class DepedencyInjection
 
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped(typeof(IReadRepository<,>), typeof(BaseReadRepository<,>));
-        services.AddScoped(typeof(IWriteRepository<,>), typeof(BaseWriteRepository<,>));
+        services.AddScoped(typeof(IWriteRepository<>), typeof(BaseWriteRepository<>));
         return services;
     }
 }

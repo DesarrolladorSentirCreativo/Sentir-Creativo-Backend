@@ -8,6 +8,7 @@ public class CreateAudienciaDto
     public string Nombre { get; set; }
     public string Email { get; set; }
     public string? Celular { get; set; }
+    public string? Profesion { get; set; }
     public int OrganizacionId { get; set; }
     public string? Departamento { get; set; }
     public string? Cargo { get; set; }
@@ -24,6 +25,6 @@ public class CreateAudienciaDto
     public string? DocumentoIdentidad { get; set; }
     public bool Activo { get; set; }
     
-    IReadOnlyList<IdCuponDescuentoDto> CuponDescuentos { get; set; }
-    IReadOnlyList<IdDifusionDto> Difusiones { get; set; }
+    public IReadOnlyList<IdCuponDescuentoDto> CuponDescuentos { get; set; }
+    public IReadOnlyList<IdDifusionDto> Difusiones { get; set; }
 }

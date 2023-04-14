@@ -1,7 +1,11 @@
 using FluentValidation;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.Create;
-using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.GetById;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Services;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.DTO.Audiencias;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.POCOEntities;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Audiencias;
+using Sentir_Creativo_Backend.CuponDescuentos.Entities.ViewModels;
+using Sentir_Creativo_Backend.Difusiones.Entities.ViewModels;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
 using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 
@@ -9,23 +13,127 @@ namespace Sentir_Creativo_Backend.Audiencias.UseCases.Audiencias.Create;
 
 public class CreateAudienciaInteractor : ICreateAudienciaInputPort
 {
-    private readonly IWriteRepository<Entities.POCOEntities.Audiencia,int> _audienciaWriteRepository;
+    private readonly IUnitOfWork _unitOfWork;
     private readonly ICreateAudienciaOutputPort _outputPort;
     private readonly IEnumerable<IValidator<CreateAudienciaDto>> _validators;
+    private readonly ICreateAudienciaService _createAudienciaService;
     
     public CreateAudienciaInteractor(
-        IWriteRepository<Entities.POCOEntities.Audiencia,int> audienciaWriteRepository,
+        IUnitOfWork unitOfWork,
         ICreateAudienciaOutputPort outputPort,
-        IEnumerable<IValidator<CreateAudienciaDto>> validators)
+        IEnumerable<IValidator<CreateAudienciaDto>> validators,
+        ICreateAudienciaService createAudienciaService)
     {
-         _audienciaWriteRepository = audienciaWriteRepository;
+         _unitOfWork = unitOfWork;
          _outputPort = outputPort;
          _validators = validators;
+         _createAudienciaService = createAudienciaService;
     }
     
     public async ValueTask Handle(CreateAudienciaDto dto)
     {
         //validamos los datos
         await Validator<CreateAudienciaDto>.Validate(dto, _validators);
+        
+        //creamos la audiencia
+        var audiencia = new Entities.POCOEntities.Audiencia()
+        {
+            Nombre = dto.Nombre, 
+            Apellido = dto.Apellido, 
+            Profesion = dto.Profesion, 
+            Email = dto.Email, 
+            Celular = dto.Celular, 
+            OrganizacionId = dto.OrganizacionId, 
+            Departamento = dto.Departamento, 
+            Cargo = dto.Cargo, 
+            CercaniaId = dto.CercaniaId, 
+            AntiguedadId = dto.AntiguedadId, 
+            MotivacionId = dto.MotivacionId, 
+            EstadoId = dto.EstadoAudienciaId, 
+            PrefijoId = dto.PrefijoId,
+            OrigenId = dto.OrigenId,
+            Email2 = dto.Email2,
+            Destacado = dto.Destacado,
+            DocumentoIdentidad = dto.DocumentoIdentidad,
+            Activo = dto.Activo,
+            CreatedAt= DateTime.Now,
+            CreatedBy = dto.UserId, 
+            PublishedAt = DateTime.Now,
+        };
+        
+        //guardamos la audiencia en la base de datos
+        _unitOfWork.WriteRepository<Entities.POCOEntities.Audiencia>().AddEntity(audiencia);
+
+        //guardamos todos los cupones de descuento de la audiencia
+        foreach (var audienciaCuponDescuento in dto.CuponDescuentos)
+        {
+            _unitOfWork.WriteRepository<AudienciaCuponDescuento>().AddEntity(new AudienciaCuponDescuento()
+            {
+                AudienciaId = audiencia.Id,
+                CuponDescuentoId = audienciaCuponDescuento.CuponDescuentoId,
+            });
+        }
+        
+        //guardamos todos las difusiones de la audiencia
+        foreach (var audienciaDifusion in dto.Difusiones)
+        {
+            _unitOfWork.WriteRepository<AudienciaDifusion>().AddEntity(new AudienciaDifusion()
+            {
+                AudienciaId = audiencia.Id,
+                DifusionId = audienciaDifusion.DifusionId,
+            });
+        }
+        
+        //confirmamos los cambios en la base de datos
+        var result = await _unitOfWork.Complete();
+        
+        //se evalua si todo funciono correctamente
+        if (result <= 0)
+        {
+            throw new Exception("No se pudo insertar el record de audiencias");
+        }
+        
+        
+        IReadOnlyList<IdCuponDescuentoViewModel> idCuponDescuentos = dto.CuponDescuentos
+            .Select(p => 
+                new IdCuponDescuentoViewModel() { CuponDescuentoId = p.CuponDescuentoId })
+            .ToList()
+            .AsReadOnly();
+        
+        IReadOnlyList<IdDifusionViewModel> idDifusiones = dto.Difusiones
+            .Select(p => 
+                new IdDifusionViewModel() { DifusionId = p.DifusionId })
+            .ToList()
+            .AsReadOnly();
+        
+        //mandamos la audiencia al web hook de make
+        await _createAudienciaService.Handle(new CreateAudienciaViewModel()
+        {
+            Id = audiencia.Id,
+            Nombre = audiencia.Nombre,
+            Apellido = audiencia.Apellido,
+            Profesion = audiencia.Profesion,
+            Email = audiencia.Email,
+            Celular = audiencia.Celular,
+            OrganizacionId = audiencia.OrganizacionId,
+            Departamento = audiencia.Departamento,
+            Cargo = audiencia.Cargo,
+            CercaniaId = audiencia.CercaniaId,
+            AntiguedadId = audiencia.AntiguedadId,
+            MotivacionId = audiencia.MotivacionId,
+            EstadoAudienciaId = audiencia.EstadoId,
+            PrefijoId = audiencia.PrefijoId,
+            OrigenId = audiencia.OrigenId,
+            Email2 = audiencia.Email2,
+            Destacado = audiencia.Destacado,
+            DocumentoIdentidad = audiencia.DocumentoIdentidad,
+            Activo = audiencia.Activo,
+            PublishedAt = audiencia.PublishedAt,
+            CuponDescuentos = idCuponDescuentos,
+            Difusiones = idDifusiones,
+        });
+       
+        await _outputPort.Handle(audiencia.Id);
+
     }
 }

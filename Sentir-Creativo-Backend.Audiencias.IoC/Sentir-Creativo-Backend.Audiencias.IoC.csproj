@@ -13,6 +13,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Sentir-Creativo-Backend.Audiencias.Controllers\Sentir-Creativo-Backend.Audiencias.Controllers.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.Audiencias.Make.Repositories\Sentir-Creativo-Backend.Audiencias.Make.Repositories.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.Audiencias.Presenters\Sentir-Creativo-Backend.Audiencias.Presenters.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.Audiencias.UseCases\Sentir-Creativo-Backend.Audiencias.UseCases.csproj" />
     </ItemGroup>

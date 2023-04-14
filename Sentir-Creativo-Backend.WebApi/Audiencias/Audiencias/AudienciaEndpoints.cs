@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.Audiencias;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.DTO;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.DTO.Audiencias;
 
 namespace Sentir_Creativo_Backend.WebApi.Audiencias.Audiencias;
 
@@ -36,6 +37,9 @@ public static class AudienciaEndpoints
 
             return Results.Ok(await controller.Handle(itemId));
         });
+
+        app.MapPost("/audiencias", async (CreateAudienciaDto dto, ICreateAudienciaController controller) =>
+            Results.Ok(await controller.Handle(dto)));
 
         return app;
     }

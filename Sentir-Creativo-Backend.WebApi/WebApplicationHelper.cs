@@ -29,6 +29,8 @@ public static class WebApplicationHelper
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
+        builder.Services.AddHttpClient();
+        builder.Services.AddLogging();
         builder.Services.AddSharedKernelRepositoriesServices(builder.Configuration);
         builder.Services.AddAudienciasServices();
         builder.Services.AddProyectosServices();

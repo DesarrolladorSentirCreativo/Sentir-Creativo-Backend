@@ -6,6 +6,7 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.Mot
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.Organizaciones;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.Origenes;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.Prefijos;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.DTO.Audiencias;
 using Sentir_Creativo_Backend.Audiencias.Controllers.Antiguedades;
 using Sentir_Creativo_Backend.Audiencias.Controllers.Audiencias;
 using Sentir_Creativo_Backend.Audiencias.Controllers.Cercanias;
@@ -29,6 +30,7 @@ public static class DependencyContainer
         services.AddScoped<IGetByIdAudienciaController, GetByIdAudienciaController>();
         services.AddScoped<IPaginationAudienciaController, PaginationAudienciaController>();
         services.AddScoped<ISearchAudienciasDifusionController, SearchAudienciasDifusionController>();
+        services.AddScoped<ICreateAudienciaController, CreateAudienciaController>();
         
         return services;
     }

@@ -13,8 +13,7 @@ public class AudienciaCuponDescuentoConfiguration : IEntityTypeConfiguration<Aud
         builder.HasKey(p => p.Id).HasName("id");
         builder.Property(p => p.AudienciaId).HasColumnName("audiencia_id");
         builder.Property(p => p.CuponDescuentoId).HasColumnName("cupon-descuento_id");
-        builder.Property(p => p.Activo).HasColumnName("activo");
-            
+
         builder.HasOne(u => u.Audiencia)
             .WithOne()
             .HasForeignKey<AudienciaCuponDescuento>("AudienciaId");

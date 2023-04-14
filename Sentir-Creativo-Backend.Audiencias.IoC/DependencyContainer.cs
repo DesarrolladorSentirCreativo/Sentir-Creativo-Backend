@@ -1,5 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Sentir_Creativo_Backend.Audiencias.Controllers;
+using Sentir_Creativo_Backend.Audiencias.Make.Repositories;
 using Sentir_Creativo_Backend.Audiencias.Presenters;
 using Sentir_Creativo_Backend.Audiencias.UseCases;
 
@@ -12,6 +13,7 @@ public static class DependencyContainer
         services.AddAudienciasUseCasesServices();
         services.AddAudienciasControllers();
         services.AddAudienciasPresenters();
+        services.AddAudienciasMakeServices();
         
         return services;
     }

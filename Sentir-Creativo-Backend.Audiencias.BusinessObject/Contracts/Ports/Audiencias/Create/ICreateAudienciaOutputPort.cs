@@ -2,5 +2,5 @@ namespace Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audie
 
 public interface ICreateAudienciaOutputPort
 {
-    ValueTask<int> Handle(int audienciaId);
+    ValueTask Handle(int audienciaId);
 }
