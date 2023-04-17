@@ -296,6 +296,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Sha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Audiencias.Make.Repositories", "Sentir-Creativo-Backend.Audiencias.Make.Repositories\Sentir-Creativo-Backend.Audiencias.Make.Repositories.csproj", "{F1A2BBE9-661B-49E6-B06E-8EF54E1BB6F6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{3B723AB7-BED9-4D99-B0CF-22C474796750}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.WebExceptionsPresenters", "Sentir-Creativo-Backend.WebExceptionsPresenters\Sentir-Creativo-Backend.WebExceptionsPresenters.csproj", "{59E193D9-3FD5-4E89-BDE0-64EA69C55E8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -546,6 +550,10 @@ Global
 		{F1A2BBE9-661B-49E6-B06E-8EF54E1BB6F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1A2BBE9-661B-49E6-B06E-8EF54E1BB6F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1A2BBE9-661B-49E6-B06E-8EF54E1BB6F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59E193D9-3FD5-4E89-BDE0-64EA69C55E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E193D9-3FD5-4E89-BDE0-64EA69C55E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E193D9-3FD5-4E89-BDE0-64EA69C55E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E193D9-3FD5-4E89-BDE0-64EA69C55E8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AF9EBC78-BCD3-42E7-9477-9E398DD192D0} = {B94285CE-73E8-4F56-BCBD-F359734ED5A3}
@@ -695,5 +703,7 @@ Global
 		{C448B773-650D-4962-9969-063CBDE1393A} = {E0387F40-EB30-46D1-8858-F6AAC9E6AA48}
 		{C10B8A5D-A575-46C1-B631-958C4A222586} = {C448B773-650D-4962-9969-063CBDE1393A}
 		{F1A2BBE9-661B-49E6-B06E-8EF54E1BB6F6} = {6FAEBCD4-123E-4438-981B-8DFB895C5699}
+		{3B723AB7-BED9-4D99-B0CF-22C474796750} = {BDEFCC45-C911-4A92-BC85-AA3E5C8763FA}
+		{59E193D9-3FD5-4E89-BDE0-64EA69C55E8B} = {3B723AB7-BED9-4D99-B0CF-22C474796750}
 	EndGlobalSection
 EndGlobal

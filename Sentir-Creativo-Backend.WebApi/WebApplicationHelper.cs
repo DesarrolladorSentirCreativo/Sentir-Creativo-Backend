@@ -5,20 +5,7 @@ using Sentir_Creativo_Backend.Proyectos.IoC;
 using Sentir_Creativo_Backend.PublicoObjetivos.IoC;
 using Sentir_Creativo_Backend.Servicios.IoC;
 using Sentir_Creativo_Backend.SharedKernel.IoC;
-using Sentir_Creativo_Backend.WebApi.Areas.Areas;
-using Sentir_Creativo_Backend.WebApi.Audiencias.Antiguedades;
-using Sentir_Creativo_Backend.WebApi.Audiencias.Audiencias;
-using Sentir_Creativo_Backend.WebApi.Audiencias.Cercanias;
-using Sentir_Creativo_Backend.WebApi.Audiencias.Motivaciones;
-using Sentir_Creativo_Backend.WebApi.Audiencias.Organizaciones;
-using Sentir_Creativo_Backend.WebApi.Audiencias.Origenes;
-using Sentir_Creativo_Backend.WebApi.Audiencias.Prefijos;
-using Sentir_Creativo_Backend.WebApi.Colecciones.Colecciones;
-using Sentir_Creativo_Backend.WebApi.Proyectos.EstadoProyectos;
-using Sentir_Creativo_Backend.WebApi.Proyectos.TipoProyectos;
-using Sentir_Creativo_Backend.WebApi.PublicoObjetivos;
-using Sentir_Creativo_Backend.WebApi.Servicios.EstadoServicios;
-using Sentir_Creativo_Backend.WebApi.Servicios.Formatos;
+using Sentir_Creativo_Backend.WebExceptionsPresenters;
 
 namespace Sentir_Creativo_Backend.WebApi;
 
@@ -26,7 +13,9 @@ public static class WebApplicationHelper
 {
     public static WebApplication CreateWebApplication(this WebApplicationBuilder builder)
     {
+        builder.Services.AddControllers(Filters.Register);
         builder.Services.AddEndpointsApiExplorer();
+        
         builder.Services.AddSwaggerGen();
 
         builder.Services.AddHttpClient();
@@ -49,6 +38,7 @@ public static class WebApplicationHelper
             });
         });
         
+        
         return builder.Build();
     }
 
@@ -59,22 +49,12 @@ public static class WebApplicationHelper
             app.UseSwagger();
             app.UseSwaggerUI();
         }
-
-        app.UseOrigenEndpoints();
-        app.UseAntiguedadEndpoints();
-        app.UseCercaniaEndpoints();
-        app.UseMotivacionEndpoints();
-        app.UsePrefijoEndpoints();
-        app.UseOrganizacionEndpoints();
-        app.UseAudienciaEndpoints();
-        app.UseTipoProyectoEndpoints();
-        app.UseEstadoProyectoEndpoints();
-        app.UsePublicoObjetivoEndpoints();
-        app.UseServicioEndpoints();
-        app.UseColeccionEndpoints();
-        app.UseFormatoEndpoints();
-        app.UseAreaEndpoints();
-
+        
+        app.UseHttpsRedirection();
+        
+        app.MapControllers();
+        
+        
         return app;
     }
 }
