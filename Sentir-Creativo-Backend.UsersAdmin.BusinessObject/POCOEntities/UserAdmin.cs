@@ -14,6 +14,6 @@ public class UserAdmin : BaseEntity<int>
     public string? ResetPasswordToken { get; set; }
     public string? RegistrationToken { get; set; }
     public bool? IsActive { get; set; }
-    public bool IsBlocked { get; set; }
+    public bool? IsBlocked { get; set; }
     public string? PreferedLanguage { get; set; }
 }

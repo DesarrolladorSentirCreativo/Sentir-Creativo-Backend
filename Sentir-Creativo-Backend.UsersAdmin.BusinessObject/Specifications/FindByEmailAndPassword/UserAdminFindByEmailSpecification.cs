@@ -6,7 +6,7 @@ namespace Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.FindB
 public class UserAdminFindByEmailSpecification : BaseSpecification<UserAdmin>
 {
     public UserAdminFindByEmailSpecification(string email)
-        : base(x => x.Email.Contains(email))
+        : base(x => x.Email == email)
 
     {
 

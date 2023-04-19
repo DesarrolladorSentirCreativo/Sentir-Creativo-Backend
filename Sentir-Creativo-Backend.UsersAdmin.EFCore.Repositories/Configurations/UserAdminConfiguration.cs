@@ -8,7 +8,7 @@ public class UserAdminConfiguration : IEntityTypeConfiguration<UserAdmin>
 {
     public void Configure(EntityTypeBuilder<UserAdmin> builder)
     {
-            builder.ToTable("strapi_administrador");
+            builder.ToTable("strapi_administrator");
                         
             builder.HasKey(p => p.Id).HasName("id");
             builder.Property(p => p.FirstName).IsRequired().HasMaxLength(255).HasColumnName("firstname");

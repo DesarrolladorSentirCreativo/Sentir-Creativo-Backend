@@ -5,6 +5,7 @@ using Sentir_Creativo_Backend.Proyectos.IoC;
 using Sentir_Creativo_Backend.PublicoObjetivos.IoC;
 using Sentir_Creativo_Backend.Servicios.IoC;
 using Sentir_Creativo_Backend.SharedKernel.IoC;
+using Sentir_Creativo_Backend.UsersAdmins.IoC;
 using Sentir_Creativo_Backend.WebExceptionsPresenters;
 
 namespace Sentir_Creativo_Backend.WebApi;
@@ -27,6 +28,7 @@ public static class WebApplicationHelper
         builder.Services.AddServiciosServices();
         builder.Services.AddColeccionesServices();
         builder.Services.AddAreasServices();
+        builder.Services.AddUserAdminServices(builder.Configuration);
 
         builder.Services.AddCors(options =>
         {
