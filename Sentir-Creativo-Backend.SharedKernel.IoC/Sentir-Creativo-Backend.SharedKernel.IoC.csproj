@@ -14,6 +14,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Sentir-Creativo-Backend.SharedKernel.EFCore.Repositories\Sentir-Creativo-Backend.SharedKernel.EFCore.Repositories.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.SharedKernel.Services.Infrastructure\Sentir-Creativo-Backend.SharedKernel.Services.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wr/wMuIFOhMYOuh+IY/beSg5I3uIPX7rCFFIpmCKYPtHNZiYu4uvNfQPejtvPfqx92/byi2N7+nKpqw2X6lpEw==",
+  "dgSpecHash": "hdQtBcGQ1aEzSKFFIvjV+p608zwvWzqkncvnGRs0Ot267YtkrYQb6zpR9M37HCsTkVV3phSRATLSUPM86XOrVQ==",
   "success": true,
   "projectFilePath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.IoC\\Sentir-Creativo-Backend.SharedKernel.IoC.csproj",
   "expectedPackageFiles": [
@@ -18,7 +18,9 @@
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512",
-    "C:\\Users\\angel\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\7.0.0\\pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512"
+    "C:\\Users\\angel\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\7.0.0\\pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
+    "C:\\Users\\angel\\.nuget\\packages\\system.formats.asn1\\5.0.0\\system.formats.asn1.5.0.0.nupkg.sha512",
+    "C:\\Users\\angel\\.nuget\\packages\\system.security.cryptography.cng\\5.0.0\\system.security.cryptography.cng.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

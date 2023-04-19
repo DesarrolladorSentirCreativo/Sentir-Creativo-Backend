@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "U86FotWn+4j45/KnkSNn2S7jJoL3ALBJqwSB66So2nzywbcQ5/CB7PleN4l2RCvy0UrDJh+undmOTsPoMnRliw==",
+  "success": true,
+  "projectFilePath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Services.Infrastructure\\Sentir-Creativo-Backend.SharedKernel.Services.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\angel\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\angel\\.nuget\\packages\\system.formats.asn1\\5.0.0\\system.formats.asn1.5.0.0.nupkg.sha512",
+    "C:\\Users\\angel\\.nuget\\packages\\system.security.cryptography.cng\\5.0.0\\system.security.cryptography.cng.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
