@@ -17,18 +17,21 @@ public class AudienciaWrapperController : ControllerBase
     private readonly IUpdateAudienciaController _updateAudienciaController;
     private readonly ISearchAudienciasDifusionController _searchAudienciasDifusionController;
     private readonly IGetByIdAudienciaController _getByIdAudienciaController;
+    private readonly IGetAllAudienciaController _getAllAudienciaController;
 
     public AudienciaWrapperController(ICreateAudienciaController createAudienciaController,
         IPaginationAudienciaController paginationAudienciaController,
         IUpdateAudienciaController updateAudienciaController,
         ISearchAudienciasDifusionController searchAudienciasDifusionController,
-        IGetByIdAudienciaController getByIdAudienciaController)
+        IGetByIdAudienciaController getByIdAudienciaController,
+        IGetAllAudienciaController getAllAudienciaController)
     {
         _createAudienciaController = createAudienciaController;
         _paginationAudienciaController = paginationAudienciaController;
         _updateAudienciaController = updateAudienciaController;
         _searchAudienciasDifusionController = searchAudienciasDifusionController;
         _getByIdAudienciaController = getByIdAudienciaController;
+        _getAllAudienciaController = getAllAudienciaController;
     }
 
     [HttpPost(Name = "CreateAudiencia")]
@@ -41,6 +44,11 @@ public class AudienciaWrapperController : ControllerBase
     public async Task<ActionResult<PaginationViewModel<AudienciaWithRelationsViewModels>>> GetPaginationAudiencia(
         [FromQuery] AudienciaPaginationDto dto)
         => Ok(await _paginationAudienciaController.Handle(dto));
+    
+    [HttpGet("/all")]
+    [ProducesResponseType(typeof(IReadOnlyList<GetAllAudienciaViewModel>), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IReadOnlyList<GetAllAudienciaViewModel>>> GetAllAudiencia()
+        => Ok(await _getAllAudienciaController.Handle());
     
 
     [HttpPut(Name = "UpdateAudiencia")]

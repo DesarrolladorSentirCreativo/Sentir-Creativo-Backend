@@ -1,14 +1,12 @@
-using Sentir_Creativo_Backend.Difusiones.Entities.ViewModels;
-
 namespace Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Audiencias;
 
-public class GetByIdAudienciaViewModel
+public class GetAllAudienciaViewModel
 {
     public int Id { get; set; }
     public string? Nombre { get; set; }
     public string? Apellido { get; set; }
     public string? Profesion { get; set; }
-    public string Email { get; set; }
+    public string? Email { get; set; }
     public string? Celular { get; set; }
     public int? OrganizacionId { get; set; }
     public string? Departamento { get; set; }
@@ -23,11 +21,9 @@ public class GetByIdAudienciaViewModel
     public bool? Destacado { get; set; }
     public string? DocumentoIdentidad  { get; set; }
     public bool Activo { get; set; }
-    
-    public IReadOnlyList<CuponDescuentoViewModel> CuponDescuentos { get; set; }
-    public IReadOnlyList<BitacoraViewModel> Bitacoras { get; set; }
-    public IReadOnlyList<ComentarioViewModel> Comentarios { get; set; }
-    public IReadOnlyList<ArchivoViewModel> Archivos { get; set; }
-    public IReadOnlyList<DifusionViewModel> Difusiones { get; set; }
-
+    public DateTime CreatedAt { get; set; }
+    public int? CreatedBy { get; set; }
+    public DateTime? UpdatedAt { get; set; }
+    public DateTime? PublishedAt { get; set; }
+    public int? UpdatedBy { get; set; }
 }

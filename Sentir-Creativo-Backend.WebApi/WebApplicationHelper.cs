@@ -32,11 +32,11 @@ public static class WebApplicationHelper
 
         builder.Services.AddCors(options =>
         {
-            options.AddDefaultPolicy(config =>
+            options.AddPolicy("CorsPolicy", builder =>
             {
-                config.AllowAnyMethod();
-                config.AllowAnyOrigin();
-                config.AllowAnyHeader();
+                builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
             });
         });
         
@@ -53,6 +53,8 @@ public static class WebApplicationHelper
         }
         
         app.UseHttpsRedirection();
+        
+        app.UseCors("CorsPolicy");
         
         app.MapControllers();
         

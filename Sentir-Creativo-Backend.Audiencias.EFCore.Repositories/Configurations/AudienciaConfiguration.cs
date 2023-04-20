@@ -10,8 +10,8 @@ public class AudienciaConfiguration :IEntityTypeConfiguration<Entities.POCOEntit
         builder.ToTable("audiencias");
         
         builder.HasKey(p => p.Id).HasName("id");
-        builder.Property(p => p.Nombre).HasMaxLength(200).IsRequired().HasColumnName("nombre");
-        builder.Property(p => p.Email).HasMaxLength(255).IsRequired().HasColumnName("email");
+        builder.Property(p => p.Nombre).HasMaxLength(200).HasColumnName("nombre");
+        builder.Property(p => p.Email).HasMaxLength(255).HasColumnName("email");
         builder.Property(p => p.Celular).HasMaxLength(30).HasColumnName("celular");
         builder.Property(p => p.MotivacionId).HasColumnName("motivacion");
         builder.Property(p => p.OrganizacionId).HasColumnName("organizacion");
@@ -24,7 +24,7 @@ public class AudienciaConfiguration :IEntityTypeConfiguration<Entities.POCOEntit
         builder.Property(p => p.UpdatedAt).HasColumnName("updated_at");
         builder.Property(p => p.CreatedBy).HasColumnName("created_by");
         builder.Property(p => p.UpdatedBy).HasColumnName("updated_by");
-        builder.Property(p => p.Apellido).HasMaxLength(200).IsRequired().HasColumnName("apellido");
+        builder.Property(p => p.Apellido).HasMaxLength(200).HasColumnName("apellido");
         builder.Property(p => p.Profesion).HasMaxLength(255).HasColumnName("profesion");
         builder.Property(p => p.EstadoId).HasColumnName("estado");
         builder.Property(p => p.OrigenId).HasColumnName("origen");
