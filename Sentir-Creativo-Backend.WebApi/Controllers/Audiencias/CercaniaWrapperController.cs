@@ -16,7 +16,7 @@ public class CercaniaWrapperController : ControllerBase
         _selectCercaniaController = selectCercaniaController;
     }
     
-    [HttpGet(Name = "SelectCercania")]
+    [HttpGet("select")]
     [ProducesResponseType(typeof(SelectCercaniaViewModel), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<SelectCercaniaViewModel>>> SelectCercania()
         => Ok(await _selectCercaniaController.Handle()); 

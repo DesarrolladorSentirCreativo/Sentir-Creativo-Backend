@@ -45,7 +45,7 @@ public class AudienciaWrapperController : ControllerBase
         [FromQuery] AudienciaPaginationDto dto)
         => Ok(await _paginationAudienciaController.Handle(dto));
     
-    [HttpGet("/all")]
+    [HttpGet("all")]
     [ProducesResponseType(typeof(IReadOnlyList<GetAllAudienciaViewModel>), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<GetAllAudienciaViewModel>>> GetAllAudiencia()
         => Ok(await _getAllAudienciaController.Handle());

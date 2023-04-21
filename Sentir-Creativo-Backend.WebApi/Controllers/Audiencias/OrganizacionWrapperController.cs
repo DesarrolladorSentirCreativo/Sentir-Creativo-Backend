@@ -17,7 +17,7 @@ public class OrganizacionWrapperController : ControllerBase
     }
     
     [HttpGet]
-    [Route("/select-organizacion")] 
+    [Route("select")] 
     [ProducesResponseType(typeof(SelectOrganizacionViewModel), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<SelectOrganizacionViewModel>>> SelectOrganizacion() 
         => Ok(await _selectOrganizacionController.Handle());
