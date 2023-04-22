@@ -2,6 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.Antiguedades;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.Audiencias;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.Cercanias;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.EstadoAudiencias;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.Motivaciones;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.Organizaciones;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.Origenes;
@@ -10,6 +11,7 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.DTO.Audiencias;
 using Sentir_Creativo_Backend.Audiencias.Controllers.Antiguedades;
 using Sentir_Creativo_Backend.Audiencias.Controllers.Audiencias;
 using Sentir_Creativo_Backend.Audiencias.Controllers.Cercanias;
+using Sentir_Creativo_Backend.Audiencias.Controllers.EstadoAudiencias;
 using Sentir_Creativo_Backend.Audiencias.Controllers.Motivaciones;
 using Sentir_Creativo_Backend.Audiencias.Controllers.Organizaciones;
 using Sentir_Creativo_Backend.Audiencias.Controllers.Origenes;
@@ -34,6 +36,7 @@ public static class DependencyContainer
         services.AddScoped<IUpdateAudienciaController, UpdateAudienciaController>();
         services.AddScoped<IGetAllAudienciaController, GetAllAudienciaController>();
         services.AddScoped<IDeleteAudienciaController, DeleteAudienciaController>();
+        services.AddScoped<ISelectEstadoAudienciaController, SelectEstadoAudienciaController>();
         
         return services;
     }

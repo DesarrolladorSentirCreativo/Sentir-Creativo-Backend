@@ -8,6 +8,7 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencia
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.SearchAudienciaDifusiones;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.Update;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Cercanias.Select;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.EstadoAudiencias.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Motivaciones.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Origenes.SelectOrigen;
@@ -15,6 +16,7 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Prefijos.
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Antiguedades;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Audiencias;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Cercanias;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.EstadoAudiencias;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Motivaciones;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Organizaciones;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Origenes;
@@ -22,6 +24,7 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Pref
 using Sentir_Creativo_Backend.Audiencias.Presenters.Antiguedades;
 using Sentir_Creativo_Backend.Audiencias.Presenters.Audiencias;
 using Sentir_Creativo_Backend.Audiencias.Presenters.Cercanias;
+using Sentir_Creativo_Backend.Audiencias.Presenters.EstadoAudiencias;
 using Sentir_Creativo_Backend.Audiencias.Presenters.Motivaciones;
 using Sentir_Creativo_Backend.Audiencias.Presenters.Organizaciones;
 using Sentir_Creativo_Backend.Audiencias.Presenters.Origenes;
@@ -84,6 +87,10 @@ public static class DependencyContainer
         services.AddScoped<DeleteAudienciaPresenter>();
         services.AddScoped<IDeleteAudienciaPresenter>(provider => provider.GetService<DeleteAudienciaPresenter>());
         services.AddScoped<IDeleteAudienciaOutputPort>(provider => provider.GetService<DeleteAudienciaPresenter>());
+        
+        services.AddScoped<SelectEstadoAudienciaPresenter>();
+        services.AddScoped<ISelectEstadoAudienciaPresenter>(provider => provider.GetService<SelectEstadoAudienciaPresenter>());
+        services.AddScoped<ISelectEstadoAudienciaOutputPort>(provider => provider.GetService<SelectEstadoAudienciaPresenter>());
         
         return services;
     }
