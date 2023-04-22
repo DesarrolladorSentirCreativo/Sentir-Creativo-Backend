@@ -1,6 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Antiguedades.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.Create;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.Delete;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.GetAll;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.GetById;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.Pagination;
@@ -13,6 +14,7 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Origenes.
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Prefijos.Select;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Antiguedades.Select;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Audiencias.Create;
+using Sentir_Creativo_Backend.Audiencias.UseCases.Audiencias.Delete;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Audiencias.GetAll;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Audiencias.GetById;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Audiencias.Pagination;
@@ -42,6 +44,7 @@ public static class DependencyContainer
         services.AddScoped<ICreateAudienciaInputPort, CreateAudienciaInteractor>();
         services.AddScoped<IUpdateAudienciaInputPort, UpdateAudienciaInteractor>();
         services.AddScoped<IGetAllAudienciaInputPort, GetAllAudienciaInteractor>();
+        services.AddScoped<IDeleteAudienciaInputPort, DeleteAudienciaInteractor>();
         
         return services;
     }

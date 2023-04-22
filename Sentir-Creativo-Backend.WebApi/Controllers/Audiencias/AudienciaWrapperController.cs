@@ -18,13 +18,15 @@ public class AudienciaWrapperController : ControllerBase
     private readonly ISearchAudienciasDifusionController _searchAudienciasDifusionController;
     private readonly IGetByIdAudienciaController _getByIdAudienciaController;
     private readonly IGetAllAudienciaController _getAllAudienciaController;
+    private readonly IDeleteAudienciaController _deleteAudienciaController;
 
     public AudienciaWrapperController(ICreateAudienciaController createAudienciaController,
         IPaginationAudienciaController paginationAudienciaController,
         IUpdateAudienciaController updateAudienciaController,
         ISearchAudienciasDifusionController searchAudienciasDifusionController,
         IGetByIdAudienciaController getByIdAudienciaController,
-        IGetAllAudienciaController getAllAudienciaController)
+        IGetAllAudienciaController getAllAudienciaController,
+        IDeleteAudienciaController deleteAudienciaController)
     {
         _createAudienciaController = createAudienciaController;
         _paginationAudienciaController = paginationAudienciaController;
@@ -32,6 +34,7 @@ public class AudienciaWrapperController : ControllerBase
         _searchAudienciasDifusionController = searchAudienciasDifusionController;
         _getByIdAudienciaController = getByIdAudienciaController;
         _getAllAudienciaController = getAllAudienciaController;
+        _deleteAudienciaController = deleteAudienciaController;
     }
 
     [HttpPost(Name = "CreateAudiencia")]
@@ -57,14 +60,19 @@ public class AudienciaWrapperController : ControllerBase
      => Ok(await _updateAudienciaController.Handle(dto));
     
 
-    [HttpGet("/difusion/{id}")]
+    [HttpGet("difusion/{id}")]
     [ProducesResponseType(typeof(IReadOnlyList<SearchAudienciasDifusionViewModel>), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<SearchAudienciasDifusionViewModel>>> SearchAudienciasDifusion(int id)
         => Ok(await _searchAudienciasDifusionController.Handle(id));
     
 
-    [HttpGet("/{id}")]
+    [HttpGet("{id}")]
     [ProducesResponseType(typeof(GetByIdAudienciaViewModel),(int)HttpStatusCode.OK)]
     public async Task<ActionResult<GetByIdAudienciaViewModel>> GetByIdAudiencia(int id)
          =>Ok(await _getByIdAudienciaController.Handle(id));
+
+    [HttpDelete("{id}")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> DeleteAudiencia(int id)
+        => Ok(await _deleteAudienciaController.Handle(id));
 }

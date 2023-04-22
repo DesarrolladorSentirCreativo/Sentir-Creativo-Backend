@@ -1,6 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Antiguedades.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.Create;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.Delete;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.GetAll;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.GetById;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.Pagination;
@@ -79,6 +80,10 @@ public static class DependencyContainer
         services.AddScoped<GetAllAudienciaPresenter>();
         services.AddScoped<IGetAllAudienciaPresenter>(provider => provider.GetService<GetAllAudienciaPresenter>());
         services.AddScoped<IGetAllAudienciaOutputPort>(provider => provider.GetService<GetAllAudienciaPresenter>());
+        
+        services.AddScoped<DeleteAudienciaPresenter>();
+        services.AddScoped<IDeleteAudienciaPresenter>(provider => provider.GetService<DeleteAudienciaPresenter>());
+        services.AddScoped<IDeleteAudienciaOutputPort>(provider => provider.GetService<DeleteAudienciaPresenter>());
         
         return services;
     }

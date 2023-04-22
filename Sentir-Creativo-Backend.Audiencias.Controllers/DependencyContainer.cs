@@ -33,6 +33,7 @@ public static class DependencyContainer
         services.AddScoped<ICreateAudienciaController, CreateAudienciaController>();
         services.AddScoped<IUpdateAudienciaController, UpdateAudienciaController>();
         services.AddScoped<IGetAllAudienciaController, GetAllAudienciaController>();
+        services.AddScoped<IDeleteAudienciaController, DeleteAudienciaController>();
         
         return services;
     }
