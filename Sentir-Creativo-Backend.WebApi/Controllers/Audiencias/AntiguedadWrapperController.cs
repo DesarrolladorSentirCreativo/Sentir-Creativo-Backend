@@ -11,14 +11,13 @@ namespace Sentir_Creativo_Backend.WebApi.Controllers.Audiencias;
 public class AntiguedadWrapperController : ControllerBase
 {
     private readonly ISelectAntiguedadController _selectAntiguedadController;
-    
+
     public AntiguedadWrapperController(ISelectAntiguedadController selectAntiguedadController)
     {
         _selectAntiguedadController = selectAntiguedadController;
     }
 
-    [HttpGet]
-    [Route("select")] 
+    [HttpGet("select")]
     [ProducesResponseType(typeof(IReadOnlyList<SelectAntiguedadViewModel>), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<SelectAntiguedadViewModel>>> SelectAntiguedad()
         => Ok(await _selectAntiguedadController.Handle());
