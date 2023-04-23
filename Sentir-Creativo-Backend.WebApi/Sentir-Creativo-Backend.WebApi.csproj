@@ -11,6 +11,8 @@
       <ProjectReference Include="..\Sentir-Creativo-Backend.Areas.IoC\Sentir-Creativo-Backend.Areas.IoC.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.Audiencias.IoC\Sentir-Creativo-Backend.Audiencias.IoC.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.Colecciones.IoC\Sentir-Creativo-Backend.Colecciones.IoC.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.CuponesDescuentos.IoC\Sentir-Creativo-Backend.CuponesDescuentos.IoC.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.Difusiones.IoC\Sentir-Creativo-Backend.Difusiones.IoC.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.Proyectos.IoC\Sentir-Creativo-Backend.Proyectos.IoC.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.PublicoObjetivos.IoC\Sentir-Creativo-Backend.PublicoObjetivos.IoC.csproj" />

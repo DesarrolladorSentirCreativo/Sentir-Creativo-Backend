@@ -3636,6 +3636,79 @@
           "bin/placeholder/Sentir-Creativo-Backend.CuponDescuentos.Entities.dll": {}
         }
       },
+      "Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Sentir-Creativo-Backend.CuponDescuentos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.CuponesDescuentos.Controllers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.CuponesDescuentos.Controllers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.CuponesDescuentos.Controllers.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.CuponesDescuentos.IoC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Sentir-Creativo-Backend.CuponesDescuentos.Controllers": "1.0.0",
+          "Sentir-Creativo-Backend.CuponesDescuentos.Presenters": "1.0.0",
+          "Sentir-Creativo-Backend.CuponesDescuentos.UseCases": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.CuponesDescuentos.IoC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.CuponesDescuentos.IoC.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.CuponesDescuentos.Presenters/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.CuponesDescuentos.Presenters.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.CuponesDescuentos.Presenters.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.CuponesDescuentos.UseCases/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Sentir-Creativo-Backend.CuponDescuentos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.CuponesDescuentos.UseCases.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.CuponesDescuentos.UseCases.dll": {}
+        }
+      },
       "Sentir-Creativo-Backend.Difusiones.BusinessObject/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -10143,6 +10216,31 @@
       "path": "../Sentir-Creativo-Backend.CuponDescuentos.Entities/Sentir-Creativo-Backend.CuponDescuentos.Entities.csproj",
       "msbuildProject": "../Sentir-Creativo-Backend.CuponDescuentos.Entities/Sentir-Creativo-Backend.CuponDescuentos.Entities.csproj"
     },
+    "Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject/Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject/Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.csproj"
+    },
+    "Sentir-Creativo-Backend.CuponesDescuentos.Controllers/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.CuponesDescuentos.Controllers/Sentir-Creativo-Backend.CuponesDescuentos.Controllers.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.CuponesDescuentos.Controllers/Sentir-Creativo-Backend.CuponesDescuentos.Controllers.csproj"
+    },
+    "Sentir-Creativo-Backend.CuponesDescuentos.IoC/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.CuponesDescuentos.IoC/Sentir-Creativo-Backend.CuponesDescuentos.IoC.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.CuponesDescuentos.IoC/Sentir-Creativo-Backend.CuponesDescuentos.IoC.csproj"
+    },
+    "Sentir-Creativo-Backend.CuponesDescuentos.Presenters/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.CuponesDescuentos.Presenters/Sentir-Creativo-Backend.CuponesDescuentos.Presenters.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.CuponesDescuentos.Presenters/Sentir-Creativo-Backend.CuponesDescuentos.Presenters.csproj"
+    },
+    "Sentir-Creativo-Backend.CuponesDescuentos.UseCases/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.CuponesDescuentos.UseCases/Sentir-Creativo-Backend.CuponesDescuentos.UseCases.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.CuponesDescuentos.UseCases/Sentir-Creativo-Backend.CuponesDescuentos.UseCases.csproj"
+    },
     "Sentir-Creativo-Backend.Difusiones.BusinessObject/1.0.0": {
       "type": "project",
       "path": "../Sentir-Creativo-Backend.Difusiones.BusinessObject/Sentir-Creativo-Backend.Difusiones.BusinessObject.csproj",
@@ -10364,6 +10462,8 @@
       "Sentir-Creativo-Backend.Areas.IoC >= 1.0.0",
       "Sentir-Creativo-Backend.Audiencias.IoC >= 1.0.0",
       "Sentir-Creativo-Backend.Colecciones.IoC >= 1.0.0",
+      "Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject >= 1.0.0",
+      "Sentir-Creativo-Backend.CuponesDescuentos.IoC >= 1.0.0",
       "Sentir-Creativo-Backend.Difusiones.IoC >= 1.0.0",
       "Sentir-Creativo-Backend.Proyectos.IoC >= 1.0.0",
       "Sentir-Creativo-Backend.PublicoObjetivos.IoC >= 1.0.0",
@@ -10417,6 +10517,12 @@
             },
             "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Colecciones.IoC\\Sentir-Creativo-Backend.Colecciones.IoC.csproj": {
               "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Colecciones.IoC\\Sentir-Creativo-Backend.Colecciones.IoC.csproj"
+            },
+            "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.csproj": {
+              "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.csproj"
+            },
+            "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.CuponesDescuentos.IoC\\Sentir-Creativo-Backend.CuponesDescuentos.IoC.csproj": {
+              "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.CuponesDescuentos.IoC\\Sentir-Creativo-Backend.CuponesDescuentos.IoC.csproj"
             },
             "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Difusiones.IoC\\Sentir-Creativo-Backend.Difusiones.IoC.csproj": {
               "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Difusiones.IoC\\Sentir-Creativo-Backend.Difusiones.IoC.csproj"
