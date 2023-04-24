@@ -366,6 +366,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Cup
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.CuponesDescuentos.IoC", "Sentir-Creativo-Backend.CuponesDescuentos.IoC\Sentir-Creativo-Backend.CuponesDescuentos.IoC.csproj", "{650B9337-2D36-44A4-A162-9DF46DC3A37B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sentir-Creativo-Backend.Archivos.UseCases", "sentir-Creativo-Backend.Archivos.UseCases\sentir-Creativo-Backend.Archivos.UseCases.csproj", "{A0088E1B-74B2-4159-894D-E7F1BF1093EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{B963C360-5A2D-4BB2-B760-ABB269A34DAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{EF7360E5-1FFB-48AE-887A-9615B02C3D18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Archivos.Controllers", "Sentir-Creativo-Backend.Archivos.Controllers\Sentir-Creativo-Backend.Archivos.Controllers.csproj", "{32D694D9-6ACA-4400-9064-FCAF4328D0CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-creativo-Backend.Archivos.Presenters", "Sentir-creativo-Backend.Archivos.Presenters\Sentir-creativo-Backend.Archivos.Presenters.csproj", "{10F7771A-A38F-49C3-B553-F3FCCF2CA7E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Archivos.IoC", "Sentir-Creativo-Backend.Archivos.IoC\Sentir-Creativo-Backend.Archivos.IoC.csproj", "{03C6DDCB-C09C-4FCD-AC5A-C1ABF4810FA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -692,6 +704,22 @@ Global
 		{650B9337-2D36-44A4-A162-9DF46DC3A37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{650B9337-2D36-44A4-A162-9DF46DC3A37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{650B9337-2D36-44A4-A162-9DF46DC3A37B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0088E1B-74B2-4159-894D-E7F1BF1093EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0088E1B-74B2-4159-894D-E7F1BF1093EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0088E1B-74B2-4159-894D-E7F1BF1093EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0088E1B-74B2-4159-894D-E7F1BF1093EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32D694D9-6ACA-4400-9064-FCAF4328D0CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D694D9-6ACA-4400-9064-FCAF4328D0CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D694D9-6ACA-4400-9064-FCAF4328D0CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D694D9-6ACA-4400-9064-FCAF4328D0CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10F7771A-A38F-49C3-B553-F3FCCF2CA7E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10F7771A-A38F-49C3-B553-F3FCCF2CA7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10F7771A-A38F-49C3-B553-F3FCCF2CA7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10F7771A-A38F-49C3-B553-F3FCCF2CA7E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03C6DDCB-C09C-4FCD-AC5A-C1ABF4810FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03C6DDCB-C09C-4FCD-AC5A-C1ABF4810FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03C6DDCB-C09C-4FCD-AC5A-C1ABF4810FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03C6DDCB-C09C-4FCD-AC5A-C1ABF4810FA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AF9EBC78-BCD3-42E7-9477-9E398DD192D0} = {B94285CE-73E8-4F56-BCBD-F359734ED5A3}
@@ -876,5 +904,11 @@ Global
 		{DA7FF546-40CE-44C0-B65D-5CFE90188650} = {289DC9B0-057A-4990-9F7C-C2D554897B00}
 		{3CA8209C-873D-45E5-B8D7-C48796A07526} = {DA7FF546-40CE-44C0-B65D-5CFE90188650}
 		{650B9337-2D36-44A4-A162-9DF46DC3A37B} = {289DC9B0-057A-4990-9F7C-C2D554897B00}
+		{A0088E1B-74B2-4159-894D-E7F1BF1093EB} = {766F8275-681F-4E67-94A6-B5E67BC870E1}
+		{B963C360-5A2D-4BB2-B760-ABB269A34DAD} = {0E2F324C-D5BF-499E-8B5D-48BE61AFA71D}
+		{EF7360E5-1FFB-48AE-887A-9615B02C3D18} = {0E2F324C-D5BF-499E-8B5D-48BE61AFA71D}
+		{32D694D9-6ACA-4400-9064-FCAF4328D0CA} = {B963C360-5A2D-4BB2-B760-ABB269A34DAD}
+		{10F7771A-A38F-49C3-B553-F3FCCF2CA7E5} = {EF7360E5-1FFB-48AE-887A-9615B02C3D18}
+		{03C6DDCB-C09C-4FCD-AC5A-C1ABF4810FA3} = {0E2F324C-D5BF-499E-8B5D-48BE61AFA71D}
 	EndGlobalSection
 EndGlobal

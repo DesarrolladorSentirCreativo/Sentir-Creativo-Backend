@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Sentir-Creativo-Backend.Archivos.IoC\Sentir-Creativo-Backend.Archivos.IoC.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.Areas.IoC\Sentir-Creativo-Backend.Areas.IoC.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.Audiencias.IoC\Sentir-Creativo-Backend.Audiencias.IoC.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.Colecciones.IoC\Sentir-Creativo-Backend.Colecciones.IoC.csproj" />

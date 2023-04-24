@@ -1,3 +1,4 @@
+using Sentir_Creativo_Backend.Archivos.IoC;
 using Sentir_Creativo_Backend.Areas.IoC;
 using Sentir_Creativo_Backend.Audiencias.IoC;
 using Sentir_Creativo_Backend.Colecciones.IoC;
@@ -33,6 +34,7 @@ public static class WebApplicationHelper
         builder.Services.AddUserAdminServices(builder.Configuration);
         builder.Services.AddDifusionesServices();
         builder.Services.AddCuponesDescuentosServices();
+        builder.Services.AddArchivosServices();
 
         builder.Services.AddCors(options =>
         {

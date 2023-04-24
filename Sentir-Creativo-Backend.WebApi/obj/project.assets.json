@@ -3206,6 +3206,20 @@
           "bin/placeholder/Sentir-Creativo-Backend.Archivos.BusinessObject.dll": {}
         }
       },
+      "Sentir-Creativo-Backend.Archivos.Controllers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Sentir-Creativo-Backend.Archivos.BusinessObject": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.Archivos.Controllers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.Archivos.Controllers.dll": {}
+        }
+      },
       "Sentir-Creativo-Backend.Archivos.EFCore.Repositories/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -3233,6 +3247,52 @@
         },
         "runtime": {
           "bin/placeholder/Sentir-Creativo-Backend.Archivos.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Archivos.IoC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Sentir-Creativo-Backend.Archivos.Controllers": "1.0.0",
+          "Sentir-creativo-Backend.Archivos.Presenters": "1.0.0",
+          "sentir-Creativo-Backend.Archivos.UseCases": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.Archivos.IoC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.Archivos.IoC.dll": {}
+        }
+      },
+      "Sentir-creativo-Backend.Archivos.Presenters/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Sentir-Creativo-Backend.Archivos.BusinessObject": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-creativo-Backend.Archivos.Presenters.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-creativo-Backend.Archivos.Presenters.dll": {}
+        }
+      },
+      "sentir-Creativo-Backend.Archivos.UseCases/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "FluentValidation": "11.5.2",
+          "Sentir-Creativo-Backend.Archivos.BusinessObject": "1.0.0",
+          "Sentir-Creativo-Backend.Archivos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.SharedKernel.UseCases": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/sentir-Creativo-Backend.Archivos.UseCases.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/sentir-Creativo-Backend.Archivos.UseCases.dll": {}
         }
       },
       "Sentir-Creativo-Backend.Areas.BusinessObject/1.0.0": {
@@ -10071,6 +10131,11 @@
       "path": "../Sentir-Creativo-Backend.Archivos.BusinessObject/Sentir-Creativo-Backend.Archivos.BusinessObject.csproj",
       "msbuildProject": "../Sentir-Creativo-Backend.Archivos.BusinessObject/Sentir-Creativo-Backend.Archivos.BusinessObject.csproj"
     },
+    "Sentir-Creativo-Backend.Archivos.Controllers/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.Archivos.Controllers/Sentir-Creativo-Backend.Archivos.Controllers.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.Archivos.Controllers/Sentir-Creativo-Backend.Archivos.Controllers.csproj"
+    },
     "Sentir-Creativo-Backend.Archivos.EFCore.Repositories/1.0.0": {
       "type": "project",
       "path": "../Sentir-Creativo-Backend.Archivos.EFCore.Repositories/Sentir-Creativo-Backend.Archivos.EFCore.Repositories.csproj",
@@ -10080,6 +10145,21 @@
       "type": "project",
       "path": "../Sentir-Creativo-Backend.Archivos.Entities/Sentir-Creativo-Backend.Archivos.Entities.csproj",
       "msbuildProject": "../Sentir-Creativo-Backend.Archivos.Entities/Sentir-Creativo-Backend.Archivos.Entities.csproj"
+    },
+    "Sentir-Creativo-Backend.Archivos.IoC/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.Archivos.IoC/Sentir-Creativo-Backend.Archivos.IoC.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.Archivos.IoC/Sentir-Creativo-Backend.Archivos.IoC.csproj"
+    },
+    "Sentir-creativo-Backend.Archivos.Presenters/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-creativo-Backend.Archivos.Presenters/Sentir-creativo-Backend.Archivos.Presenters.csproj",
+      "msbuildProject": "../Sentir-creativo-Backend.Archivos.Presenters/Sentir-creativo-Backend.Archivos.Presenters.csproj"
+    },
+    "sentir-Creativo-Backend.Archivos.UseCases/1.0.0": {
+      "type": "project",
+      "path": "../sentir-Creativo-Backend.Archivos.UseCases/sentir-Creativo-Backend.Archivos.UseCases.csproj",
+      "msbuildProject": "../sentir-Creativo-Backend.Archivos.UseCases/sentir-Creativo-Backend.Archivos.UseCases.csproj"
     },
     "Sentir-Creativo-Backend.Areas.BusinessObject/1.0.0": {
       "type": "project",
@@ -10459,6 +10539,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Sentir-Creativo-Backend.Archivos.IoC >= 1.0.0",
       "Sentir-Creativo-Backend.Areas.IoC >= 1.0.0",
       "Sentir-Creativo-Backend.Audiencias.IoC >= 1.0.0",
       "Sentir-Creativo-Backend.Colecciones.IoC >= 1.0.0",
@@ -10509,6 +10590,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Archivos.IoC\\Sentir-Creativo-Backend.Archivos.IoC.csproj": {
+              "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Archivos.IoC\\Sentir-Creativo-Backend.Archivos.IoC.csproj"
+            },
             "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Areas.IoC\\Sentir-Creativo-Backend.Areas.IoC.csproj": {
               "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Areas.IoC\\Sentir-Creativo-Backend.Areas.IoC.csproj"
             },
