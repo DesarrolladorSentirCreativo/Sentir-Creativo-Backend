@@ -57,10 +57,5 @@ public class CreateAudienciaValidator : AbstractValidator<CreateAudienciaDto>
         RuleFor(p => p.DocumentoIdentidad)
             .Length(50).WithMessage("El DocumentoIdentidad no debe superar los 50 caracteres");
         
-        RuleFor(p => p.Activo)
-            .NotNull().WithMessage("El Activo es requerido");
-
-        RuleFor(p => p.Destacado)
-            .NotNull().WithMessage("El destacado es requerido");
     }
 }

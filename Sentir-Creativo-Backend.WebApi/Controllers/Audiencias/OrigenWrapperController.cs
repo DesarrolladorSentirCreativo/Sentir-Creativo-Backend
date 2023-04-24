@@ -16,8 +16,7 @@ public class OrigenWrapperController : ControllerBase
         _selectOrigenController = selectOrigenController;
     }
     
-    [HttpGet]
-    [Route("select")] 
+    [HttpGet("select")]
     [ProducesResponseType(typeof(SelectOrigenViewModel), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<SelectOrigenViewModel>>> SelectOrigen()
         =>Ok(await _selectOrigenController.Handle()); 

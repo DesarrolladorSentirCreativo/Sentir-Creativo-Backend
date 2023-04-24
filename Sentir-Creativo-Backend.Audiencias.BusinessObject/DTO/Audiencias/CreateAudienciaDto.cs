@@ -21,10 +21,8 @@ public class CreateAudienciaDto
     public int PrefijoId { get; set; }
     public int OrigenId { get; set; }
     public string? Email2 { get; set; }
-    public bool Destacado { get; set; }
     public string? DocumentoIdentidad { get; set; }
-    public bool Activo { get; set; }
-    
+
     public IReadOnlyList<IdCuponDescuentoDto> CuponDescuentos { get; set; }
     public IReadOnlyList<IdDifusionDto> Difusiones { get; set; }
 }

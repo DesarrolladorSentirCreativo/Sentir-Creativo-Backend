@@ -17,8 +17,7 @@ public class PrefijoWrapperController : ControllerBase
         _selectPrefijoController = selectPrefijoController;
     }
     
-    [HttpGet]
-    [Route("select")] 
+    [HttpGet("select")]
     [ProducesResponseType(typeof(IReadOnlyList<SelectPrefijoViewModel>), (int) HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<SelectPrefijoViewModel>>> SelectPrefijo()
         => Ok(await _selectPrefijoController.Handle());

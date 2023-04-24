@@ -54,10 +54,10 @@ public class CreateAudienciaInteractor : ICreateAudienciaInputPort
             EstadoId = dto.EstadoAudienciaId, 
             PrefijoId = dto.PrefijoId,
             OrigenId = dto.OrigenId,
-            Email2 = dto.Email2,
-            Destacado = dto.Destacado,
+            Email2 = string.IsNullOrEmpty(dto.Email2) ? null : dto.Email2,
+            Destacado = true,
             DocumentoIdentidad = dto.DocumentoIdentidad,
-            Activo = dto.Activo,
+            Activo = true,
             CreatedAt= DateTime.Now,
             CreatedBy = dto.UserId, 
             PublishedAt = DateTime.Now,
@@ -126,7 +126,7 @@ public class CreateAudienciaInteractor : ICreateAudienciaInputPort
             CuponDescuentos = idCuponDescuentos,
             Difusiones = idDifusiones,
         });
-       
+        
         await _outputPort.Handle(audiencia.Id);
 
     }
