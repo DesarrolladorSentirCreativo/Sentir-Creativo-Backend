@@ -378,6 +378,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-creativo-Backend.Arc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Archivos.IoC", "Sentir-Creativo-Backend.Archivos.IoC\Sentir-Creativo-Backend.Archivos.IoC.csproj", "{03C6DDCB-C09C-4FCD-AC5A-C1ABF4810FA3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application Business Rules", "2.Application Business Rules", "{0CE591DE-D17E-4FA6-9FAF-C98E8835DB49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Bitacoras.BusinessObjects", "Sentir-Creativo-Backend.Bitacoras.BusinessObjects\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj", "{B6096CAB-E48D-4437-9BAB-0FB2C40D202B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Bitacoras.UseCases", "Sentir-Creativo-Backend.Bitacoras.UseCases\Sentir-Creativo-Backend.Bitacoras.UseCases.csproj", "{AF8F3849-88B6-4900-A1F3-0F63ED113A78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{0AE2B2A8-57D5-4F5F-809F-20B27CEA49D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Bitacoras.Controllers", "Sentir-Creativo-Backend.Bitacoras.Controllers\Sentir-Creativo-Backend.Bitacoras.Controllers.csproj", "{5E7C3291-85CA-4936-9CE5-6A674A65AE03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{EEDEFD94-E33F-4E0F-87C9-A954AB5390A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Bitacoras.Presenters", "Sentir-Creativo-Backend.Bitacoras.Presenters\Sentir-Creativo-Backend.Bitacoras.Presenters.csproj", "{4BC6ED1E-CB8B-483D-A5DD-F67701E1760A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Bitacoras.IoC", "Sentir-Creativo-Backend.Bitacoras.IoC\Sentir-Creativo-Backend.Bitacoras.IoC.csproj", "{555ECEE3-3D17-4A74-8A59-9383BE6C1C54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -720,6 +736,26 @@ Global
 		{03C6DDCB-C09C-4FCD-AC5A-C1ABF4810FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03C6DDCB-C09C-4FCD-AC5A-C1ABF4810FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03C6DDCB-C09C-4FCD-AC5A-C1ABF4810FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6096CAB-E48D-4437-9BAB-0FB2C40D202B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6096CAB-E48D-4437-9BAB-0FB2C40D202B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6096CAB-E48D-4437-9BAB-0FB2C40D202B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6096CAB-E48D-4437-9BAB-0FB2C40D202B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF8F3849-88B6-4900-A1F3-0F63ED113A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF8F3849-88B6-4900-A1F3-0F63ED113A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8F3849-88B6-4900-A1F3-0F63ED113A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF8F3849-88B6-4900-A1F3-0F63ED113A78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E7C3291-85CA-4936-9CE5-6A674A65AE03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E7C3291-85CA-4936-9CE5-6A674A65AE03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E7C3291-85CA-4936-9CE5-6A674A65AE03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E7C3291-85CA-4936-9CE5-6A674A65AE03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BC6ED1E-CB8B-483D-A5DD-F67701E1760A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC6ED1E-CB8B-483D-A5DD-F67701E1760A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC6ED1E-CB8B-483D-A5DD-F67701E1760A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC6ED1E-CB8B-483D-A5DD-F67701E1760A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{555ECEE3-3D17-4A74-8A59-9383BE6C1C54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{555ECEE3-3D17-4A74-8A59-9383BE6C1C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{555ECEE3-3D17-4A74-8A59-9383BE6C1C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{555ECEE3-3D17-4A74-8A59-9383BE6C1C54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AF9EBC78-BCD3-42E7-9477-9E398DD192D0} = {B94285CE-73E8-4F56-BCBD-F359734ED5A3}
@@ -910,5 +946,13 @@ Global
 		{32D694D9-6ACA-4400-9064-FCAF4328D0CA} = {B963C360-5A2D-4BB2-B760-ABB269A34DAD}
 		{10F7771A-A38F-49C3-B553-F3FCCF2CA7E5} = {EF7360E5-1FFB-48AE-887A-9615B02C3D18}
 		{03C6DDCB-C09C-4FCD-AC5A-C1ABF4810FA3} = {0E2F324C-D5BF-499E-8B5D-48BE61AFA71D}
+		{0CE591DE-D17E-4FA6-9FAF-C98E8835DB49} = {B94285CE-73E8-4F56-BCBD-F359734ED5A3}
+		{B6096CAB-E48D-4437-9BAB-0FB2C40D202B} = {0CE591DE-D17E-4FA6-9FAF-C98E8835DB49}
+		{AF8F3849-88B6-4900-A1F3-0F63ED113A78} = {0CE591DE-D17E-4FA6-9FAF-C98E8835DB49}
+		{0AE2B2A8-57D5-4F5F-809F-20B27CEA49D0} = {CF8030C1-8B50-453A-83AC-B6813CF03A05}
+		{5E7C3291-85CA-4936-9CE5-6A674A65AE03} = {0AE2B2A8-57D5-4F5F-809F-20B27CEA49D0}
+		{EEDEFD94-E33F-4E0F-87C9-A954AB5390A3} = {CF8030C1-8B50-453A-83AC-B6813CF03A05}
+		{4BC6ED1E-CB8B-483D-A5DD-F67701E1760A} = {EEDEFD94-E33F-4E0F-87C9-A954AB5390A3}
+		{555ECEE3-3D17-4A74-8A59-9383BE6C1C54} = {CF8030C1-8B50-453A-83AC-B6813CF03A05}
 	EndGlobalSection
 EndGlobal

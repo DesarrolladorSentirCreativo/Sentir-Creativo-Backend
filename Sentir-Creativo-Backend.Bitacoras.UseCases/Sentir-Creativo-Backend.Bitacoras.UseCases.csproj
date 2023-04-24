@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Sentir_Creativo_Backend.Bitacoras.UseCases</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.Bitacoras.Entities\Sentir-Creativo-Backend.Bitacoras.Entities.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.SharedKernel.Entities\Sentir-Creativo-Backend.SharedKernel.Entities.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.SharedKernel.UseCases\Sentir-Creativo-Backend.SharedKernel.UseCases.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="11.5.2" />
+    </ItemGroup>
+
+</Project>

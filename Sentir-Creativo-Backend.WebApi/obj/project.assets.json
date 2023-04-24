@@ -3526,6 +3526,30 @@
           "bin/placeholder/Sentir-Creativo-Backend.Audiencias.UseCases.dll": {}
         }
       },
+      "Sentir-Creativo-Backend.Bitacoras.BusinessObjects/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.Bitacoras.BusinessObjects.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.Bitacoras.BusinessObjects.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Bitacoras.Controllers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Sentir-Creativo-Backend.Bitacoras.BusinessObjects": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.Bitacoras.Controllers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.Bitacoras.Controllers.dll": {}
+        }
+      },
       "Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -3552,6 +3576,53 @@
         },
         "runtime": {
           "bin/placeholder/Sentir-Creativo-Backend.Bitacoras.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Bitacoras.IoC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Sentir-Creativo-Backend.Bitacoras.Controllers": "1.0.0",
+          "Sentir-Creativo-Backend.Bitacoras.Presenters": "1.0.0",
+          "Sentir-Creativo-Backend.Bitacoras.UseCases": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.Bitacoras.IoC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.Bitacoras.IoC.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Bitacoras.Presenters/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Sentir-Creativo-Backend.Bitacoras.BusinessObjects": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.Bitacoras.Presenters.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.Bitacoras.Presenters.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Bitacoras.UseCases/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "FluentValidation": "11.5.2",
+          "Sentir-Creativo-Backend.Bitacoras.BusinessObjects": "1.0.0",
+          "Sentir-Creativo-Backend.Bitacoras.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.SharedKernel.UseCases": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.Bitacoras.UseCases.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.Bitacoras.UseCases.dll": {}
         }
       },
       "Sentir-Creativo-Backend.Colecciones.BusinessObject/1.0.0": {
@@ -10236,6 +10307,16 @@
       "path": "../Sentir-Creativo-Backend.Audiencias.UseCases/Sentir-Creativo-Backend.Audiencias.UseCases.csproj",
       "msbuildProject": "../Sentir-Creativo-Backend.Audiencias.UseCases/Sentir-Creativo-Backend.Audiencias.UseCases.csproj"
     },
+    "Sentir-Creativo-Backend.Bitacoras.BusinessObjects/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.Bitacoras.BusinessObjects/Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.Bitacoras.BusinessObjects/Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj"
+    },
+    "Sentir-Creativo-Backend.Bitacoras.Controllers/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.Bitacoras.Controllers/Sentir-Creativo-Backend.Bitacoras.Controllers.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.Bitacoras.Controllers/Sentir-Creativo-Backend.Bitacoras.Controllers.csproj"
+    },
     "Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories/1.0.0": {
       "type": "project",
       "path": "../Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories/Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.csproj",
@@ -10245,6 +10326,21 @@
       "type": "project",
       "path": "../Sentir-Creativo-Backend.Bitacoras.Entities/Sentir-Creativo-Backend.Bitacoras.Entities.csproj",
       "msbuildProject": "../Sentir-Creativo-Backend.Bitacoras.Entities/Sentir-Creativo-Backend.Bitacoras.Entities.csproj"
+    },
+    "Sentir-Creativo-Backend.Bitacoras.IoC/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.Bitacoras.IoC/Sentir-Creativo-Backend.Bitacoras.IoC.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.Bitacoras.IoC/Sentir-Creativo-Backend.Bitacoras.IoC.csproj"
+    },
+    "Sentir-Creativo-Backend.Bitacoras.Presenters/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.Bitacoras.Presenters/Sentir-Creativo-Backend.Bitacoras.Presenters.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.Bitacoras.Presenters/Sentir-Creativo-Backend.Bitacoras.Presenters.csproj"
+    },
+    "Sentir-Creativo-Backend.Bitacoras.UseCases/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.Bitacoras.UseCases/Sentir-Creativo-Backend.Bitacoras.UseCases.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.Bitacoras.UseCases/Sentir-Creativo-Backend.Bitacoras.UseCases.csproj"
     },
     "Sentir-Creativo-Backend.Colecciones.BusinessObject/1.0.0": {
       "type": "project",
@@ -10542,6 +10638,7 @@
       "Sentir-Creativo-Backend.Archivos.IoC >= 1.0.0",
       "Sentir-Creativo-Backend.Areas.IoC >= 1.0.0",
       "Sentir-Creativo-Backend.Audiencias.IoC >= 1.0.0",
+      "Sentir-Creativo-Backend.Bitacoras.IoC >= 1.0.0",
       "Sentir-Creativo-Backend.Colecciones.IoC >= 1.0.0",
       "Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject >= 1.0.0",
       "Sentir-Creativo-Backend.CuponesDescuentos.IoC >= 1.0.0",
@@ -10598,6 +10695,9 @@
             },
             "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.IoC\\Sentir-Creativo-Backend.Audiencias.IoC.csproj": {
               "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.IoC\\Sentir-Creativo-Backend.Audiencias.IoC.csproj"
+            },
+            "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.IoC\\Sentir-Creativo-Backend.Bitacoras.IoC.csproj": {
+              "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.IoC\\Sentir-Creativo-Backend.Bitacoras.IoC.csproj"
             },
             "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Colecciones.IoC\\Sentir-Creativo-Backend.Colecciones.IoC.csproj": {
               "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Colecciones.IoC\\Sentir-Creativo-Backend.Colecciones.IoC.csproj"

@@ -22,5 +22,6 @@ public class BitacoraConfiguration: IEntityTypeConfiguration<Bitacora>
         builder.Property(p => p.CreatedBy).HasColumnName("created_by");
         builder.Property(p => p.UpdatedBy).HasColumnName("updated_by");
         builder.Property(p => p.Fecha).HasColumnName("fecha");
+        builder.Property(p => p.Activo).HasColumnName("activo");
     }
 }
