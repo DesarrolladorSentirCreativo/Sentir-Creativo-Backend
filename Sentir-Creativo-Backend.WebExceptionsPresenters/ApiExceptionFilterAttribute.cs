@@ -23,7 +23,7 @@ public class ApiExceptionFilterAttribute : ExceptionFilterAttribute
         else
         {
             new BaseExceptionHandler().SetResult(context, StatusCodes.Status500InternalServerError,
-                "Ha ocurrido un error al procesar la peticion", "");
+                "Ha ocurrido un error al procesar la peticion", context.Exception.Message);
         }
         base.OnException(context);
     }
