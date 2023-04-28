@@ -314,7 +314,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositorie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.UsersAdmin.EFCore.Repositories", "Sentir-Creativo-Backend.UsersAdmin.EFCore.Repositories\Sentir-Creativo-Backend.UsersAdmin.EFCore.Repositories.csproj", "{7D241063-9E3C-458F-9E14-FC919043A38B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Frameworks And Drivers", "4. Frameworks And Drivers", "{AF370155-6A7A-48B8-87ED-5D85D4915185}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Frameworks And Drivers", "4.Frameworks And Drivers", "{AF370155-6A7A-48B8-87ED-5D85D4915185}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.SharedKernel.Services.Infrastructure", "Sentir-Creativo-Backend.SharedKernel.Services.Infrastructure\Sentir-Creativo-Backend.SharedKernel.Services.Infrastructure.csproj", "{B1C39337-54AA-4605-8546-17C838228743}"
 EndProject
@@ -393,6 +393,36 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Bitacoras.Presenters", "Sentir-Creativo-Backend.Bitacoras.Presenters\Sentir-Creativo-Backend.Bitacoras.Presenters.csproj", "{4BC6ED1E-CB8B-483D-A5DD-F67701E1760A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Bitacoras.IoC", "Sentir-Creativo-Backend.Bitacoras.IoC\Sentir-Creativo-Backend.Bitacoras.IoC.csproj", "{555ECEE3-3D17-4A74-8A59-9383BE6C1C54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Direcciones", "Direcciones", "{B937B6C5-FAC8-4907-8795-86F114562D3A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Enterprise Business Rules", "1.Enterprise Business Rules", "{F47CDD0A-8C8F-4CB5-9BBC-5ED42DBFB9ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Direcciones.Entities", "Sentir-Creativo-Backend.Direcciones.Entities\Sentir-Creativo-Backend.Direcciones.Entities.csproj", "{8CA9A353-8459-4E91-9524-9B24DA1927EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Interface Adapters", "3.Interface Adapters", "{411F9741-6944-4253-A642-93A6A6DF4CCF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{A5649C00-D829-475F-91DA-C53EB10391FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{D80B0BFC-267F-4670-8F66-41DA1E97EED2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Direcciones.EFCore.Repositories", "Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.csproj", "{B2FD218C-06A2-4A28-931B-C749C61F5328}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application Business Rules", "2.Application Business Rules", "{6D3375DB-C32C-4E44-98BC-CCE8C050CA0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Direcciones.BusinessObjects", "Sentir-Creativo-Backend.Direcciones.BusinessObjects\Sentir-Creativo-Backend.Direcciones.BusinessObjects.csproj", "{B61A1FBC-1AD2-469A-ABB5-73D1CE8502DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Direcciones.UseCases", "Sentir-Creativo-Backend.Direcciones.UseCases\Sentir-Creativo-Backend.Direcciones.UseCases.csproj", "{CAC23753-6B01-4B07-B97B-4E3D452C3860}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{6239B79A-BE91-4755-996C-96D0AE2231AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Direcciones.Controllers", "Sentir-Creativo-Backend.Direcciones.Controllers\Sentir-Creativo-Backend.Direcciones.Controllers.csproj", "{C52F82E2-9B6A-4D02-B511-2F10E5C44151}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{AC66CDF0-485E-4E9E-AE19-07744F5C4153}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Direcciones.Presenters", "Sentir-Creativo-Backend.Direcciones.Presenters\Sentir-Creativo-Backend.Direcciones.Presenters.csproj", "{1638A742-E543-4555-A517-1C3065D6A60B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Direcciones.IoC", "Sentir-Creativo-Backend.Direcciones.IoC\Sentir-Creativo-Backend.Direcciones.IoC.csproj", "{D8B4F236-5108-48D4-978A-0CAE372E2CDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -756,6 +786,34 @@ Global
 		{555ECEE3-3D17-4A74-8A59-9383BE6C1C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{555ECEE3-3D17-4A74-8A59-9383BE6C1C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{555ECEE3-3D17-4A74-8A59-9383BE6C1C54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CA9A353-8459-4E91-9524-9B24DA1927EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA9A353-8459-4E91-9524-9B24DA1927EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA9A353-8459-4E91-9524-9B24DA1927EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA9A353-8459-4E91-9524-9B24DA1927EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2FD218C-06A2-4A28-931B-C749C61F5328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2FD218C-06A2-4A28-931B-C749C61F5328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2FD218C-06A2-4A28-931B-C749C61F5328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2FD218C-06A2-4A28-931B-C749C61F5328}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B61A1FBC-1AD2-469A-ABB5-73D1CE8502DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B61A1FBC-1AD2-469A-ABB5-73D1CE8502DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B61A1FBC-1AD2-469A-ABB5-73D1CE8502DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B61A1FBC-1AD2-469A-ABB5-73D1CE8502DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAC23753-6B01-4B07-B97B-4E3D452C3860}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAC23753-6B01-4B07-B97B-4E3D452C3860}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAC23753-6B01-4B07-B97B-4E3D452C3860}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAC23753-6B01-4B07-B97B-4E3D452C3860}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C52F82E2-9B6A-4D02-B511-2F10E5C44151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C52F82E2-9B6A-4D02-B511-2F10E5C44151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C52F82E2-9B6A-4D02-B511-2F10E5C44151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C52F82E2-9B6A-4D02-B511-2F10E5C44151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1638A742-E543-4555-A517-1C3065D6A60B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1638A742-E543-4555-A517-1C3065D6A60B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1638A742-E543-4555-A517-1C3065D6A60B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1638A742-E543-4555-A517-1C3065D6A60B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8B4F236-5108-48D4-978A-0CAE372E2CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B4F236-5108-48D4-978A-0CAE372E2CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B4F236-5108-48D4-978A-0CAE372E2CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B4F236-5108-48D4-978A-0CAE372E2CDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AF9EBC78-BCD3-42E7-9477-9E398DD192D0} = {B94285CE-73E8-4F56-BCBD-F359734ED5A3}
@@ -954,5 +1012,20 @@ Global
 		{EEDEFD94-E33F-4E0F-87C9-A954AB5390A3} = {CF8030C1-8B50-453A-83AC-B6813CF03A05}
 		{4BC6ED1E-CB8B-483D-A5DD-F67701E1760A} = {EEDEFD94-E33F-4E0F-87C9-A954AB5390A3}
 		{555ECEE3-3D17-4A74-8A59-9383BE6C1C54} = {CF8030C1-8B50-453A-83AC-B6813CF03A05}
+		{B937B6C5-FAC8-4907-8795-86F114562D3A} = {FF98014D-E7A7-4469-A0EC-CBF9EE4AEABC}
+		{F47CDD0A-8C8F-4CB5-9BBC-5ED42DBFB9ED} = {B937B6C5-FAC8-4907-8795-86F114562D3A}
+		{8CA9A353-8459-4E91-9524-9B24DA1927EE} = {F47CDD0A-8C8F-4CB5-9BBC-5ED42DBFB9ED}
+		{411F9741-6944-4253-A642-93A6A6DF4CCF} = {B937B6C5-FAC8-4907-8795-86F114562D3A}
+		{A5649C00-D829-475F-91DA-C53EB10391FE} = {411F9741-6944-4253-A642-93A6A6DF4CCF}
+		{D80B0BFC-267F-4670-8F66-41DA1E97EED2} = {A5649C00-D829-475F-91DA-C53EB10391FE}
+		{B2FD218C-06A2-4A28-931B-C749C61F5328} = {D80B0BFC-267F-4670-8F66-41DA1E97EED2}
+		{6D3375DB-C32C-4E44-98BC-CCE8C050CA0B} = {B937B6C5-FAC8-4907-8795-86F114562D3A}
+		{B61A1FBC-1AD2-469A-ABB5-73D1CE8502DE} = {6D3375DB-C32C-4E44-98BC-CCE8C050CA0B}
+		{CAC23753-6B01-4B07-B97B-4E3D452C3860} = {6D3375DB-C32C-4E44-98BC-CCE8C050CA0B}
+		{6239B79A-BE91-4755-996C-96D0AE2231AC} = {411F9741-6944-4253-A642-93A6A6DF4CCF}
+		{C52F82E2-9B6A-4D02-B511-2F10E5C44151} = {6239B79A-BE91-4755-996C-96D0AE2231AC}
+		{AC66CDF0-485E-4E9E-AE19-07744F5C4153} = {411F9741-6944-4253-A642-93A6A6DF4CCF}
+		{1638A742-E543-4555-A517-1C3065D6A60B} = {AC66CDF0-485E-4E9E-AE19-07744F5C4153}
+		{D8B4F236-5108-48D4-978A-0CAE372E2CDF} = {411F9741-6944-4253-A642-93A6A6DF4CCF}
 	EndGlobalSection
 EndGlobal

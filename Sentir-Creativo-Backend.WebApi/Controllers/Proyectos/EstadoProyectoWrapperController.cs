@@ -16,8 +16,7 @@ public class EstadoProyectoWrapperController : ControllerBase
         _selectEstadoProyectoController = selectEstadoProyectoController;
     }
     
-    [HttpGet]
-    [Route("/select-estado-proyecto")] 
+    [HttpGet("select")]
     [ProducesResponseType(typeof(SelectEstadoProyectoViewModel), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<SelectEstadoProyectoViewModel>>> SelectEstadoProyecto() 
         => Ok(await _selectEstadoProyectoController.Handle());

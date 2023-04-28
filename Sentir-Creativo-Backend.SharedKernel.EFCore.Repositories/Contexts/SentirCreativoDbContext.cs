@@ -15,6 +15,8 @@ using Sentir_Creativo_Backend.Comentarios.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.CuponDescuentos.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.CuponDescuentos.Entities.POCOEntities;
 using Sentir_Creativo_Backend.Difusiones.Entities.POCOEntities;
+using Sentir_Creativo_Backend.Direcciones.EFCore.Repositories.Configurations;
+using Sentir_Creativo_Backend.Direcciones.Entities.POCOEntities;
 using Sentir_Creativo_Backend.Plantillas.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.Plantillas.Entities.POCOEntities;
 using Sentir_Creativo_Backend.Proyectos.EFCore.Repositories.Configurations;
@@ -70,6 +72,7 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new EstadoServicioConfiguration());
         modelBuilder.ApplyConfiguration(new FormatoConfiguration());
         modelBuilder.ApplyConfiguration(new UserAdminConfiguration());
+        modelBuilder.ApplyConfiguration(new PaisConfiguration());
     }
     
     DbSet<Bitacora> Bitacoras { get; set; }
@@ -104,5 +107,5 @@ public class SentirCreativoDbContext : DbContext
     DbSet<EstadoServicio> EstadoServicios { get; set; }
     DbSet<Formato> Formatos { get; set; }
     DbSet<UserAdmin> UserAdmins { get; set; }
-
+    DbSet<Pais> Paises { get; set; }
 }
