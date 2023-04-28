@@ -1,6 +1,8 @@
 using Microsoft.Extensions.DependencyInjection;
+using Sentir_Creativo_Backend.Direcciones.BusinessObjects.Contracts.Controllers.Ciudades;
 using Sentir_Creativo_Backend.Direcciones.BusinessObjects.Contracts.Controllers.Paises;
 using Sentir_Creativo_Backend.Direcciones.BusinessObjects.Contracts.Controllers.Regiones;
+using Sentir_Creativo_Backend.Direcciones.Controllers.Ciudades;
 using Sentir_Creativo_Backend.Direcciones.Controllers.Paises;
 using Sentir_Creativo_Backend.Direcciones.Controllers.Regiones;
 
@@ -12,6 +14,7 @@ public static class DependencyContainer
     {
         services.AddScoped<ISelectPaisController, SelectPaisController>();
         services.AddScoped<ISelectRegionController, SelectRegionController>();
+        services.AddScoped<ISelectCiudadController, SelectCiudadController>();
         
         return services;
     }

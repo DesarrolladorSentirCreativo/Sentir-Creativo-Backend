@@ -74,6 +74,7 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new UserAdminConfiguration());
         modelBuilder.ApplyConfiguration(new PaisConfiguration());
         modelBuilder.ApplyConfiguration(new RegionConfiguration());
+        modelBuilder.ApplyConfiguration(new CiudadConfiguration());
     }
     
     DbSet<Bitacora> Bitacoras { get; set; }
@@ -110,4 +111,5 @@ public class SentirCreativoDbContext : DbContext
     DbSet<UserAdmin> UserAdmins { get; set; }
     DbSet<Pais> Paises { get; set; }
     DbSet<Region> Regiones { get; set; }
+    DbSet<Ciudad> Ciudades { get; set; }
 }

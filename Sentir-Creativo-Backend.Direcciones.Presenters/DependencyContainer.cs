@@ -1,9 +1,12 @@
 using Microsoft.Extensions.DependencyInjection;
+using Sentir_Creativo_Backend.Direcciones.BusinessObjects.Contracts.Ports.Ciudades.Select;
 using Sentir_Creativo_Backend.Direcciones.BusinessObjects.Contracts.Ports.Paises.Select;
 using Sentir_Creativo_Backend.Direcciones.BusinessObjects.Contracts.Ports.Regiones.Select;
+using Sentir_Creativo_Backend.Direcciones.BusinessObjects.Contracts.Presenters.Ciudades;
 using Sentir_Creativo_Backend.Direcciones.BusinessObjects.Contracts.Presenters.Paises;
 using Sentir_Creativo_Backend.Direcciones.BusinessObjects.Contracts.Presenters.Regiones;
 using Sentir_Creativo_Backend.Direcciones.BusinessObjects.ViewModels.Paises;
+using Sentir_Creativo_Backend.Direcciones.Presenters.Ciudades;
 using Sentir_Creativo_Backend.Direcciones.Presenters.Paises;
 using Sentir_Creativo_Backend.Direcciones.Presenters.Regiones;
 
@@ -20,6 +23,10 @@ public static class DependencyContainer
         services.AddScoped<SelectRegionPresenter>();
         services.AddScoped<ISelectRegionPresenter>(provider => provider.GetService<SelectRegionPresenter>());
         services.AddScoped<ISelectRegionOutputPort>(provider => provider.GetService<SelectRegionPresenter>());
+        
+        services.AddScoped<SelectCiudadPresenter>();
+        services.AddScoped<ISelectCiudadPresenter>(provider => provider.GetService<SelectCiudadPresenter>());
+        services.AddScoped<ISelectCiudadOutputPort>(provider => provider.GetService<SelectCiudadPresenter>());
         
         return services;
     }
