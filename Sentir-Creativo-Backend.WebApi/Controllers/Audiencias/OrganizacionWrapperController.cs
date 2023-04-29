@@ -10,10 +10,14 @@ namespace Sentir_Creativo_Backend.WebApi.Controllers.Audiencias;
 public class OrganizacionWrapperController : ControllerBase
 {
     private readonly ISelectOrganizacionController _selectOrganizacionController;
+    private readonly IGetAllOrganizacionController _getAllOrganizacionController;
     
-    public OrganizacionWrapperController(ISelectOrganizacionController selectOrganizacionController)
+    public OrganizacionWrapperController(
+        ISelectOrganizacionController selectOrganizacionController,
+        IGetAllOrganizacionController getAllOrganizacionController)
     {
         _selectOrganizacionController = selectOrganizacionController;
+        _getAllOrganizacionController = getAllOrganizacionController;
     }
     
     [HttpGet]
@@ -21,5 +25,10 @@ public class OrganizacionWrapperController : ControllerBase
     [ProducesResponseType(typeof(SelectOrganizacionViewModel), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<SelectOrganizacionViewModel>>> SelectOrganizacion() 
         => Ok(await _selectOrganizacionController.Handle());
+    
+    [HttpGet("all")]
+    [ProducesResponseType(typeof(IReadOnlyList<GetAllOrganizacionViewModel>), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IReadOnlyList<GetAllOrganizacionViewModel>>> GetAllOrganizacion()
+        => Ok(await _getAllOrganizacionController.Handle());
     
 }

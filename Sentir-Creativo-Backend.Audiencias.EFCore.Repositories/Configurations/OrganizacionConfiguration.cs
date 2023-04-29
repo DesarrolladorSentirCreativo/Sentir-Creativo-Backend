@@ -1,5 +1,7 @@
+using System.Numerics;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Sentir_Creativo_Backend.Audiencias.Entities.POCOEntities;
 
 namespace Sentir_Creativo_Backend.Audiencias.EFCore.Repositories.Configurations;
@@ -19,7 +21,7 @@ public class OrganizacionConfiguration : IEntityTypeConfiguration<Organizacion>
         builder.Property(p => p.Historial).HasMaxLength(255).HasColumnName("historial");
         builder.Property(p => p.RubroId).HasColumnName("rubro");
         builder.Property(p => p.Email).HasMaxLength(255).HasColumnName("email");
-        builder.Property(p => p.Telefono).HasMaxLength(30).HasColumnName("telefono");
+        builder.Property(p => p.Telefono).HasColumnName("telefono").HasColumnType("bigint");
         builder.Property(p => p.PublishedAt).HasColumnName("published_at"); 
         builder.Property(p => p.CreatedAt).HasColumnName("created_at");
         builder.Property(p => p.UpdatedAt).HasColumnName("updated_at");

@@ -1,10 +1,9 @@
-using System.Numerics;
-using Sentir_Creativo_Backend.SharedKernel.Entities.POCOEntities;
 
-namespace Sentir_Creativo_Backend.Audiencias.Entities.POCOEntities;
+namespace Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Organizaciones;
 
-public class Organizacion : BaseEntity<int>
+public class GetAllOrganizacionViewModel
 {
+    public int Id { get; set; }
     public string Nombre { get; set; }
     public string? Website { get; set; }
     public string? Facebook { get; set; }
@@ -15,11 +14,5 @@ public class Organizacion : BaseEntity<int>
     public int? RubroId { get; set; }
     public long? Telefono { get; set; }
     public bool Activo { get; set; }
-    public DateTime CreatedAt { get; set; }
-    public int? CreatedBy { get; set; }
-    public DateTime UpdatedAt { get; set; }
     public DateTime? PublishedAt { get; set; }
-    public int? UpdatedBy { get; set; }
-    
-    public virtual Rubro? Rubro { get; set; }
 }
