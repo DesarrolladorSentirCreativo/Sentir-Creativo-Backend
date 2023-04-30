@@ -14,6 +14,7 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizac
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Origenes.SelectOrigen;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Prefijos.Select;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Rubros.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Antiguedades;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Audiencias;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Cercanias;
@@ -22,6 +23,7 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Moti
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Organizaciones;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Origenes;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Prefijos;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Presenters.Rubros;
 using Sentir_Creativo_Backend.Audiencias.Presenters.Antiguedades;
 using Sentir_Creativo_Backend.Audiencias.Presenters.Audiencias;
 using Sentir_Creativo_Backend.Audiencias.Presenters.Cercanias;
@@ -30,6 +32,7 @@ using Sentir_Creativo_Backend.Audiencias.Presenters.Motivaciones;
 using Sentir_Creativo_Backend.Audiencias.Presenters.Organizaciones;
 using Sentir_Creativo_Backend.Audiencias.Presenters.Origenes;
 using Sentir_Creativo_Backend.Audiencias.Presenters.Prefijos;
+using Sentir_Creativo_Backend.Audiencias.Presenters.Rubros;
 
 namespace Sentir_Creativo_Backend.Audiencias.Presenters;
 
@@ -96,6 +99,14 @@ public static class DependencyContainer
         services.AddScoped<GetAllOrganizacionPresenter>();
         services.AddScoped<IGetAllOrganizacionPresenter>(provider => provider.GetService<GetAllOrganizacionPresenter>());
         services.AddScoped<IGetAllOrganizacionOutputPort>(provider => provider.GetService<GetAllOrganizacionPresenter>());
+        
+        services.AddScoped<GetAllOrganizacionPresenter>();
+        services.AddScoped<IGetAllOrganizacionPresenter>(provider => provider.GetService<GetAllOrganizacionPresenter>());
+        services.AddScoped<IGetAllOrganizacionOutputPort>(provider => provider.GetService<GetAllOrganizacionPresenter>());
+        
+        services.AddScoped<SelectRubroPresenter>();
+        services.AddScoped<ISelectRubroPresenter>(provider => provider.GetService<SelectRubroPresenter>());
+        services.AddScoped<ISelectRubroOutputPort>(provider => provider.GetService<SelectRubroPresenter>());
         
         return services;
     }

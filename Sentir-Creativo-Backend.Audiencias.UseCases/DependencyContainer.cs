@@ -14,6 +14,7 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizac
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Origenes.SelectOrigen;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Prefijos.Select;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Rubros.Select;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Antiguedades.Select;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Audiencias.Create;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Audiencias.Delete;
@@ -29,6 +30,7 @@ using Sentir_Creativo_Backend.Audiencias.UseCases.Organizaciones.GetAll;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Organizaciones.Select;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Origenes.Select;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Prefijos.Select;
+using Sentir_Creativo_Backend.Audiencias.UseCases.Rubros.Select;
 
 namespace Sentir_Creativo_Backend.Audiencias.UseCases;
 
@@ -51,6 +53,7 @@ public static class DependencyContainer
         services.AddScoped<IDeleteAudienciaInputPort, DeleteAudienciaInteractor>();
         services.AddScoped<ISelectEstadoAudienciaInputPort, SelectEstadoAudienciaInteractor>();
         services.AddScoped<IGetAllOrganizacionInputPort, GetAllOrganizacionInteractor>();
+        services.AddScoped<ISelectRubroInputPort, SelectRubroInteractor>();
         
         return services;
     }

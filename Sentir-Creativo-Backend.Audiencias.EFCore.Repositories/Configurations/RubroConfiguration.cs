@@ -23,6 +23,7 @@ public class RubroConfiguration: IEntityTypeConfiguration<Rubro>
         builder.Property(p => p.UpdatedAt).HasColumnName("updated_at");
         builder.Property(p => p.CreatedBy).HasColumnName("created_by");
         builder.Property(p => p.UpdatedBy).HasColumnName("updated_by");
+        builder.Property(p => p.Activo).HasColumnName("activo");
         
         builder.HasOne(u => u.TipoRubro)
             .WithOne()

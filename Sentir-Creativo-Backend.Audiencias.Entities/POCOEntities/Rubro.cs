@@ -16,6 +16,7 @@ public class Rubro: BaseEntity<int>
     public DateTime UpdatedAt { get; set; }
     public DateTime? PublishedAt { get; set; }
     public int? UpdatedBy { get; set; }
+    public bool Activo { get; set; }
     
     public virtual TipoRubro TipoRubro { get; set; }
 }
