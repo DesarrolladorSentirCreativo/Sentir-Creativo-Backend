@@ -47,6 +47,8 @@ public class CreateOrganizacionInteractor : ICreateOrganizacionInputPort
         
         //guardamos la organizacion en la base de datos
         _unitOfWork.WriteRepository<Organizacion>().AddEntity(organizacion);
+        
+        
 
         var direccion = new Direccion()
         {
@@ -59,6 +61,8 @@ public class CreateOrganizacionInteractor : ICreateOrganizacionInputPort
         
         //guardamos la dirección en la base de datos
         _unitOfWork.WriteRepository<Direccion>().AddEntity(direccion);
+        
+        await _unitOfWork.Complete();
         
         //asiganmos la direccion para la organizacion
         var organizacionDireccion = new OrganizacionDireccion()
