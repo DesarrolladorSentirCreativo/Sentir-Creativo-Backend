@@ -41,6 +41,7 @@ public static class DependencyContainer
         services.AddScoped<ISelectEstadoAudienciaController, SelectEstadoAudienciaController>();
         services.AddScoped<IGetAllOrganizacionController, GetAllOrganizacionController>();
         services.AddScoped<ISelectRubroController, SelectRubroController>();
+        services.AddScoped<ICreateOrganizacionController, CreateOrganizacionController>();
         
         return services;
     }
