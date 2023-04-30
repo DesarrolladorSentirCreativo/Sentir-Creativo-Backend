@@ -11,6 +11,7 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Cercanias
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.EstadoAudiencias.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Motivaciones.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.Create;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.Delete;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.GetAll;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Origenes.SelectOrigen;
@@ -112,6 +113,10 @@ public static class DependencyContainer
         services.AddScoped<CreateOrganizacionPresenter>();
         services.AddScoped<ICreateOrganizacionPresenter>(provider => provider.GetService<CreateOrganizacionPresenter>());
         services.AddScoped<ICreateOrganizacionOutputPort>(provider => provider.GetService<CreateOrganizacionPresenter>());
+        
+        services.AddScoped<DeleteOrganizacionPresenter>();
+        services.AddScoped<IDeleteOrganizacionPresenter>(provider => provider.GetService<DeleteOrganizacionPresenter>());
+        services.AddScoped<IDeleteOrganizacionOutputPort>(provider => provider.GetService<DeleteOrganizacionPresenter>());
         
         return services;
     }

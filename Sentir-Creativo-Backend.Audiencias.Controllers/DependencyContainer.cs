@@ -42,6 +42,7 @@ public static class DependencyContainer
         services.AddScoped<IGetAllOrganizacionController, GetAllOrganizacionController>();
         services.AddScoped<ISelectRubroController, SelectRubroController>();
         services.AddScoped<ICreateOrganizacionController, CreateOrganizacionController>();
+        services.AddScoped<IDeleteOrganizacionController, DeleteOrganizacionController>();
         
         return services;
     }

@@ -13,15 +13,18 @@ public class OrganizacionWrapperController : ControllerBase
     private readonly ISelectOrganizacionController _selectOrganizacionController;
     private readonly IGetAllOrganizacionController _getAllOrganizacionController;
     private readonly ICreateOrganizacionController _createOrganizacionController;
+    private readonly IDeleteOrganizacionController _deleteOrganizacionController;
     
     public OrganizacionWrapperController(
         ISelectOrganizacionController selectOrganizacionController,
         IGetAllOrganizacionController getAllOrganizacionController,
-        ICreateOrganizacionController createOrganizacionController)
+        ICreateOrganizacionController createOrganizacionController,
+        IDeleteOrganizacionController deleteOrganizacionController)
     {
         _selectOrganizacionController = selectOrganizacionController;
         _getAllOrganizacionController = getAllOrganizacionController;
         _createOrganizacionController = createOrganizacionController;
+        _deleteOrganizacionController = deleteOrganizacionController;
     }
     
     [HttpGet]
@@ -39,4 +42,9 @@ public class OrganizacionWrapperController : ControllerBase
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> CreateOrganizacion([FromBody] CreateOrganizacionDto dto)
         => Ok(await _createOrganizacionController.Handle(dto));
+    
+    [HttpDelete("{id}")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> DeleteOrganizacion(int id)
+        => Ok(await _deleteOrganizacionController.Handle(id));
 }
