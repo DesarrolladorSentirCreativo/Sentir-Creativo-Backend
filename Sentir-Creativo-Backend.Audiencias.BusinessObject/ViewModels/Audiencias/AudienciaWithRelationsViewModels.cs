@@ -7,7 +7,7 @@ public class AudienciaWithRelationsViewModels
     public string? Apellido { get; set; }
     public string? Profesion { get; set; }
     public string Email { get; set; }
-    public string? Celular { get; set; }
+    public long? Celular { get; set; }
     public string? Organizacion { get; set; }
     public string? Departamento { get; set; }
     public string? Cargo { get; set; }

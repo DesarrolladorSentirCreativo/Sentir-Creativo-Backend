@@ -11,7 +11,7 @@ public class AudienciaPaginationSpecification: BaseSpecification<Sentir_Creativo
                                                          || x.Antiguedad!.Nombre.Contains(audienciaParams.Search) || x.Email!.Contains(audienciaParams.Search) 
                                                          || x.Organizacion!.Nombre.Contains(audienciaParams.Search) || x.Prefijo!.Nombre.Contains(audienciaParams.Search) 
                                                          || x.Profesion!.Contains(audienciaParams.Search) || x.Cercania!.Nombre.Contains(audienciaParams.Search)
-                                                         || x.Email2!.Contains(audienciaParams.Search) || x.Celular!.Contains(audienciaParams.Search)
+                                                         || x.Email2!.Contains(audienciaParams.Search) || x.Celular == Convert.ToInt32(audienciaParams.Search)
                                                          || x.Cargo!.Contains(audienciaParams.Search) || x.DocumentoIdentidad!.Contains(audienciaParams.Search))
     {
         AddInclude(p => p.Antiguedad!);

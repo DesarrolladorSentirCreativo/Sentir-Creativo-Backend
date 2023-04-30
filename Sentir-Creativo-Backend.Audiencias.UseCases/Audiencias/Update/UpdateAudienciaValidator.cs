@@ -18,9 +18,6 @@ public class UpdateAudienciaValidator : AbstractValidator<UpdateAudienciaDto>
             .NotEmpty().WithMessage("El email es requerido")
             .Length(255).WithMessage("El email no debe superar los 255 caracteres");
         
-        RuleFor(p => p.Celular)
-            .Length(30).WithMessage("El celular no debe superar los 30 caracteres");
-        
         RuleFor(p => p.OrganizacionId)
             .NotNull().WithMessage("OrganizacionId es requerido");
         

@@ -12,7 +12,7 @@ public class AudienciaConfiguration :IEntityTypeConfiguration<Entities.POCOEntit
         builder.HasKey(p => p.Id).HasName("id");
         builder.Property(p => p.Nombre).HasMaxLength(200).HasColumnName("nombre");
         builder.Property(p => p.Email).HasMaxLength(255).HasColumnName("email");
-        builder.Property(p => p.Celular).HasMaxLength(30).HasColumnName("celular");
+        builder.Property(p => p.Celular).HasColumnName("celular").HasColumnType("bigint");
         builder.Property(p => p.MotivacionId).HasColumnName("motivacion");
         builder.Property(p => p.OrganizacionId).HasColumnName("organizacion");
         builder.Property(p => p.Departamento).HasMaxLength(255).HasColumnName("departamento");

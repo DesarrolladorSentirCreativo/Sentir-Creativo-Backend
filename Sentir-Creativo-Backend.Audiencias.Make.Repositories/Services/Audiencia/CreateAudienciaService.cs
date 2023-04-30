@@ -28,7 +28,7 @@ public class CreateAudienciaService : ICreateAudienciaService
             { "id", viewModel.Id.ToString() },
             { "nombre", viewModel.Nombre },
             { "email", viewModel.Email },
-            { "celular", viewModel.Celular },
+            { "celular", viewModel.Celular.ToString() },
             { "organizacionId", viewModel.OrganizacionId.ToString() },
             { "profesion", viewModel.Profesion },
             { "cercaniaId", viewModel.CercaniaId.ToString() },

@@ -11,7 +11,7 @@ public class UpdateAudienciaViewModel
     public int Id { get; set; }
     public string? Nombre { get; set; }
     public string? Email { get; set; }
-    public string? Celular { get; set; }
+    public long? Celular { get; set; }
     public string? Profesion { get; set; }
     public int? OrganizacionId { get; set; }
     public string? Departamento { get; set; }
