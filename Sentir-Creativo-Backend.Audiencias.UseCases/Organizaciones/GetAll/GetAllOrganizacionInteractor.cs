@@ -21,9 +21,9 @@ public class GetAllOrganizacionInteractor : IGetAllOrganizacionInputPort
     {
         var spec = new OrganizacionActivosSpecification();
 
-        var organizaciones = await _readRepository.GetAllWithSpec(spec);
+        var organizacionDirecciones = await _readRepository.GetAllWithSpec(spec);
         
-        IReadOnlyList<GetAllOrganizacionViewModel> viewModels = organizaciones
+        IReadOnlyList<GetAllOrganizacionViewModel> viewModels = organizacionDirecciones
             .Select(p => new GetAllOrganizacionViewModel()
             {
                 Id = p.Id,

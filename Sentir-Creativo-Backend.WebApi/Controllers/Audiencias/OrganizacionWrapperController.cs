@@ -14,17 +14,23 @@ public class OrganizacionWrapperController : ControllerBase
     private readonly IGetAllOrganizacionController _getAllOrganizacionController;
     private readonly ICreateOrganizacionController _createOrganizacionController;
     private readonly IDeleteOrganizacionController _deleteOrganizacionController;
+    private readonly IDireccionByIdOrganizacionController _direccionByIdOrganizacionController;
+    private readonly IUpdateOrganizacionController _updateOrganizacionController;
     
     public OrganizacionWrapperController(
         ISelectOrganizacionController selectOrganizacionController,
         IGetAllOrganizacionController getAllOrganizacionController,
         ICreateOrganizacionController createOrganizacionController,
-        IDeleteOrganizacionController deleteOrganizacionController)
+        IDeleteOrganizacionController deleteOrganizacionController,
+        IDireccionByIdOrganizacionController direccionByIdOrganizacionController,
+        IUpdateOrganizacionController updateOrganizacionController)
     {
         _selectOrganizacionController = selectOrganizacionController;
         _getAllOrganizacionController = getAllOrganizacionController;
         _createOrganizacionController = createOrganizacionController;
         _deleteOrganizacionController = deleteOrganizacionController;
+        _direccionByIdOrganizacionController = direccionByIdOrganizacionController; 
+        _updateOrganizacionController = updateOrganizacionController;
     }
     
     [HttpGet]
@@ -47,4 +53,16 @@ public class OrganizacionWrapperController : ControllerBase
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> DeleteOrganizacion(int id)
         => Ok(await _deleteOrganizacionController.Handle(id));
+    
+    
+    [HttpGet]
+    [Route("direccion/{id}")] 
+    [ProducesResponseType(typeof(SelectOrganizacionViewModel), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<DireccionByIdOrganizacionViewModel>> DireccionById(int id) 
+        => Ok(await _direccionByIdOrganizacionController.Handle(id));
+    
+    [HttpPut(Name = "UpdateOrganizacion")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> UpdateOrganizacion([FromBody] UpdateOrganizacionDto dto)
+        => Ok(await _updateOrganizacionController.Handle(dto));
 }

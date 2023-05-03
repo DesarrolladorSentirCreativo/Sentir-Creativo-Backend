@@ -12,8 +12,10 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.EstadoAud
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Motivaciones.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.Create;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.Delete;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.DireccionById;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.GetAll;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.Select;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.Update;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Origenes.SelectOrigen;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Prefijos.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Rubros.Select;
@@ -117,6 +119,14 @@ public static class DependencyContainer
         services.AddScoped<DeleteOrganizacionPresenter>();
         services.AddScoped<IDeleteOrganizacionPresenter>(provider => provider.GetService<DeleteOrganizacionPresenter>());
         services.AddScoped<IDeleteOrganizacionOutputPort>(provider => provider.GetService<DeleteOrganizacionPresenter>());
+        
+        services.AddScoped<DireccionByIdOrganizacionPresenter>();
+        services.AddScoped<IDireccionByIdOrganizacionPresenter>(provider => provider.GetService<DireccionByIdOrganizacionPresenter>());
+        services.AddScoped<IDireccionByIdOrganizacionOutputPort>(provider => provider.GetService<DireccionByIdOrganizacionPresenter>());
+        
+        services.AddScoped<UpdateOrganizacionPresenter>();
+        services.AddScoped<IUpdateOrganizacionPresenter>(provider => provider.GetService<UpdateOrganizacionPresenter>());
+        services.AddScoped<IUpdateOrganizacionOutputPort>(provider => provider.GetService<UpdateOrganizacionPresenter>());
         
         return services;
     }

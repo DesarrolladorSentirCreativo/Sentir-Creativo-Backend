@@ -8,7 +8,6 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.Org
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.Origenes;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.Prefijos;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.Rubros;
-using Sentir_Creativo_Backend.Audiencia.BusinessObject.DTO.Audiencias;
 using Sentir_Creativo_Backend.Audiencias.Controllers.Antiguedades;
 using Sentir_Creativo_Backend.Audiencias.Controllers.Audiencias;
 using Sentir_Creativo_Backend.Audiencias.Controllers.Cercanias;
@@ -43,6 +42,8 @@ public static class DependencyContainer
         services.AddScoped<ISelectRubroController, SelectRubroController>();
         services.AddScoped<ICreateOrganizacionController, CreateOrganizacionController>();
         services.AddScoped<IDeleteOrganizacionController, DeleteOrganizacionController>();
+        services.AddScoped<IDireccionByIdOrganizacionController, DireccionByIdOrganizacionController>();
+        services.AddScoped<IUpdateOrganizacionController, UpdateOrganizacionController>();
         
         return services;
     }

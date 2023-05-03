@@ -12,8 +12,10 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.EstadoAud
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Motivaciones.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.Create;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.Delete;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.DireccionById;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.GetAll;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.Select;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizaciones.Update;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Origenes.SelectOrigen;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Prefijos.Select;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Rubros.Select;
@@ -30,8 +32,10 @@ using Sentir_Creativo_Backend.Audiencias.UseCases.EstadosAudiencias.Select;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Motivaciones.Select;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Organizaciones.Create;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Organizaciones.Delete;
+using Sentir_Creativo_Backend.Audiencias.UseCases.Organizaciones.DireccionById;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Organizaciones.GetAll;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Organizaciones.Select;
+using Sentir_Creativo_Backend.Audiencias.UseCases.Organizaciones.Update;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Origenes.Select;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Prefijos.Select;
 using Sentir_Creativo_Backend.Audiencias.UseCases.Rubros.Select;
@@ -60,6 +64,8 @@ public static class DependencyContainer
         services.AddScoped<ISelectRubroInputPort, SelectRubroInteractor>();
         services.AddScoped<ICreateOrganizacionInputPort, CreateOrganizacionInteractor>();
         services.AddScoped<IDeleteOrganizacionInputPort, DeleteOrganizacionInteractor>();
+        services.AddScoped<IDireccionByIdOrganizacionInputPort, DireccionByIdOrganizacionInteractor>();
+        services.AddScoped<IUpdateOrganizacionInputPort, UpdateOrganizacionInteractor>();
         
         return services;
     }
