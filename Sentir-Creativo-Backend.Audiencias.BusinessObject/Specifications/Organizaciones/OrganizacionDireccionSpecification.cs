@@ -9,5 +9,6 @@ public class OrganizacionDireccionSpecification : BaseSpecification<Organizacion
     {
         AddInclude(p => p.Organizacion!);
         AddInclude(p => p.Direccion!);
+        AddInclude(p => p.Direccion!.Ciudad!);
     }
 }

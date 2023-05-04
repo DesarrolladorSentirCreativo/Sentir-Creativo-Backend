@@ -19,7 +19,7 @@ public class SelectOrganizacionInteractor : ISelectOrganizacionInputPort
     
     public async ValueTask Handle()
     {
-        var spec = new  OrganizacionActivosSpecification();
+        var spec = new OrganizacionActivosSpecification();
 
         var organizaciones = await _readRepository.GetAllWithSpec(spec);
         

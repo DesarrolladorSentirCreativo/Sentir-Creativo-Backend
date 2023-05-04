@@ -5,9 +5,7 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.DTO.Audiencias;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.POCOEntities;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Audiencias;
 using Sentir_Creativo_Backend.CuponDescuentos.Entities.Mappings;
-using Sentir_Creativo_Backend.CuponDescuentos.Entities.ViewModels;
 using Sentir_Creativo_Backend.Difusiones.Entities.Mappings;
-using Sentir_Creativo_Backend.Difusiones.Entities.ViewModels;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
 using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 

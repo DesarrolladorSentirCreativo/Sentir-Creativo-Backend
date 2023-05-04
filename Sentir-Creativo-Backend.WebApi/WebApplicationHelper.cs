@@ -3,6 +3,7 @@ using Sentir_Creativo_Backend.Areas.IoC;
 using Sentir_Creativo_Backend.Audiencias.IoC;
 using Sentir_Creativo_Backend.Bitacoras.IoC;
 using Sentir_Creativo_Backend.Colecciones.IoC;
+using Sentir_Creativo_Backend.Comentarios.IoC;
 using Sentir_Creativo_Backend.CuponesDescuentos.IoC;
 using Sentir_Creativo_Backend.Difusiones.IoC;
 using Sentir_Creativo_Backend.Direcciones.IoC;
@@ -39,6 +40,7 @@ public static class WebApplicationHelper
         builder.Services.AddArchivosServices();
         builder.Services.AddBitacorasServices();
         builder.Services.AddDireccionesServices();
+        builder.Services.AddComentariosServices();
 
         builder.Services.AddCors(options =>
         {
