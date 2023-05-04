@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Services;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.POCOEntities;
+using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
 
 namespace Sentir_Creativo_Backend.UsersAdmin.Infrastructure.Services;
 
@@ -21,7 +21,7 @@ public class UserAdminTokenService : IUserAdminTokenService
     {
         var claims = new[]
         {
-            new Claim(ClaimTypes.Name, userAdmin.FirstName + " " + userAdmin.LastName),
+            new Claim(ClaimTypes.Name, userAdmin.UserName ?? "Usuario"),
             new Claim(ClaimTypes.Email, userAdmin.Email)
         };
         

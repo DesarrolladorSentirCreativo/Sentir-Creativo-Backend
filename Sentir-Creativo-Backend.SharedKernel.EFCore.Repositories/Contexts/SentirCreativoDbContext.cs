@@ -25,8 +25,8 @@ using Sentir_Creativo_Backend.PublicoObjetivos.EFCore.Repositories.Configuration
 using Sentir_Creativo_Backend.PublicoObjetivos.Entities.POCOEntities;
 using Sentir_Creativo_Backend.Servicios.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.Servicios.Entities.POCOEntities;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.POCOEntities;
 using Sentir_Creativo_Backend.UsersAdmin.EFCore.Repositories.Configurations;
+using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
 using Sentir_Cretivo_Backend.Difusiones.EFCore.Repositories.Configuraciones;
 
 namespace Sentir_Creativo_Backend.SharedKernel.EFCore.Repositories.Contexts;

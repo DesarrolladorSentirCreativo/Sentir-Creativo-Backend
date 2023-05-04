@@ -94,6 +94,19 @@
         "runtime": {
           "bin/placeholder/Sentir-Creativo-Backend.SharedKernel.UseCases.dll": {}
         }
+      },
+      "Sentir-Creativo-Backend.UsersAdmin.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.UsersAdmin.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.UsersAdmin.Entities.dll": {}
+        }
       }
     }
   },
@@ -170,13 +183,19 @@
       "type": "project",
       "path": "../Sentir-Creativo-Backend.SharedKernel.UseCases/Sentir-Creativo-Backend.SharedKernel.UseCases.csproj",
       "msbuildProject": "../Sentir-Creativo-Backend.SharedKernel.UseCases/Sentir-Creativo-Backend.SharedKernel.UseCases.csproj"
+    },
+    "Sentir-Creativo-Backend.UsersAdmin.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.UsersAdmin.Entities/Sentir-Creativo-Backend.UsersAdmin.Entities.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.UsersAdmin.Entities/Sentir-Creativo-Backend.UsersAdmin.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "FluentValidation >= 11.5.2",
       "Sentir-Creativo-Backend.Comentarios.BusinessObjects >= 1.0.0",
-      "Sentir-Creativo-Backend.SharedKernel.UseCases >= 1.0.0"
+      "Sentir-Creativo-Backend.SharedKernel.UseCases >= 1.0.0",
+      "Sentir-Creativo-Backend.UsersAdmin.Entities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -217,6 +236,9 @@
             },
             "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.UseCases\\Sentir-Creativo-Backend.SharedKernel.UseCases.csproj": {
               "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.UseCases\\Sentir-Creativo-Backend.SharedKernel.UseCases.csproj"
+            },
+            "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.UsersAdmin.Entities\\Sentir-Creativo-Backend.UsersAdmin.Entities.csproj": {
+              "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.UsersAdmin.Entities\\Sentir-Creativo-Backend.UsersAdmin.Entities.csproj"
             }
           }
         }

@@ -798,7 +798,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.UsersAdmin.Entities": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Sentir-Creativo-Backend.UsersAdmin.BusinessObject.dll": {}
@@ -820,6 +821,19 @@
         },
         "runtime": {
           "bin/placeholder/Sentir-Creativo-Backend.UsersAdmin.EFCore.Repositories.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.UsersAdmin.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.UsersAdmin.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.UsersAdmin.Entities.dll": {}
         }
       },
       "Sentir-Cretivo-Backend.Difusiones.EFCore.Repositories/1.0.0": {
@@ -1606,6 +1620,11 @@
       "type": "project",
       "path": "../Sentir-Creativo-Backend.UsersAdmin.EFCore.Repositories/Sentir-Creativo-Backend.UsersAdmin.EFCore.Repositories.csproj",
       "msbuildProject": "../Sentir-Creativo-Backend.UsersAdmin.EFCore.Repositories/Sentir-Creativo-Backend.UsersAdmin.EFCore.Repositories.csproj"
+    },
+    "Sentir-Creativo-Backend.UsersAdmin.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.UsersAdmin.Entities/Sentir-Creativo-Backend.UsersAdmin.Entities.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.UsersAdmin.Entities/Sentir-Creativo-Backend.UsersAdmin.Entities.csproj"
     },
     "Sentir-Cretivo-Backend.Difusiones.EFCore.Repositories/1.0.0": {
       "type": "project",

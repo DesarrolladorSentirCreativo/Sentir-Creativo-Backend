@@ -10,6 +10,7 @@
     <ItemGroup>
       <ProjectReference Include="..\Sentir-Creativo-Backend.Comentarios.BusinessObjects\Sentir-Creativo-Backend.Comentarios.BusinessObjects.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.SharedKernel.UseCases\Sentir-Creativo-Backend.SharedKernel.UseCases.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.UsersAdmin.Entities\Sentir-Creativo-Backend.UsersAdmin.Entities.csproj" />
     </ItemGroup>
 
     <ItemGroup>

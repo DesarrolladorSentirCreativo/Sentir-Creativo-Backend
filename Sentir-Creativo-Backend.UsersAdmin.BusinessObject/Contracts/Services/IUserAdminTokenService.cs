@@ -1,4 +1,4 @@
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.POCOEntities;
+using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
 
 namespace Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Services;
 

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Sentir-Creativo-Backend.SharedKernel.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.SharedKernel.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.SharedKernel.Entities.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Sentir-Creativo-Backend.SharedKernel.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.SharedKernel.Entities/Sentir-Creativo-Backend.SharedKernel.Entities.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.SharedKernel.Entities/Sentir-Creativo-Backend.SharedKernel.Entities.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Sentir-Creativo-Backend.SharedKernel.Entities >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\angel\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj": {
+              "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

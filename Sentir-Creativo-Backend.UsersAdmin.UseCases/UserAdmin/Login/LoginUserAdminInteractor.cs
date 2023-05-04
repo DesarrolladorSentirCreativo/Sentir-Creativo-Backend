@@ -12,7 +12,7 @@ namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.UserAdmin.Login;
 
 public class LoginUserAdminInteractor : ILoginUserAdminInputPort
 {
-    private readonly IReadRepository<BusinessObject.POCOEntities.UserAdmin,int> _readRepository;
+    private readonly IReadRepository<Entities.POCOEntities.UserAdmin,int> _readRepository;
     private readonly ILoginUserAdminOutputPort _outputPort;
     private readonly IEnumerable<IValidator<LoginUserAdminDto>> _validators;
     private readonly IHashPassword _hashPassword;
@@ -20,7 +20,7 @@ public class LoginUserAdminInteractor : ILoginUserAdminInputPort
     private readonly ILogger<LoginUserAdminInteractor> _logger;
 
     public LoginUserAdminInteractor(
-        IReadRepository<BusinessObject.POCOEntities.UserAdmin,int> readRepository,
+        IReadRepository<Entities.POCOEntities.UserAdmin,int> readRepository,
         ILoginUserAdminOutputPort outputPort,
         IEnumerable<IValidator<LoginUserAdminDto>> validators,
         IHashPassword hashPassword,

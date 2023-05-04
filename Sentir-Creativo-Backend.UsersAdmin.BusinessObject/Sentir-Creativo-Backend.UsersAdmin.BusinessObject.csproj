@@ -9,6 +9,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Sentir-Creativo-Backend.SharedKernel.Entities\Sentir-Creativo-Backend.SharedKernel.Entities.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.UsersAdmin.Entities\Sentir-Creativo-Backend.UsersAdmin.Entities.csproj" />
     </ItemGroup>
 
 </Project>
