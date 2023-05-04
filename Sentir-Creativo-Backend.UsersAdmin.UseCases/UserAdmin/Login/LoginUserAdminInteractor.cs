@@ -52,11 +52,14 @@ public class LoginUserAdminInteractor : ILoginUserAdminInputPort
 
         var userToken = new UserAdminTokenViewModel()
         {
-            Token = _userAdminTokenService.GenerateToken(user)
+            Token = _userAdminTokenService.GenerateToken(user),
+            User = new UserViewModel(){
+                UserId = user.Id,
+                Email = user.Email,
+                UserName = user.UserName
+            }
         };
 
         await _outputPort.Handle(userToken);
-
-        
     }
 }
