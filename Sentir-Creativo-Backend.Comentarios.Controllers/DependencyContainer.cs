@@ -10,6 +10,7 @@ public static class DependencyContainer
     {
         services.AddScoped<ICreateComentarioController, CreateComentarioController>();
         services.AddScoped<IGetByIdComentarioController, GetByIdComentarioController>();
+        services.AddScoped<IUpdateComentarioController, UpdateComentarioController>();
         
         return services;
     }

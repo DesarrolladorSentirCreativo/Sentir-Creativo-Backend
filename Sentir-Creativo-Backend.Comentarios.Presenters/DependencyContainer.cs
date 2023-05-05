@@ -1,6 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Sentir_Creativo_Backend.Comentarios.BusinessObjects.Ports.Create;
 using Sentir_Creativo_Backend.Comentarios.BusinessObjects.Ports.GetById;
+using Sentir_Creativo_Backend.Comentarios.BusinessObjects.Ports.Update;
 using Sentir_Creativo_Backend.Comentarios.BusinessObjects.Presenters;
 using Sentir_Creativo_Backend.Comentarios.Presenters.Comentarios;
 
@@ -17,6 +18,10 @@ public static class DependencyContainer
         services.AddScoped<GetByIdComentarioPresenter>();
         services.AddScoped<IGetByIdComentarioPresenter>(provider => provider.GetService<GetByIdComentarioPresenter>());
         services.AddScoped<IGetByIdComentarioOutputPort>(provider => provider.GetService<GetByIdComentarioPresenter>());
+        
+        services.AddScoped<UpdateComentarioPresenter>();
+        services.AddScoped<IUpdateComentarioPresenter>(provider => provider.GetService<UpdateComentarioPresenter>());
+        services.AddScoped<IUpdateComentarioOutputPort>(provider => provider.GetService<UpdateComentarioPresenter>());
         
         return services;
     }

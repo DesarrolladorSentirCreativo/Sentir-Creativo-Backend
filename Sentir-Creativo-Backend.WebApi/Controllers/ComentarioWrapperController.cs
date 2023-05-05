@@ -2,6 +2,7 @@ using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Senitr_Creativo_Backend.Comentarios.Entities.DTO;
 using Sentir_Creativo_Backend.Comentarios.BusinessObjects.Controllers;
+using Sentir_Creativo_Backend.Comentarios.BusinessObjects.DTO;
 using Sentir_Creativo_Backend.Comentarios.BusinessObjects.ViewModels;
 
 namespace Sentir_Creativo_Backend.WebApi.Controllers;
@@ -12,13 +13,16 @@ public class ComentarioWrapperController : ControllerBase
 {
     private readonly ICreateComentarioController _createComentarioController;
     private readonly IGetByIdComentarioController _getByIdComentarioController;
+    private readonly IUpdateComentarioController _updateComentarioController;
     
     public ComentarioWrapperController(
         ICreateComentarioController createComentarioController,
-        IGetByIdComentarioController getByIdComentarioController)
+        IGetByIdComentarioController getByIdComentarioController,
+        IUpdateComentarioController updateComentarioController)
     {
         _createComentarioController = createComentarioController;
         _getByIdComentarioController = getByIdComentarioController;
+        _updateComentarioController = updateComentarioController;
     }
     
     [HttpPost(Name = "CreateComentario")]
@@ -30,4 +34,10 @@ public class ComentarioWrapperController : ControllerBase
     [ProducesResponseType(typeof(GetByIdComentarioViewModel),(int)HttpStatusCode.OK)]
     public async Task<ActionResult<GetByIdComentarioViewModel>> GetByIdComentario(int id)
         =>Ok(await _getByIdComentarioController.Handle(id));
+    
+    [HttpPut(Name = "UpdateComentario")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> UpdateComentario([FromBody] UpdateComentarioDto dto)
+        => Ok(await _updateComentarioController.Handle(dto));
+
 }
