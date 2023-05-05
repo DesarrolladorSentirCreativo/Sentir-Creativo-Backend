@@ -33,7 +33,8 @@ public class CreateComentarioInteractor : ICreateComentarioInputPort
         {
             Descripcion = dto.Descripcion,
             CreatedBy = dto.UserId,
-            CreatedAt = DateTime.Now
+            CreatedAt = DateTime.Now,
+            PublishedAt = DateTime.Now
         };
         
         _unitOfWork.WriteRepository<Comentario>().AddEntity(comentario);
