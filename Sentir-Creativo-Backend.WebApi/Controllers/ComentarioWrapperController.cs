@@ -14,15 +14,18 @@ public class ComentarioWrapperController : ControllerBase
     private readonly ICreateComentarioController _createComentarioController;
     private readonly IGetByIdComentarioController _getByIdComentarioController;
     private readonly IUpdateComentarioController _updateComentarioController;
+    private readonly IDeleteComentarioController _deleteComentarioController;
     
     public ComentarioWrapperController(
         ICreateComentarioController createComentarioController,
         IGetByIdComentarioController getByIdComentarioController,
-        IUpdateComentarioController updateComentarioController)
+        IUpdateComentarioController updateComentarioController,
+        IDeleteComentarioController deleteComentarioController)
     {
         _createComentarioController = createComentarioController;
         _getByIdComentarioController = getByIdComentarioController;
         _updateComentarioController = updateComentarioController;
+        _deleteComentarioController = deleteComentarioController;
     }
     
     [HttpPost(Name = "CreateComentario")]
@@ -39,5 +42,9 @@ public class ComentarioWrapperController : ControllerBase
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> UpdateComentario([FromBody] UpdateComentarioDto dto)
         => Ok(await _updateComentarioController.Handle(dto));
-
+    
+    [HttpDelete("{id}")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> DeleteComentario(int id)
+        => Ok(await _deleteComentarioController.Handle(id));
 }
