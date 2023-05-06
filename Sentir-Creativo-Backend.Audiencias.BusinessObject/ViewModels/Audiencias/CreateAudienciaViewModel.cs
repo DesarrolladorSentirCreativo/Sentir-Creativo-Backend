@@ -10,7 +10,6 @@ public class CreateAudienciaViewModel
     public string Email { get; set; }
     public long? Celular { get; set; }
     public string? Profesion { get; set; }
-    public int? OrganizacionId { get; set; }
     public string? Departamento { get; set; }
     public string? Cargo { get; set; }
     public int? AntiguedadId { get; set; }

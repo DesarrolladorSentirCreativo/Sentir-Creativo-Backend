@@ -1,3 +1,4 @@
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.DTO.Organizaciones;
 using Sentir_Creativo_Backend.CuponDescuentos.Entities.DTO;
 using Sentir_Creativo_Backend.Difusiones.Entities.DTO;
 
@@ -9,7 +10,6 @@ public class CreateAudienciaDto
     public string Email { get; set; }
     public long? Celular { get; set; }
     public string? Profesion { get; set; }
-    public int OrganizacionId { get; set; }
     public string? Departamento { get; set; }
     public string? Cargo { get; set; }
     public int AntiguedadId { get; set; }
@@ -23,6 +23,7 @@ public class CreateAudienciaDto
     public string? Email2 { get; set; }
     public string? DocumentoIdentidad { get; set; }
 
+    public IReadOnlyList<IdOrganizacionDto> Organizaciones { get; set; }
     public IReadOnlyList<IdCuponDescuentoDto> CuponDescuentos { get; set; }
     public IReadOnlyList<IdDifusionDto> Difusiones { get; set; }
 }

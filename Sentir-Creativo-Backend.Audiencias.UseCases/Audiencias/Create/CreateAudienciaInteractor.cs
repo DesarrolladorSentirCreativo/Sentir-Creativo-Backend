@@ -42,8 +42,7 @@ public class CreateAudienciaInteractor : ICreateAudienciaInputPort
             Apellido = dto.Apellido, 
             Profesion = dto.Profesion, 
             Email = dto.Email, 
-            Celular = dto.Celular, 
-            OrganizacionId = dto.OrganizacionId, 
+            Celular = dto.Celular,
             Departamento = dto.Departamento, 
             Cargo = dto.Cargo, 
             CercaniaId = dto.CercaniaId, 
@@ -84,6 +83,16 @@ public class CreateAudienciaInteractor : ICreateAudienciaInputPort
             });
         }
         
+        //guardamos todas las organizaciones de la audiencia
+        foreach (var audienciaOrganizacion in dto.Organizaciones)
+        {
+            _unitOfWork.WriteRepository<AudienciaOrganizacion>().AddEntity(new AudienciaOrganizacion()
+            {
+                AudienciaId = audiencia.Id,
+                OrganizacionId = audienciaOrganizacion.OrganizacionId,
+            });
+        }
+        
         //confirmamos los cambios en la base de datos
         var result = await _unitOfWork.Complete();
         
@@ -107,7 +116,6 @@ public class CreateAudienciaInteractor : ICreateAudienciaInputPort
             Profesion = audiencia.Profesion,
             Email = audiencia.Email,
             Celular = audiencia.Celular,
-            OrganizacionId = audiencia.OrganizacionId,
             Departamento = audiencia.Departamento,
             Cargo = audiencia.Cargo,
             CercaniaId = audiencia.CercaniaId,

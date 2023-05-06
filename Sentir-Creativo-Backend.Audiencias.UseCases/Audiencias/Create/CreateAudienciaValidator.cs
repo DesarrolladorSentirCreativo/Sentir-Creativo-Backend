@@ -14,10 +14,7 @@ public class CreateAudienciaValidator : AbstractValidator<CreateAudienciaDto>
         RuleFor( p => p.Email)
             .NotEmpty().WithMessage("El email es requerido")
             .Length(255).WithMessage("El email no debe superar los 255 caracteres");
-        
-        RuleFor(p => p.OrganizacionId)
-            .NotNull().WithMessage("OrganizacionId es requerido");
-        
+
         RuleFor(p => p.Departamento)
             .Length(255).WithMessage("El departamento no debe superar los 255 caracteres");
         

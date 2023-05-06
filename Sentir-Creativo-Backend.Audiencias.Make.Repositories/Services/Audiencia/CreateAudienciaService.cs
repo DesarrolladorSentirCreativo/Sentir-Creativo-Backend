@@ -29,7 +29,6 @@ public class CreateAudienciaService : ICreateAudienciaService
             { "nombre", viewModel.Nombre },
             { "email", viewModel.Email },
             { "celular", viewModel.Celular.ToString() },
-            { "organizacionId", viewModel.OrganizacionId.ToString() },
             { "profesion", viewModel.Profesion },
             { "cercaniaId", viewModel.CercaniaId.ToString() },
             { "origenId", viewModel.OrigenId.ToString()},
@@ -50,6 +49,6 @@ public class CreateAudienciaService : ICreateAudienciaService
         });
         
         var url = "https://hook.us1.make.com/c5z60wuhoslgkerkhv1cj2z3we6tro8u" + queryString;
-        var response = await _httpClient.GetAsync(url);
+         await _httpClient.GetAsync(url);
     }
 }
