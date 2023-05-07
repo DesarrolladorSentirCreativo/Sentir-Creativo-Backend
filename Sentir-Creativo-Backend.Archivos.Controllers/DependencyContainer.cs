@@ -9,6 +9,7 @@ public static class DependencyContainer
     public static IServiceCollection AddArchivosControllers(this IServiceCollection services)
     {
         services.AddScoped<ICreateArchivoController, CreateArchivoController>();
+        services.AddScoped<IUpdateArchivoController, UpdateArchivoController>();
         
         return services;
     }
