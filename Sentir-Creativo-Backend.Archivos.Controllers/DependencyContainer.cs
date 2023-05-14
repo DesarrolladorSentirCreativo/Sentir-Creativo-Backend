@@ -10,6 +10,7 @@ public static class DependencyContainer
     {
         services.AddScoped<ICreateArchivoController, CreateArchivoController>();
         services.AddScoped<IUpdateArchivoController, UpdateArchivoController>();
+        services.AddScoped<IDeleteArchivoController, DeleteArchivoController>();
         
         return services;
     }
