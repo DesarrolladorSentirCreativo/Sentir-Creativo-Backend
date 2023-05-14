@@ -2,7 +2,7 @@ using Sentir_Creativo_Backend.SharedKernel.Entities.Specifications;
 
 namespace Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.Audiencias;
 
-public class AudienciaPaginationSpecification: BaseSpecification<Sentir_Creativo_Backend.Audiencias.Entities.POCOEntities.Audiencia>
+public class AudienciaPaginationSpecification:  BaseSpecification<Sentir_Creativo_Backend.Audiencias.Entities.POCOEntities.Audiencia>
 {
     public AudienciaPaginationSpecification(AudienciaPaginationSpecificationParams audienciaParams) : base(
         x => 

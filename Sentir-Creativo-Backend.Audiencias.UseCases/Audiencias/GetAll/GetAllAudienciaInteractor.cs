@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Logging;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.GetAll;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.Audiencias;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Audiencias;
@@ -9,15 +10,18 @@ public class GetAllAudienciaInteractor : IGetAllAudienciaInputPort
 {
     private readonly IReadRepository<Entities.POCOEntities.Audiencia,int> _readRepository;
     private readonly IGetAllAudienciaOutputPort _outputPort;
-    
+    private readonly ILogger<GetAllAudienciaInteractor> _logger;
+
     public GetAllAudienciaInteractor(IReadRepository<Entities.POCOEntities.Audiencia,int> readRepository, 
-        IGetAllAudienciaOutputPort outputPort)
+        IGetAllAudienciaOutputPort outputPort,
+        ILogger<GetAllAudienciaInteractor> logger)
     {
         _readRepository = readRepository;
         _outputPort = outputPort;
+        _logger = logger;
     }
     
-    public async  ValueTask Handle()
+    public async ValueTask Handle()
     {
         var spec = new AudienciaActivosSpecification();
 
@@ -28,10 +32,10 @@ public class GetAllAudienciaInteractor : IGetAllAudienciaInputPort
                 new GetAllAudienciaViewModel()
                 {
                     Id = p.Id,
-                    Nombre = p.Nombre,
+                    Nombre = p.Nombre!,
                     Apellido = p.Apellido,
                     Profesion = p.Profesion,
-                    Email = p.Email,
+                    Email = p.Email!,
                     Celular = p.Celular,
                     OrganizacionId = p.OrganizacionId,
                     Departamento = p.Departamento,
@@ -45,7 +49,8 @@ public class GetAllAudienciaInteractor : IGetAllAudienciaInputPort
                     Email2 = p.Email2,
                     Destacado = p.Destacado,
                     DocumentoIdentidad = p.DocumentoIdentidad,
-                    Activo = p.Activo
+                    Activo = p.Activo,
+                    PublishedAt = p.PublishedAt
                 })
             .ToList()
             .AsReadOnly();

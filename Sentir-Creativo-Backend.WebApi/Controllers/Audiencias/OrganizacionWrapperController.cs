@@ -49,7 +49,7 @@ public class OrganizacionWrapperController : ControllerBase
     public async Task<ActionResult<int>> CreateOrganizacion([FromBody] CreateOrganizacionDto dto)
         => Ok(await _createOrganizacionController.Handle(dto));
     
-    [HttpDelete("{id}")]
+    [HttpPut("{id}")]
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> DeleteOrganizacion(int id)
         => Ok(await _deleteOrganizacionController.Handle(id));

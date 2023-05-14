@@ -26,7 +26,7 @@ public class AudienciaConfiguration :IEntityTypeConfiguration<Entities.POCOEntit
         builder.Property(p => p.UpdatedBy).HasColumnName("updated_by");
         builder.Property(p => p.Apellido).HasMaxLength(200).HasColumnName("apellido");
         builder.Property(p => p.Profesion).HasMaxLength(255).HasColumnName("profesion");
-        builder.Property(p => p.EstadoId).HasColumnName("estado");
+        builder.Property(p => p.EstadoId!).HasColumnName("estado");
         builder.Property(p => p.OrigenId).HasColumnName("origen");
         builder.Property(p => p.PrefijoId).HasColumnName("prefijo");
         builder.Property(p => p.Email2).HasMaxLength(255).HasColumnName("email2");

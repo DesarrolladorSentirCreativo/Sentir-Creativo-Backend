@@ -43,7 +43,7 @@ public class ComentarioWrapperController : ControllerBase
     public async Task<ActionResult<int>> UpdateComentario([FromBody] UpdateComentarioDto dto)
         => Ok(await _updateComentarioController.Handle(dto));
     
-    [HttpDelete("{id}")]
+    [HttpPut("{id}")]
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> DeleteComentario(int id)
         => Ok(await _deleteComentarioController.Handle(id));

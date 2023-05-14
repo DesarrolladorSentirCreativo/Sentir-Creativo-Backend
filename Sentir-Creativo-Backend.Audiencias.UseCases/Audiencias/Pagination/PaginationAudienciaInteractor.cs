@@ -44,10 +44,10 @@ public class PaginationAudienciaInteractor : IPaginationAudienciaInputPort
                 new AudienciaWithRelationsViewModels ()
                 {
                     Id = p.Id,
-                    Nombre = p.Nombre,
+                    Nombre = p.Nombre!,
                     Apellido = p.Apellido,
                     Profesion = p.Profesion,
-                    Email = p.Email,
+                    Email = p.Email!,
                     Celular = p.Celular,
                     Organizacion = p.Organizacion?.Nombre,
                     Departamento = p.Departamento,

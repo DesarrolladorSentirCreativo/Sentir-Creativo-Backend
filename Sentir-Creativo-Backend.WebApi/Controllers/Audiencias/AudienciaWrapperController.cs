@@ -71,7 +71,7 @@ public class AudienciaWrapperController : ControllerBase
     public async Task<ActionResult<GetByIdAudienciaViewModel>> GetByIdAudiencia(int id)
          =>Ok(await _getByIdAudienciaController.Handle(id));
 
-    [HttpDelete("{id}")]
+    [HttpPut("{id}")]
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> DeleteAudiencia(int id)
         => Ok(await _deleteAudienciaController.Handle(id));
