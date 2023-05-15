@@ -1,6 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Sentir_Creativo_Backend.Archivos.BusinessObject.Ports.Archivos.Create;
 using Sentir_Creativo_Backend.Archivos.BusinessObject.Ports.Archivos.Delete;
+using Sentir_Creativo_Backend.Archivos.BusinessObject.Ports.Archivos.GetById;
 using Sentir_Creativo_Backend.Archivos.BusinessObject.Ports.Archivos.Update;
 using Sentir_Creativo_Backend.Archivos.BusinessObject.Presenters.Archivos;
 using Sentir_creativo_Backend.Archivos.Presenters.Archivos;
@@ -22,6 +23,10 @@ public static class DependencyContainer
         services.AddScoped<DeleteArchivoPresenter>();
         services.AddScoped<IDeleteArchivoPresenter>(provider => provider.GetService<DeleteArchivoPresenter>());
         services.AddScoped<IDeleteArchivoOutputPort>(provider => provider.GetService<DeleteArchivoPresenter>());
+        
+        services.AddScoped<GetByIdArchivoPresenter>();
+        services.AddScoped<IGetByIdArchivoPresenter>(provider => provider.GetService<GetByIdArchivoPresenter>());
+        services.AddScoped<IGetByIdArchivoOutputPort>(provider => provider.GetService<GetByIdArchivoPresenter>());
         
         return services;
     }

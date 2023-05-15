@@ -2,6 +2,7 @@ using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.Archivos.BusinessObject.Controllers.Archivos;
 using Sentir_Creativo_Backend.Archivos.BusinessObject.DTO;
+using Sentir_Creativo_Backend.Archivos.BusinessObject.ViewModels;
 
 namespace Sentir_Creativo_Backend.WebApi.Controllers.Archivos;
 
@@ -12,15 +13,18 @@ public class ArchivoWrapperController : ControllerBase
     private readonly ICreateArchivoController _createArchivoController;
     private readonly IUpdateArchivoController _updateArchivoController;
     private readonly IDeleteArchivoController _deleteArchivoController;
+    private readonly IGetByIdArchivoController _getByIdArchivoController;
     
     public ArchivoWrapperController(
         ICreateArchivoController createArchivoController,
         IUpdateArchivoController updateArchivoController,
-        IDeleteArchivoController deleteArchivoController)
+        IDeleteArchivoController deleteArchivoController,
+        IGetByIdArchivoController getByIdArchivoController)
     {
         _createArchivoController = createArchivoController;
         _updateArchivoController = updateArchivoController;
         _deleteArchivoController = deleteArchivoController;
+        _getByIdArchivoController = getByIdArchivoController;
     }
     
     [HttpPost(Name = "CreateArchivo")]
@@ -37,5 +41,10 @@ public class ArchivoWrapperController : ControllerBase
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> DeleteArchivo(int id)
         => Ok(await _deleteArchivoController.Handle(id));
+    
+    [HttpGet("{id}")]
+    [ProducesResponseType(typeof(GetByIdArchivoViewModel),(int)HttpStatusCode.OK)]
+    public async Task<ActionResult<GetByIdArchivoViewModel>> GetByIdAudiencia(int id)
+        =>Ok(await _getByIdArchivoController.Handle(id));
 
 }
