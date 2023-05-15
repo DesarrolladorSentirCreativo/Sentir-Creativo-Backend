@@ -68,7 +68,12 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
         var comentarios = await _audienciaComentarioReadRepository.GetAllWithSpec(specComentarios);
         IReadOnlyList<ComentarioViewModel> comentariosViewModels = comentarios
             .Select(p => 
-                    new ComentarioViewModel() { Id = p.Id, Descripcion = p.Comentario == null ? null : p.Comentario.Descripcion})
+                    new ComentarioViewModel()
+                    {
+                        Id = p.Id, 
+                        Descripcion = p.Comentario == null ? null : p.Comentario.Descripcion,
+                        PublishedAt = p.Comentario == null ? null : p.Comentario.PublishedAt
+                    })
                 .ToList()
                 .AsReadOnly();
 
@@ -77,7 +82,7 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
         var archivos = await _audienciaArchivoReadRepository.GetAllWithSpec(specArchivos);
         IReadOnlyList<ArchivoViewModel> archivosViewModels = archivos
             .Select(p => 
-                new ArchivoViewModel() { Id = p.Id, Path = p.Archivo!.Path, Nombre = p.Archivo!.Nombre! })
+                new ArchivoViewModel() { Id = p.Id, Path = p.Archivo!.Path, Nombre = p.Archivo!.Nombre!, PublishedAt  = p.Archivo.PublishedAt })
             .ToList()
             .AsReadOnly();
         

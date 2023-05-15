@@ -7,8 +7,7 @@ public class AudienciaComentario : BaseEntity<int>
 {
     public int? AudienciaId { get; set; }
     public int? ComentarioId { get; set; }
-    public bool Activo { get; set; }
-    
+
     public Audiencias.Entities.POCOEntities.Audiencia? Audiencia { get; set; }
     public Comentario? Comentario { get; set; }
 }

@@ -13,8 +13,7 @@ public class AudienciaComentarioConfiguration : IEntityTypeConfiguration<Audienc
         builder.HasKey(p => p.Id).HasName("id");
         builder.Property(p => p.AudienciaId).HasColumnName("audiencia_id");
         builder.Property(p => p.ComentarioId).HasColumnName("comentario_id");
-        builder.Property(p => p.Activo).HasColumnName("activo");
-            
+
         builder.HasOne(u => u.Audiencia)
             .WithOne()
             .HasForeignKey<AudienciaComentario>("AudienciaId");
