@@ -1,3 +1,4 @@
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Organizaciones;
 using Sentir_Creativo_Backend.Difusiones.Entities.ViewModels;
 
 namespace Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Audiencias;
@@ -16,7 +17,7 @@ public class GetByIdAudienciaViewModel
     public int? AntiguedadId { get; set; }
     public int? CercaniaId { get; set; }
     public int? MotivacionId { get; set; }
-    public int? EstadoId { get; set; }
+    public int? EstadoAudienciaId { get; set; }
     public int? PrefijoId { get; set; }
     public int? OrigenId { get; set; }
     public string? Email2 { get; set; }
@@ -29,5 +30,6 @@ public class GetByIdAudienciaViewModel
     public IReadOnlyList<ComentarioViewModel> Comentarios { get; set; }
     public IReadOnlyList<ArchivoViewModel> Archivos { get; set; }
     public IReadOnlyList<DifusionViewModel> Difusiones { get; set; }
+    public IReadOnlyList<AudienciaOrganizacionViewModel> Organizaciones { get; set; }
 
 }

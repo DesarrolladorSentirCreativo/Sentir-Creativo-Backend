@@ -31,15 +31,12 @@ public class GetByIdComentarioInteractor : IGetByIdComentarioInputPort
         
         var userAdmin = await _userAdminReadRepository.GetByIdAsync(comentario.CreatedBy ?? 0);
         
-        if(userAdmin == null) throw new Exception("El usuario no se encuentra registrado");
-        
-
         var modelView = new GetByIdComentarioViewModel()
         {
             Id = comentario.Id,
             Descripcion = comentario.Descripcion ?? "",
-            FechaCreacion = comentario.PublishedAt,
-            Usuario = userAdmin.UserName ?? "Usuario"
+            PublishedAt = comentario.PublishedAt,
+            Usuario = userAdmin != null ? userAdmin.UserName ?? "SentirCreativo.com" : "SentirCreativo.com"
         };
         
         await _outputPort.Handle(modelView);

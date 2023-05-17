@@ -35,6 +35,9 @@
             "projectReferences": {
               "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj": {
                 "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj"
+              },
+              "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.UsersAdmin.Entities\\Sentir-Creativo-Backend.UsersAdmin.Entities.csproj": {
+                "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.UsersAdmin.Entities\\Sentir-Creativo-Backend.UsersAdmin.Entities.csproj"
               }
             }
           }

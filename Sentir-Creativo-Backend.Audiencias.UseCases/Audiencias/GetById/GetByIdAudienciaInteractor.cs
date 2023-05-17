@@ -6,10 +6,13 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.AudienciaB
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.AudienciaComentarios;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.AudienciaCuponDescuentos;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.AudienciaDifusiones;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.AudienciaOrganizaciones;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.Audiencias;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Audiencias;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Organizaciones;
 using Sentir_Creativo_Backend.Difusiones.Entities.ViewModels;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
 
 namespace Sentir_Creativo_Backend.Audiencias.UseCases.Audiencias.GetById;
 
@@ -22,6 +25,8 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
     private readonly IReadRepository<AudienciaCuponDescuento,int> _audienciaCuponDescuentoReadRepository;
     private readonly IReadRepository<AudienciaDifusion,int> _audienciaDifusionReadRepository;
     private readonly IGetByIdAudienciaOutputPort _outputPort;
+    private readonly IReadRepository<AudienciaOrganizacion,int> _audienciaOrganizacionReadRepository;
+    private readonly IReadRepository<UserAdmin,int> _userAdminReadRepository;
 
     public GetByIdAudienciaInteractor(
         ILogger<GetByIdAudienciaInteractor> logger,
@@ -31,7 +36,9 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
         IReadRepository<AudienciaArchivo,int> audienciaArchivoReadRepository,
         IReadRepository<AudienciaCuponDescuento,int> audienciaCuponDescuentoObjetivoReadRepository,
         IReadRepository<AudienciaDifusion,int> audienciaDifusionReadRepository,
-        IGetByIdAudienciaOutputPort outputPort)
+        IGetByIdAudienciaOutputPort outputPort,
+        IReadRepository<AudienciaOrganizacion,int> audienciaOrganizacionReadRepository,
+        IReadRepository<UserAdmin,int> userAdminReadRepository)
     {
         _audienciaReadRepository =  audienciaRedRepository;
         _audienciaBitacoraReadRepository = audienciaBitacoraRedRepository;
@@ -40,6 +47,8 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
         _audienciaCuponDescuentoReadRepository = audienciaCuponDescuentoObjetivoReadRepository;
         _audienciaDifusionReadRepository = audienciaDifusionReadRepository;
         _outputPort = outputPort;
+        _audienciaOrganizacionReadRepository = audienciaOrganizacionReadRepository;
+        _userAdminReadRepository = userAdminReadRepository;
     }
     
     public async ValueTask Handle(int audienciaId)
@@ -67,13 +76,19 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
         
         var comentarios = await _audienciaComentarioReadRepository.GetAllWithSpec(specComentarios);
         IReadOnlyList<ComentarioViewModel> comentariosViewModels = comentarios
-            .Select(p => 
-                    new ComentarioViewModel()
-                    {
-                        Id = p.Id, 
-                        Descripcion = p.Comentario == null ? null : p.Comentario.Descripcion,
-                        PublishedAt = p.Comentario == null ? null : p.Comentario.PublishedAt
-                    })
+            .Select(p =>
+            {
+                return new ComentarioViewModel()
+                {
+                    
+                    Id = p.ComentarioId,
+                    Descripcion = p.Comentario == null ? null : p.Comentario.Descripcion,
+                    PublishedAt = p.Comentario == null ? null : p.Comentario.PublishedAt,
+                    UserId = p.Comentario == null ? null :
+                        p.Comentario.CreatedBy == null ? null : p.Comentario.CreatedBy,
+                };
+                
+            })
                 .ToList()
                 .AsReadOnly();
 
@@ -92,7 +107,7 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
         
         IReadOnlyList<CuponDescuentoViewModel> cuponDescuentosViewModels = cuponDescuentos
             .Select(p => 
-                new CuponDescuentoViewModel() { Id = p.Id, Codigo = p.CuponDescuento!.Codigo })
+                new CuponDescuentoViewModel() { CuponDescuentoId = p.CuponDescuento!.Id })
             .ToList()
             .ToList()
             .AsReadOnly();
@@ -104,22 +119,24 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
         IReadOnlyList<DifusionViewModel> audienciaDifusionesViewModels = audienciasDifusiones
             .Select(p => 
                 new DifusionViewModel() 
-                    { Id = p.Difusion!.Id, 
-                        Nombre = p.Difusion!.Nombre ,
-                       Descripcion = p.Difusion!.Descripcion,
-                       PublishedAt = p.Difusion!.PublishedAt,
-                       Activo = p.Difusion!.Activo,
-                       PlataformaId = p.Difusion!.PlataformaId,
-                       CuponDescuentoId = p.Difusion!.CuponDescuentoId,
-                       ColeccionId = p.Difusion!.ColeccionId,
-                       Slogan = p.Difusion!.Slogan,
-                       Asunto = p.Difusion!.Asunto,
-                       PreHeader = p.Difusion!.PreHeader,
-                       PlantillaId = p.Difusion!.PlantillaId,
+                    { DifusionId = p.Difusion.Id
                     })
             .ToList()
             .AsReadOnly();
 
+        //obtener las organizaciones 
+        var specOrganizaciones = new AudienciaOrganizacionSpecification(audienciaId);
+        var audienciaOrganizaciones = await _audienciaOrganizacionReadRepository.GetAllWithSpec(specOrganizaciones);
+        
+        IReadOnlyList<AudienciaOrganizacionViewModel> audienciaOrganizacionViewModels = audienciaOrganizaciones
+            .Select(p => 
+                new AudienciaOrganizacionViewModel()
+                {
+                    OrganizacionId = p.OrganizacionId
+                }
+                )
+            .ToList()
+            .AsReadOnly();
 
         var audienciaViewModel = new GetByIdAudienciaViewModel
         {
@@ -135,7 +152,7 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
             AntiguedadId = audiencia.AntiguedadId,
             CercaniaId = audiencia.CercaniaId,
             MotivacionId = audiencia.MotivacionId,
-            EstadoId = audiencia.EstadoId,
+            EstadoAudienciaId = audiencia.EstadoId,
             PrefijoId = audiencia.PrefijoId,
             OrigenId = audiencia.OrigenId,
             Email2 = audiencia.Email2,
@@ -146,7 +163,8 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
             Comentarios = comentariosViewModels,
             Archivos = archivosViewModels,
             CuponDescuentos = cuponDescuentosViewModels,
-            Difusiones = audienciaDifusionesViewModels
+            Difusiones = audienciaDifusionesViewModels,
+            Organizaciones = audienciaOrganizacionViewModels,
             
         };
 

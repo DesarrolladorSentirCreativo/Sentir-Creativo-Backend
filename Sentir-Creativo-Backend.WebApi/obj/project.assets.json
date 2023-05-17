@@ -3184,7 +3184,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.UsersAdmin.Entities": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Senitr-Creativo-Backend.Comentarios.Entities.dll": {}
@@ -3519,7 +3520,8 @@
           "Sentir-Creativo-Backend.Audiencias.Entities": "1.0.0",
           "Sentir-Creativo-Backend.Direcciones.Entities": "1.0.0",
           "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0",
-          "Sentir-Creativo-Backend.SharedKernel.UseCases": "1.0.0"
+          "Sentir-Creativo-Backend.SharedKernel.UseCases": "1.0.0",
+          "Sentir-Creativo-Backend.UsersAdmin.Entities": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Sentir-Creativo-Backend.Audiencias.UseCases.dll": {}
