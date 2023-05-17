@@ -1,5 +1,5 @@
 using Senitr_Creativo_Backend.Comentarios.Entities.DTO;
-using Sentir_Creativo_Backend.Archivos.Entities.DTO;
+using Sentir_Creativo_Backend.Archivos.BusinessObject.DTO;
 using Sentir_Creativo_Backend.Bitacoras.Entities.DTO;
 using Sentir_Creativo_Backend.CuponDescuentos.Entities.DTO;
 using Sentir_Creativo_Backend.Difusiones.Entities.DTO;

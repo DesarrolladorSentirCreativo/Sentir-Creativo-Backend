@@ -1,5 +1,5 @@
 using Senitr_Creativo_Backend.Comentarios.Entities.ViewModels;
-using Sentir_Creativo_Backend.Archivos.Entities.ViewModels;
+using Sentir_Creativo_Backend.Archivos.BusinessObject.ViewModels;
 using Sentir_Creativo_Backend.Bitacoras.Entities.ViewModels;
 using Sentir_Creativo_Backend.CuponDescuentos.Entities.ViewModels;
 using Sentir_Creativo_Backend.Difusiones.Entities.ViewModels;

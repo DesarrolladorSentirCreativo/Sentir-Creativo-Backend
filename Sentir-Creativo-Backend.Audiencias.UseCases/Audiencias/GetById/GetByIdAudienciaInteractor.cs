@@ -97,7 +97,16 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
         var archivos = await _audienciaArchivoReadRepository.GetAllWithSpec(specArchivos);
         IReadOnlyList<ArchivoViewModel> archivosViewModels = archivos
             .Select(p => 
-                new ArchivoViewModel() { Id = p.Id, Path = p.Archivo!.Path, Nombre = p.Archivo!.Nombre!, PublishedAt  = p.Archivo.PublishedAt })
+                new ArchivoViewModel()
+                {
+                    Id = p.Id, 
+                    Path = p.Archivo!.Path, 
+                    Nombre = p.Archivo!.Nombre!, 
+                    PublishedAt  = p.Archivo.PublishedAt,
+                    TipoArchivoId = p.Archivo.TipoArchivoId,
+                    TipoArchivo = p.Archivo.TipoArchivo?.Nombre,
+                    Publico = p.Archivo?.Publico
+                })
             .ToList()
             .AsReadOnly();
         

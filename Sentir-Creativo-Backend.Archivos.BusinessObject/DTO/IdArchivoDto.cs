@@ -1,4 +1,4 @@
-namespace Sentir_Creativo_Backend.Archivos.Entities.DTO;
+namespace Sentir_Creativo_Backend.Archivos.BusinessObject.DTO;
 
 public class IdArchivoDto
 {

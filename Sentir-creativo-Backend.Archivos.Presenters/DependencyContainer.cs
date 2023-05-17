@@ -3,8 +3,11 @@ using Sentir_Creativo_Backend.Archivos.BusinessObject.Ports.Archivos.Create;
 using Sentir_Creativo_Backend.Archivos.BusinessObject.Ports.Archivos.Delete;
 using Sentir_Creativo_Backend.Archivos.BusinessObject.Ports.Archivos.GetById;
 using Sentir_Creativo_Backend.Archivos.BusinessObject.Ports.Archivos.Update;
+using Sentir_Creativo_Backend.Archivos.BusinessObject.Ports.TipoArchivo.Select;
 using Sentir_Creativo_Backend.Archivos.BusinessObject.Presenters.Archivos;
+using Sentir_Creativo_Backend.Archivos.BusinessObject.Presenters.TipoArchivo;
 using Sentir_creativo_Backend.Archivos.Presenters.Archivos;
+using Sentir_creativo_Backend.Archivos.Presenters.TipoArchivos;
 
 namespace Sentir_creativo_Backend.Archivos.Presenters;
 
@@ -27,6 +30,10 @@ public static class DependencyContainer
         services.AddScoped<GetByIdArchivoPresenter>();
         services.AddScoped<IGetByIdArchivoPresenter>(provider => provider.GetService<GetByIdArchivoPresenter>());
         services.AddScoped<IGetByIdArchivoOutputPort>(provider => provider.GetService<GetByIdArchivoPresenter>());
+        
+        services.AddScoped<SelectTipoArchivoPresenter>();
+        services.AddScoped<ISelectTipoArchivoPresenter>(provider => provider.GetService<SelectTipoArchivoPresenter>());
+        services.AddScoped<ISelectTipoArchivoOutputPort>(provider => provider.GetService<SelectTipoArchivoPresenter>());
         
         return services;
     }

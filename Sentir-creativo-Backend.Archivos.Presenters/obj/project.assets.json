@@ -22,6 +22,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Sentir-Creativo-Backend.Archivos.Entities": "1.0.0",
           "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
         },
         "compile": {
@@ -29,6 +30,19 @@
         },
         "runtime": {
           "bin/placeholder/Sentir-Creativo-Backend.Archivos.BusinessObject.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Archivos.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.Archivos.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.Archivos.Entities.dll": {}
         }
       },
       "Sentir-Creativo-Backend.SharedKernel.Entities/1.0.0": {
@@ -77,6 +91,11 @@
       "type": "project",
       "path": "../Sentir-Creativo-Backend.Archivos.BusinessObject/Sentir-Creativo-Backend.Archivos.BusinessObject.csproj",
       "msbuildProject": "../Sentir-Creativo-Backend.Archivos.BusinessObject/Sentir-Creativo-Backend.Archivos.BusinessObject.csproj"
+    },
+    "Sentir-Creativo-Backend.Archivos.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.Archivos.Entities/Sentir-Creativo-Backend.Archivos.Entities.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.Archivos.Entities/Sentir-Creativo-Backend.Archivos.Entities.csproj"
     },
     "Sentir-Creativo-Backend.SharedKernel.Entities/1.0.0": {
       "type": "project",

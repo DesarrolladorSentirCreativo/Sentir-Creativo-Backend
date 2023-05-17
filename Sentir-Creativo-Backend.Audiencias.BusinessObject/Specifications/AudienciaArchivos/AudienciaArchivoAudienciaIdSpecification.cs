@@ -8,5 +8,6 @@ public class AudienciaArchivoAudienciaIdSpecification : BaseSpecification<Audien
     public AudienciaArchivoAudienciaIdSpecification(int audienciaId) : base(x => x.AudienciaId == audienciaId)
     {
         AddInclude(p => p.Archivo!);
+        AddInclude(p => p.Archivo!.TipoArchivo!);
     }
 }

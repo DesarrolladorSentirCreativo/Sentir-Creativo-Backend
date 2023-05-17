@@ -1,6 +1,6 @@
 using FluentValidation;
 using Senitr_Creativo_Backend.Comentarios.Entities.Mappings;
-using Sentir_Creativo_Backend.Archivos.Entities.Mappings;
+using Sentir_Creativo_Backend.Archivos.BusinessObject.Mappings;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.Update;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Services;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.DTO.Audiencias;

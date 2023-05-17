@@ -1,7 +1,8 @@
-using Sentir_Creativo_Backend.Archivos.Entities.DTO;
-using Sentir_Creativo_Backend.Archivos.Entities.ViewModels;
 
-namespace Sentir_Creativo_Backend.Archivos.Entities.Mappings;
+using Sentir_Creativo_Backend.Archivos.BusinessObject.DTO;
+using Sentir_Creativo_Backend.Archivos.BusinessObject.ViewModels;
+
+namespace Sentir_Creativo_Backend.Archivos.BusinessObject.Mappings;
 
 public static class ArchivoMapping
 {
