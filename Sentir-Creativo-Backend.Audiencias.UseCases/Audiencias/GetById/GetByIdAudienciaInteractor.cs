@@ -106,8 +106,9 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
         var cuponDescuentos = await _audienciaCuponDescuentoReadRepository.GetAllWithSpec(specDescuentos);
         
         IReadOnlyList<CuponDescuentoViewModel> cuponDescuentosViewModels = cuponDescuentos
+            .Where(p => p.CuponDescuentoId != null)
             .Select(p => 
-                new CuponDescuentoViewModel() { CuponDescuentoId = p.CuponDescuento?.Id })
+                new CuponDescuentoViewModel() { CuponDescuentoId = p.CuponDescuentoId })
             .ToList()
             .ToList()
             .AsReadOnly();
