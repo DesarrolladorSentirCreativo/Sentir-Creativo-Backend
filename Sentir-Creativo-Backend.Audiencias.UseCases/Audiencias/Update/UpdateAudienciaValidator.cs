@@ -18,9 +18,6 @@ public class UpdateAudienciaValidator : AbstractValidator<UpdateAudienciaDto>
             .NotEmpty().WithMessage("El email es requerido")
             .Length(255).WithMessage("El email no debe superar los 255 caracteres");
         
-        RuleFor(p => p.OrganizacionId)
-            .NotNull().WithMessage("OrganizacionId es requerido");
-        
         RuleFor(p => p.Departamento)
             .Length(255).WithMessage("El departamento no debe superar los 255 caracteres");
         
@@ -37,7 +34,7 @@ public class UpdateAudienciaValidator : AbstractValidator<UpdateAudienciaDto>
             .NotNull().WithMessage("La MotivacionId es requerido");
         
         RuleFor(p => p.UserId)
-            .NotNull().WithMessage("El USerId es requerido");
+            .NotNull().WithMessage("El UserId es requerido");
         
         RuleFor(p => p.Apellido)
             .Length(200).WithMessage("El apellido no debe superar los 200 caracteres");
@@ -56,11 +53,5 @@ public class UpdateAudienciaValidator : AbstractValidator<UpdateAudienciaDto>
         
         RuleFor(p => p.DocumentoIdentidad)
             .Length(50).WithMessage("El DocumentoIdentidad no debe superar los 50 caracteres");
-        
-        RuleFor(p => p.Activo)
-            .NotNull().WithMessage("El Activo es requerido");
-
-        RuleFor(p => p.Destacado)
-            .NotNull().WithMessage("El destacado es requerido");
     }
 }

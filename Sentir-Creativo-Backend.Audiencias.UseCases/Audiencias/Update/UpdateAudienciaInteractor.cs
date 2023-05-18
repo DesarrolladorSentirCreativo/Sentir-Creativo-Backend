@@ -92,16 +92,6 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
             });
         }
         
-        //guardamos los nuevas bitacoras de la audiencia
-        foreach (var audienciaBitacora in dto.Bitacoras)
-        {
-            _unitOfWork.WriteRepository<AudienciaBitacora>().AddEntity(new AudienciaBitacora()
-            {
-                AudienciaId = dto.Id,
-                BitacoraId = audienciaBitacora.BitacoraId
-            });
-        }
-
         //guardamos los nuevos archivos de la audiencia
         foreach (var audienciaArchivo in dto.Archivos)
         {
@@ -118,7 +108,6 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
         audienciaUpdate.Email = dto.Email;
         audienciaUpdate.Profesion = dto.Profesion;
         audienciaUpdate.Celular = dto.Celular;
-        audienciaUpdate.OrganizacionId = dto.OrganizacionId;
         audienciaUpdate.Departamento = dto.Departamento;
         audienciaUpdate.Cargo = dto.Cargo;
         audienciaUpdate.AntiguedadId = dto.AntiguedadId;
@@ -128,9 +117,8 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
         audienciaUpdate.PrefijoId = dto.PrefijoId;
         audienciaUpdate.OrigenId = dto.OrigenId;
         audienciaUpdate.Email2 = dto.Email2;
-        audienciaUpdate.Destacado = dto.Destacado;
         audienciaUpdate.DocumentoIdentidad = dto.DocumentoIdentidad;
-        audienciaUpdate.Activo = dto.Activo;
+        audienciaUpdate.Activo = true;
         audienciaUpdate.UpdatedAt = DateTime.Now;
         audienciaUpdate.UpdatedBy = dto.UserId;
         
@@ -149,7 +137,6 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
         var idCuponDescuentos = CuponDescuentoMapping.Handle(dto.CuponDescuentos);
         var idDifusiones = DifusionMapping.Handle(dto.Difusiones);
         var idArchivos = ArchivoMapping.Handle(dto.Archivos);
-        var idBitacoras = BitacoraMapping.Handle(dto.Bitacoras);
         var idComentarios = CommentarioMapping.Handle(dto.Comentarios);
 
         //mandamos los datos para que se envien al webhooks
@@ -178,7 +165,6 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
             CuponDescuentos = idCuponDescuentos,
             Difusiones = idDifusiones,
             Archivos = idArchivos,
-            Bitacoras = idBitacoras,
             Comentarios = idComentarios
         });
         

@@ -8,6 +8,5 @@ public class AudienciaOrganizacionSpecification : BaseSpecification<AudienciaOrg
     public AudienciaOrganizacionSpecification(int audienciaId)
         : base(x => x.AudienciaId == audienciaId)
     {
-        AddInclude(p => p.Organizacion!);
     }
 }

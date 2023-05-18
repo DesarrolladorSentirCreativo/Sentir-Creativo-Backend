@@ -18,7 +18,6 @@ public class UpdateAudienciaService : IUpdateAudienciaService
     {
         var cuponDescuentosJson = JsonConvert.SerializeObject(viewModel.CuponDescuentos);
         var difusionesJson = JsonConvert.SerializeObject(viewModel.Difusiones);
-        var bitacorasJson = JsonConvert.SerializeObject(viewModel.Bitacoras);
         var archivosJson = JsonConvert.SerializeObject(viewModel.Archivos);
         var comentariosJson = JsonConvert.SerializeObject(viewModel.Comentarios);
         
@@ -46,7 +45,6 @@ public class UpdateAudienciaService : IUpdateAudienciaService
             { "publishedAt", viewModel.PublishedAt.ToString()},
             { "cuponDescuentos",cuponDescuentosJson},
             { "difusiones", difusionesJson },
-            { "bitacoras", bitacorasJson },
             { "comentarios", comentariosJson },
             { "archivos", archivosJson },
             

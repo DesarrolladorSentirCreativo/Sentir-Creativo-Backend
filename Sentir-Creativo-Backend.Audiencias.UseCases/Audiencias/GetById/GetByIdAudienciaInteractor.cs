@@ -62,15 +62,6 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
             throw new ApplicationException("Audiencia no encontrada");
         }
         
-        //obtener las bitacoras de la audiencia
-        var specBitacoras = new AudienciaBitacorasAudienciaIdSpecification(audienciaId);
-        var bitacoras = await _audienciaBitacoraReadRepository.GetAllWithSpec(specBitacoras);
-        IReadOnlyList<BitacoraViewModel> bitacorasViewModels = bitacoras
-            .Select(p => 
-                new BitacoraViewModel() { Id = p.Id,Accion = p.Bitacora!.Accion, Fecha = p.Bitacora!.Fecha, Via = p.Bitacora!.Via })
-            .ToList()
-            .AsReadOnly();
-        
         //obtener los comentarios de la audiencia
         var specComentarios = new AudienciaComentarioAudienciaIdSpecification(audienciaId);
         
@@ -99,7 +90,7 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
             .Select(p => 
                 new ArchivoViewModel()
                 {
-                    Id = p.Id, 
+                    Id = p.Archivo!.Id, 
                     Path = p.Archivo!.Path, 
                     Nombre = p.Archivo!.Nombre!, 
                     PublishedAt  = p.Archivo.PublishedAt,
@@ -116,7 +107,7 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
         
         IReadOnlyList<CuponDescuentoViewModel> cuponDescuentosViewModels = cuponDescuentos
             .Select(p => 
-                new CuponDescuentoViewModel() { CuponDescuentoId = p.CuponDescuento!.Id })
+                new CuponDescuentoViewModel() { CuponDescuentoId = p.CuponDescuento?.Id })
             .ToList()
             .ToList()
             .AsReadOnly();
@@ -128,7 +119,7 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
         IReadOnlyList<DifusionViewModel> audienciaDifusionesViewModels = audienciasDifusiones
             .Select(p => 
                 new DifusionViewModel() 
-                    { DifusionId = p.Difusion.Id
+                    { DifusionId = p.DifusionId
                     })
             .ToList()
             .AsReadOnly();
@@ -168,7 +159,6 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
             Destacado = audiencia.Destacado,
             DocumentoIdentidad = audiencia.DocumentoIdentidad,
             Activo = audiencia.Activo,
-            Bitacoras = bitacorasViewModels,
             Comentarios = comentariosViewModels,
             Archivos = archivosViewModels,
             CuponDescuentos = cuponDescuentosViewModels,

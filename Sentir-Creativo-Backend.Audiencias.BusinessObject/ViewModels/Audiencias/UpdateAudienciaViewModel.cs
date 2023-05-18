@@ -1,6 +1,5 @@
 using Senitr_Creativo_Backend.Comentarios.Entities.ViewModels;
 using Sentir_Creativo_Backend.Archivos.BusinessObject.ViewModels;
-using Sentir_Creativo_Backend.Bitacoras.Entities.ViewModels;
 using Sentir_Creativo_Backend.CuponDescuentos.Entities.ViewModels;
 using Sentir_Creativo_Backend.Difusiones.Entities.ViewModels;
 
@@ -31,7 +30,6 @@ public class UpdateAudienciaViewModel
 
     public IReadOnlyList<IdCuponDescuentoViewModel> CuponDescuentos { get; set; }
     public IReadOnlyList<IdDifusionViewModel> Difusiones { get; set; }
-    public IReadOnlyList<IdBitacoraViewModel> Bitacoras { get; set; }
     public IReadOnlyList<IdComentarioViewModel> Comentarios { get; set; }
     public IReadOnlyList<IdArchivoViewModel> Archivos { get; set; }
 

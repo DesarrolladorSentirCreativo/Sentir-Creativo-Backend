@@ -26,7 +26,6 @@ public class GetByIdAudienciaViewModel
     public bool Activo { get; set; }
     
     public IReadOnlyList<CuponDescuentoViewModel> CuponDescuentos { get; set; }
-    public IReadOnlyList<BitacoraViewModel> Bitacoras { get; set; }
     public IReadOnlyList<ComentarioViewModel> Comentarios { get; set; }
     public IReadOnlyList<ArchivoViewModel> Archivos { get; set; }
     public IReadOnlyList<DifusionViewModel> Difusiones { get; set; }
