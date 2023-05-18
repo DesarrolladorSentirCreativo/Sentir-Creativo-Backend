@@ -130,14 +130,21 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
         var audienciaOrganizaciones = await _audienciaOrganizacionReadRepository.GetAllWithSpec(specOrganizaciones);
         
         IReadOnlyList<AudienciaOrganizacionViewModel> audienciaOrganizacionViewModels = audienciaOrganizaciones
-            .Select(p => 
-                new AudienciaOrganizacionViewModel()
-                {
-                    OrganizacionId = p.OrganizacionId
-                }
-                )
+            .Select(p => new AudienciaOrganizacionViewModel
+            {
+                OrganizacionId = p.OrganizacionId
+            })
             .ToList()
             .AsReadOnly();
+
+        List<AudienciaOrganizacionViewModel> audienciaOrganizacionViewModelsDefault =
+            new List<AudienciaOrganizacionViewModel>
+            {
+                new AudienciaOrganizacionViewModel
+                {
+                    OrganizacionId = audiencia.OrganizacionId ?? 0
+                }
+            };
 
         var audienciaViewModel = new GetByIdAudienciaViewModel
         {
@@ -164,7 +171,7 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
             Archivos = archivosViewModels,
             CuponDescuentos = cuponDescuentosViewModels,
             Difusiones = audienciaDifusionesViewModels,
-            Organizaciones = audienciaOrganizacionViewModels,
+            Organizaciones = audienciaOrganizacionViewModels.Count > 0 ? audienciaOrganizacionViewModels : audienciaOrganizacionViewModelsDefault
             
         };
 
