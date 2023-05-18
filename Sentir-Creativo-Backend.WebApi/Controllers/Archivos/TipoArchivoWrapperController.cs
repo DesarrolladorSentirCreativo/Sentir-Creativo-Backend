@@ -5,6 +5,9 @@ using Sentir_Creativo_Backend.Archivos.BusinessObject.ViewModels;
 
 namespace Sentir_Creativo_Backend.WebApi.Controllers.Archivos;
 
+
+[ApiController]
+[Route("api/v1/tipos-archivos")]
 public class TipoArchivoWrapperController : ControllerBase
 {
     private readonly ISelectTipoArchivoController _selectTipoArchivoController;

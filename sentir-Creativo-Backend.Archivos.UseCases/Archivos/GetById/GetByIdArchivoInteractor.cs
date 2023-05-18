@@ -1,4 +1,5 @@
 using Sentir_Creativo_Backend.Archivos.BusinessObject.Ports.Archivos.GetById;
+using Sentir_Creativo_Backend.Archivos.BusinessObject.Specifications.Archivos;
 using Sentir_Creativo_Backend.Archivos.BusinessObject.ViewModels;
 using Sentir_Creativo_Backend.Archivos.Entities.POCOEntities;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
@@ -20,7 +21,9 @@ public class GetByIdArchivoInteractor : IGetByIdArchivoInputPort
     
     public async ValueTask Handle(int archivoId)
     {
-        var archivo = await _readRepository.GetByIdAsync(archivoId);
+        var spec = new ArchivoSpecification(archivoId);
+        
+        var archivo = await _readRepository.GetByIdWithSpec(spec);
         
         //validamos si existe el archivo
         if(archivo == null) throw new Exception("No se encontró ningún archivo.");
@@ -32,6 +35,7 @@ public class GetByIdArchivoInteractor : IGetByIdArchivoInputPort
             Nombre = archivo.Nombre,
             TipoArchivoId = archivo.TipoArchivoId,
             Path = archivo.Path,
+            TipoArchivo = archivo.TipoArchivo?.Nombre,
             Publico = archivo.Publico,
             PublishedAt = archivo.PublishedAt,
         };

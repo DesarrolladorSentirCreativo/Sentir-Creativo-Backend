@@ -6,6 +6,7 @@ public class GetByIdArchivoViewModel
     public string? Nombre { get; set; }
     public string? Path { get; set; }
     public int? TipoArchivoId { get; set; }
+    public string? TipoArchivo { get; set; }
     public bool? Publico { get; set; }
     public DateTime? PublishedAt { get; set; }
 }

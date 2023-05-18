@@ -32,6 +32,7 @@ public class CreateArchivoInteractor : ICreateArchivoInputPort
             Nombre = dto.Nombre,
             Path = dto.Path,
             Publico = dto.Publico,
+            TipoArchivoId = dto.TipoArchivoId,
             PublishedAt = DateTime.Now,
             Activo = true
         };
