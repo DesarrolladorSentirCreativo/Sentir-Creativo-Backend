@@ -1,7 +1,10 @@
 using Microsoft.Extensions.Logging;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.GetAll;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.POCOEntities;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.AudienciaOrganizaciones;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.Audiencias;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Audiencias;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Organizaciones;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
 
 namespace Sentir_Creativo_Backend.Audiencias.UseCases.Audiencias.GetAll;
@@ -10,22 +13,24 @@ public class GetAllAudienciaInteractor : IGetAllAudienciaInputPort
 {
     private readonly IReadRepository<Entities.POCOEntities.Audiencia,int> _readRepository;
     private readonly IGetAllAudienciaOutputPort _outputPort;
-    private readonly ILogger<GetAllAudienciaInteractor> _logger;
+    private readonly IReadRepository<AudienciaOrganizacion,int> _audienciaOrganizacionReadRepository;
 
     public GetAllAudienciaInteractor(IReadRepository<Entities.POCOEntities.Audiencia,int> readRepository, 
         IGetAllAudienciaOutputPort outputPort,
-        ILogger<GetAllAudienciaInteractor> logger)
+        IReadRepository<AudienciaOrganizacion,int> audienciaOrganizacionReadRepository)
     {
         _readRepository = readRepository;
         _outputPort = outputPort;
-        _logger = logger;
+        _audienciaOrganizacionReadRepository = audienciaOrganizacionReadRepository;
     }
     
     public async ValueTask Handle()
     {
         var spec = new AudienciaActivosSpecification();
+        
 
         var audiencias = await _readRepository.GetAllWithSpec(spec);
+        var audienciaOrganizaciones = await _audienciaOrganizacionReadRepository.GetAllAsync();
         
         IReadOnlyList<GetAllAudienciaViewModel> data = audiencias
             .Select(p => 
@@ -49,6 +54,7 @@ public class GetAllAudienciaInteractor : IGetAllAudienciaInputPort
                     Email2 = p.Email2,
                     Destacado = p.Destacado,
                     DocumentoIdentidad = p.DocumentoIdentidad,
+                    organizaciones = GetAudienciaOrganizacion(audienciaOrganizaciones,p.Id,p.OrganizacionId ?? 0),
                     Activo = p.Activo,
                     PublishedAt = p.PublishedAt
                 })
@@ -56,5 +62,31 @@ public class GetAllAudienciaInteractor : IGetAllAudienciaInputPort
             .AsReadOnly();
 
         await _outputPort.Handle(data);
+    }
+
+    private IReadOnlyList<AudienciaOrganizacionViewModel> GetAudienciaOrganizacion(
+        IReadOnlyList<AudienciaOrganizacion> audienciaOrganizaciones,int audienciaId, int organizacionId)
+    {
+        IReadOnlyList<AudienciaOrganizacionViewModel> audienciaOrganizacionViewModels = audienciaOrganizaciones
+            .Where(p => p.AudienciaId == audienciaId)
+            .Select(p => new AudienciaOrganizacionViewModel
+            {
+                OrganizacionId = p.OrganizacionId
+            })
+            .ToList()
+            .AsReadOnly();
+
+        List<AudienciaOrganizacionViewModel> audienciaOrganizacionViewModelsDefault =
+            new List<AudienciaOrganizacionViewModel>
+            {
+                new AudienciaOrganizacionViewModel
+                {
+                    OrganizacionId = organizacionId
+                }
+            };
+
+        return audienciaOrganizacionViewModels.Count > 0
+            ? audienciaOrganizacionViewModels
+            : audienciaOrganizacionViewModelsDefault;
     }
 }

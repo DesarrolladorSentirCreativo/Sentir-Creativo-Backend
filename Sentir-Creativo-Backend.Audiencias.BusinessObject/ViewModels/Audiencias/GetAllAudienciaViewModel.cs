@@ -1,3 +1,5 @@
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Organizaciones;
+
 namespace Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Audiencias;
 
 public class GetAllAudienciaViewModel
@@ -22,4 +24,6 @@ public class GetAllAudienciaViewModel
     public string? DocumentoIdentidad  { get; set; }
     public bool Activo { get; set; }
     public DateTime? PublishedAt { get; set; }
+    
+    public IReadOnlyList<AudienciaOrganizacionViewModel> organizaciones { get; set; }
 }
