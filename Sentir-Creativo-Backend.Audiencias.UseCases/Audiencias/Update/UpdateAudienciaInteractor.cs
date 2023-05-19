@@ -51,6 +51,7 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
         
         //eliminamos las antiguas bitacoras de la audiencia
         _unitOfWork.WriteRepository<AudienciaBitacora>().DeleteWhere(p => p.AudienciaId == dto.Id);
+        _unitOfWork.WriteRepository<AudienciaOrganizacion>().DeleteWhere(p => p.AudienciaId == dto.Id);
         
         //eliminamos las difuciones de la audiencia
         _unitOfWork.WriteRepository<AudienciaDifusion>().DeleteWhere(p => p.AudienciaId == dto.Id);
@@ -99,6 +100,15 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
             {
                 AudienciaId = dto.Id,
                 ArchivoId = audienciaArchivo.ArchivoId
+            });
+        }
+        
+        foreach (var audienciaOrganizacion in dto.Organizaciones)
+        {
+            _unitOfWork.WriteRepository<AudienciaOrganizacion>().AddEntity(new AudienciaOrganizacion()
+            {
+                AudienciaId = dto.Id,
+                OrganizacionId= audienciaOrganizacion.OrganizacionId
             });
         }
         

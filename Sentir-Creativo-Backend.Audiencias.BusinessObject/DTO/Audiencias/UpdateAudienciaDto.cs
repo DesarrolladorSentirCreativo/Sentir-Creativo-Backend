@@ -1,5 +1,6 @@
 using Senitr_Creativo_Backend.Comentarios.Entities.DTO;
 using Sentir_Creativo_Backend.Archivos.BusinessObject.DTO;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.DTO.Organizaciones;
 using Sentir_Creativo_Backend.Bitacoras.Entities.DTO;
 using Sentir_Creativo_Backend.CuponDescuentos.Entities.DTO;
 using Sentir_Creativo_Backend.Difusiones.Entities.DTO;
@@ -30,4 +31,5 @@ public class UpdateAudienciaDto
     public IReadOnlyList<IdDifusionDto> Difusiones { get; set; }
     public IReadOnlyList<IdComentarioDto> Comentarios { get; set; }
     public IReadOnlyList<IdArchivoDto> Archivos { get; set; }
+    public IReadOnlyList<IdOrganizacionDto> Organizaciones { get; set; }
 }
