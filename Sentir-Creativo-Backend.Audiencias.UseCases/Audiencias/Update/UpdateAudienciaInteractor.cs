@@ -65,17 +65,20 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
         
         //eliminamos cupones de descuento de la audiencia 
         _unitOfWork.WriteRepository<AudienciaCuponDescuento>().DeleteWhere(p => p.AudienciaId == dto.Id);
-        
-        
+
+
+        var audienciaId = dto.Id;
         //guardamos  los nuevos cupones de descuento de la audiencia
         foreach (var audienciaCuponDescuento in dto.CuponDescuentos)
         {
             _unitOfWork.WriteRepository<AudienciaCuponDescuento>().AddEntity(new AudienciaCuponDescuento()
             {
-                AudienciaId = dto.Id,
+                AudienciaId = audienciaId,
                 CuponDescuentoId = audienciaCuponDescuento.CuponDescuentoId,
             });
         }
+        
+
         
         //guardamos las nuevas difusiones de la audiencia
         foreach (var audienciaDifusion in dto.Difusiones)
@@ -87,6 +90,8 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
             });
         }
         
+
+        
         //guardamos los nuevos comentarios de la audiencia
         foreach (var audienciaComentario in dto.Comentarios)
         {
@@ -96,6 +101,8 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
                 ComentarioId = audienciaComentario.ComentarioId,
             });
         }
+        
+
         
         //guardamos los nuevos archivos de la audiencia
         foreach (var audienciaArchivo in dto.Archivos)
@@ -107,6 +114,8 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
             });
         }
         
+
+        
         foreach (var audienciaOrganizacion in dto.Organizaciones)
         {
             _unitOfWork.WriteRepository<AudienciaOrganizacion>().AddEntity(new AudienciaOrganizacion()
@@ -115,6 +124,8 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
                 OrganizacionId= audienciaOrganizacion.OrganizacionId
             });
         }
+        
+   
         
         //guardamos los nuevos datos de la audiencia
         audienciaUpdate.Nombre = dto.Nombre;

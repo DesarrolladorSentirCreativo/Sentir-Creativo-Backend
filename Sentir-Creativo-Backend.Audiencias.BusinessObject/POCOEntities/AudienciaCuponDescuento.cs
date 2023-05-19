@@ -5,7 +5,7 @@ namespace Sentir_Creativo_Backend.Audiencia.BusinessObject.POCOEntities;
 
 public class AudienciaCuponDescuento : BaseEntity<int>
 {
-    public int? AudienciaId { get; set; }
+    public int AudienciaId { get; set; }
     public int? CuponDescuentoId { get; set; }
 
     public virtual Audiencias.Entities.POCOEntities.Audiencia? Audiencia { get; set; }
