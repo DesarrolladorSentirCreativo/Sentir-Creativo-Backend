@@ -51,6 +51,7 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
         
         //eliminamos las antiguas bitacoras de la audiencia
         _unitOfWork.WriteRepository<AudienciaBitacora>().DeleteWhere(p => p.AudienciaId == dto.Id);
+        
         _unitOfWork.WriteRepository<AudienciaOrganizacion>().DeleteWhere(p => p.AudienciaId == dto.Id);
         
         //eliminamos las difuciones de la audiencia
@@ -61,6 +62,9 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
         
         //eliminamos los archivos de la audiencia
         _unitOfWork.WriteRepository<AudienciaArchivo>().DeleteWhere(p => p.AudienciaId == dto.Id);
+        
+        //eliminamos cupones de descuento de la audiencia 
+        _unitOfWork.WriteRepository<AudienciaCuponDescuento>().DeleteWhere(p => p.AudienciaId == dto.Id);
         
         
         //guardamos  los nuevos cupones de descuento de la audiencia
