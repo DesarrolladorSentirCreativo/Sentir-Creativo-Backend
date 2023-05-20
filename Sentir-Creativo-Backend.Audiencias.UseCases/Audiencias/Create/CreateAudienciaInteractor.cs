@@ -62,6 +62,8 @@ public class CreateAudienciaInteractor : ICreateAudienciaInputPort
         
         //guardamos la audiencia en la base de datos
         _unitOfWork.WriteRepository<Entities.POCOEntities.Audiencia>().AddEntity(audiencia);
+        
+        await _unitOfWork.Complete();
 
         //guardamos todos los cupones de descuento de la audiencia
         foreach (var audienciaCuponDescuento in dto.CuponDescuentos)
@@ -70,6 +72,17 @@ public class CreateAudienciaInteractor : ICreateAudienciaInputPort
             {
                 AudienciaId = audiencia.Id,
                 CuponDescuentoId = audienciaCuponDescuento.CuponDescuentoId,
+            });
+        }
+        
+        //guardamos todos los comentarios de la audiencia
+        
+        foreach (var audienciaComentario in dto.Comentarios)
+        {
+            _unitOfWork.WriteRepository<AudienciaComentario>().AddEntity(new AudienciaComentario()
+            {
+                AudienciaId = audiencia.Id,
+                ComentarioId = audienciaComentario.ComentarioId
             });
         }
         
