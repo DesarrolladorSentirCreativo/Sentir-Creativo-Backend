@@ -12,13 +12,16 @@ public class SucursalWrapperController : ControllerBase
 {
     private readonly ICreateSucursalController _createSucursalController;
     private readonly IGetAllSucursalController _getAllSucursalController;
+    private readonly IUpdateSucursalController _updateSucursalController;
     
     public SucursalWrapperController(
         ICreateSucursalController createSucursalController,
-        IGetAllSucursalController getAllSucursalController)
+        IGetAllSucursalController getAllSucursalController,
+        IUpdateSucursalController updateSucursalController)
     {
         _createSucursalController = createSucursalController;
         _getAllSucursalController = getAllSucursalController;
+        _updateSucursalController = updateSucursalController;
     }
     
     [HttpPost(Name = "CreateSucursal")]
@@ -30,4 +33,9 @@ public class SucursalWrapperController : ControllerBase
     [ProducesResponseType(typeof(IReadOnlyList<GetAllSucursalViewModel>), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<GetAllSucursalViewModel>>> GetAllSucursal()
         => Ok(await _getAllSucursalController.Handle());
+    
+    [HttpPut(Name = "UpdateSucursal")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> UpdateAudiencia([FromBody] UpdateSucursalDto dto)
+        => Ok(await _updateSucursalController.Handle(dto));
 }
