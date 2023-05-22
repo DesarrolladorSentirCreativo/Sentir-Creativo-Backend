@@ -78,6 +78,7 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new DireccionConfiguration());
         modelBuilder.ApplyConfiguration(new OrganizacionDireccionConfiguration());
         modelBuilder.ApplyConfiguration(new AudienciaOrganizacionConfiguration());
+        modelBuilder.ApplyConfiguration(new SucursalConfiguration());
     }
     
     DbSet<Bitacora> Bitacoras { get; set; }
