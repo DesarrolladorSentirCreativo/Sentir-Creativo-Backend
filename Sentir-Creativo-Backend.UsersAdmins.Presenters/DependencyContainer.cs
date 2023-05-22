@@ -1,6 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Login;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Create;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.GetAll;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters;
@@ -30,6 +31,14 @@ public static class DependencyContainer
         services.AddScoped<UpdateSucursalPresenter>();
         services.AddScoped<IUpdateSucursalPresenter>(provider => provider.GetService<UpdateSucursalPresenter>());
         services.AddScoped<IUpdateSucursalOutputPort>(provider => provider.GetService<UpdateSucursalPresenter>());
+        
+        services.AddScoped<UpdateSucursalPresenter>();
+        services.AddScoped<IUpdateSucursalPresenter>(provider => provider.GetService<UpdateSucursalPresenter>());
+        services.AddScoped<IUpdateSucursalOutputPort>(provider => provider.GetService<UpdateSucursalPresenter>());
+        
+        services.AddScoped<DeleteSucursalPresenter>();
+        services.AddScoped<IDeleteSucursalPresenter>(provider => provider.GetService<DeleteSucursalPresenter>());
+        services.AddScoped<IDeleteSucursalOutputPort>(provider => provider.GetService<DeleteSucursalPresenter>());
 
         
         return services;

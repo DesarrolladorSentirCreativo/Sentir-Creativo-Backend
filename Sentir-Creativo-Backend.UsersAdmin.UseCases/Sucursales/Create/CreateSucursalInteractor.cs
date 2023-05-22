@@ -46,7 +46,7 @@ public class CreateSucursalInteractor : ICreateSucursalInputPort
         
         var result = await _unitOfWork.Complete();
         
-        //se evalua si todo funciono correctamente
+        //se evalua si funciono correctamente
         if (result <= 0)
         {
             throw new Exception("No se pudo insertar el record de sucursales");
