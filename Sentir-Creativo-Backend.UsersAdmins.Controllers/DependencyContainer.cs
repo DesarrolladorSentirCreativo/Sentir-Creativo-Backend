@@ -15,6 +15,7 @@ public static class DependencyContainer
         
         //sucursales
         services.AddScoped<ICreateSucursalController, CreateSucursalController>();
+        services.AddScoped<IGetAllSucursalController, GetAllSucursalController>();
         
         return services;
     }
