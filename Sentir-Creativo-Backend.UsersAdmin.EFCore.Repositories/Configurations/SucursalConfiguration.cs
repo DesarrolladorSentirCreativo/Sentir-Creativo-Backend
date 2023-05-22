@@ -13,7 +13,7 @@ public class SucursalConfiguration : IEntityTypeConfiguration<Sucursal>
         builder.HasKey(p => p.Id).HasName("id");
         builder.Property(p => p.Nombre).HasColumnName("sucursal").IsRequired().HasMaxLength(60);
         builder.Property(p => p.Descripcion).HasColumnName("descripcion").HasMaxLength(1024);
-        builder.Property(p => p.Descripcion).HasColumnName("direccion").IsRequired().HasMaxLength(1024);
+        builder.Property(p => p.Direccion).HasColumnName("direccion").IsRequired().HasMaxLength(1024);
         builder.Property(p => p.PaisId).HasColumnName("pais").IsRequired();
         builder.Property(p => p.RegionId).HasColumnName("region").IsRequired();
         builder.Property(p => p.ComunaId).HasColumnName("comuna").IsRequired();
