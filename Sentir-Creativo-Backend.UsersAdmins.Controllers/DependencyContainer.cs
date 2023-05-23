@@ -1,7 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Sucursales;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Create;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.Sucursales;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.UserAdmin;
 
@@ -19,6 +18,7 @@ public static class DependencyContainer
         services.AddScoped<IUpdateSucursalController, UpdateSucursalController>();
         services.AddScoped<IDeleteSucursalController, DeleteSucursalController>();
         services.AddScoped<IGetByIdSucursalController, GetByIdSucursalController>();
+        services.AddScoped<ISelectSucursalController, SelectSucursalController>();
         
         return services;
     }

@@ -4,12 +4,14 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursal
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.GetAll;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.GetById;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.Sucursales;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Sucursales.Create;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Sucursales.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Sucursales.GetAll;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Sucursales.GetById;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.Sucursales.Select;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Sucursales.Update;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.UserAdmin.Login;
 
@@ -27,6 +29,7 @@ public static class DependencyContainer
         services.AddScoped<IUpdateSucursalInputPort, UpdateSucursalInteractor>();
         services.AddScoped<IDeleteSucursalInputPort, DeleteSucursalInteractor>();
         services.AddScoped<IGetByIdSucursalInputPort, GetByIdSucursalInteractor>();
+        services.AddScoped<ISelectSucursalInputPort, SelectSucursalInteractor>();
         
         return services;
     }

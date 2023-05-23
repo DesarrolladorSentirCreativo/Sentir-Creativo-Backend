@@ -15,24 +15,27 @@ public class SucursalWrapperController : ControllerBase
     private readonly IUpdateSucursalController _updateSucursalController;
     private readonly IDeleteSucursalController _deleteSucursalController;
     private readonly IGetByIdSucursalController _getByIdSucursalController;
+    private readonly ISelectSucursalController _selectSucursalController;
     
     public SucursalWrapperController(
         ICreateSucursalController createSucursalController,
         IGetAllSucursalController getAllSucursalController,
         IUpdateSucursalController updateSucursalController, 
         IDeleteSucursalController deleteSucursalController,
-        IGetByIdSucursalController getByIdSucursalController)
+        IGetByIdSucursalController getByIdSucursalController,
+        ISelectSucursalController selectSucursalController)
     {
         _createSucursalController = createSucursalController;
         _getAllSucursalController = getAllSucursalController;
         _updateSucursalController = updateSucursalController;
         _deleteSucursalController = deleteSucursalController;
         _getByIdSucursalController = getByIdSucursalController;
+        _selectSucursalController = selectSucursalController;
     }
     
     [HttpPost(Name = "CreateSucursal")]
     [ProducesResponseType((int)HttpStatusCode.OK)]
-    public async Task<ActionResult<int>> CreateAudiencia([FromBody] CreateSucursalDto dto)
+    public async Task<ActionResult<int>> CreateSucursal([FromBody] CreateSucursalDto dto)
         => Ok(await _createSucursalController.Handle(dto));
     
     [HttpGet]
@@ -42,7 +45,7 @@ public class SucursalWrapperController : ControllerBase
     
     [HttpPut(Name = "UpdateSucursal")]
     [ProducesResponseType((int)HttpStatusCode.OK)]
-    public async Task<ActionResult<int>> UpdateAudiencia([FromBody] UpdateSucursalDto dto)
+    public async Task<ActionResult<int>> UpdateSucursal([FromBody] UpdateSucursalDto dto)
         => Ok(await _updateSucursalController.Handle(dto));
     
     
@@ -53,6 +56,12 @@ public class SucursalWrapperController : ControllerBase
     
     [HttpGet("{id}")]
     [ProducesResponseType(typeof(GetByIdSucursalViewModel),(int)HttpStatusCode.OK)]
-    public async Task<ActionResult<GetByIdSucursalViewModel>> GetByIdAudiencia(int id)
+    public async Task<ActionResult<GetByIdSucursalViewModel>> GetByIdSucursal(int id)
         =>Ok(await _getByIdSucursalController.Handle(id));
+    
+    [HttpGet]
+    [Route("select")] 
+    [ProducesResponseType(typeof(SelectSucursalViewModel), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IReadOnlyList<SelectSucursalViewModel>>> SelectSucursal() 
+        => Ok(await _selectSucursalController.Handle());
 }
