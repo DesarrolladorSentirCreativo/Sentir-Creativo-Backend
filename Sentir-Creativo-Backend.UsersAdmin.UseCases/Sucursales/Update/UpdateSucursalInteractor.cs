@@ -43,7 +43,7 @@ public class UpdateSucursalInteractor : IUpdateSucursalInputPort
         sucursal.Direccion = dto.Direccion;
         sucursal.PaisId = dto.PaisId;
         sucursal.RegionId = dto.RegionId;
-        sucursal.ComunaId = dto.ComunaId;
+        sucursal.ComunaId = dto.CiudadId;
         sucursal.UpdatedAt = DateTime.Now;
         sucursal.UpdatedBy = dto.UserId;
         

@@ -7,6 +7,6 @@ public class GetByIdSucursalViewModel
     public string? Descripcion { get; set; }
     public int PaisId { get; set; }
     public int RegionId { get; set; }
-    public int ComunaId{ get; set; }
+    public int CiudadId{ get; set; }
     public string Direccion { get; set; }
 }

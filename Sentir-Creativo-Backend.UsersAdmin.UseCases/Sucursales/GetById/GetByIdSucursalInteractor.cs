@@ -33,7 +33,7 @@ public class GetByIdSucursalInteractor : IGetByIdSucursalInputPort
             Nombre = sucursal.Nombre,
             Descripcion = sucursal.Descripcion,
             Direccion = sucursal.Direccion,
-            ComunaId = sucursal.ComunaId,
+            CiudadId = sucursal.ComunaId,
             RegionId = sucursal.RegionId,
             PaisId = sucursal.PaisId
         };

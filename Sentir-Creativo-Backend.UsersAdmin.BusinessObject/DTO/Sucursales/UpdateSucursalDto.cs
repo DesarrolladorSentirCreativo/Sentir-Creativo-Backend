@@ -8,6 +8,6 @@ public class UpdateSucursalDto
     public string Direccion { get; set; }
     public int PaisId { get; set; }
     public int RegionId { get; set; }
-    public int ComunaId { get; set; }
+    public int CiudadId { get; set; }
     public int UserId { get; set; }
 }
