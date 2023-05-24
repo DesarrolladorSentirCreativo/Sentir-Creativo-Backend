@@ -35,7 +35,7 @@ public class GetAllSucursalInteractor : IGetAllSucursalInputPort
                     Direccion = p.Direccion,
                     PaisId = p.PaisId,
                     RegionId = p.RegionId,
-                    ComunaId = p.ComunaId,
+                    CiudadId = p.ComunaId,
                     CreatedAt = p.CreatedAt
                     
                 })

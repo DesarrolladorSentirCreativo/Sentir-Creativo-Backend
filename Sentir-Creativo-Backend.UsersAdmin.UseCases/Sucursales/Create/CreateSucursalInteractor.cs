@@ -35,7 +35,7 @@ public class CreateSucursalInteractor : ICreateSucursalInputPort
             Descripcion = dto.Descripcion,
             PaisId = dto.PaisId,
             RegionId = dto.RegionId,
-            ComunaId = dto.ComunaId,
+            ComunaId = dto.CiudadId,
             CreatedAt = DateTime.Now,
             CreatedBy = dto.UserId,
             Activo = true

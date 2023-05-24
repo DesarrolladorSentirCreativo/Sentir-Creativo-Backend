@@ -24,8 +24,8 @@ public class CreateSucursalValidator : AbstractValidator<CreateSucursalDto>
         RuleFor(p => p.RegionId)
            .NotNull().WithMessage("Region Id es requerido");
         
-        RuleFor(p => p.ComunaId)
-            .NotNull().WithMessage("Comuna Id es requerido");
+        RuleFor(p => p.CiudadId)
+            .NotNull().WithMessage("Ciudad Id es requerido");
         
         RuleFor(p => p.UserId)
             .NotNull().WithMessage("User Id es requerido");
