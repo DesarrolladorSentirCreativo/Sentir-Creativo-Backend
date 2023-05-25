@@ -1,4 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Login;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Delete;
@@ -6,7 +7,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursal
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Update;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.Sucursales;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.CategoriaPrivilegios.Create;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Sucursales.Create;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Sucursales.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Sucursales.GetAll;
@@ -30,6 +31,9 @@ public static class DependencyContainer
         services.AddScoped<IDeleteSucursalInputPort, DeleteSucursalInteractor>();
         services.AddScoped<IGetByIdSucursalInputPort, GetByIdSucursalInteractor>();
         services.AddScoped<ISelectSucursalInputPort, SelectSucursalInteractor>();
+        
+        //categorias privilegios
+        services.AddScoped<ICreateCategoriaPrivilegioInputPort, CreateCategoriaPrivilegioInteractor>();
         
         return services;
     }

@@ -12,7 +12,7 @@ public class CategoriaPrivilegioConfiguration : IEntityTypeConfiguration<Categor
         builder.ToTable("categorias_privilegios");
                         
         builder.HasKey(p => p.Id).HasName("id");
-        builder.Property(p => p.Nombre).HasColumnName("sucursal").IsRequired().HasMaxLength(50);
+        builder.Property(p => p.Nombre).HasColumnName("nombre").IsRequired().HasMaxLength(50);
         builder.Property(p => p.Descripcion).HasColumnName("descripcion").HasMaxLength(256);
         builder.Property(p => p.CreatedAt).HasColumnName("created_at");
         builder.Property(p => p.UpdatedAt).HasColumnName("updated_at");
