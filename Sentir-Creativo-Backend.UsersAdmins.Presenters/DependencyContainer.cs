@@ -2,6 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.GetAll;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Login;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Create;
@@ -72,6 +73,10 @@ public static class DependencyContainer
         services.AddScoped<DeleteCategoriaPrivilegioPresenter>();
         services.AddScoped<IDeleteCategoriaPrivilegioPresenter>(provider => provider.GetService<DeleteCategoriaPrivilegioPresenter>());
         services.AddScoped<IDeleteCategoriaPrivilegioOutputPort>(provider => provider.GetService<DeleteCategoriaPrivilegioPresenter>());
+        
+        services.AddScoped<GetByIdCategoriaPrivilegioPresenter>();
+        services.AddScoped<IGetByIdCategoriaPrivilegioPresenter>(provider => provider.GetService<GetByIdCategoriaPrivilegioPresenter>());
+        services.AddScoped<IGetByIdCategoriaPrivilegioOutputPort>(provider => provider.GetService<GetByIdCategoriaPrivilegioPresenter>());
 
 
         
