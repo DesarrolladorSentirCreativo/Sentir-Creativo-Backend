@@ -79,6 +79,7 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new OrganizacionDireccionConfiguration());
         modelBuilder.ApplyConfiguration(new AudienciaOrganizacionConfiguration());
         modelBuilder.ApplyConfiguration(new SucursalConfiguration());
+        modelBuilder.ApplyConfiguration(new CategoriaPrivilegioConfiguration());
     }
     
     DbSet<Bitacora> Bitacoras { get; set; }
@@ -119,4 +120,5 @@ public class SentirCreativoDbContext : DbContext
     DbSet<Direccion> Direcciones { get; set; }
     DbSet<OrganizacionDireccion> OrganizacionDirecciones { get; set; }
     DbSet<AudienciaOrganizacion> AudienciaOrganizaciones { get; set; }
+    DbSet<CategoriaPrivilegio> CategoriaPrivilegios { get; set; }
 }
