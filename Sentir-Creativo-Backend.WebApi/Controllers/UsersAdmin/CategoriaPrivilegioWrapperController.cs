@@ -13,15 +13,18 @@ public class CategoriaPrivilegioWrapperController: ControllerBase
     private readonly ICreateCategoriaPrivilegioController _createSCategoriaPrivilegioController;
     private readonly IGetAllCategoriaPrivilegioController _getAllSCategoriaPrivilegioController;
     private readonly IUpdateCategoriaPrivilegioController _updateSCategoriaPrivilegioController;
+    private readonly IDeleteCategoriaPrivilegioController _deleteSCategoriaPrivilegioController;
     
     public CategoriaPrivilegioWrapperController(
         ICreateCategoriaPrivilegioController createSCategoriaPrivilegioController,
         IGetAllCategoriaPrivilegioController getAllSCategoriaPrivilegioController,
-        IUpdateCategoriaPrivilegioController updateSCategoriaPrivilegioController)
+        IUpdateCategoriaPrivilegioController updateSCategoriaPrivilegioController,
+        IDeleteCategoriaPrivilegioController deleteSCategoriaPrivilegioController)
     {
         _createSCategoriaPrivilegioController = createSCategoriaPrivilegioController;
         _getAllSCategoriaPrivilegioController = getAllSCategoriaPrivilegioController;
         _updateSCategoriaPrivilegioController = updateSCategoriaPrivilegioController;
+        _deleteSCategoriaPrivilegioController = deleteSCategoriaPrivilegioController;
     }
     
     [HttpPost(Name = "CreateCategoriaPrivilegio")]
@@ -38,4 +41,11 @@ public class CategoriaPrivilegioWrapperController: ControllerBase
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> UpdateCategoriaPrivilegio([FromBody] UpdateCategoriaPrivilegioDto dto)
         => Ok(await _updateSCategoriaPrivilegioController.Handle(dto));
+    
+    [HttpPut("{id}")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> DeleteCategoriaPrivilegio(int id)
+        => Ok(await _deleteSCategoriaPrivilegioController.Handle(id));
+
+    
 }
