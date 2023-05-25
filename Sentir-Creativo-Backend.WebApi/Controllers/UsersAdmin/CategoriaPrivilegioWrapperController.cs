@@ -16,19 +16,22 @@ public class CategoriaPrivilegioWrapperController: ControllerBase
     private readonly IUpdateCategoriaPrivilegioController _updateSCategoriaPrivilegioController;
     private readonly IDeleteCategoriaPrivilegioController _deleteSCategoriaPrivilegioController;
     private readonly IGetByIdCategoriaPrivilegioController _getByIdCategoriaPrivilegioController;
+    private readonly ISelectCategoriaPrivilegioController _selectCategoriaPrivilegioController;
     
     public CategoriaPrivilegioWrapperController(
         ICreateCategoriaPrivilegioController createSCategoriaPrivilegioController,
         IGetAllCategoriaPrivilegioController getAllSCategoriaPrivilegioController,
         IUpdateCategoriaPrivilegioController updateSCategoriaPrivilegioController,
         IDeleteCategoriaPrivilegioController deleteSCategoriaPrivilegioController,
-        IGetByIdCategoriaPrivilegioController getByIdCategoriaPrivilegioController)
+        IGetByIdCategoriaPrivilegioController getByIdCategoriaPrivilegioController,
+        ISelectCategoriaPrivilegioController selectCategoriaPrivilegioController)
     {
         _createSCategoriaPrivilegioController = createSCategoriaPrivilegioController;
         _getAllSCategoriaPrivilegioController = getAllSCategoriaPrivilegioController;
         _updateSCategoriaPrivilegioController = updateSCategoriaPrivilegioController;
         _deleteSCategoriaPrivilegioController = deleteSCategoriaPrivilegioController;
         _getByIdCategoriaPrivilegioController = getByIdCategoriaPrivilegioController;
+        _selectCategoriaPrivilegioController = selectCategoriaPrivilegioController;
     }
     
     [HttpPost(Name = "CreateCategoriaPrivilegio")]
@@ -55,4 +58,10 @@ public class CategoriaPrivilegioWrapperController: ControllerBase
     [ProducesResponseType(typeof(GetByIdCategoriaPrivilegioViewModel),(int)HttpStatusCode.OK)]
     public async Task<ActionResult<GetByIdCategoriaPrivilegioViewModel>> GetByIdCategoriaPrivilegio(int id)
         =>Ok(await _getByIdCategoriaPrivilegioController.Handle(id));
+    
+    [HttpGet]
+    [Route("select")] 
+    [ProducesResponseType(typeof(SelectCategoriaPrivilegioViewModel), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IReadOnlyList<SelectCategoriaPrivilegioViewModel>>> SelectCategoriaPrivilegio() 
+        => Ok(await _selectCategoriaPrivilegioController.Handle());
 }

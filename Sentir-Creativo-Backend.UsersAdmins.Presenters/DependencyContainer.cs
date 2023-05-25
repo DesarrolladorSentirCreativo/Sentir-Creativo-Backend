@@ -3,6 +3,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Categori
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.GetAll;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.GetById;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Login;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Create;
@@ -77,6 +78,10 @@ public static class DependencyContainer
         services.AddScoped<GetByIdCategoriaPrivilegioPresenter>();
         services.AddScoped<IGetByIdCategoriaPrivilegioPresenter>(provider => provider.GetService<GetByIdCategoriaPrivilegioPresenter>());
         services.AddScoped<IGetByIdCategoriaPrivilegioOutputPort>(provider => provider.GetService<GetByIdCategoriaPrivilegioPresenter>());
+        
+        services.AddScoped<SelectCategoriaPrivilegioPresenter>();
+        services.AddScoped<ISelectCategoriaPrivilegioPresenter>(provider => provider.GetService<SelectCategoriaPrivilegioPresenter>());
+        services.AddScoped<ISelectCategoriaPrivilegioOutputPort>(provider => provider.GetService<SelectCategoriaPrivilegioPresenter>());
 
 
         
