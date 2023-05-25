@@ -12,13 +12,16 @@ public class CategoriaPrivilegioWrapperController: ControllerBase
 {
     private readonly ICreateCategoriaPrivilegioController _createSCategoriaPrivilegioController;
     private readonly IGetAllCategoriaPrivilegioController _getAllSCategoriaPrivilegioController;
+    private readonly IUpdateCategoriaPrivilegioController _updateSCategoriaPrivilegioController;
     
     public CategoriaPrivilegioWrapperController(
         ICreateCategoriaPrivilegioController createSCategoriaPrivilegioController,
-        IGetAllCategoriaPrivilegioController getAllSCategoriaPrivilegioController)
+        IGetAllCategoriaPrivilegioController getAllSCategoriaPrivilegioController,
+        IUpdateCategoriaPrivilegioController updateSCategoriaPrivilegioController)
     {
         _createSCategoriaPrivilegioController = createSCategoriaPrivilegioController;
         _getAllSCategoriaPrivilegioController = getAllSCategoriaPrivilegioController;
+        _updateSCategoriaPrivilegioController = updateSCategoriaPrivilegioController;
     }
     
     [HttpPost(Name = "CreateCategoriaPrivilegio")]
@@ -30,4 +33,9 @@ public class CategoriaPrivilegioWrapperController: ControllerBase
     [ProducesResponseType(typeof(IReadOnlyList<GetAllCategoriaPrivilegioViewModel>), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<GetAllCategoriaPrivilegioViewModel>>> GetAllCategoriaPrivilegio()
         => Ok(await _getAllSCategoriaPrivilegioController.Handle());
+    
+    [HttpPut(Name = "UpdateCategoriaPrivilegio")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> UpdateCategoriaPrivilegio([FromBody] UpdateCategoriaPrivilegioDto dto)
+        => Ok(await _updateSCategoriaPrivilegioController.Handle(dto));
 }
