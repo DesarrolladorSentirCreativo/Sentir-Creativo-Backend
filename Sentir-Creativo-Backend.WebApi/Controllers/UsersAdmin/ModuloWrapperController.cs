@@ -1,5 +1,6 @@
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.Motivaciones;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Modulos;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Modulos;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.Modulos;
@@ -16,19 +17,22 @@ public class ModuloWrapperController : ControllerBase
     private readonly IUpdateModuloController _updateModuloController;
     private readonly IDeleteModuloController _deleteModuloController;
     private readonly IGetByIdModuloController _getByIdModuloController;
+    private readonly ISelectModuloController _selectModuloController;
 
     public ModuloWrapperController(
         ICreateModuloController createModuloController,
          IGetAllModuloController getAllModuloController,
         IUpdateModuloController updateModuloController,
         IDeleteModuloController deleteModuloController,
-        IGetByIdModuloController getByIdModuloController)
+        IGetByIdModuloController getByIdModuloController,
+        ISelectModuloController selectModuloController)
     {
         _createModuloController = createModuloController;
         _getAllModuloController = getAllModuloController;
         _updateModuloController = updateModuloController;
         _deleteModuloController = deleteModuloController;
         _getByIdModuloController = getByIdModuloController;
+        _selectModuloController = selectModuloController;
     }
     
     [HttpPost(Name = "CreateModulo")]
@@ -55,4 +59,10 @@ public class ModuloWrapperController : ControllerBase
     [ProducesResponseType(typeof(GetByIdModuloViewModel),(int)HttpStatusCode.OK)]
     public async Task<ActionResult<GetByIdModuloViewModel>> GetByIdModulo(int id)
         =>Ok(await _getByIdModuloController.Handle(id));
+    
+    [HttpGet]
+    [Route("select")] 
+    [ProducesResponseType(typeof(SelectModuloViewModel), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IReadOnlyList<SelectModuloViewModel>>> SelectModulo() 
+        => Ok(await _selectModuloController.Handle());
 }

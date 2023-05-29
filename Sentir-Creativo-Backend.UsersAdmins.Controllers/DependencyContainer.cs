@@ -38,6 +38,7 @@ public static class DependencyContainer
         services.AddScoped<IUpdateModuloController, UpdateModuloController>();
         services.AddScoped<IDeleteModuloController, DeleteModuloController>();
         services.AddScoped<IGetByIdModuloController, GetByIdModuloController>();
+        services.AddScoped<ISelectModuloController, SelectModuloController>();
         
         return services;
     }
