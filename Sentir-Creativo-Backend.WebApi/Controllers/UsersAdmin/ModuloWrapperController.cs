@@ -13,13 +13,16 @@ public class ModuloWrapperController : ControllerBase
 {
     private readonly ICreateModuloController _createModuloController;
     private readonly IGetAllModuloController _getAllModuloController;
+    private readonly IUpdateModuloController _updateModuloController;
 
     public ModuloWrapperController(
         ICreateModuloController createModuloController,
-         IGetAllModuloController getAllModuloController)
+         IGetAllModuloController getAllModuloController,
+        IUpdateModuloController updateModuloController)
     {
         _createModuloController = createModuloController;
         _getAllModuloController = getAllModuloController;
+        _updateModuloController = updateModuloController;
     }
     
     [HttpPost(Name = "CreateModulo")]
@@ -31,4 +34,9 @@ public class ModuloWrapperController : ControllerBase
     [ProducesResponseType(typeof(IReadOnlyList<GetAllModuloPresenter>), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<GetAllModuloViewModel>>> GetAllModulo()
         => Ok(await _getAllModuloController.Handle());
+    
+    [HttpPut(Name = "UpdateModulo")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> UpdateModulo([FromBody] UpdateModuloDto dto)
+        => Ok(await _updateModuloController.Handle(dto));
 }
