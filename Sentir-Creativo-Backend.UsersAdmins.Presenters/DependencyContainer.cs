@@ -9,6 +9,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Login;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.GetAll;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Delete;
@@ -105,6 +106,10 @@ public static class DependencyContainer
         services.AddScoped<DeleteModuloPresenter>();
         services.AddScoped<IDeleteModuloPresenter>(provider => provider.GetService<DeleteModuloPresenter>());
         services.AddScoped<IDeleteModuloOutputPort>(provider => provider.GetService<DeleteModuloPresenter>());
+            
+        services.AddScoped<GetByIdModuloPresenter>();
+        services.AddScoped<IGetByIdModuloPresenter>(provider => provider.GetService<GetByIdModuloPresenter>());
+        services.AddScoped<IGetByIdModuloOutputPort>(provider => provider.GetService<GetByIdModuloPresenter>());
 
         
         return services;
