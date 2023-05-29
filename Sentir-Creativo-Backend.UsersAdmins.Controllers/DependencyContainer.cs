@@ -34,6 +34,7 @@ public static class DependencyContainer
         
         //modulos
         services.AddScoped<ICreateModuloController, CreateModuloController>();
+        services.AddScoped<IGetAllModuloController, GetAllModuloController>();
         
         return services;
     }
