@@ -1,8 +1,10 @@
 using Microsoft.Extensions.DependencyInjection;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.CategoriaPrivilegios;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Modulos;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Sucursales;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.CategoriaPrivilegios;
+using Sentir_Creativo_Backend.UsersAdmins.Controllers.Modulos;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.Sucursales;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.UserAdmin;
 
@@ -29,6 +31,9 @@ public static class DependencyContainer
         services.AddScoped<IDeleteCategoriaPrivilegioController, DeleteCategoriaPrivilegioController>();
         services.AddScoped<IGetByIdCategoriaPrivilegioController, GetByIdCategoriaPrivilegioController>();
         services.AddScoped<ISelectCategoriaPrivilegioController, SelectCategoriaPrivilegioController>();
+        
+        //modulos
+        services.AddScoped<ICreateModuloController, CreateModuloController>();
         
         return services;
     }

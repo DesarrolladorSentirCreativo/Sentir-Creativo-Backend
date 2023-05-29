@@ -6,6 +6,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Categori
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Login;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.GetAll;
@@ -14,9 +15,11 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursal
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.CategoriaPrivilegios;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Modulos;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Sucursales;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.AdminUser;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.CategoriaPrivilegios;
+using Sentir_Creativo_Backend.UsersAdmins.Presenters.Modulos;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Sucursales;
 
 namespace Sentir_Creativo_Backend.UsersAdmins.Presenters;
@@ -82,7 +85,11 @@ public static class DependencyContainer
         services.AddScoped<SelectCategoriaPrivilegioPresenter>();
         services.AddScoped<ISelectCategoriaPrivilegioPresenter>(provider => provider.GetService<SelectCategoriaPrivilegioPresenter>());
         services.AddScoped<ISelectCategoriaPrivilegioOutputPort>(provider => provider.GetService<SelectCategoriaPrivilegioPresenter>());
-
+        
+        //modulos
+        services.AddScoped<CreateModuloPresenter>();
+        services.AddScoped<ICreateModuloPresenter>(provider => provider.GetService<CreateModuloPresenter>());
+        services.AddScoped<ICreateModuloOutputPort>(provider => provider.GetService<CreateModuloPresenter>());
 
         
         return services;
