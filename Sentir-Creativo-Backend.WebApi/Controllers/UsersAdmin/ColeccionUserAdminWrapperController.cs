@@ -15,19 +15,22 @@ public class ColeccionUserAdminWrapperController : ControllerBase
     private readonly IUpdateColeccionUserAdminController _updateColeccionUserAdminController;
     private readonly IDeleteColeccionUserAdminController _deleteColeccionUserAdminController;
     private readonly IGetByIdColeccionUserAdminController _getByIdColeccionUserAdminController;
+    private readonly ISelectColeccionUserAdminController _selectColeccionUserAdminController;
     
     public ColeccionUserAdminWrapperController(
         ICreateColeccionUserAdminController createColeccionUserAdminController,
         IGetAllColeccionUserAdminController getAllColeccionUserAdminController,
         IUpdateColeccionUserAdminController updateColeccionUserAdminController,
         IDeleteColeccionUserAdminController deleteColeccionUserAdminController,
-        IGetByIdColeccionUserAdminController getByIdColeccionUserAdminController)
+        IGetByIdColeccionUserAdminController getByIdColeccionUserAdminController,
+        ISelectColeccionUserAdminController selectColeccionUserAdminController)
     {
         _createColeccionUserAdminController = createColeccionUserAdminController;
         _getAllColeccionUserAdminController = getAllColeccionUserAdminController;
         _updateColeccionUserAdminController = updateColeccionUserAdminController;
         _deleteColeccionUserAdminController = deleteColeccionUserAdminController;
         _getByIdColeccionUserAdminController = getByIdColeccionUserAdminController;
+        _selectColeccionUserAdminController = selectColeccionUserAdminController;
     }
     
     [HttpPost(Name = "CreateColeccionUserAdmin")]
@@ -55,5 +58,11 @@ public class ColeccionUserAdminWrapperController : ControllerBase
     [ProducesResponseType(typeof(GetByIdColeccionUserAdminViewModel),(int)HttpStatusCode.OK)]
     public async Task<ActionResult<GetByIdColeccionUserAdminViewModel>> GetByIdColeccionUserAdmin(int id)
         =>Ok(await _getByIdColeccionUserAdminController.Handle(id));
+    
+    [HttpGet]
+    [Route("select")] 
+    [ProducesResponseType(typeof(SelectColeccionUserAdminViewModel), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IReadOnlyList<SelectColeccionUserAdminViewModel>>> SelectColeccionUserAdmin() 
+        => Ok(await _selectColeccionUserAdminController.Handle());
 
 }
