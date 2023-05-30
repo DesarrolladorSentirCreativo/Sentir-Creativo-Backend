@@ -8,6 +8,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Categori
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.GetAll;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Login;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Create;
@@ -138,6 +139,10 @@ public static class DependencyContainer
         services.AddScoped<DeleteColeccionUserAdminPresenter>();
         services.AddScoped<IDeleteColeccionUserAdminPresenter>(provider => provider.GetService<DeleteColeccionUserAdminPresenter>());
         services.AddScoped<IDeleteColeccionUserAdminOutputPort>(provider => provider.GetService<DeleteColeccionUserAdminPresenter>());
+        
+        services.AddScoped<GetByIdColeccionUserAdminPresenter>();
+        services.AddScoped<IGetByIdColeccionUserAdminPresenter>(provider => provider.GetService<GetByIdColeccionUserAdminPresenter>());
+        services.AddScoped<IGetByIdColeccionUserAdminOutputPort>(provider => provider.GetService<GetByIdColeccionUserAdminPresenter>());
         
         return services;
     }

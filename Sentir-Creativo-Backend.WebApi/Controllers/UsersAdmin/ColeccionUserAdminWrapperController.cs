@@ -14,17 +14,20 @@ public class ColeccionUserAdminWrapperController : ControllerBase
     private readonly IGetAllColeccionUserAdminController _getAllColeccionUserAdminController;
     private readonly IUpdateColeccionUserAdminController _updateColeccionUserAdminController;
     private readonly IDeleteColeccionUserAdminController _deleteColeccionUserAdminController;
+    private readonly IGetByIdColeccionUserAdminController _getByIdColeccionUserAdminController;
     
     public ColeccionUserAdminWrapperController(
         ICreateColeccionUserAdminController createColeccionUserAdminController,
         IGetAllColeccionUserAdminController getAllColeccionUserAdminController,
         IUpdateColeccionUserAdminController updateColeccionUserAdminController,
-        IDeleteColeccionUserAdminController deleteColeccionUserAdminController)
+        IDeleteColeccionUserAdminController deleteColeccionUserAdminController,
+        IGetByIdColeccionUserAdminController getByIdColeccionUserAdminController)
     {
         _createColeccionUserAdminController = createColeccionUserAdminController;
         _getAllColeccionUserAdminController = getAllColeccionUserAdminController;
         _updateColeccionUserAdminController = updateColeccionUserAdminController;
         _deleteColeccionUserAdminController = deleteColeccionUserAdminController;
+        _getByIdColeccionUserAdminController = getByIdColeccionUserAdminController;
     }
     
     [HttpPost(Name = "CreateColeccionUserAdmin")]
@@ -47,5 +50,10 @@ public class ColeccionUserAdminWrapperController : ControllerBase
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> DeleteColeccionUserAdmin(int id)
         => Ok(await _deleteColeccionUserAdminController.Handle(id));
+    
+    [HttpGet("{id}")]
+    [ProducesResponseType(typeof(GetByIdColeccionUserAdminViewModel),(int)HttpStatusCode.OK)]
+    public async Task<ActionResult<GetByIdColeccionUserAdminViewModel>> GetByIdColeccionUserAdmin(int id)
+        =>Ok(await _getByIdColeccionUserAdminController.Handle(id));
 
 }
