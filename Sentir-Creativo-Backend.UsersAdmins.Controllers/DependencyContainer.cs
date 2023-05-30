@@ -46,6 +46,7 @@ public static class DependencyContainer
         services.AddScoped<ICreateColeccionUserAdminController, CreateColeccionUserAdminController>();
         services.AddScoped<IGetAllColeccionUserAdminController, GetAllColeccionUserAdminController>();
         services.AddScoped<IUpdateColeccionUserAdminController, UpdateColeccionUserAdminController>();
+        services.AddScoped<IDeleteColeccionUserAdminController, DeleteColeccionUserAdminController>();
         
         return services;
     }

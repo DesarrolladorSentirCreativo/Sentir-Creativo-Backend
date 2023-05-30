@@ -13,15 +13,18 @@ public class ColeccionUserAdminWrapperController : ControllerBase
     private readonly ICreateColeccionUserAdminController _createColeccionUserAdminController;
     private readonly IGetAllColeccionUserAdminController _getAllColeccionUserAdminController;
     private readonly IUpdateColeccionUserAdminController _updateColeccionUserAdminController;
+    private readonly IDeleteColeccionUserAdminController _deleteColeccionUserAdminController;
     
     public ColeccionUserAdminWrapperController(
         ICreateColeccionUserAdminController createColeccionUserAdminController,
         IGetAllColeccionUserAdminController getAllColeccionUserAdminController,
-        IUpdateColeccionUserAdminController updateColeccionUserAdminController)
+        IUpdateColeccionUserAdminController updateColeccionUserAdminController,
+        IDeleteColeccionUserAdminController deleteColeccionUserAdminController)
     {
         _createColeccionUserAdminController = createColeccionUserAdminController;
         _getAllColeccionUserAdminController = getAllColeccionUserAdminController;
         _updateColeccionUserAdminController = updateColeccionUserAdminController;
+        _deleteColeccionUserAdminController = deleteColeccionUserAdminController;
     }
     
     [HttpPost(Name = "CreateColeccionUserAdmin")]
@@ -39,5 +42,10 @@ public class ColeccionUserAdminWrapperController : ControllerBase
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> UpdateColeccionUserAdmin([FromBody] UpdateColeccionUserAdminDto dto)
         => Ok(await _updateColeccionUserAdminController.Handle(dto));
+    
+    [HttpPut("{id}")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> DeleteColeccionUserAdmin(int id)
+        => Ok(await _deleteColeccionUserAdminController.Handle(id));
 
 }
