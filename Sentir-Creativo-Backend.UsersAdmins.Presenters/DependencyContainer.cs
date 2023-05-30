@@ -5,6 +5,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Categori
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Update;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Login;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Delete;
@@ -20,10 +21,12 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursal
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.CategoriaPrivilegios;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.ColeccionesUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Modulos;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Sucursales;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.AdminUser;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.CategoriaPrivilegios;
+using Sentir_Creativo_Backend.UsersAdmins.Presenters.ColeccionesUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Modulos;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Sucursales;
 
@@ -115,6 +118,11 @@ public static class DependencyContainer
         services.AddScoped<SelectModuloPresenter>();
         services.AddScoped<ISelectModuloPresenter>(provider => provider.GetService<SelectModuloPresenter>());
         services.AddScoped<ISelectModuloOutputPort>(provider => provider.GetService<SelectModuloPresenter>());
+        
+        //colecciones
+        services.AddScoped<CreateColeccionUserAdminPresenter>();
+        services.AddScoped<ICreateColeccionUserAdminPresenter>(provider => provider.GetService<CreateColeccionUserAdminPresenter>());
+        services.AddScoped<ICreateColeccionUserAdminOutputPort>(provider => provider.GetService<CreateColeccionUserAdminPresenter>());
         
         return services;
     }
