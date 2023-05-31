@@ -35,8 +35,9 @@ public class SentirCreativoDbContext : DbContext
 {
     public SentirCreativoDbContext(DbContextOptions<SentirCreativoDbContext> options) : base(options)
     {
-            
+        
     }
+    
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

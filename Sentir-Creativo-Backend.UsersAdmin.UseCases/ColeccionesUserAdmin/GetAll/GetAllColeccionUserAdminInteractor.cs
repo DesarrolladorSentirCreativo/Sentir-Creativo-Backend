@@ -30,7 +30,7 @@ public class GetAllColeccionUserAdminInteractor : IGetAllColeccionUserAdminInput
                 {
                     Id = p.Id,
                     Nombre = p.Nombre,
-                    Modulo = p.Modulo.Nombre,
+                    ModuloId = p.ModuloId,
                     Descripcion = p.Descripcion,
 
                 })

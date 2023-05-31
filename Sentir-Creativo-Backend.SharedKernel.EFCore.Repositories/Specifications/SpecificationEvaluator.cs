@@ -8,6 +8,7 @@ public class SpecificationEvaluator<T> where T : class
     public static IQueryable<T> GetQuery(IQueryable<T> inputQuery, ISpecification<T> spec)
     {
         
+        
         if (spec.Criteria != null)
         { 
             inputQuery = inputQuery.Where(spec.Criteria);
