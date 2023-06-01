@@ -27,7 +27,7 @@ public class DeleteArchivoInteractor : IDeleteArchivoInputPort
         
         archivo.Activo = false;
         
-        _unitOfWork.WriteRepository<Archivo>().UpdateEntity(archivo);
+        _unitOfWork.WriteRepository<Archivo,int>().UpdateEntity(archivo);
 
         var result = await _unitOfWork.Complete();
         

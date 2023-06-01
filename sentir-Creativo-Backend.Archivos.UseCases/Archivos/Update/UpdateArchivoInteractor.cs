@@ -45,7 +45,7 @@ public class UpdateArchivoInteractor : IUpdateArchivoInputPort
         archivo.UpdatedAt = DateTime.Now;
         
         //actualizamos los datos
-        _unitOfWork.WriteRepository<Archivo>().UpdateEntity(archivo);
+        _unitOfWork.WriteRepository<Archivo,int>().UpdateEntity(archivo);
 
         await _unitOfWork.Complete();
 

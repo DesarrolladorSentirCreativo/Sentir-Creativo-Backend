@@ -46,7 +46,7 @@ public class CreateOrganizacionInteractor : ICreateOrganizacionInputPort
         };
         
         //guardamos la organizacion en la base de datos
-        _unitOfWork.WriteRepository<Organizacion>().AddEntity(organizacion);
+        _unitOfWork.WriteRepository<Organizacion,int>().AddEntity(organizacion);
         
         
 
@@ -60,7 +60,7 @@ public class CreateOrganizacionInteractor : ICreateOrganizacionInputPort
         };
         
         //guardamos la dirección en la base de datos
-        _unitOfWork.WriteRepository<Direccion>().AddEntity(direccion);
+        _unitOfWork.WriteRepository<Direccion,int>().AddEntity(direccion);
         
         await _unitOfWork.Complete();
         
@@ -73,7 +73,7 @@ public class CreateOrganizacionInteractor : ICreateOrganizacionInputPort
         };
         
         //guardamos la dirección para la organizacion
-        _unitOfWork.WriteRepository<OrganizacionDireccion>().AddEntity(organizacionDireccion);
+        _unitOfWork.WriteRepository<OrganizacionDireccion,int>().AddEntity(organizacionDireccion);
         
         //confirmamos los cambios en la base de datos
         var result = await _unitOfWork.Complete();

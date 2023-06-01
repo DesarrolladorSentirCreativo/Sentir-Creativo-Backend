@@ -25,6 +25,7 @@ using Sentir_Creativo_Backend.PublicoObjetivos.EFCore.Repositories.Configuration
 using Sentir_Creativo_Backend.PublicoObjetivos.Entities.POCOEntities;
 using Sentir_Creativo_Backend.Servicios.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.Servicios.Entities.POCOEntities;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.POCOEntities;
 using Sentir_Creativo_Backend.UsersAdmin.EFCore.Repositories.Configurations;
 using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
 using Sentir_Cretivo_Backend.Difusiones.EFCore.Repositories.Configuraciones;
@@ -83,6 +84,9 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new CategoriaPrivilegioConfiguration());
         modelBuilder.ApplyConfiguration(new ModuloConfiguration());
         modelBuilder.ApplyConfiguration(new ColeccionUserAdminConfiguration());
+        modelBuilder.ApplyConfiguration(new AccesoConfiguration());
+        modelBuilder.ApplyConfiguration(new PrivilegioConfiguration());
+        modelBuilder.ApplyConfiguration(new PrivilegioAccesoConfiguration());
     }
     
     DbSet<Bitacora> Bitacoras { get; set; }
@@ -124,4 +128,7 @@ public class SentirCreativoDbContext : DbContext
     DbSet<OrganizacionDireccion> OrganizacionDirecciones { get; set; }
     DbSet<AudienciaOrganizacion> AudienciaOrganizaciones { get; set; }
     DbSet<CategoriaPrivilegio> CategoriaPrivilegios { get; set; }
+    DbSet<Privilegio> Privilegios { get; set; }
+    DbSet<Acceso> Accesos { get; set; }
+    DbSet<PrivilegioAcceso> PrivilegioAccesos { get; set; }
 }

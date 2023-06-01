@@ -41,7 +41,7 @@ public class UpdateComentarioInteractor : IUpdateComentarioInputPort
         comentario.CreatedBy = dto.UserId;
         comentario.UpdatedBy = dto.UserId;
         
-        _unitOfWork.WriteRepository<Comentario>().UpdateEntity(comentario);
+        _unitOfWork.WriteRepository<Comentario,int>().UpdateEntity(comentario);
 
         var result = await _unitOfWork.Complete();
         

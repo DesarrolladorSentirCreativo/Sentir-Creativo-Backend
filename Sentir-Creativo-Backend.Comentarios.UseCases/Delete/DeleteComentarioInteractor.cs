@@ -26,7 +26,7 @@ public class DeleteComentarioInteractor : IDeleteComentarioInputPort
 
         if (comentario == null) throw new Exception("El comentario no se encuentra registrado");
         
-        _unitOfWork.WriteRepository<Comentario>().DeleteEntity(comentario);
+        _unitOfWork.WriteRepository<Comentario,int>().DeleteEntity(comentario);
 
         await _unitOfWork.Complete();
 

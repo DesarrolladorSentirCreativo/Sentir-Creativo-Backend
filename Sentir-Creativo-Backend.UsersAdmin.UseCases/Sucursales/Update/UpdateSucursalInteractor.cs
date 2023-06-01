@@ -47,7 +47,7 @@ public class UpdateSucursalInteractor : IUpdateSucursalInputPort
         sucursal.UpdatedAt = DateTime.Now;
         sucursal.UpdatedBy = dto.UserId;
         
-        _unitOfWork.WriteRepository<Sucursal>().UpdateEntity(sucursal);
+        _unitOfWork.WriteRepository<Sucursal,int>().UpdateEntity(sucursal);
         
         var result = await _unitOfWork.Complete();
         

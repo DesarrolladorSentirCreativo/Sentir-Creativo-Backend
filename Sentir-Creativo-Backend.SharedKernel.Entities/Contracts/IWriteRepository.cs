@@ -3,7 +3,7 @@ using Sentir_Creativo_Backend.SharedKernel.Entities.POCOEntities;
 
 namespace Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
 
-public interface IWriteRepository<T> where T : BaseEntity<int>
+public interface IWriteRepository<T,TId> where T : BaseEntity<TId>
 {
     Task<T> AddAsync(T entity);
     Task<T> UpdateAsync(T entity);

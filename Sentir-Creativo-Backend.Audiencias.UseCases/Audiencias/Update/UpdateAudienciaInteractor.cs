@@ -50,28 +50,28 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
         }
         
         //eliminamos las antiguas bitacoras de la audiencia
-        _unitOfWork.WriteRepository<AudienciaBitacora>().DeleteWhere(p => p.AudienciaId == dto.Id);
+        _unitOfWork.WriteRepository<AudienciaBitacora,int>().DeleteWhere(p => p.AudienciaId == dto.Id);
         
-        _unitOfWork.WriteRepository<AudienciaOrganizacion>().DeleteWhere(p => p.AudienciaId == dto.Id);
+        _unitOfWork.WriteRepository<AudienciaOrganizacion,int>().DeleteWhere(p => p.AudienciaId == dto.Id);
         
         //eliminamos las difuciones de la audiencia
-        _unitOfWork.WriteRepository<AudienciaDifusion>().DeleteWhere(p => p.AudienciaId == dto.Id);
+        _unitOfWork.WriteRepository<AudienciaDifusion,int>().DeleteWhere(p => p.AudienciaId == dto.Id);
         
         //eliminamos los comentarios de la audiencia
-        _unitOfWork.WriteRepository<AudienciaComentario>().DeleteWhere(p => p.AudienciaId == dto.Id);
+        _unitOfWork.WriteRepository<AudienciaComentario,int>().DeleteWhere(p => p.AudienciaId == dto.Id);
         
         //eliminamos los archivos de la audiencia
-        _unitOfWork.WriteRepository<AudienciaArchivo>().DeleteWhere(p => p.AudienciaId == dto.Id);
+        _unitOfWork.WriteRepository<AudienciaArchivo,int>().DeleteWhere(p => p.AudienciaId == dto.Id);
         
         //eliminamos cupones de descuento de la audiencia 
-        _unitOfWork.WriteRepository<AudienciaCuponDescuento>().DeleteWhere(p => p.AudienciaId == dto.Id);
+        _unitOfWork.WriteRepository<AudienciaCuponDescuento,int>().DeleteWhere(p => p.AudienciaId == dto.Id);
 
 
         var audienciaId = dto.Id;
         //guardamos  los nuevos cupones de descuento de la audiencia
         foreach (var audienciaCuponDescuento in dto.CuponDescuentos)
         {
-            _unitOfWork.WriteRepository<AudienciaCuponDescuento>().AddEntity(new AudienciaCuponDescuento()
+            _unitOfWork.WriteRepository<AudienciaCuponDescuento,int>().AddEntity(new AudienciaCuponDescuento()
             {
                 AudienciaId = audienciaId,
                 CuponDescuentoId = audienciaCuponDescuento.CuponDescuentoId,
@@ -83,7 +83,7 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
         //guardamos las nuevas difusiones de la audiencia
         foreach (var audienciaDifusion in dto.Difusiones)
         {
-            _unitOfWork.WriteRepository<AudienciaDifusion>().AddEntity(new AudienciaDifusion()
+            _unitOfWork.WriteRepository<AudienciaDifusion,int>().AddEntity(new AudienciaDifusion()
             {
                 AudienciaId = dto.Id,
                 DifusionId = audienciaDifusion.DifusionId,
@@ -95,7 +95,7 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
         //guardamos los nuevos comentarios de la audiencia
         foreach (var audienciaComentario in dto.Comentarios)
         {
-            _unitOfWork.WriteRepository<AudienciaComentario>().AddEntity(new AudienciaComentario()
+            _unitOfWork.WriteRepository<AudienciaComentario,int>().AddEntity(new AudienciaComentario()
             {
                 AudienciaId = dto.Id,
                 ComentarioId = audienciaComentario.ComentarioId,
@@ -107,7 +107,7 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
         //guardamos los nuevos archivos de la audiencia
         foreach (var audienciaArchivo in dto.Archivos)
         {
-            _unitOfWork.WriteRepository<AudienciaArchivo>().AddEntity(new AudienciaArchivo()
+            _unitOfWork.WriteRepository<AudienciaArchivo,int>().AddEntity(new AudienciaArchivo()
             {
                 AudienciaId = dto.Id,
                 ArchivoId = audienciaArchivo.ArchivoId
@@ -118,7 +118,7 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
         
         foreach (var audienciaOrganizacion in dto.Organizaciones)
         {
-            _unitOfWork.WriteRepository<AudienciaOrganizacion>().AddEntity(new AudienciaOrganizacion()
+            _unitOfWork.WriteRepository<AudienciaOrganizacion,int>().AddEntity(new AudienciaOrganizacion()
             {
                 AudienciaId = dto.Id,
                 OrganizacionId= audienciaOrganizacion.OrganizacionId
@@ -147,7 +147,7 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
         audienciaUpdate.UpdatedAt = DateTime.Now;
         audienciaUpdate.UpdatedBy = dto.UserId;
         
-        _unitOfWork.WriteRepository<Entities.POCOEntities.Audiencia>().UpdateEntity(audienciaUpdate);
+        _unitOfWork.WriteRepository<Entities.POCOEntities.Audiencia,int>().UpdateEntity(audienciaUpdate);
         
         //guardamos los cambios en la base de datos
        var result = await _unitOfWork.Complete();

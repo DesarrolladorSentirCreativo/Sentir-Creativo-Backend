@@ -30,7 +30,7 @@ public class DeleteCategoriaPrivilegioInteractor : IDeleteCategoriaPrivilegioInp
 
         categoriaPrivilegio.Activo = false;
         
-        _unitOfWork.WriteRepository<CategoriaPrivilegio>().UpdateEntity(categoriaPrivilegio);
+        _unitOfWork.WriteRepository<CategoriaPrivilegio,int>().UpdateEntity(categoriaPrivilegio);
         
         var result = await _unitOfWork.Complete();
         

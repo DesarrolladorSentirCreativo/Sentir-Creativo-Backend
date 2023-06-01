@@ -18,6 +18,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Update;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.GetAll;
@@ -28,11 +29,13 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.CategoriaPrivilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.ColeccionesUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Modulos;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Sucursales;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.AdminUser;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.CategoriaPrivilegios;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.ColeccionesUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Modulos;
+using Sentir_Creativo_Backend.UsersAdmins.Presenters.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Sucursales;
 
 namespace Sentir_Creativo_Backend.UsersAdmins.Presenters;
@@ -148,6 +151,11 @@ public static class DependencyContainer
         services.AddScoped<SelectColeccionUserAdminPresenter>();
         services.AddScoped<ISelectColeccionUserAdminAdminPresenter>(provider => provider.GetService<SelectColeccionUserAdminPresenter>());
         services.AddScoped<ISelectColeccionUserAdminOutputPort>(provider => provider.GetService<SelectColeccionUserAdminPresenter>());
+        
+        //privilegios
+        services.AddScoped<CreatePrivilegioPresenter>();
+        services.AddScoped<ICreatePrivilegioPresenter>(provider => provider.GetService<CreatePrivilegioPresenter>());
+        services.AddScoped<ICreatePrivilegioOutputPort>(provider => provider.GetService<CreatePrivilegioPresenter>());
         
         return services;
     }

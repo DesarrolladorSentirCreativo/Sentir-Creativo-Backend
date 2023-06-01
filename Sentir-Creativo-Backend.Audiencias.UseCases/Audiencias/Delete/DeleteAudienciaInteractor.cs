@@ -27,7 +27,7 @@ public class DeleteAudienciaInteractor : IDeleteAudienciaInputPort
 
         audiencia.Activo = false;
         
-        _unitOfWork.WriteRepository<Entities.POCOEntities.Audiencia>().UpdateEntity(audiencia);
+        _unitOfWork.WriteRepository<Entities.POCOEntities.Audiencia,int>().UpdateEntity(audiencia);
 
         await _unitOfWork.Complete();
 

@@ -36,7 +36,7 @@ public class CreateModuloInteractor : ICreateModuloInputPort
             Activo = true
         };
         
-        _unitOfWork.WriteRepository<Modulo>().AddEntity(modulo);
+        _unitOfWork.WriteRepository<Modulo,int>().AddEntity(modulo);
         
         var result = await _unitOfWork.Complete();
         

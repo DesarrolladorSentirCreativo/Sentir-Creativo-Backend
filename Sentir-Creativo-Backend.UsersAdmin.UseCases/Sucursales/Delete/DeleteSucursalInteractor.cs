@@ -33,7 +33,7 @@ public class DeleteSucursalInteractor : IDeleteSucursalInputPort
 
         sucursal.Activo = false;
         
-        _unitOfWork.WriteRepository<Sucursal>().UpdateEntity(sucursal);
+        _unitOfWork.WriteRepository<Sucursal,int>().UpdateEntity(sucursal);
 
         var result = await _unitOfWork.Complete();
         

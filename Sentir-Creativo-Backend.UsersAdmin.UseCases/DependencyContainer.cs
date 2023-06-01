@@ -18,6 +18,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Update;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.GetAll;
@@ -42,6 +43,7 @@ using Sentir_Creativo_Backend.UsersAdmin.UseCases.Modulos.GetAll;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Modulos.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Modulos.Select;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Modulos.Update;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.Privilegios.Create;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Sucursales.Create;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Sucursales.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Sucursales.GetAll;
@@ -89,6 +91,9 @@ public static class DependencyContainer
         services.AddScoped<IDeleteColeccionUserAdminInputPort, DeleteColeccionUserAdminInteractor>();
         services.AddScoped<IGetByIdColeccionUserAdminInputPort, GetByIdColeccionUserAdminInteractor>();
         services.AddScoped<ISelectColeccionUserAdminInputPort, SelectColeccionUserAdminInteractor>();
+        
+        //privilegios
+        services.AddScoped<ICreatePrivilegioInputPort, CreatePrivilegioInteractor>();
         
         return services;
     }

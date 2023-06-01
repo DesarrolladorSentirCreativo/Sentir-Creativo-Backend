@@ -31,7 +31,7 @@ public class DeleteColeccionUserAdminInteractor : IDeleteColeccionUserAdminInput
         
         coleccionUserAdmin.Activo = false;
         
-        _unitOfWork.WriteRepository<ColeccionUserAdmin>().UpdateEntity(coleccionUserAdmin);
+        _unitOfWork.WriteRepository<ColeccionUserAdmin,int>().UpdateEntity(coleccionUserAdmin);
         
         var result = await _unitOfWork.Complete();
         

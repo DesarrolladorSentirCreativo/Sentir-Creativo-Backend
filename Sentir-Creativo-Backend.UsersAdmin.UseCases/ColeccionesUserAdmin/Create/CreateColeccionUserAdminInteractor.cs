@@ -38,7 +38,7 @@ public class CreateColeccionUserAdminInteractor : ICreateColeccionUserAdminInput
             Activo = true
         };
         
-        _unitOfWork.WriteRepository<ColeccionUserAdmin>().AddEntity(coleccionUserAdmin);
+        _unitOfWork.WriteRepository<ColeccionUserAdmin,int>().AddEntity(coleccionUserAdmin);
         
         var result = await _unitOfWork.Complete();
         

@@ -20,7 +20,7 @@ public class UnitOfWork: IUnitOfWork
         _context.Dispose();
     }
 
-    public IWriteRepository<TEntity> WriteRepository<TEntity>() where TEntity : BaseEntity<int>
+    public IWriteRepository<TEntity,TId> WriteRepository<TEntity,TId>() where TEntity : BaseEntity<TId>
     {
         if (_repositories == null)
         { 
@@ -31,12 +31,12 @@ public class UnitOfWork: IUnitOfWork
 
         if (!_repositories.ContainsKey(type))
         {
-            var repositoryType = typeof(BaseWriteRepository<>);
-            var repositoryInstance = Activator.CreateInstance(repositoryType.MakeGenericType(typeof(TEntity)), _context);
+            var repositoryType = typeof(BaseWriteRepository<,>);
+            var repositoryInstance = Activator.CreateInstance(repositoryType.MakeGenericType(typeof(TEntity), typeof(TId)), _context);
             _repositories.Add(type, repositoryInstance);
         }
 
-        return (IWriteRepository<TEntity>)_repositories[type];
+        return (IWriteRepository<TEntity,TId>)_repositories[type];
     }
 
     public async Task<int> Complete()

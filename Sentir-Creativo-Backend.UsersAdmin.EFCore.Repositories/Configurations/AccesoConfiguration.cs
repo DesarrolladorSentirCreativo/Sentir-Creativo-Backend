@@ -11,7 +11,6 @@ public class AccesoConfiguration : IEntityTypeConfiguration<Acceso>
         builder.ToTable("accesos");
                         
         builder.HasKey(p => p.Id).HasName("id");
-        builder.Property(p => p.Nombre).HasColumnName("nombre").IsRequired().HasMaxLength(50);
         builder.Property(p => p.ColeccionId).HasColumnName("coleccion").IsRequired();
         builder.Property(p => p.Crear).HasColumnName("crear").IsRequired();
         builder.Property(p => p.Actualizar).HasColumnName("actualizar").IsRequired();

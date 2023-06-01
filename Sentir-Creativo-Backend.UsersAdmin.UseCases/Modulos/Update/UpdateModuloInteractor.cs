@@ -44,7 +44,7 @@ public class UpdateModuloInteractor : IUpdateModuloInputPort
         modulo.UpdatedBy = dto.UserId;
         modulo.UpdatedAt = DateTime.Now;
         
-        _unitOfWork.WriteRepository<Modulo>().UpdateEntity(modulo);
+        _unitOfWork.WriteRepository<Modulo,int>().UpdateEntity(modulo);
         
         var result = await _unitOfWork.Complete();
         

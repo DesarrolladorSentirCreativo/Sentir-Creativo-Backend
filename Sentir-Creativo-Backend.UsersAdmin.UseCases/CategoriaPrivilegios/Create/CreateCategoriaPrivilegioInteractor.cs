@@ -37,7 +37,7 @@ public class CreateCategoriaPrivilegioInteractor : ICreateCategoriaPrivilegioInp
             Activo = true
         };
         
-        _unitOfWork.WriteRepository<CategoriaPrivilegio>().AddEntity(categoriaPrivilegio);
+        _unitOfWork.WriteRepository<CategoriaPrivilegio,int>().AddEntity(categoriaPrivilegio);
         
         
         var result = await _unitOfWork.Complete();

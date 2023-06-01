@@ -43,7 +43,7 @@ public class UpdateColeccionUserAdminInteractor : IUpdateColeccionUserAdminInput
         coleccionUserAdmin.UpdatedBy = dto.UserId;
         coleccionUserAdmin.UpdatedAt = DateTime.Now;
         
-        _unitOfWork.WriteRepository<ColeccionUserAdmin>().UpdateEntity(coleccionUserAdmin);
+        _unitOfWork.WriteRepository<ColeccionUserAdmin,int>().UpdateEntity(coleccionUserAdmin);
         
         var result = await _unitOfWork.Complete();
         

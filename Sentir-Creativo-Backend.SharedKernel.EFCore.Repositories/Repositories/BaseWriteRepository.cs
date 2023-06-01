@@ -6,7 +6,7 @@ using Sentir_Creativo_Backend.SharedKernel.Entities.POCOEntities;
 
 namespace Sentir_Creativo_Backend.SharedKernel.EFCore.Repositories.Repositories;
 
-public class BaseWriteRepository<T> : IWriteRepository<T> where T: BaseEntity<int>
+public class BaseWriteRepository<T,TId> : IWriteRepository<T,TId> where T: BaseEntity<TId>
 {
     protected readonly SentirCreativoDbContext _context;
     

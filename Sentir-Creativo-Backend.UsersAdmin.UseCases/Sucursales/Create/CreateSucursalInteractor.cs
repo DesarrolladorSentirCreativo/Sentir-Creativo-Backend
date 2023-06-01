@@ -41,7 +41,7 @@ public class CreateSucursalInteractor : ICreateSucursalInputPort
             Activo = true
         };
         
-        _unitOfWork.WriteRepository<Sucursal>().AddEntity(sucursal);
+        _unitOfWork.WriteRepository<Sucursal,int>().AddEntity(sucursal);
         
         
         var result = await _unitOfWork.Complete();

@@ -65,7 +65,7 @@ public class UpdateOrganizacionInteractor : IUpdateOrganizacionInputPort
             direccionUpdate.Calle = dto.Calle;
             
             //actualizamos los datos de la dirección
-            _unitOfWork.WriteRepository<Direccion>().UpdateEntity(direccionUpdate);
+            _unitOfWork.WriteRepository<Direccion,int>().UpdateEntity(direccionUpdate);
         }
         else
         {
@@ -79,7 +79,7 @@ public class UpdateOrganizacionInteractor : IUpdateOrganizacionInputPort
             };
         
             //guardamos la dirección en la base de datos
-            _unitOfWork.WriteRepository<Direccion>().AddEntity(direccion);
+            _unitOfWork.WriteRepository<Direccion,int>().AddEntity(direccion);
             await _unitOfWork.Complete();
             
             
@@ -92,11 +92,11 @@ public class UpdateOrganizacionInteractor : IUpdateOrganizacionInputPort
             };
             
             //guardamos la dirección para la organizacion
-            _unitOfWork.WriteRepository<OrganizacionDireccion>().AddEntity(organizacionDireccion);
+            _unitOfWork.WriteRepository<OrganizacionDireccion,int>().AddEntity(organizacionDireccion);
         }
         
         //actualizamos los datos de la organización
-        _unitOfWork.WriteRepository<Organizacion>().UpdateEntity(organizacionUpdate);
+        _unitOfWork.WriteRepository<Organizacion,int>().UpdateEntity(organizacionUpdate);
 
         //confirmamos las trasacciones en la base de datos
         var result = await _unitOfWork.Complete();

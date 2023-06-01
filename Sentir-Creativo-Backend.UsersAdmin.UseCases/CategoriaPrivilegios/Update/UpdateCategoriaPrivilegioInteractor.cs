@@ -43,7 +43,7 @@ public class UpdateCategoriaPrivilegioInteractor : IUpdateCategoriaPrivilegioInp
         categoriaPrivilegio.UpdatedAt = DateTime.Now;
         categoriaPrivilegio.UpdatedBy = dto.UserId;
         
-        _unitOfWork.WriteRepository<CategoriaPrivilegio>().UpdateEntity(categoriaPrivilegio);
+        _unitOfWork.WriteRepository<CategoriaPrivilegio,int>().UpdateEntity(categoriaPrivilegio);
         
         var result = await _unitOfWork.Complete();
         

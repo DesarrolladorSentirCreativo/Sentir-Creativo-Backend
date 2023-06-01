@@ -43,7 +43,7 @@ public class CreateBitacoraInteractor : ICreateBitacoraInputPort
         };
         
         //guardamos la bitacora en la base de datos
-        _unitOfWork.WriteRepository<Bitacora>().AddEntity(bitacora);
+        _unitOfWork.WriteRepository<Bitacora,int>().AddEntity(bitacora);
         
         //confirmamos los cambios en la base de datos
         var result = await _unitOfWork.Complete();

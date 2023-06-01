@@ -38,7 +38,7 @@ public class CreateArchivoInteractor : ICreateArchivoInputPort
         };
         
         //guardamos el archivo en la base de datos
-        _unitOfWork.WriteRepository<Archivo>().AddEntity(archivo);
+        _unitOfWork.WriteRepository<Archivo,int>().AddEntity(archivo);
         
         //confirmamos los cambios en la base de datos
         var result = await _unitOfWork.Complete();

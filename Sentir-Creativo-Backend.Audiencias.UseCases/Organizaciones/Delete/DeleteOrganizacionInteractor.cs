@@ -31,7 +31,7 @@ public class DeleteOrganizacionInteractor : IDeleteOrganizacionInputPort
         
         organizacion.Activo = false;
         
-        _unitOfWork.WriteRepository<Organizacion>().UpdateEntity(organizacion);
+        _unitOfWork.WriteRepository<Organizacion,int>().UpdateEntity(organizacion);
 
         await _unitOfWork.Complete();
 

@@ -61,14 +61,14 @@ public class CreateAudienciaInteractor : ICreateAudienciaInputPort
         };
         
         //guardamos la audiencia en la base de datos
-        _unitOfWork.WriteRepository<Entities.POCOEntities.Audiencia>().AddEntity(audiencia);
+        _unitOfWork.WriteRepository<Entities.POCOEntities.Audiencia,int>().AddEntity(audiencia);
         
         await _unitOfWork.Complete();
 
         //guardamos todos los cupones de descuento de la audiencia
         foreach (var audienciaCuponDescuento in dto.CuponDescuentos)
         {
-            _unitOfWork.WriteRepository<AudienciaCuponDescuento>().AddEntity(new AudienciaCuponDescuento()
+            _unitOfWork.WriteRepository<AudienciaCuponDescuento,int>().AddEntity(new AudienciaCuponDescuento()
             {
                 AudienciaId = audiencia.Id,
                 CuponDescuentoId = audienciaCuponDescuento.CuponDescuentoId,
@@ -79,7 +79,7 @@ public class CreateAudienciaInteractor : ICreateAudienciaInputPort
         
         foreach (var audienciaComentario in dto.Comentarios)
         {
-            _unitOfWork.WriteRepository<AudienciaComentario>().AddEntity(new AudienciaComentario()
+            _unitOfWork.WriteRepository<AudienciaComentario,int>().AddEntity(new AudienciaComentario()
             {
                 AudienciaId = audiencia.Id,
                 ComentarioId = audienciaComentario.ComentarioId
@@ -89,7 +89,7 @@ public class CreateAudienciaInteractor : ICreateAudienciaInputPort
         //guardamos todos las difusiones de la audiencia
         foreach (var audienciaDifusion in dto.Difusiones)
         {
-            _unitOfWork.WriteRepository<AudienciaDifusion>().AddEntity(new AudienciaDifusion()
+            _unitOfWork.WriteRepository<AudienciaDifusion,int>().AddEntity(new AudienciaDifusion()
             {
                 AudienciaId = audiencia.Id,
                 DifusionId = audienciaDifusion.DifusionId,
@@ -99,7 +99,7 @@ public class CreateAudienciaInteractor : ICreateAudienciaInputPort
         //guardamos todas las organizaciones de la audiencia
         foreach (var audienciaOrganizacion in dto.Organizaciones)
         {
-            _unitOfWork.WriteRepository<AudienciaOrganizacion>().AddEntity(new AudienciaOrganizacion()
+            _unitOfWork.WriteRepository<AudienciaOrganizacion,int>().AddEntity(new AudienciaOrganizacion()
             {
                 AudienciaId = audiencia.Id,
                 OrganizacionId = audienciaOrganizacion.OrganizacionId,

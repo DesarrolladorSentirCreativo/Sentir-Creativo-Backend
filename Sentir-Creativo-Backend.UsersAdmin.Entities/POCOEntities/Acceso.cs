@@ -2,9 +2,8 @@ using Sentir_Creativo_Backend.SharedKernel.Entities.POCOEntities;
 
 namespace Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
 
-public class Acceso : BaseEntity<int>
+public class Acceso : BaseEntity<string>
 {
-    public string Nombre { get; set; }
     public int ColeccionId { get; set; }
     public bool Crear { get; set; }
     public bool Actualizar { get; set; }

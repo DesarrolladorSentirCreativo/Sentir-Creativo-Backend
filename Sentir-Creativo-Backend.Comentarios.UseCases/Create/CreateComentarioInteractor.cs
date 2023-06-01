@@ -37,7 +37,7 @@ public class CreateComentarioInteractor : ICreateComentarioInputPort
             PublishedAt = DateTime.Now
         };
         
-        _unitOfWork.WriteRepository<Comentario>().AddEntity(comentario);
+        _unitOfWork.WriteRepository<Comentario,int>().AddEntity(comentario);
 
         var result  = await _unitOfWork.Complete();
         
