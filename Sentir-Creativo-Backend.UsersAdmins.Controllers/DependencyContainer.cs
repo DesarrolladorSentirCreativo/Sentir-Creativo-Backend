@@ -54,6 +54,7 @@ public static class DependencyContainer
         
         //privilegios
         services.AddScoped<ICreatePrivilegioController, CreatePrivilegioController>();
+        services.AddScoped<IGetAllPrivilegioController, GetAllPrivilegioController>();
         
         return services;
     }

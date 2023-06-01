@@ -2,6 +2,7 @@ using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Privilegios;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.Privilegios;
 
 namespace Sentir_Creativo_Backend.WebApi.Controllers.UsersAdmin;
 
@@ -10,15 +11,24 @@ namespace Sentir_Creativo_Backend.WebApi.Controllers.UsersAdmin;
 public class PrivilegioWrapperController : ControllerBase
 {
     private readonly ICreatePrivilegioController _createPrivilegioController;
+    private readonly IGetAllPrivilegioController _getAllPrivilegioController;
 
-    public PrivilegioWrapperController(ICreatePrivilegioController createPrivilegioController)
+    public PrivilegioWrapperController(
+        ICreatePrivilegioController createPrivilegioController,
+        IGetAllPrivilegioController getAllPrivilegioController)
     {
         _createPrivilegioController = createPrivilegioController;
+        _getAllPrivilegioController = getAllPrivilegioController;
     }
     
     [HttpPost(Name = "CreatePrivilegio")]
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> CreatePrivilegio([FromBody] CreatePrivilegioDto dto)
         => Ok(await _createPrivilegioController.Handle(dto));
+    
+    [HttpGet]
+    [ProducesResponseType(typeof(IReadOnlyList<GetAllPrivilegioViewModel>), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IReadOnlyList<GetAllPrivilegioViewModel>>> GetAllPrivilegio()
+        => Ok(await _getAllPrivilegioController.Handle());
 
 }
