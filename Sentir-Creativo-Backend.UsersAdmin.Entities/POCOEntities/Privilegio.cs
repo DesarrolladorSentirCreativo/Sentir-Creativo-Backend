@@ -12,4 +12,6 @@ public class Privilegio : BaseEntity<int>
     public DateTime? UpdatedAt { get; set; }
     public int? UpdatedBy { get; set; }
     public bool Activo { get; set; }
+    
+    public virtual CategoriaPrivilegio Categoria { get; set; }
 }

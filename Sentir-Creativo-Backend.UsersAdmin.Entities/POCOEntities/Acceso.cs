@@ -16,4 +16,6 @@ public class Acceso : BaseEntity<int>
     public DateTime? UpdatedAt { get; set; }
     public int? UpdatedBy { get; set; }
     public bool Activo { get; set; }
+    
+    public virtual ColeccionUserAdmin Coleccion { get; set; }
 }

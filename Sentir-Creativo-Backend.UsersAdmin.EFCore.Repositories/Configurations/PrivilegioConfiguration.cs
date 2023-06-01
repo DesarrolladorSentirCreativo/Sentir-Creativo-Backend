@@ -4,28 +4,24 @@ using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
 
 namespace Sentir_Creativo_Backend.UsersAdmin.EFCore.Repositories.Configurations;
 
-public class AccesoConfiguration : IEntityTypeConfiguration<Acceso>
+public class PrivilegioConfiguration : IEntityTypeConfiguration<Privilegio>
 {
-    public void Configure(EntityTypeBuilder<Acceso> builder)
+    public void Configure(EntityTypeBuilder<Privilegio> builder)
     {
-        builder.ToTable("accesos");
+        builder.ToTable("privilegios");
                         
         builder.HasKey(p => p.Id).HasName("id");
         builder.Property(p => p.Nombre).HasColumnName("nombre").IsRequired().HasMaxLength(50);
-        builder.Property(p => p.ColeccionId).HasColumnName("coleccion").IsRequired();
-        builder.Property(p => p.Crear).HasColumnName("crear").IsRequired();
-        builder.Property(p => p.Actualizar).HasColumnName("actualizar").IsRequired();
-        builder.Property(p => p.Eliminar).HasColumnName("eliminar").IsRequired();
-        builder.Property(p => p.Listar).HasColumnName("listar").IsRequired();
-        builder.Property(p => p.Ver).HasColumnName("ver").IsRequired();
+        builder.Property(p => p.CategoriaId).HasColumnName("categoria").IsRequired();
+        builder.Property(p => p.Descripcion).HasColumnName("descripcion").HasMaxLength(1024);
         builder.Property(p => p.CreatedAt).HasColumnName("created_at");
         builder.Property(p => p.UpdatedAt).HasColumnName("updated_at");
         builder.Property(p => p.CreatedBy).HasColumnName("created_by");
         builder.Property(p => p.UpdatedBy).HasColumnName("updated_by");
         builder.Property(p => p.Activo).HasColumnName("activo");
         
-        builder.HasOne(u => u.Coleccion)
+        builder.HasOne(u => u.Categoria)
             .WithOne()
-            .HasForeignKey<Acceso>("ColeccionId");
+            .HasForeignKey<Privilegio>("CategoriaId");
     }
 }
