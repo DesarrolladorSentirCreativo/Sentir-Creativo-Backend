@@ -20,6 +20,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Privilegios.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Privilegios.GetAll;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Privilegios.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.GetAll;
@@ -162,6 +163,10 @@ public static class DependencyContainer
         services.AddScoped<IGetAllPrivilegioPresenter>(provider => provider.GetService<GetAllPrivilegioPresenter>());
         services.AddScoped<IGetAllPrivilegioOutputPort>(provider => provider.GetService<GetAllPrivilegioPresenter>());
         
+        services.AddScoped<UpdatePrivilegioPresenter>();
+        services.AddScoped<IUpdatePrivilegioPresenter>(provider => provider.GetService<UpdatePrivilegioPresenter>());
+        services.AddScoped<IUpdatePrivilegioOutputPort>(provider => provider.GetService<UpdatePrivilegioPresenter>());
+
         return services;
     }
 }
