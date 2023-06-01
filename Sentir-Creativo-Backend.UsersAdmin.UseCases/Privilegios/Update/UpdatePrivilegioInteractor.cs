@@ -62,6 +62,9 @@ public class UpdatePrivilegioInteractor : IUpdatePrivilegioInputPort
             _unitOfWork.WriteRepository<Acceso,string>().DeleteWhere(x => x.Id == privilegioAcceso.AccesoId);
         }
         
+        //eliminamos los privilegios accesos
+        _unitOfWork.WriteRepository<PrivilegioAcceso,int>().DeleteWhere(x => x.PrivilegioId == privilegio.Id);
+        
         
         List<string> accesoIds = new List<string>();
         

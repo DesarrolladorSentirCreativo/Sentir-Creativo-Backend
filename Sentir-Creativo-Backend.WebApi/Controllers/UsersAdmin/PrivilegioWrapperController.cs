@@ -13,15 +13,18 @@ public class PrivilegioWrapperController : ControllerBase
     private readonly ICreatePrivilegioController _createPrivilegioController;
     private readonly IGetAllPrivilegioController _getAllPrivilegioController;
     private readonly IUpdatePrivilegioController _updatePrivilegioController;
+    private readonly IDeletePrivilegioController _deletePrivilegioController;
 
     public PrivilegioWrapperController(
         ICreatePrivilegioController createPrivilegioController,
         IGetAllPrivilegioController getAllPrivilegioController,
-        IUpdatePrivilegioController updatePrivilegioController)
+        IUpdatePrivilegioController updatePrivilegioController,
+        IDeletePrivilegioController deletePrivilegioController)
     {
         _createPrivilegioController = createPrivilegioController;
         _getAllPrivilegioController = getAllPrivilegioController;
         _updatePrivilegioController = updatePrivilegioController;
+        _deletePrivilegioController = deletePrivilegioController;
     }
     
     [HttpPost(Name = "CreatePrivilegio")]
@@ -38,5 +41,10 @@ public class PrivilegioWrapperController : ControllerBase
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> UpdatePrivilegio([FromBody] UpdatePrivilegioDto dto)
         => Ok(await _updatePrivilegioController.Handle(dto));
+    
+    [HttpPut("{id}")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<string>> DeletePrivilegio(string id)
+        => Ok(await _deletePrivilegioController.Handle(id));
 
 }
