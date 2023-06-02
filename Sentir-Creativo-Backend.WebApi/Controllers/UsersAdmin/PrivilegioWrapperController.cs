@@ -15,19 +15,22 @@ public class PrivilegioWrapperController : ControllerBase
     private readonly IUpdatePrivilegioController _updatePrivilegioController;
     private readonly IDeletePrivilegioController _deletePrivilegioController;
     private readonly ISelectPrivilegioController _selectPrivilegioController;
+    private readonly IGetByIdPrivilegioController _getByIdPrivilegioController;
 
     public PrivilegioWrapperController(
         ICreatePrivilegioController createPrivilegioController,
         IGetAllPrivilegioController getAllPrivilegioController,
         IUpdatePrivilegioController updatePrivilegioController,
         IDeletePrivilegioController deletePrivilegioController,
-        ISelectPrivilegioController selectPrivilegioController)
+        ISelectPrivilegioController selectPrivilegioController,
+        IGetByIdPrivilegioController getByIdPrivilegioController)
     {
         _createPrivilegioController = createPrivilegioController;
         _getAllPrivilegioController = getAllPrivilegioController;
         _updatePrivilegioController = updatePrivilegioController;
         _deletePrivilegioController = deletePrivilegioController;
         _selectPrivilegioController = selectPrivilegioController;
+        _getByIdPrivilegioController = getByIdPrivilegioController;
     }
     
     [HttpPost(Name = "CreatePrivilegio")]
@@ -55,5 +58,11 @@ public class PrivilegioWrapperController : ControllerBase
     [ProducesResponseType(typeof(SelectPrivilegioViewModel), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<SelectPrivilegioViewModel>>> SelectPrivilegio() 
         => Ok(await _selectPrivilegioController.Handle());
+    
+        
+    [HttpGet("{id}")]
+    [ProducesResponseType(typeof(GetByIdPrivilegioViewModel),(int)HttpStatusCode.OK)]
+    public async Task<ActionResult<GetByIdPrivilegioViewModel>> GetByIdPrivilegio(string id)
+        =>Ok(await _getByIdPrivilegioController.Handle(id));
 
 }

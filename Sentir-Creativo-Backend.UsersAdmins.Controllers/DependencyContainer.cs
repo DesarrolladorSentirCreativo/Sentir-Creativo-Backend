@@ -58,6 +58,7 @@ public static class DependencyContainer
         services.AddScoped<IUpdatePrivilegioController, UpdatePrivilegioController>();
         services.AddScoped<IDeletePrivilegioController, DeletePrivilegioController>();
         services.AddScoped<ISelectPrivilegioController, SelectPrivilegioController>();
+        services.AddScoped<IGetByIdPrivilegioController, GetByIdPrivilegioController>();
         
         return services;
     }
