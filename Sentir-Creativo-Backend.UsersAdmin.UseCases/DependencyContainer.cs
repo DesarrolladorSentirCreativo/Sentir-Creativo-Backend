@@ -15,6 +15,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Login;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.GetAll;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.GetAllWithColecciones;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Update;
@@ -45,6 +46,7 @@ using Sentir_Creativo_Backend.UsersAdmin.UseCases.ColeccionesUserAdmin.Update;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Modulos.Create;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Modulos.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Modulos.GetAll;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.Modulos.GetAllWithColeccionesModulo;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Modulos.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Modulos.Select;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Modulos.Update;
@@ -93,7 +95,8 @@ public static class DependencyContainer
         services.AddScoped<IDeleteModuloInputPort, DeleteModuloInteractor>();
         services.AddScoped<IGetByIdModuloInputPort, GetByIdModuloInteractor>();
         services.AddScoped<ISelectModuloInputPort, SelectModuloInteractor>();
-        
+        services.AddScoped<IGetAllWithColeccionesModuloInputPort, GetAllWithColeccionesModuloInteractor>();
+
         //colecciones
         services.AddScoped<ICreateColeccionUserAdminInputPort, CreateColeccionUserAdminInteractor>();
         services.AddScoped<IGetAllColeccionUserAdminInputPort, GetAllColeccionUserAdminInteractor>();
@@ -109,7 +112,7 @@ public static class DependencyContainer
         services.AddScoped<IDeletePrivilegioInputPort, DeletePrivilegioInteractor>();
         services.AddScoped<ISelectPrivilegioInputPort, SelectPrivilegioInteractor>();
         services.AddScoped<IGetByIdPrivilegioInputPort, GetByIdPrivilegioInteractor>();
-        
+
         return services;
     }
 }

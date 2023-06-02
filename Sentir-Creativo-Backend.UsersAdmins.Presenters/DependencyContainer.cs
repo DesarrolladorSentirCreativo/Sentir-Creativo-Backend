@@ -15,6 +15,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Login;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.GetAll;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.GetAllWithColecciones;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Update;
@@ -131,6 +132,10 @@ public static class DependencyContainer
         services.AddScoped<SelectModuloPresenter>();
         services.AddScoped<ISelectModuloPresenter>(provider => provider.GetService<SelectModuloPresenter>());
         services.AddScoped<ISelectModuloOutputPort>(provider => provider.GetService<SelectModuloPresenter>());
+        
+        services.AddScoped<GetAllWithColeccionesModuloPresenter>();
+        services.AddScoped<IGetAllWithColeccionesModuloPresenter>(provider => provider.GetService<GetAllWithColeccionesModuloPresenter>());
+        services.AddScoped<IGetAllWithColeccionesModuloOutputPort>(provider => provider.GetService<GetAllWithColeccionesModuloPresenter>());
         
         //colecciones
         services.AddScoped<CreateColeccionUserAdminPresenter>();

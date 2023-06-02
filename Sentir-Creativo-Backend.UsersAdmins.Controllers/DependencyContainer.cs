@@ -43,6 +43,7 @@ public static class DependencyContainer
         services.AddScoped<IDeleteModuloController, DeleteModuloController>();
         services.AddScoped<IGetByIdModuloController, GetByIdModuloController>();
         services.AddScoped<ISelectModuloController, SelectModuloController>();
+        services.AddScoped<IGetAllWithColeccionesModuloController, GetAllWithColeccionesModuloController>();
         
         //colecciones
         services.AddScoped<ICreateColeccionUserAdminController, CreateColeccionUserAdminController>();

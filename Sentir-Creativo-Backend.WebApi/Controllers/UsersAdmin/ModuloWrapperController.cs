@@ -18,6 +18,7 @@ public class ModuloWrapperController : ControllerBase
     private readonly IDeleteModuloController _deleteModuloController;
     private readonly IGetByIdModuloController _getByIdModuloController;
     private readonly ISelectModuloController _selectModuloController;
+    private readonly IGetAllWithColeccionesModuloController _getAllWithColeccionesModuloController;
 
     public ModuloWrapperController(
         ICreateModuloController createModuloController,
@@ -25,7 +26,8 @@ public class ModuloWrapperController : ControllerBase
         IUpdateModuloController updateModuloController,
         IDeleteModuloController deleteModuloController,
         IGetByIdModuloController getByIdModuloController,
-        ISelectModuloController selectModuloController)
+        ISelectModuloController selectModuloController,
+        IGetAllWithColeccionesModuloController getAllWithColeccionesModuloController)
     {
         _createModuloController = createModuloController;
         _getAllModuloController = getAllModuloController;
@@ -33,6 +35,7 @@ public class ModuloWrapperController : ControllerBase
         _deleteModuloController = deleteModuloController;
         _getByIdModuloController = getByIdModuloController;
         _selectModuloController = selectModuloController;
+        _getAllWithColeccionesModuloController = getAllWithColeccionesModuloController;
     }
     
     [HttpPost(Name = "CreateModulo")]
@@ -65,4 +68,10 @@ public class ModuloWrapperController : ControllerBase
     [ProducesResponseType(typeof(SelectModuloViewModel), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<SelectModuloViewModel>>> SelectModulo() 
         => Ok(await _selectModuloController.Handle());
+    
+    [HttpGet]
+    [Route("with-colecciones")] 
+    [ProducesResponseType(typeof(GetAllWithColeccionesModuloViewModel), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IReadOnlyList<GetAllWithColeccionesModuloViewModel>>> WithColecciones() 
+        => Ok(await _getAllWithColeccionesModuloController.Handle());
 }
