@@ -35,14 +35,16 @@ public class GetAllWithColeccionesModuloInteractor : IGetAllWithColeccionesModul
         
         var colecciones = await _readColeccionRepository.GetAllWithSpec(specColecciones);
         
-        IReadOnlyList<GetAllWithColeccionesModuloViewModel> data = colecciones
+        IReadOnlyList<GetAllWithColeccionesModuloViewModel> data = modulos
             .Select(p => 
                 new GetAllWithColeccionesModuloViewModel()
                 {
                     Id = p.Id,
                     Nombre = p.Nombre,
                     Descripcion = p.Descripcion,
-                    colecciones = colecciones.Select(x => new GetAllColeccionUserAdminViewModel()
+                    colecciones = colecciones
+                        .Where(x => x.ModuloId == p.Id)
+                        .Select(x => new GetAllColeccionUserAdminViewModel()
                     {
                         Id = x.Id,
                         ModuloId = x.ModuloId,
