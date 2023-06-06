@@ -43,6 +43,7 @@ public class CreatePrivilegioInteractor : ICreatePrivilegioInputPort
                 Crear = acceso.Crear,
                 Actualizar = acceso.Actualizar,
                 Eliminar = acceso.Eliminar,
+                ColeccionId = acceso.ColeccionId,
                 Ver = acceso.Ver,
                 Listar = acceso.Listar,
                 CreatedBy = dto.UserId,
@@ -66,7 +67,8 @@ public class CreatePrivilegioInteractor : ICreatePrivilegioInputPort
             Descripcion = dto.Descripcion,
             CategoriaId = dto.CategoriaId,
             CreatedBy = dto.UserId,
-            CreatedAt = DateTime.Now
+            CreatedAt = DateTime.Now,
+            Activo = true
         };
 
         _unitOfWork.WriteRepository<Privilegio,string>().AddEntity(privilegio);
