@@ -6,5 +6,6 @@ public class UpdateAccesoDto
     public bool Actualizar { get; set; }
     public bool Eliminar { get; set; }
     public bool Ver { get; set; }
+    public int ColeccionId { get; set; }
     public bool Listar { get; set; }
 }

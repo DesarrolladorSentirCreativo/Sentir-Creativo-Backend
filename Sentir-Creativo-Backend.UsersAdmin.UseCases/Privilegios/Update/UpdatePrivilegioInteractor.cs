@@ -79,6 +79,7 @@ public class UpdatePrivilegioInteractor : IUpdatePrivilegioInputPort
                 Crear = acceso.Crear,
                 Actualizar = acceso.Actualizar,
                 Eliminar = acceso.Eliminar,
+                ColeccionId = acceso.ColeccionId,
                 Ver = acceso.Ver,
                 Listar = acceso.Listar,
                 CreatedBy = dto.UserId,
