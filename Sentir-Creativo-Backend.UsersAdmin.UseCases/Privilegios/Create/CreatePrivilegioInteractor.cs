@@ -1,4 +1,5 @@
 using FluentValidation;
+using Microsoft.Extensions.Logging;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
 using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Privilegios.Create;
@@ -13,33 +14,34 @@ public class CreatePrivilegioInteractor : ICreatePrivilegioInputPort
     private readonly IUnitOfWork _unitOfWork;
     private readonly ICreatePrivilegioOutputPort _outputPort;
     private readonly IEnumerable<IValidator<CreatePrivilegioDto>> _validators;
+    private readonly ILogger<CreatePrivilegioInteractor> _logger;
 
     public CreatePrivilegioInteractor(
         IUnitOfWork unitOfWork,
         ICreatePrivilegioOutputPort outputPort,
-        IEnumerable<IValidator<CreatePrivilegioDto>> validators)
+        IEnumerable<IValidator<CreatePrivilegioDto>> validators,
+        ILogger<CreatePrivilegioInteractor> logger)
     {
         _outputPort = outputPort;
         _unitOfWork = unitOfWork;
         _validators = validators;
+        _logger = logger;
     }
         
     
     public async ValueTask Handle(CreatePrivilegioDto dto)
     {
-        //validamos los datos
+        // Validamos los datos
         await Validator<CreatePrivilegioDto>.Validate(dto, _validators);
-        
-        List<string> accesoIds = new List<string>();
-        
-        //guardamos todos los accesos de la audiencia
+
+        // Guardamos todos los accesos de la audiencia
+        var accesoIds = new List<string>();
+
         foreach (var acceso in dto.Accesos)
         {
-            Guid uuid = Guid.NewGuid();
-            
             var newAcceso = new Acceso()
             {
-                Id = uuid.ToString(),
+                Id = Guid.NewGuid().ToString(),
                 Crear = acceso.Crear,
                 Actualizar = acceso.Actualizar,
                 Eliminar = acceso.Eliminar,
@@ -49,20 +51,17 @@ public class CreatePrivilegioInteractor : ICreatePrivilegioInputPort
                 CreatedBy = dto.UserId,
                 CreatedAt = DateTime.Now
             };
-            
-            _unitOfWork.WriteRepository<Acceso,string>().AddEntity(newAcceso);
-            
-            // Guardar el ID del acceso insertado en la lista
+
+            _unitOfWork.WriteRepository<Acceso, string>().AddEntity(newAcceso);
+
+            // Guardamos el ID del acceso insertado en la lista
             accesoIds.Add(newAcceso.Id);
-            
         }
-        
-        Guid uuidPrivilegio = Guid.NewGuid();
-        
-        //guardamos el privilegio
+
+        // Guardamos el privilegio
         var privilegio = new Privilegio()
         {
-            Id = uuidPrivilegio.ToString(),
+            Id = Guid.NewGuid().ToString(),
             Nombre = dto.Nombre,
             Descripcion = dto.Descripcion,
             CategoriaId = dto.CategoriaId,
@@ -71,24 +70,37 @@ public class CreatePrivilegioInteractor : ICreatePrivilegioInputPort
             Activo = true
         };
 
-        _unitOfWork.WriteRepository<Privilegio,string>().AddEntity(privilegio);
+        _unitOfWork.WriteRepository<Privilegio, string>().AddEntity(privilegio);
         
-        //creamos los accesos del privilegio
-        for (int i = 0; i < accesoIds.Count; i++)
+        // Creamos los accesos del privilegio
+        foreach (string accesoId in accesoIds)
         {
-            string accesoId = accesoIds[i];
-
             var privilegioAcceso = new PrivilegioAcceso()
             {
                 AccesoId = accesoId,
                 PrivilegioId = privilegio.Id,
             };
+            _unitOfWork.WriteRepository<PrivilegioAcceso, int>().AddEntity(privilegioAcceso); 
             
-            _unitOfWork.WriteRepository<PrivilegioAcceso,int>().AddEntity(privilegioAcceso);
         }
 
-        await _unitOfWork.Complete();
+        var primerAccesoId = accesoIds[0]; // Obtener el primer ID de la lista accesoIds
+
+        var primerPrivilegioAcceso = new PrivilegioAcceso()
+        {
+            AccesoId = primerAccesoId,
+            PrivilegioId = privilegio.Id,
+        };
+
+        _unitOfWork.WriteRepository<PrivilegioAcceso, int>().AddEntity(primerPrivilegioAcceso);
         
+        var result = await _unitOfWork.Complete();
+
+        if (result <= 0)
+        {
+            throw new Exception("No se pudo insertar el record de privilegios");
+        }
+
         await _outputPort.Handle(privilegio.Id);
 
     }
