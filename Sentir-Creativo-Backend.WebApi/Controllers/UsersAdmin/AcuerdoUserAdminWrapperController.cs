@@ -13,15 +13,18 @@ public class AcuerdoUserAdminWrapperController : ControllerBase
     private readonly ICreateAcuerdoUserAdminController _createAcuerdoUserAdminController;
     private readonly IGetAllAcuerdoUserAdminController _getAllAcuerdoUserAdminController;
     private readonly IUpdateAcuerdoUserAdminController _updateAcuerdoUserAdminController;
+    private readonly IDeleteAcuerdoUserAdminController _deleteAcuerdoUserAdminController;
 
     public AcuerdoUserAdminWrapperController(
         ICreateAcuerdoUserAdminController createAcuerdoUserAdminController,
         IGetAllAcuerdoUserAdminController getAllAcuerdoUserAdminController,
-        IUpdateAcuerdoUserAdminController updateAcuerdoUserAdminController)
+        IUpdateAcuerdoUserAdminController updateAcuerdoUserAdminController,
+        IDeleteAcuerdoUserAdminController deleteAcuerdoUserAdminController)
     {
         _createAcuerdoUserAdminController = createAcuerdoUserAdminController;
         _getAllAcuerdoUserAdminController = getAllAcuerdoUserAdminController;
         _updateAcuerdoUserAdminController = updateAcuerdoUserAdminController;
+        _deleteAcuerdoUserAdminController = deleteAcuerdoUserAdminController;
     }
     
     [HttpPost(Name = "CreateAcuerdoUserAdmin")]
@@ -38,4 +41,9 @@ public class AcuerdoUserAdminWrapperController : ControllerBase
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> UpdateAcuerdoUserAdmin([FromBody] UpdateAcuerdoUserAdminDto dto)
         => Ok(await _updateAcuerdoUserAdminController.Handle(dto));
+    
+    [HttpPut("{id}")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> DeleteAcuerdoUserAdmin(int id)
+        => Ok(await _deleteAcuerdoUserAdminController.Handle(id));
 }

@@ -1,5 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AcuerdosUserAdmin.Create;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AcuerdosUserAdmin.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AcuerdosUserAdmin.GetAll;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AcuerdosUserAdmin.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Create;
@@ -204,6 +205,10 @@ public static class DependencyContainer
         services.AddScoped<UpdateAcuerdoUserAdminPresenter>();
         services.AddScoped<IUpdateAcuerdoUserAdminPresenter>(provider => provider.GetService<UpdateAcuerdoUserAdminPresenter>());
         services.AddScoped<IUpdateAcuerdoUserAdminOutputPort>(provider => provider.GetService<UpdateAcuerdoUserAdminPresenter>());
+        
+        services.AddScoped<DeleteAcuerdoUserAdminPresenter>();
+        services.AddScoped<IDeleteAcuerdoUserAdminPresenter>(provider => provider.GetService<DeleteAcuerdoUserAdminPresenter>());
+        services.AddScoped<IDeleteAcuerdoUserAdminOutputPort>(provider => provider.GetService<DeleteAcuerdoUserAdminPresenter>());
 
         return services;
     }

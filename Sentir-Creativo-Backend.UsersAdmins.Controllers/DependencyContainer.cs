@@ -67,6 +67,7 @@ public static class DependencyContainer
         services.AddScoped<ICreateAcuerdoUserAdminController, CreateAcuerdoUserAdminController>();
         services.AddScoped<IGetAllAcuerdoUserAdminController, GetAllAcuerdoUserAdminController>();
         services.AddScoped<IUpdateAcuerdoUserAdminController, UpdateAcuerdoUserAdminController>();
+        services.AddScoped<IDeleteAcuerdoUserAdminController, DeleteAcuerdoUserAdminController>();
         
         return services;
     }
