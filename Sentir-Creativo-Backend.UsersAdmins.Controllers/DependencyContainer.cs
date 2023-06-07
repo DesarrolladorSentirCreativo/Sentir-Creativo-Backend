@@ -1,10 +1,12 @@
 using Microsoft.Extensions.DependencyInjection;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.AcuerdosUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.CategoriaPrivilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.ColeccionesUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Modulos;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Sucursales;
+using Sentir_Creativo_Backend.UsersAdmins.Controllers.AcuerdosUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.CategoriaPrivilegios;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.ColeccionesUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.Modulos;
@@ -60,6 +62,9 @@ public static class DependencyContainer
         services.AddScoped<IDeletePrivilegioController, DeletePrivilegioController>();
         services.AddScoped<ISelectPrivilegioController, SelectPrivilegioController>();
         services.AddScoped<IGetByIdPrivilegioController, GetByIdPrivilegioController>();
+        
+        //acuerdos
+        services.AddScoped<ICreateAcuerdoUserAdminController, CreateAcuerdoUserAdminController>();
         
         return services;
     }
