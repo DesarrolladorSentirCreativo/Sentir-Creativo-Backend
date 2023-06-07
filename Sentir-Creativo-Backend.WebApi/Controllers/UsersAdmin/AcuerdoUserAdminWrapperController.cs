@@ -15,19 +15,22 @@ public class AcuerdoUserAdminWrapperController : ControllerBase
     private readonly IUpdateAcuerdoUserAdminController _updateAcuerdoUserAdminController;
     private readonly IDeleteAcuerdoUserAdminController _deleteAcuerdoUserAdminController;
     private readonly IGetByIdAcuerdoUserAdminControiller _getByIdAcuerdoUserAdminControiller;
+    private readonly ISelectAcuerdoUserAdminController _selectAcuerdoUserAdminController;
 
     public AcuerdoUserAdminWrapperController(
         ICreateAcuerdoUserAdminController createAcuerdoUserAdminController,
         IGetAllAcuerdoUserAdminController getAllAcuerdoUserAdminController,
         IUpdateAcuerdoUserAdminController updateAcuerdoUserAdminController,
         IDeleteAcuerdoUserAdminController deleteAcuerdoUserAdminController,
-        IGetByIdAcuerdoUserAdminControiller getByIdAcuerdoUserAdminControiller)
+        IGetByIdAcuerdoUserAdminControiller getByIdAcuerdoUserAdminControiller,
+        ISelectAcuerdoUserAdminController selectAcuerdoUserAdminController)
     {
         _createAcuerdoUserAdminController = createAcuerdoUserAdminController;
         _getAllAcuerdoUserAdminController = getAllAcuerdoUserAdminController;
         _updateAcuerdoUserAdminController = updateAcuerdoUserAdminController;
         _deleteAcuerdoUserAdminController = deleteAcuerdoUserAdminController;
         _getByIdAcuerdoUserAdminControiller = getByIdAcuerdoUserAdminControiller;
+        _selectAcuerdoUserAdminController = selectAcuerdoUserAdminController;
     }
     
     [HttpPost(Name = "CreateAcuerdoUserAdmin")]
@@ -54,4 +57,10 @@ public class AcuerdoUserAdminWrapperController : ControllerBase
     [ProducesResponseType(typeof(GetByIdAcuerdoUserAdminViewModel),(int)HttpStatusCode.OK)]
     public async Task<ActionResult<GetByIdAcuerdoUserAdminViewModel>> GetByIdAcuerdoUserAdmin(int id)
         =>Ok(await _getByIdAcuerdoUserAdminControiller.Handle(id));
+    
+    [HttpGet]
+    [Route("select")] 
+    [ProducesResponseType(typeof(SelectAcuerdoUserAdminViewModel), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IReadOnlyList<SelectAcuerdoUserAdminViewModel>>> SelectAcuerdoUserAdmin() 
+        => Ok(await _selectAcuerdoUserAdminController.Handle());
 }

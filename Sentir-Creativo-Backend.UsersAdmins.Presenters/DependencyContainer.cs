@@ -3,6 +3,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Acuerdos
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AcuerdosUserAdmin.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AcuerdosUserAdmin.GetAll;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AcuerdosUserAdmin.GetById;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AcuerdosUserAdmin.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AcuerdosUserAdmin.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Delete;
@@ -214,6 +215,10 @@ public static class DependencyContainer
         services.AddScoped<GetByIdAcuerdoUserAdminPresenter>();
         services.AddScoped<IGetByIdAcuerdoUserAdminPresenter>(provider => provider.GetService<GetByIdAcuerdoUserAdminPresenter>());
         services.AddScoped<IGetByIdAcuerdoUserAdminOutputPort>(provider => provider.GetService<GetByIdAcuerdoUserAdminPresenter>());
+        
+        services.AddScoped<SelectAcuerdoUserAdminPresenter>();
+        services.AddScoped<ISelectAcuerdoUserAdminPresenter>(provider => provider.GetService<SelectAcuerdoUserAdminPresenter>());
+        services.AddScoped<ISelectAcuerdoUserAdminOutputPort>(provider => provider.GetService<SelectAcuerdoUserAdminPresenter>());
 
         return services;
     }
