@@ -87,6 +87,7 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new AccesoConfiguration());
         modelBuilder.ApplyConfiguration(new PrivilegioConfiguration());
         modelBuilder.ApplyConfiguration(new PrivilegioAccesoConfiguration());
+        modelBuilder.ApplyConfiguration(new AcuerdoUserAdminConfiguration());
     }
     
     DbSet<Bitacora> Bitacoras { get; set; }
@@ -130,5 +131,6 @@ public class SentirCreativoDbContext : DbContext
     DbSet<CategoriaPrivilegio> CategoriaPrivilegios { get; set; }
     DbSet<Privilegio> Privilegios { get; set; }
     DbSet<Acceso> Accesos { get; set; }
-    DbSet<PrivilegioAcceso> PrivilegioAccesos { get; set; }
+    DbSet<PrivilegioAcceso> PrivilegioAccesos { get; set; } 
+    DbSet<AcuerdoUserAdmin> AcuerdoUserAdmins { get; set; }
 }
