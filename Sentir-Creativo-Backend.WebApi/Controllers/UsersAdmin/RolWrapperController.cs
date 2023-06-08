@@ -14,13 +14,16 @@ public class RolWrapperController : ControllerBase
     private readonly ICreateRolController _createRolController;
     private readonly IGetAllRolController _getAllRolController;
     private readonly IUpdateRolController _updateRolController;
+    private readonly IDeleteRolController _deleteRolController;
     public RolWrapperController(ICreateRolController createRolController,
         IGetAllRolController getAllRolController,
-        IUpdateRolController updateRolController)
+        IUpdateRolController updateRolController,
+        IDeleteRolController deleteRolController)
     {
         _createRolController = createRolController;
         _getAllRolController = getAllRolController;
         _updateRolController = updateRolController;
+        _deleteRolController = deleteRolController;
     }
     
     [HttpPost(Name = "CreateRol")]
@@ -37,5 +40,10 @@ public class RolWrapperController : ControllerBase
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> UpdateRol([FromBody] UpdateRolDto dto)
         => Ok(await _updateRolController.Handle(dto));
+    
+    [HttpPut("{id}")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> DeleteRol(int id)
+        => Ok(await _deleteRolController.Handle(id));
 
 }
