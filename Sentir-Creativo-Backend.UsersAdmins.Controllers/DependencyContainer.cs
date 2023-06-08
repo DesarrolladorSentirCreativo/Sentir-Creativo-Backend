@@ -76,6 +76,7 @@ public static class DependencyContainer
         //roles
         services.AddScoped<ICreateRolController, CreateRolController>();
         services.AddScoped<IGetAllRolController, GetAllRolController>();
+        services.AddScoped<IUpdateRolController, UpdateRolController>();
         
         return services;
     }

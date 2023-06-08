@@ -13,12 +13,14 @@ public class RolWrapperController : ControllerBase
 {
     private readonly ICreateRolController _createRolController;
     private readonly IGetAllRolController _getAllRolController;
-    
+    private readonly IUpdateRolController _updateRolController;
     public RolWrapperController(ICreateRolController createRolController,
-        IGetAllRolController getAllRolController)
+        IGetAllRolController getAllRolController,
+        IUpdateRolController updateRolController)
     {
         _createRolController = createRolController;
         _getAllRolController = getAllRolController;
+        _updateRolController = updateRolController;
     }
     
     [HttpPost(Name = "CreateRol")]
@@ -30,4 +32,10 @@ public class RolWrapperController : ControllerBase
     [ProducesResponseType(typeof(IReadOnlyList<GetAllRolPresenter>), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<GetAllRolViewModel>>> GetAllRol()
         => Ok(await _getAllRolController.Handle());
+    
+    [HttpPut(Name = "UpdateRol")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> UpdateRol([FromBody] UpdateRolDto dto)
+        => Ok(await _updateRolController.Handle(dto));
+
 }
