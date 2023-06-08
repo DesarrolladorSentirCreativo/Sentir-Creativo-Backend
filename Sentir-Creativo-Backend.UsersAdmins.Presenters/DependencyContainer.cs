@@ -31,6 +31,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Privileg
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Privilegios.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Privilegios.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Privilegios.Update;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Roles.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.GetAll;
@@ -43,6 +44,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Cat
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.ColeccionesUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Modulos;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Privilegios;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Roles;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Sucursales;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.AcuerdosUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.AdminUser;
@@ -50,6 +52,7 @@ using Sentir_Creativo_Backend.UsersAdmins.Presenters.CategoriaPrivilegios;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.ColeccionesUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Modulos;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Privilegios;
+using Sentir_Creativo_Backend.UsersAdmins.Presenters.Roles;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Sucursales;
 
 namespace Sentir_Creativo_Backend.UsersAdmins.Presenters;
@@ -219,6 +222,11 @@ public static class DependencyContainer
         services.AddScoped<SelectAcuerdoUserAdminPresenter>();
         services.AddScoped<ISelectAcuerdoUserAdminPresenter>(provider => provider.GetService<SelectAcuerdoUserAdminPresenter>());
         services.AddScoped<ISelectAcuerdoUserAdminOutputPort>(provider => provider.GetService<SelectAcuerdoUserAdminPresenter>());
+        
+        //roles
+        services.AddScoped<CreateRolPresenter>();
+        services.AddScoped<ICreateRolPresenter>(provider => provider.GetService<CreateRolPresenter>());
+        services.AddScoped<ICreateRolOutputPort>(provider => provider.GetService<CreateRolPresenter>());
 
         return services;
     }
