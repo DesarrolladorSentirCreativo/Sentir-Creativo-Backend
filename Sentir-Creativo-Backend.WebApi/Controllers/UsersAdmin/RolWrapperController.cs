@@ -16,17 +16,21 @@ public class RolWrapperController : ControllerBase
     private readonly IUpdateRolController _updateRolController;
     private readonly IDeleteRolController _deleteRolController;
     private readonly IGetByIdRolController _getByIdRolController;
+    private readonly ISelectRolController _selectRolController;
+    
     public RolWrapperController(ICreateRolController createRolController,
         IGetAllRolController getAllRolController,
         IUpdateRolController updateRolController,
         IDeleteRolController deleteRolController,
-        IGetByIdRolController getByIdRolController)
+        IGetByIdRolController getByIdRolController,
+        ISelectRolController selectRolController)
     {
         _createRolController = createRolController;
         _getAllRolController = getAllRolController;
         _updateRolController = updateRolController;
         _deleteRolController = deleteRolController;
         _getByIdRolController = getByIdRolController;
+        _selectRolController = selectRolController;
     }
     
     [HttpPost(Name = "CreateRol")]
@@ -53,5 +57,11 @@ public class RolWrapperController : ControllerBase
     [ProducesResponseType(typeof(GetByIdRolViewModel),(int)HttpStatusCode.OK)]
     public async Task<ActionResult<GetByIdRolViewModel>> GetByIdRol(int id)
         =>Ok(await _getByIdRolController.Handle(id));
+    
+    [HttpGet]
+    [Route("select")] 
+    [ProducesResponseType(typeof(SelectRolViewModel), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IReadOnlyList<SelectRolViewModel>>> SelectRol() 
+        => Ok(await _selectRolController.Handle());
 
 }

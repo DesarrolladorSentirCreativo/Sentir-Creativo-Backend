@@ -35,6 +35,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Roles.Cr
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Roles.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Roles.GetAll;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Roles.GetById;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Roles.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Roles.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Delete;
@@ -247,6 +248,10 @@ public static class DependencyContainer
         services.AddScoped<GetByIdRolPresenter>();
         services.AddScoped<IGetByIdRolPresenter>(provider => provider.GetService<GetByIdRolPresenter>());
         services.AddScoped<IGetByIdRolOutputPort>(provider => provider.GetService<GetByIdRolPresenter>());
+        
+        services.AddScoped<SelectRolPresenter>();
+        services.AddScoped<ISelectRolPresenter>(provider => provider.GetService<SelectRolPresenter>());
+        services.AddScoped<ISelectRolOutputPort>(provider => provider.GetService<SelectRolPresenter>());
 
         return services;
     }
