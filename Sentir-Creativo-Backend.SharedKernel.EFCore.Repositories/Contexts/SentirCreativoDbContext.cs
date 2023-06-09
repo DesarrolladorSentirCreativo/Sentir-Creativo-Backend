@@ -91,6 +91,7 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new RolConfiguration());
         modelBuilder.ApplyConfiguration(new RolAcuerdoConfiguration());
         modelBuilder.ApplyConfiguration(new RolPrivilegioConfiguration());
+        modelBuilder.ApplyConfiguration(new CategoriaUserAdminConfigurarion());
     }
     
     DbSet<Bitacora> Bitacoras { get; set; }
@@ -139,4 +140,5 @@ public class SentirCreativoDbContext : DbContext
     DbSet<Rol> Roles { get; set; }
     DbSet<RolAcuerdo> RolAcuerdos { get; set; }
     DbSet<RolPrivilegio> RolPrivilegios { get; set; }
+    DbSet<CategoriaUserAdmin> CategoriaUserAdmins { get; set; }
 }
