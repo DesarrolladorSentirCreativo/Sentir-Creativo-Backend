@@ -92,6 +92,7 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new RolAcuerdoConfiguration());
         modelBuilder.ApplyConfiguration(new RolPrivilegioConfiguration());
         modelBuilder.ApplyConfiguration(new CategoriaUserAdminConfigurarion());
+        modelBuilder.ApplyConfiguration(new AfpConfiguration());
     }
     
     DbSet<Bitacora> Bitacoras { get; set; }
@@ -141,4 +142,5 @@ public class SentirCreativoDbContext : DbContext
     DbSet<RolAcuerdo> RolAcuerdos { get; set; }
     DbSet<RolPrivilegio> RolPrivilegios { get; set; }
     DbSet<CategoriaUserAdmin> CategoriaUserAdmins { get; set; }
+    DbSet<Afp> Afps { get; set; }
 }
