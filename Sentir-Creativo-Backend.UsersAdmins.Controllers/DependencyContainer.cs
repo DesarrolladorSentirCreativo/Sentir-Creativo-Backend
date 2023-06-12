@@ -2,6 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.AcuerdosUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.CategoriaPrivilegios;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.CategoriaUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.ColeccionesUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Modulos;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Privilegios;
@@ -9,6 +10,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Ro
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Sucursales;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.AcuerdosUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.CategoriaPrivilegios;
+using Sentir_Creativo_Backend.UsersAdmins.Controllers.CategoriaUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.ColeccionesUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.Modulos;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.Privilegios;
@@ -81,6 +83,15 @@ public static class DependencyContainer
         services.AddScoped<IGetByIdRolController, GetByIdRolController>();
         services.AddScoped<ISelectRolController, SelectRolController>();
         
+        //categorias
+        services.AddScoped<ICreateCategoriaUserAdminController, CreateCategoriaUserAdminController>();
+        services.AddScoped<IGetAllCategoriaUserAdminController, GetAllCategoriaUserAdminController>();
+        services.AddScoped<IUpdateCategoriaUserAdminController, UpdateCategoriaUserAdminController>();
+        services.AddScoped<IDeleteCategoriaUserAdminController, DeleteCategoriaUserAdminController>();
+        services.AddScoped<IGetByIdCategoriaUserAdminController, GetByIdCategoriaUserAdminController>();
+        services.AddScoped<ISelectCategoriaUserAdminController, SelectCategoriaUserAdminController>();
+        
+
         return services;
     }
 }

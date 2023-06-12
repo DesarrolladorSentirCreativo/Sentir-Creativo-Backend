@@ -11,6 +11,12 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Categori
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Update;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaUserAdmins.Create;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaUserAdmins.Delete;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaUserAdmins.GetAll;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaUserAdmins.GetById;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaUserAdmins.Select;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaUserAdmins.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.GetAll;
@@ -55,6 +61,12 @@ using Sentir_Creativo_Backend.UsersAdmin.UseCases.CategoriaPrivilegios.GetAll;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.CategoriaPrivilegios.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.CategoriaPrivilegios.Select;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.CategoriaPrivilegios.Update;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.CategoriaUserAdmins.Create;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.CategoriaUserAdmins.Delete;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.CategoriaUserAdmins.GetAll;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.CategoriaUserAdmins.GetById;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.CategoriaUserAdmins.Select;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.CategoriaUserAdmins.Update;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.ColeccionesUserAdmin.Create;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.ColeccionesUserAdmin.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.ColeccionesUserAdmin.GetAll;
@@ -152,6 +164,14 @@ public static class DependencyContainer
         services.AddScoped<IDeleteRolInputPort, DeleteRolInteractor>();
         services.AddScoped<IGetByIdRolInputPort, GetByIdRolInteractor>();
         services.AddScoped<ISelectRolInputPort, SelectRolInteractor>();
+        
+        //categorias useradmins
+        services.AddScoped<ICreateCategoriaUserAdminInputPort, CreateCategoriaUserAdminInteractor>();
+        services.AddScoped<IGetAllCategoriaUserAdminInputPort, GetAllCategoriaUserAdminInteractor>();
+        services.AddScoped<IUpdateCategoriaUserAdminInputPort, UpdateCategoriaUserAdminInteractor>();
+        services.AddScoped<IDeleteCategoriaUserAdminInputPort, DeleteCategoriaUserAdminInteractor>();
+        services.AddScoped<IGetByIdCategoriaUserAdminInputPort, GetByIdCategoriaUserAdminInteractor>();
+        services.AddScoped<ISelectCategoriaUserAdminInputPort, SelectCategoriaUserAdminInteractor>();
 
         return services;
     }

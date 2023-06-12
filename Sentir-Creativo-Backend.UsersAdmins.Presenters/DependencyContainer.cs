@@ -11,6 +11,12 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Categori
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Update;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaUserAdmins.Create;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaUserAdmins.Delete;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaUserAdmins.GetAll;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaUserAdmins.GetById;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaUserAdmins.Select;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaUserAdmins.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.GetAll;
@@ -46,6 +52,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursal
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.AcuerdosUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.CategoriaPrivilegios;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.CategoriaUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.ColeccionesUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Modulos;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Privilegios;
@@ -54,6 +61,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Suc
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.AcuerdosUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.AdminUser;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.CategoriaPrivilegios;
+using Sentir_Creativo_Backend.UsersAdmins.Presenters.CategoriaUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.ColeccionesUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Modulos;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Privilegios;
@@ -252,6 +260,31 @@ public static class DependencyContainer
         services.AddScoped<SelectRolPresenter>();
         services.AddScoped<ISelectRolPresenter>(provider => provider.GetService<SelectRolPresenter>());
         services.AddScoped<ISelectRolOutputPort>(provider => provider.GetService<SelectRolPresenter>());
+        
+        //categorias
+        services.AddScoped<CreateCategoriaUserAdminPresenter>();
+        services.AddScoped<ICreateCategoriaUserAdminPresenter>(provider => provider.GetService<CreateCategoriaUserAdminPresenter>());
+        services.AddScoped<ICreateCategoriaUserAdminOutputPort>(provider => provider.GetService<CreateCategoriaUserAdminPresenter>());
+        
+        services.AddScoped<GetAllCategoriaUserAdminPresenter>();
+        services.AddScoped<IGetAllCategoriaUserAdminPresenter>(provider => provider.GetService<GetAllCategoriaUserAdminPresenter>());
+        services.AddScoped<IGetAllCategoriaUserAdminOutputPort>(provider => provider.GetService<GetAllCategoriaUserAdminPresenter>());
+        
+        services.AddScoped<UpdateCategoriaUserAdminPresenter>();
+        services.AddScoped<IUpdateCategoriaUserAdminPresenter>(provider => provider.GetService<UpdateCategoriaUserAdminPresenter>());
+        services.AddScoped<IUpdateCategoriaUserAdminOutputPort>(provider => provider.GetService<UpdateCategoriaUserAdminPresenter>());
+        
+        services.AddScoped<DeleteCategoriaUserAdminPresenter>();
+        services.AddScoped<IDeleteCategoriaUserAdminPresenter>(provider => provider.GetService<DeleteCategoriaUserAdminPresenter>());
+        services.AddScoped<IDeleteCategoriaUserAdminOutputPort>(provider => provider.GetService<DeleteCategoriaUserAdminPresenter>());
+        
+        services.AddScoped<GetByIdCategoriaUserAdminPresenter>();
+        services.AddScoped<IGetByIdCategoriaUserAdminPresenter>(provider => provider.GetService<GetByIdCategoriaUserAdminPresenter>());
+        services.AddScoped<IGetByIdCategoriaUserAdminOutputPort>(provider => provider.GetService<GetByIdCategoriaUserAdminPresenter>());
+        
+        services.AddScoped<SelectCategoriaUserAdminPresenter>();
+        services.AddScoped<ISelectCategoriaUserAdminPresenter>(provider => provider.GetService<SelectCategoriaUserAdminPresenter>());
+        services.AddScoped<ISelectCategoriaUserAdminOutputPort>(provider => provider.GetService<SelectCategoriaUserAdminPresenter>());
 
         return services;
     }
