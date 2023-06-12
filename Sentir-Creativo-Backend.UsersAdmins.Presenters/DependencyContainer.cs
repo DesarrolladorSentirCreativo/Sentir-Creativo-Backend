@@ -5,6 +5,12 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Acuerdos
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AcuerdosUserAdmin.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AcuerdosUserAdmin.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AcuerdosUserAdmin.Update;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AFP.Create;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AFP.Delete;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AFP.GetAll;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AFP.GetById;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AFP.Select;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AFP.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.GetAll;
@@ -51,6 +57,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursal
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.AcuerdosUserAdmin;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.AFP;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.CategoriaPrivilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.CategoriaUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.ColeccionesUserAdmin;
@@ -60,6 +67,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Rol
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Sucursales;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.AcuerdosUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.AdminUser;
+using Sentir_Creativo_Backend.UsersAdmins.Presenters.AFP;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.CategoriaPrivilegios;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.CategoriaUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.ColeccionesUserAdmin;
@@ -285,7 +293,32 @@ public static class DependencyContainer
         services.AddScoped<SelectCategoriaUserAdminPresenter>();
         services.AddScoped<ISelectCategoriaUserAdminPresenter>(provider => provider.GetService<SelectCategoriaUserAdminPresenter>());
         services.AddScoped<ISelectCategoriaUserAdminOutputPort>(provider => provider.GetService<SelectCategoriaUserAdminPresenter>());
-
+        
+        //afp
+        services.AddScoped<CreateAfpPresenter>();
+        services.AddScoped<ICreateAfpPresenter>(provider => provider.GetService<CreateAfpPresenter>());
+        services.AddScoped<ICreateAfpOutputPort>(provider => provider.GetService<CreateAfpPresenter>());
+        
+        services.AddScoped<GetAllAfpPresenter>();
+        services.AddScoped<IGetAllAfpPresenter>(provider => provider.GetService<GetAllAfpPresenter>());
+        services.AddScoped<IGetAllAfpOutputPort>(provider => provider.GetService<GetAllAfpPresenter>());
+        
+        services.AddScoped<UpdateAfpPresenter>();
+        services.AddScoped<IUpdateAfpPresenter>(provider => provider.GetService<UpdateAfpPresenter>());
+        services.AddScoped<IUpdateAfpOutputPort>(provider => provider.GetService<UpdateAfpPresenter>());
+        
+        services.AddScoped<DeleteAfpPresenter>();
+        services.AddScoped<IDeleteAfpPresenter>(provider => provider.GetService<DeleteAfpPresenter>());
+        services.AddScoped<IDeleteAfpOutputPort>(provider => provider.GetService<DeleteAfpPresenter>());
+        
+        services.AddScoped<GetByIdAfpPresenter>();
+        services.AddScoped<IGetByIdAfpPresenter>(provider => provider.GetService<GetByIdAfpPresenter>());
+        services.AddScoped<IGetByIdAfpOutputPort>(provider => provider.GetService<GetByIdAfpPresenter>());
+        
+        services.AddScoped<SelectAfpPresenter>();
+        services.AddScoped<ISelectAfpPresenter>(provider => provider.GetService<SelectAfpPresenter>());
+        services.AddScoped<ISelectAfpOutputPort>(provider => provider.GetService<SelectAfpPresenter>());
+        
         return services;
     }
 }

@@ -5,6 +5,12 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Acuerdos
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AcuerdosUserAdmin.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AcuerdosUserAdmin.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AcuerdosUserAdmin.Update;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AFP.Create;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AFP.Delete;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AFP.GetAll;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AFP.GetById;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AFP.Select;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AFP.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.GetAll;
@@ -55,6 +61,12 @@ using Sentir_Creativo_Backend.UsersAdmin.UseCases.AcuerdosUserAdmin.GetAll;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.AcuerdosUserAdmin.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.AcuerdosUserAdmin.Select;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.AcuerdosUserAdmin.Update;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.AFP.Create;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.AFP.Delete;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.AFP.GetAll;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.AFP.GetById;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.AFP.Select;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.AFP.Update;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.CategoriaPrivilegios.Create;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.CategoriaPrivilegios.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.CategoriaPrivilegios.GetAll;
@@ -172,6 +184,14 @@ public static class DependencyContainer
         services.AddScoped<IDeleteCategoriaUserAdminInputPort, DeleteCategoriaUserAdminInteractor>();
         services.AddScoped<IGetByIdCategoriaUserAdminInputPort, GetByIdCategoriaUserAdminInteractor>();
         services.AddScoped<ISelectCategoriaUserAdminInputPort, SelectCategoriaUserAdminInteractor>();
+        
+        //afp
+        services.AddScoped<ICreateAfpInputPort, CreateAfpInteractor>();
+        services.AddScoped<IGetAllAfpInputPort, GetAllAfpInteractor>();
+        services.AddScoped<IDeleteAfpInputPort, DeleteAfpInteractor>();
+        services.AddScoped<IUpdateAfpInputPort, UpdateAfpInteractor>();
+        services.AddScoped<IGetByIdAfpInputPort, GetByIdAfpInteractor>();
+        services.AddScoped<ISelectAfpInputPort, SelectAfpInteractor>();
 
         return services;
     }

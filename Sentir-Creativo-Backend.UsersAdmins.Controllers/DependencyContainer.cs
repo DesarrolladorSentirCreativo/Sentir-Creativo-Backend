@@ -1,6 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.AcuerdosUserAdmin;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.AFP;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.CategoriaPrivilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.CategoriaUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.ColeccionesUserAdmin;
@@ -9,6 +10,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Pr
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Roles;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Sucursales;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.AcuerdosUserAdmin;
+using Sentir_Creativo_Backend.UsersAdmins.Controllers.AFP;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.CategoriaPrivilegios;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.CategoriaUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.ColeccionesUserAdmin;
@@ -91,6 +93,14 @@ public static class DependencyContainer
         services.AddScoped<IGetByIdCategoriaUserAdminController, GetByIdCategoriaUserAdminController>();
         services.AddScoped<ISelectCategoriaUserAdminController, SelectCategoriaUserAdminController>();
         
+        //afp
+        services.AddScoped<ICreateAfpController, CreateAfpController>();
+        services.AddScoped<IGetAllAfpController, GetAllAfpController>();
+        services.AddScoped<IUpdateAfpController, UpdateAfpController>();
+        services.AddScoped<IDeleteAfpController, DeleteAfpController>();
+        services.AddScoped<IGetByIdAfpController, GetByIdAfpController>();
+        services.AddScoped<ISelectAfpController, SelectAfpController>();
+
 
         return services;
     }
