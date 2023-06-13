@@ -93,6 +93,7 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new RolPrivilegioConfiguration());
         modelBuilder.ApplyConfiguration(new CategoriaUserAdminConfigurarion());
         modelBuilder.ApplyConfiguration(new AfpConfiguration());
+        modelBuilder.ApplyConfiguration(new ModoTrabajoConfiguration());
     }
     
     DbSet<Bitacora> Bitacoras { get; set; }
@@ -143,4 +144,5 @@ public class SentirCreativoDbContext : DbContext
     DbSet<RolPrivilegio> RolPrivilegios { get; set; }
     DbSet<CategoriaUserAdmin> CategoriaUserAdmins { get; set; }
     DbSet<Afp> Afps { get; set; }
+    DbSet<ModoTrabajo> ModoTrabajos { get; set; }
 }
