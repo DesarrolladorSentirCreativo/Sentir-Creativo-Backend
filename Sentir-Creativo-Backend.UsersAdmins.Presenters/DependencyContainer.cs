@@ -30,6 +30,12 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Coleccio
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Login;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ModoTrabajos.Create;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ModoTrabajos.Delete;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ModoTrabajos.GetAll;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ModoTrabajos.GetById;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ModoTrabajos.Select;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ModoTrabajos.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.GetAll;
@@ -61,6 +67,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.AFP
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.CategoriaPrivilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.CategoriaUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.ColeccionesUserAdmin;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.ModoTrabajos;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Modulos;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Roles;
@@ -71,6 +78,7 @@ using Sentir_Creativo_Backend.UsersAdmins.Presenters.AFP;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.CategoriaPrivilegios;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.CategoriaUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.ColeccionesUserAdmin;
+using Sentir_Creativo_Backend.UsersAdmins.Presenters.ModoTrabajos;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Modulos;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Roles;
@@ -319,6 +327,33 @@ public static class DependencyContainer
         services.AddScoped<ISelectAfpPresenter>(provider => provider.GetService<SelectAfpPresenter>());
         services.AddScoped<ISelectAfpOutputPort>(provider => provider.GetService<SelectAfpPresenter>());
         
+        
+        //modosTrabajos
+        services.AddScoped<CreateModoTrabajoPresenter>();
+        services.AddScoped<ICreateModoTrabajoPresenter>(provider => provider.GetService<CreateModoTrabajoPresenter>());
+        services.AddScoped<ICreateModoTrabajoOutputPort>(provider => provider.GetService<CreateModoTrabajoPresenter>());
+        
+        services.AddScoped<GetAllModoTrabajoPresenter>();
+        services.AddScoped<IGetAllModoTrabajoPresenter>(provider => provider.GetService<GetAllModoTrabajoPresenter>());
+        services.AddScoped<IGetAllModoTrabajoOutputPort>(provider => provider.GetService<GetAllModoTrabajoPresenter>());
+        
+        services.AddScoped<UpdateModoTrabajoPresenter>();
+        services.AddScoped<IUpdateModoTrabajoPresenter>(provider => provider.GetService<UpdateModoTrabajoPresenter>());
+        services.AddScoped<IUpdateModoTrabajoOutputPort>(provider => provider.GetService<UpdateModoTrabajoPresenter>());
+        
+        services.AddScoped<DeleteModoTrabajoPresenter>();
+        services.AddScoped<IDeleteModoTrabajoPresenter>(provider => provider.GetService<DeleteModoTrabajoPresenter>());
+        services.AddScoped<IDeleteModoTrabajoOutputPort>(provider => provider.GetService<DeleteModoTrabajoPresenter>());
+        
+        services.AddScoped<GetByIdModoTrabajoPresenter>();
+        services.AddScoped<IGetByIdModoTrabajoPresenter>(provider => provider.GetService<GetByIdModoTrabajoPresenter>());
+        services.AddScoped<IGetByIdModoTrabajoOutputPort>(provider => provider.GetService<GetByIdModoTrabajoPresenter>());
+        
+        services.AddScoped<SelectModoTrabajoPresenter>();
+        services.AddScoped<ISelectModoTrabajoPresenter>(provider => provider.GetService<SelectModoTrabajoPresenter>());
+        services.AddScoped<ISelectModoTrabajoOutputPort>(provider => provider.GetService<SelectModoTrabajoPresenter>());
+        
+
         return services;
     }
 }

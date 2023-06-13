@@ -30,6 +30,12 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Coleccio
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Login;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ModoTrabajos.Create;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ModoTrabajos.Delete;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ModoTrabajos.GetAll;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ModoTrabajos.GetById;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ModoTrabajos.Select;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ModoTrabajos.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.GetAll;
@@ -85,6 +91,12 @@ using Sentir_Creativo_Backend.UsersAdmin.UseCases.ColeccionesUserAdmin.GetAll;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.ColeccionesUserAdmin.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.ColeccionesUserAdmin.Select;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.ColeccionesUserAdmin.Update;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.ModoTrabajos.Create;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.ModoTrabajos.Delete;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.ModoTrabajos.GetAll;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.ModoTrabajos.GetById;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.ModoTrabajos.Select;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.ModoTrabajos.Update;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Modulos.Create;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Modulos.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.Modulos.GetAll;
@@ -192,6 +204,14 @@ public static class DependencyContainer
         services.AddScoped<IUpdateAfpInputPort, UpdateAfpInteractor>();
         services.AddScoped<IGetByIdAfpInputPort, GetByIdAfpInteractor>();
         services.AddScoped<ISelectAfpInputPort, SelectAfpInteractor>();
+        
+        //modosTrabajos
+        services.AddScoped<ICreateModoTrabajoInputPort, CreateModoTrabajoInteractor>();
+        services.AddScoped<IGetAllModoTrabajoInputPort, GetAllModoTrabajoInteractor>();
+        services.AddScoped<IDeleteModoTrabajoInputPort, DeleteModoTrabajoInteractor>();
+        services.AddScoped<IUpdateModoTrabajoInputPort, UpdateModoTrabajoInteractor>();
+        services.AddScoped<IGetByIdModoTrabajoInputPort, GetByIdModoTrabajoInteractor>();
+        services.AddScoped<ISelectModoTrabajoInputPort, SelectModoTrabajoInteractor>();
 
         return services;
     }

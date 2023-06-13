@@ -40,7 +40,7 @@ public class AfpWrapperController : ControllerBase
         => Ok(await _createAfpController.Handle(dto));
     
     [HttpGet]
-    [ProducesResponseType(typeof(IReadOnlyList<GetAllAfpPresenter>), (int)HttpStatusCode.OK)]
+    [ProducesResponseType(typeof(IReadOnlyList<GetAllAfpViewModel>), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<GetAllAfpViewModel>>> GetAlAfp()
         => Ok(await _getAllAfpController.Handle());
     

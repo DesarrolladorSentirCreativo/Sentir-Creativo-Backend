@@ -5,6 +5,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.AF
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.CategoriaPrivilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.CategoriaUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.ColeccionesUserAdmin;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.ModoTrabajos;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Modulos;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Roles;
@@ -14,6 +15,7 @@ using Sentir_Creativo_Backend.UsersAdmins.Controllers.AFP;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.CategoriaPrivilegios;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.CategoriaUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.ColeccionesUserAdmin;
+using Sentir_Creativo_Backend.UsersAdmins.Controllers.ModoTrabajos;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.Modulos;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.Roles;
@@ -100,6 +102,14 @@ public static class DependencyContainer
         services.AddScoped<IDeleteAfpController, DeleteAfpController>();
         services.AddScoped<IGetByIdAfpController, GetByIdAfpController>();
         services.AddScoped<ISelectAfpController, SelectAfpController>();
+        
+        //modosTrabajos
+        services.AddScoped<ICreateModoTrabajoController, CreateModoTrabajoController>();
+        services.AddScoped<IGetAllModoTrabajoController, GetAllModoTrabajoController>();
+        services.AddScoped<IUpdateModoTrabajoController, UpdateModoTrabajoController>();
+        services.AddScoped<IDeleteModoTrabajoController, DeleteModoTrabajoController>();
+        services.AddScoped<IGetByIdModoTrabajoController, GetByIdModoTrabajoController>();
+        services.AddScoped<ISelectModoTrabajoController, SelectModoTrabajoController>();
 
 
         return services;
