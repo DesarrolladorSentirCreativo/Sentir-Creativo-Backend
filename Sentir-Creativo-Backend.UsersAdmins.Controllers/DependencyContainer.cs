@@ -7,6 +7,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Ca
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.ColeccionesUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.ModoTrabajos;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Modulos;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Previsiones;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Roles;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Sucursales;
@@ -17,6 +18,7 @@ using Sentir_Creativo_Backend.UsersAdmins.Controllers.CategoriaUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.ColeccionesUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.ModoTrabajos;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.Modulos;
+using Sentir_Creativo_Backend.UsersAdmins.Controllers.Previsiones;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.Roles;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.Sucursales;
@@ -110,6 +112,14 @@ public static class DependencyContainer
         services.AddScoped<IDeleteModoTrabajoController, DeleteModoTrabajoController>();
         services.AddScoped<IGetByIdModoTrabajoController, GetByIdModoTrabajoController>();
         services.AddScoped<ISelectModoTrabajoController, SelectModoTrabajoController>();
+        
+        //previsiones
+        services.AddScoped<ICreatePrevisionController, CreatePrevisionController>();
+        services.AddScoped<IGetAllPrevisionController, GetAllPrevisionController>();
+        services.AddScoped<IUpdatePrevisionController, UpdatePrevisionController>();
+        services.AddScoped<IDeletePrevisionController, DeletePrevisionController>();
+        services.AddScoped<IGetByIdPrevisionController, GetByIdPrevisionController>();
+        services.AddScoped<ISelectPrevisionController, SelectPrevisionController>();
 
 
         return services;

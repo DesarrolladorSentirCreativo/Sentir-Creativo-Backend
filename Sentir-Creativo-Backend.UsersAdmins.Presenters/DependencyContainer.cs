@@ -43,6 +43,12 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.Update;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Previsiones.Create;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Previsiones.Delete;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Previsiones.GetAll;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Previsiones.GetById;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Previsiones.Select;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Previsiones.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Privilegios.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Privilegios.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Privilegios.GetAll;
@@ -69,6 +75,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Cat
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.ColeccionesUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.ModoTrabajos;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Modulos;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Previsiones;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Roles;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Sucursales;
@@ -80,6 +87,7 @@ using Sentir_Creativo_Backend.UsersAdmins.Presenters.CategoriaUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.ColeccionesUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.ModoTrabajos;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Modulos;
+using Sentir_Creativo_Backend.UsersAdmins.Presenters.Previsiones;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Roles;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Sucursales;
@@ -352,6 +360,31 @@ public static class DependencyContainer
         services.AddScoped<SelectModoTrabajoPresenter>();
         services.AddScoped<ISelectModoTrabajoPresenter>(provider => provider.GetService<SelectModoTrabajoPresenter>());
         services.AddScoped<ISelectModoTrabajoOutputPort>(provider => provider.GetService<SelectModoTrabajoPresenter>());
+        
+        //previsiones
+        services.AddScoped<CreatePrevisionPresenter>();
+        services.AddScoped<ICreatePrevisionPresenter>(provider => provider.GetService<CreatePrevisionPresenter>());
+        services.AddScoped<ICreatePrevisionOutputPort>(provider => provider.GetService<CreatePrevisionPresenter>());
+        
+        services.AddScoped<GetAllPrevisionPresenter>();
+        services.AddScoped<IGetAllPrevisionPresenter>(provider => provider.GetService<GetAllPrevisionPresenter>());
+        services.AddScoped<IGetAllPrevisionOutputPort>(provider => provider.GetService<GetAllPrevisionPresenter>());
+        
+        services.AddScoped<UpdatePrevisionPresenter>();
+        services.AddScoped<IUpdatePrevisionPresenter>(provider => provider.GetService<UpdatePrevisionPresenter>());
+        services.AddScoped<IUpdatePrevisionOutputPort>(provider => provider.GetService<UpdatePrevisionPresenter>());
+        
+        services.AddScoped<DeletePrevisionPresenter>();
+        services.AddScoped<IDeletePrevisionPresenter>(provider => provider.GetService<DeletePrevisionPresenter>());
+        services.AddScoped<IDeletePrevisionOutputPort>(provider => provider.GetService<DeletePrevisionPresenter>());
+        
+        services.AddScoped<GetByIdPrevisionPresenter>();
+        services.AddScoped<IGetByIdPrevisionPresenter>(provider => provider.GetService<GetByIdPrevisionPresenter>());
+        services.AddScoped<IGetByIdPrevisionOutputPort>(provider => provider.GetService<GetByIdPrevisionPresenter>());
+        
+        services.AddScoped<SelectPrevisionPresenter>();
+        services.AddScoped<ISelectPrevisionPresenter>(provider => provider.GetService<SelectPrevisionPresenter>());
+        services.AddScoped<ISelectPrevisionOutputPort>(provider => provider.GetService<SelectPrevisionPresenter>());
         
 
         return services;
