@@ -95,6 +95,7 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new AfpConfiguration());
         modelBuilder.ApplyConfiguration(new ModoTrabajoConfiguration());
         modelBuilder.ApplyConfiguration(new PrevisionConfiguration());
+        modelBuilder.ApplyConfiguration(new EstadoUserAdminConfiguration());
     }
     
     DbSet<Bitacora> Bitacoras { get; set; }
@@ -147,4 +148,5 @@ public class SentirCreativoDbContext : DbContext
     DbSet<Afp> Afps { get; set; }
     DbSet<ModoTrabajo> ModoTrabajos { get; set; }
     DbSet<Prevision> Previsiones { get; set; }
+    DbSet<EstadoUserAdmin> EstadoUserAdmins { get; set;}
 }

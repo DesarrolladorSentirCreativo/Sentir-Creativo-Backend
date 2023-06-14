@@ -5,6 +5,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.AF
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.CategoriaPrivilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.CategoriaUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.ColeccionesUserAdmin;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.EstadoUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.ModoTrabajos;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Modulos;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Previsiones;
@@ -16,6 +17,7 @@ using Sentir_Creativo_Backend.UsersAdmins.Controllers.AFP;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.CategoriaPrivilegios;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.CategoriaUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.ColeccionesUserAdmin;
+using Sentir_Creativo_Backend.UsersAdmins.Controllers.EstadoUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.ModoTrabajos;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.Modulos;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.Previsiones;
@@ -120,8 +122,15 @@ public static class DependencyContainer
         services.AddScoped<IDeletePrevisionController, DeletePrevisionController>();
         services.AddScoped<IGetByIdPrevisionController, GetByIdPrevisionController>();
         services.AddScoped<ISelectPrevisionController, SelectPrevisionController>();
-
-
+        
+        //estados useradmins
+        services.AddScoped<ICreateEstadoUserAdminController, CreateEstadoUserAdminController>();
+        services.AddScoped<IGetAllEstadoUserAdminController, GetAllEstadoUserAdminController>();
+        services.AddScoped<IUpdateEstadoUserAdminController, UpdateEstadoUserAdminController>();
+        services.AddScoped<IDeleteEstadoUserAdminController, DeleteEstadoUserAdminController>();
+        services.AddScoped<IGetByIdEstadoUserAdminController, GetByIdEstadoUserAdminController>();
+        services.AddScoped<ISelectEstadoUserAdminController, SelectEstadoUserAdminController>();
+        
         return services;
     }
 }
