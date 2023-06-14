@@ -96,6 +96,16 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new ModoTrabajoConfiguration());
         modelBuilder.ApplyConfiguration(new PrevisionConfiguration());
         modelBuilder.ApplyConfiguration(new EstadoUserAdminConfiguration());
+        modelBuilder.ApplyConfiguration(new CuentaBancariaConfiguration());
+        modelBuilder.ApplyConfiguration(new UsuarioAdminConfiguration());
+        modelBuilder.ApplyConfiguration(new UsuarioArchivoConfiguration());
+        modelBuilder.ApplyConfiguration(new UsuarioComentarioConfiguration());
+        modelBuilder.ApplyConfiguration(new UsuarioAcuerdoConfiguration());
+        modelBuilder.ApplyConfiguration(new UsuarioSucursalConfiguration());
+        modelBuilder.ApplyConfiguration(new UsuarioRolConfiguration());
+        modelBuilder.ApplyConfiguration(new UsuarioPrevilegioConfiguration());
+        
+        
     }
     
     DbSet<Bitacora> Bitacoras { get; set; }
@@ -149,4 +159,13 @@ public class SentirCreativoDbContext : DbContext
     DbSet<ModoTrabajo> ModoTrabajos { get; set; }
     DbSet<Prevision> Previsiones { get; set; }
     DbSet<EstadoUserAdmin> EstadoUserAdmins { get; set;}
+    DbSet<CuentaBancaria> CuentaBancarias { get; set; }
+    DbSet<UsuarioAdmin> UsuarioAdmins { get; set; }
+    DbSet<UsuarioAcuerdo> UsuarioAcuerdos { get; set; }
+    DbSet<UsuarioArchivo> UsuarioArchivos { get; set; }
+    DbSet<UsuarioComentario> UsuarioComentarios { get; set; }
+    DbSet<UsuarioSucursal> UsuarioSucursales { get; set; }
+    DbSet<UsuarioRol> UsuarioRoles { get; set; }
+    DbSet<UsuarioPrivilegio> UsuarioPrivilegios { get; set; }
+
 }

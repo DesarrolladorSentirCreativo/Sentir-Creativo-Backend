@@ -4526,6 +4526,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Senitr-Creativo-Backend.Comentarios.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Archivos.Entities": "1.0.0",
           "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0",
           "Sentir-Creativo-Backend.UsersAdmin.Entities": "1.0.0"
         },
