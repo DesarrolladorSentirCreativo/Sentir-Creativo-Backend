@@ -22,7 +22,8 @@ public class CreatePrivilegioValidator : AbstractValidator<CreatePrivilegioDto>
         
         
         RuleFor(p => p.Accesos)
-            .NotNull().WithMessage("User Id es requerido");
+            .NotNull().WithMessage("Accesos Id es requerido");
+        
         
     }
 }

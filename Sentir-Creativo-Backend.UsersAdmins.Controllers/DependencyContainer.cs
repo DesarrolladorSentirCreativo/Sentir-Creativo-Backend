@@ -12,6 +12,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Pr
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Roles;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Sucursales;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.UsuarioAdmins;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.AcuerdosUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.AFP;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.CategoriaPrivilegios;
@@ -25,6 +26,7 @@ using Sentir_Creativo_Backend.UsersAdmins.Controllers.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.Roles;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.Sucursales;
 using Sentir_Creativo_Backend.UsersAdmins.Controllers.UserAdmin;
+using Sentir_Creativo_Backend.UsersAdmins.Controllers.UsuarioAdmins;
 
 namespace Sentir_Creativo_Backend.UsersAdmins.Controllers;
 
@@ -130,6 +132,9 @@ public static class DependencyContainer
         services.AddScoped<IDeleteEstadoUserAdminController, DeleteEstadoUserAdminController>();
         services.AddScoped<IGetByIdEstadoUserAdminController, GetByIdEstadoUserAdminController>();
         services.AddScoped<ISelectEstadoUserAdminController, SelectEstadoUserAdminController>();
+        
+        //usuarioS admins
+        services.AddScoped<ICreateUsuarioAdminController, CreateUsuarioAdminController>();
         
         return services;
     }

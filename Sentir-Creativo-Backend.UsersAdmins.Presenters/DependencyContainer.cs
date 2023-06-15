@@ -73,6 +73,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursal
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Update;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.Create;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.AcuerdosUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.AFP;
@@ -86,6 +87,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Pre
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Roles;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.Sucursales;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.UsuarioAdmins;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.AcuerdosUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.AdminUser;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.AFP;
@@ -99,6 +101,7 @@ using Sentir_Creativo_Backend.UsersAdmins.Presenters.Previsiones;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Roles;
 using Sentir_Creativo_Backend.UsersAdmins.Presenters.Sucursales;
+using Sentir_Creativo_Backend.UsersAdmins.Presenters.UsuarioAdmins;
 
 namespace Sentir_Creativo_Backend.UsersAdmins.Presenters;
 
@@ -419,6 +422,11 @@ public static class DependencyContainer
         services.AddScoped<SelectEstadoUserAdminPresenter>();
         services.AddScoped<ISelectEstadoUserAdminPresenter>(provider => provider.GetService<SelectEstadoUserAdminPresenter>());
         services.AddScoped<ISelectEstadoUserAdminOutputPort>(provider => provider.GetService<SelectEstadoUserAdminPresenter>());
+        
+        //usuarios admins
+        services.AddScoped<CreateUsuarioAdminPresenter>();
+        services.AddScoped<ICreateUsuarioAdminPresenter>(provider => provider.GetService<CreateUsuarioAdminPresenter>());
+        services.AddScoped<ICreateUsuarioAdminOutputPort>(provider => provider.GetService<CreateUsuarioAdminPresenter>());
         
 
         return services;
