@@ -13,15 +13,18 @@ public class UsuarioAdminWrapperController : ControllerBase
     private readonly ICreateUsuarioAdminController _createUsuarioAdminController;
     private readonly IGetAllUsuarioAdminController _getAllUsuarioAdminController;
     private readonly IUpdateUsuarioAdminController _updateUsuarioAdminController;
+    private readonly IDeleteUsuarioAdminController _deleteUsuarioAdminController;
     
     public UsuarioAdminWrapperController(
         ICreateUsuarioAdminController createUsuarioAdminController, 
         IGetAllUsuarioAdminController getAllUsuarioAdminController,
-        IUpdateUsuarioAdminController updateUsuarioAdminController)
+        IUpdateUsuarioAdminController updateUsuarioAdminController,
+        IDeleteUsuarioAdminController deleteUsuarioAdminController)
     {
         _createUsuarioAdminController = createUsuarioAdminController;
         _getAllUsuarioAdminController = getAllUsuarioAdminController;
         _updateUsuarioAdminController = updateUsuarioAdminController;
+        _deleteUsuarioAdminController = deleteUsuarioAdminController;
     }
     
     [HttpPost(Name = "CreateUsuarioAdmin")]
@@ -38,6 +41,11 @@ public class UsuarioAdminWrapperController : ControllerBase
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> UpdateUsuarioAdmin([FromBody] UpdateUsuarioAdminDto dto)
         => Ok(await _updateUsuarioAdminController.Handle(dto));
+    
+    [HttpDelete("{id}", Name = "DeleteUsuarioAdmin")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> DeleteUsuarioAdmin(int id)
+        => Ok(await _deleteUsuarioAdminController.Handle(id));
     
     
 }

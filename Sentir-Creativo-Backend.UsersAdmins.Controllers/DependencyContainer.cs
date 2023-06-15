@@ -133,10 +133,11 @@ public static class DependencyContainer
         services.AddScoped<IGetByIdEstadoUserAdminController, GetByIdEstadoUserAdminController>();
         services.AddScoped<ISelectEstadoUserAdminController, SelectEstadoUserAdminController>();
         
-        //usuarioS admins
+        //usuarios admins
         services.AddScoped<ICreateUsuarioAdminController, CreateUsuarioAdminController>();
         services.AddScoped<IGetAllUsuarioAdminController, GetAllUsuarioAdminController>();
         services.AddScoped<IUpdateUsuarioAdminController, UpdateUsuarioAdminController>();
+        services.AddScoped<IDeleteUsuarioAdminController, DeleteUsuarioAdminController>();
         
         return services;
     }
