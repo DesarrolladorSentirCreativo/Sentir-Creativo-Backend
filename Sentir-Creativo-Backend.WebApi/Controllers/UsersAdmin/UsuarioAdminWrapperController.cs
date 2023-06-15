@@ -12,13 +12,16 @@ public class UsuarioAdminWrapperController : ControllerBase
 {
     private readonly ICreateUsuarioAdminController _createUsuarioAdminController;
     private readonly IGetAllUsuarioAdminController _getAllUsuarioAdminController;
+    private readonly IUpdateUsuarioAdminController _updateUsuarioAdminController;
     
     public UsuarioAdminWrapperController(
         ICreateUsuarioAdminController createUsuarioAdminController, 
-        IGetAllUsuarioAdminController getAllUsuarioAdminController)
+        IGetAllUsuarioAdminController getAllUsuarioAdminController,
+        IUpdateUsuarioAdminController updateUsuarioAdminController)
     {
         _createUsuarioAdminController = createUsuarioAdminController;
         _getAllUsuarioAdminController = getAllUsuarioAdminController;
+        _updateUsuarioAdminController = updateUsuarioAdminController;
     }
     
     [HttpPost(Name = "CreateUsuarioAdmin")]
@@ -30,4 +33,11 @@ public class UsuarioAdminWrapperController : ControllerBase
     [ProducesResponseType(typeof(IReadOnlyList<GetAllUsuarioAdminViewModel>), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<GetAllUsuarioAdminViewModel>>> GetAllUsuarioAdmin()
         => Ok(await _getAllUsuarioAdminController.Handle());
+    
+    [HttpPut("{id}", Name = "UpdateUsuarioAdmin")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> UpdateUsuarioAdmin([FromBody] UpdateUsuarioAdminDto dto)
+        => Ok(await _updateUsuarioAdminController.Handle(dto));
+    
+    
 }
