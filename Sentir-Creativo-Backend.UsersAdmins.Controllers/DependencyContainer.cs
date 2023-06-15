@@ -135,6 +135,7 @@ public static class DependencyContainer
         
         //usuarioS admins
         services.AddScoped<ICreateUsuarioAdminController, CreateUsuarioAdminController>();
+        services.AddScoped<IGetAllUsuarioAdminController, GetAllUsuarioAdminController>();
         
         return services;
     }

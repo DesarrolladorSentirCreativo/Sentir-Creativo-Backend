@@ -74,6 +74,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursal
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.Create;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.GetAll;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.AcuerdosUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.AFP;
@@ -428,6 +429,9 @@ public static class DependencyContainer
         services.AddScoped<ICreateUsuarioAdminPresenter>(provider => provider.GetService<CreateUsuarioAdminPresenter>());
         services.AddScoped<ICreateUsuarioAdminOutputPort>(provider => provider.GetService<CreateUsuarioAdminPresenter>());
         
+        services.AddScoped<GetAllUsuarioAdminPresenter>();
+        services.AddScoped<IGetAllUsuarioAdminPresenter>(provider => provider.GetService<GetAllUsuarioAdminPresenter>());
+        services.AddScoped<IGetAllUsuarioAdminOutputPort>(provider => provider.GetService<GetAllUsuarioAdminPresenter>());
 
         return services;
     }
