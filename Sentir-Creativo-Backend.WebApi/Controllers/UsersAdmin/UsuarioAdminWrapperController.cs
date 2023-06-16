@@ -14,17 +14,20 @@ public class UsuarioAdminWrapperController : ControllerBase
     private readonly IGetAllUsuarioAdminController _getAllUsuarioAdminController;
     private readonly IUpdateUsuarioAdminController _updateUsuarioAdminController;
     private readonly IDeleteUsuarioAdminController _deleteUsuarioAdminController;
+    private readonly IGetByIdUsuarioAdminController _getByIdUsuarioAdminController;
     
     public UsuarioAdminWrapperController(
         ICreateUsuarioAdminController createUsuarioAdminController, 
         IGetAllUsuarioAdminController getAllUsuarioAdminController,
         IUpdateUsuarioAdminController updateUsuarioAdminController,
-        IDeleteUsuarioAdminController deleteUsuarioAdminController)
+        IDeleteUsuarioAdminController deleteUsuarioAdminController,
+        IGetByIdUsuarioAdminController getByIdUsuarioAdminController)
     {
         _createUsuarioAdminController = createUsuarioAdminController;
         _getAllUsuarioAdminController = getAllUsuarioAdminController;
         _updateUsuarioAdminController = updateUsuarioAdminController;
         _deleteUsuarioAdminController = deleteUsuarioAdminController;
+        _getByIdUsuarioAdminController = getByIdUsuarioAdminController;
     }
     
     [HttpPost(Name = "CreateUsuarioAdmin")]
@@ -46,6 +49,11 @@ public class UsuarioAdminWrapperController : ControllerBase
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> DeleteUsuarioAdmin(int id)
         => Ok(await _deleteUsuarioAdminController.Handle(id));
+    
+    [HttpGet("{id}", Name = "GetByIdUsuarioAdmin")]
+    [ProducesResponseType(typeof(GetByIdUsuarioAdminViewModel), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<GetByIdUsuarioAdminViewModel>> GetByIdUsuarioAdmin(int id)
+        => Ok(await _getByIdUsuarioAdminController.Handle(id));
     
     
 }
