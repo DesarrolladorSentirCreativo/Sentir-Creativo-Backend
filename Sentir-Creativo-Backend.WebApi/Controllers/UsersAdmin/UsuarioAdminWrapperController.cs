@@ -15,19 +15,22 @@ public class UsuarioAdminWrapperController : ControllerBase
     private readonly IUpdateUsuarioAdminController _updateUsuarioAdminController;
     private readonly IDeleteUsuarioAdminController _deleteUsuarioAdminController;
     private readonly IGetByIdUsuarioAdminController _getByIdUsuarioAdminController;
+    private readonly ISelectUsuarioAdminController _selectUsuarioAdminController;
     
     public UsuarioAdminWrapperController(
         ICreateUsuarioAdminController createUsuarioAdminController, 
         IGetAllUsuarioAdminController getAllUsuarioAdminController,
         IUpdateUsuarioAdminController updateUsuarioAdminController,
         IDeleteUsuarioAdminController deleteUsuarioAdminController,
-        IGetByIdUsuarioAdminController getByIdUsuarioAdminController)
+        IGetByIdUsuarioAdminController getByIdUsuarioAdminController,
+        ISelectUsuarioAdminController selectUsuarioAdminController)
     {
         _createUsuarioAdminController = createUsuarioAdminController;
         _getAllUsuarioAdminController = getAllUsuarioAdminController;
         _updateUsuarioAdminController = updateUsuarioAdminController;
         _deleteUsuarioAdminController = deleteUsuarioAdminController;
         _getByIdUsuarioAdminController = getByIdUsuarioAdminController;
+        _selectUsuarioAdminController = selectUsuarioAdminController;
     }
     
     [HttpPost(Name = "CreateUsuarioAdmin")]
@@ -54,6 +57,12 @@ public class UsuarioAdminWrapperController : ControllerBase
     [ProducesResponseType(typeof(GetByIdUsuarioAdminViewModel), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<GetByIdUsuarioAdminViewModel>> GetByIdUsuarioAdmin(int id)
         => Ok(await _getByIdUsuarioAdminController.Handle(id));
+    
+    [HttpGet(Name = "SelectUsuarioAdmin")]
+    [Route("select")] 
+    [ProducesResponseType(typeof(IReadOnlyList<SelectUsuarioAdminViewModel>), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IReadOnlyList<SelectUsuarioAdminViewModel>>> SelectUsuarioAdmin()
+        => Ok(await _selectUsuarioAdminController.Handle());
     
     
 }

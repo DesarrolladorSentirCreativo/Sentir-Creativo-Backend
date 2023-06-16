@@ -77,6 +77,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioU
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.GetAll;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.GetById;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.Update;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.AcuerdosUserAdmin.Create;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.AcuerdosUserAdmin.Delete;
@@ -156,6 +157,7 @@ using Sentir_Creativo_Backend.UsersAdmin.UseCases.UsuarioAdmins.Create;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.UsuarioAdmins.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.UsuarioAdmins.GetAll;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.UsuarioAdmins.GetById;
+using Sentir_Creativo_Backend.UsersAdmin.UseCases.UsuarioAdmins.Select;
 using Sentir_Creativo_Backend.UsersAdmin.UseCases.UsuarioAdmins.Update;
 
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases;
@@ -269,6 +271,7 @@ public static class DependencyContainer
         services.AddScoped<IUpdateUsuarioAdminInputPort, UpdateUsuarioAdminInteractor>();
         services.AddScoped<IDeleteUsuarioAdminInputPort, DeleteUsuarioAdminInteractor>();
         services.AddScoped<IGetByIdUsuarioAdminInputPort, GetByIdUsuarioAdminInteractor>();
+        services.AddScoped<ISelectUsuarioAdminInputPort, SelectUsuarioAdminInteractor>();
 
         return services;
     }
