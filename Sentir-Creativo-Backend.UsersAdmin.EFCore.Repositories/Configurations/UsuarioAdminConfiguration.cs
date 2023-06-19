@@ -11,9 +11,12 @@ public class UsuarioAdminConfiguration : IEntityTypeConfiguration<UsuarioAdmin>
         builder.ToTable("useradmins");
                         
         builder.HasKey(p => p.Id).HasName("id");
+        builder.Property(p => p.PrefijoId).IsRequired().HasColumnName("prefijo");
         builder.Property(p => p.Nombre).HasColumnName("nombre").IsRequired().HasMaxLength(80);
         builder.Property(p => p.Apellidos).HasColumnName("apellidos").IsRequired().HasMaxLength(80);
         builder.Property(p => p.PrevisionId).HasColumnName("prevision").IsRequired();
+        builder.Property(p => p.Telefono).HasColumnName("telefono_personal").HasMaxLength(30);
+        builder.Property(p => p.EmailPersonal).HasColumnName("email_personal").HasMaxLength(256);
         builder.Property(p => p.ModoId).HasColumnName("modo").IsRequired();
         builder.Property(p => p.AfpId).HasColumnName("afp").IsRequired();
         builder.Property(p => p.CategoriaId).HasColumnName("categoria").IsRequired();
@@ -63,9 +66,10 @@ public class UsuarioAdminConfiguration : IEntityTypeConfiguration<UsuarioAdmin>
         builder.HasOne(u => u.Estado)
             .WithOne()
             .HasForeignKey<UsuarioAdmin>("EstadoId");
-
-
-
         
+        builder.HasOne(u => u.Prefijo)
+            .WithOne()
+            .HasForeignKey<UsuarioAdmin>("PrefijoId");
+
     }
 }

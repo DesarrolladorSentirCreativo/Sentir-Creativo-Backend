@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "Sentir-Creativo-Backend.Audiencias.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sentir-Creativo-Backend.Audiencias.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sentir-Creativo-Backend.Audiencias.Entities.dll": {}
+        }
+      },
       "Sentir-Creativo-Backend.SharedKernel.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -15,6 +28,11 @@
     }
   },
   "libraries": {
+    "Sentir-Creativo-Backend.Audiencias.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Sentir-Creativo-Backend.Audiencias.Entities/Sentir-Creativo-Backend.Audiencias.Entities.csproj",
+      "msbuildProject": "../Sentir-Creativo-Backend.Audiencias.Entities/Sentir-Creativo-Backend.Audiencias.Entities.csproj"
+    },
     "Sentir-Creativo-Backend.SharedKernel.Entities/1.0.0": {
       "type": "project",
       "path": "../Sentir-Creativo-Backend.SharedKernel.Entities/Sentir-Creativo-Backend.SharedKernel.Entities.csproj",
@@ -23,6 +41,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Sentir-Creativo-Backend.Audiencias.Entities >= 1.0.0",
       "Sentir-Creativo-Backend.SharedKernel.Entities >= 1.0.0"
     ]
   },
@@ -59,6 +78,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.Entities\\Sentir-Creativo-Backend.Audiencias.Entities.csproj": {
+              "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Audiencias.Entities\\Sentir-Creativo-Backend.Audiencias.Entities.csproj"
+            },
             "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj": {
               "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj"
             }

@@ -1,9 +1,11 @@
+using Sentir_Creativo_Backend.Audiencias.Entities.POCOEntities;
 using Sentir_Creativo_Backend.SharedKernel.Entities.POCOEntities;
 
 namespace Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
 
 public class UsuarioAdmin : BaseEntity<int>
 {
+    public int PrefijoId { get; set; }
     public string Nombre { get; set; }
     public string Apellidos { get; set; }
     public int PrevisionId  { get; set; }
@@ -14,6 +16,8 @@ public class UsuarioAdmin : BaseEntity<int>
     public bool ValidaDocumento { get; set; }
     public string TipoDocumento { get; set; }
     public string NumDocumento { get; set; }
+    public string? Telefono { get; set; }
+    public string? EmailPersonal { get; set; }
     public DateTime FechaPago { get; set; }
     public DateTime FechaInicio { get; set; }
     public DateTime? FechaFin { get; set; }
@@ -38,7 +42,7 @@ public class UsuarioAdmin : BaseEntity<int>
     public virtual ModoTrabajo Modo { get; set; }
     public virtual CategoriaUserAdmin Categoria { get; set; }
     public virtual CuentaBancaria CuentaBancaria { get; set; }
-    
+    public virtual Prefijo Prefijo { get; set; }
     public virtual EstadoUserAdmin Estado { get; set; }
 
 

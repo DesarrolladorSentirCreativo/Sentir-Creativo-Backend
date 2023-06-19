@@ -30,9 +30,12 @@ public class GetAllUsuarioAdminInteractor : IGetAllUsuarioAdminInputPort
                 new GetAllUsuarioAdminViewModel()
                 {
                     Id = p.Id,
+                    PrefijoId = p.PrefijoId,
                     Nombre = p.Nombre,
                     Apellidos = p.Apellidos,
                     Email = p.Email,
+                    EmailPersonal = p.EmailPersonal,
+                    Telefono = p.Telefono,
                     PrevisionId = p.PrevisionId,
                     ModoId = p.ModoId,
                     AfpId = p.AfpId,

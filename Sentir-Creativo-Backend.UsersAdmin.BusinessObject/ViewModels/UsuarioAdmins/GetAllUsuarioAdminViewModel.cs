@@ -3,6 +3,9 @@ namespace Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.UsuarioAd
 public class GetAllUsuarioAdminViewModel
 {
     public int Id { get; set; }
+    public int PrefijoId { get; set; }
+    public string? Telefono { get; set; }
+    public string? EmailPersonal { get; set; }
     public string Nombre { get; set; }
     public string Apellidos { get; set; }
     public int PrevisionId  { get; set; }

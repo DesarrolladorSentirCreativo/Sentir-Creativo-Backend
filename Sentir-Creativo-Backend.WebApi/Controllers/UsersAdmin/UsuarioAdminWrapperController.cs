@@ -43,12 +43,12 @@ public class UsuarioAdminWrapperController : ControllerBase
     public async Task<ActionResult<IReadOnlyList<GetAllUsuarioAdminViewModel>>> GetAllUsuarioAdmin()
         => Ok(await _getAllUsuarioAdminController.Handle());
     
-    [HttpPut("{id}", Name = "UpdateUsuarioAdmin")]
+    [HttpPut(Name = "UpdateUsuarioAdmin")]
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> UpdateUsuarioAdmin([FromBody] UpdateUsuarioAdminDto dto)
         => Ok(await _updateUsuarioAdminController.Handle(dto));
     
-    [HttpDelete("{id}", Name = "DeleteUsuarioAdmin")]
+    [HttpPut("{id}", Name = "DeleteUsuarioAdmin")]
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> DeleteUsuarioAdmin(int id)
         => Ok(await _deleteUsuarioAdminController.Handle(id));
@@ -58,11 +58,9 @@ public class UsuarioAdminWrapperController : ControllerBase
     public async Task<ActionResult<GetByIdUsuarioAdminViewModel>> GetByIdUsuarioAdmin(int id)
         => Ok(await _getByIdUsuarioAdminController.Handle(id));
     
-    [HttpGet(Name = "SelectUsuarioAdmin")]
+    [HttpGet]
     [Route("select")] 
-    [ProducesResponseType(typeof(IReadOnlyList<SelectUsuarioAdminViewModel>), (int)HttpStatusCode.OK)]
-    public async Task<ActionResult<IReadOnlyList<SelectUsuarioAdminViewModel>>> SelectUsuarioAdmin()
+    [ProducesResponseType(typeof(SelectUsuarioAdminViewModel), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IReadOnlyList<SelectUsuarioAdminViewModel>>> SelectUsuarioAdmin() 
         => Ok(await _selectUsuarioAdminController.Handle());
-    
-    
 }
