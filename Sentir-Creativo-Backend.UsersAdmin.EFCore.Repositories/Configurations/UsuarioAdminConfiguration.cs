@@ -19,6 +19,7 @@ public class UsuarioAdminConfiguration : IEntityTypeConfiguration<UsuarioAdmin>
         builder.Property(p => p.EmailPersonal).HasColumnName("email_personal").HasMaxLength(256);
         builder.Property(p => p.ModoId).HasColumnName("modo").IsRequired();
         builder.Property(p => p.AfpId).HasColumnName("afp").IsRequired();
+        builder.Property(p => p.Alias).HasColumnName("alias").IsRequired().HasMaxLength(50);
         builder.Property(p => p.CategoriaId).HasColumnName("categoria").IsRequired();
         builder.Property(p => p.CuentaBancariaId).HasColumnName("cuenta_bancaria").IsRequired();
         builder.Property(p => p.ValidaDocumento).HasColumnName("valida_documento").IsRequired();

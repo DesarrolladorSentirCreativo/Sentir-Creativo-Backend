@@ -63,24 +63,29 @@ public class CreateUsuarioAdminInteractor : ICreateUsuarioAdminInputPort
             Direccion = dto.Direccion,
             ComunaId = dto.ComunaId,
             RegionId = dto.RegionId,
+            Alias = dto.Alias,
             PaisId = dto.PaisId,
             PublishedAt = DateTime.Now,
             CreatedAt = DateTime.Now,
             CreatedBy = dto.UserId,
+            EmailPersonal = dto.EmailPersonal,
             Activo = true
         };
 
-        //creamos la cuenta bancaria
-        var cuentaBancaria = new CuentaBancaria()
+       if(!string.IsNullOrEmpty(dto.Banco))
         {
-            Banco = dto.Banco,
-            TipoCuenta = dto.TipoCuenta,
-            NumCuenta = dto.NumCuenta,
-            Activo = true,
-            CreatedAt = DateTime.Now,
-            CreatedBy = dto.UserId,
-            PublishedAt = DateTime.Now
-        };
+            //creamos la cuenta bancaria
+            var cuentaBancaria = new CuentaBancaria()
+            {
+                Banco = dto.Banco,
+                TipoCuenta = dto.TipoCuenta,
+                NumCuenta = dto.NumCuenta,
+                Activo = true,
+                CreatedAt = DateTime.Now,
+                CreatedBy = dto.UserId,
+                PublishedAt = DateTime.Now
+            };
+        }
 
         _unitOfWork.WriteRepository<CuentaBancaria, int>().AddEntity(cuentaBancaria);
 
@@ -120,16 +125,6 @@ public class CreateUsuarioAdminInteractor : ICreateUsuarioAdminInputPort
             {
                 UsuarioId = usuario.Id,
                 PrivilegioId = privilegio.PrivilegioId
-            });
-        }
-        
-        //guardamos los archivos
-        foreach (var archivo in dto.Archivos)
-        {
-            _unitOfWork.WriteRepository<UsuarioArchivo,int>().AddEntity(new UsuarioArchivo()
-            {
-                UsuarioId = usuario.Id,
-                ArchivoId = archivo.ArchivoId
             });
         }
         

@@ -10,7 +10,11 @@ public class CreateUsuarioAdminValidator : AbstractValidator<CreateUsuarioAdminD
         RuleFor(p => p.Nombre)
             .NotEmpty().WithMessage("El nombre es requerido")
             .Length(80).WithMessage("El nombre no debe superar los 80 caracteres");
-        
+
+        RuleFor(p => p.Alias)
+            .NotEmpty().WithMessage("El alias es requerido")
+            .Length(50).WithMessage("El alias no debe superar los 50 caracteres");
+
         RuleFor(p => p.Apellidos)
             .NotEmpty().WithMessage("Los apellidos es requerido")
             .Length(80).WithMessage("Los apellidos no debe superar los 80 caracteres");
@@ -58,6 +62,11 @@ public class CreateUsuarioAdminValidator : AbstractValidator<CreateUsuarioAdminD
             .NotEmpty().WithMessage("El email es requerido")
             .Length(256).WithMessage("El email no debe superar los 256 caracteres")
             .EmailAddress().WithMessage("El email no es valido");
+
+        RuleFor(p => p.EmailPersonal)
+         .NotEmpty().WithMessage("El email personal es requerido")
+         .Length(256).WithMessage("El email personal no debe superar los 256 caracteres")
+         .EmailAddress().WithMessage("El email personal no es valido");
 
         RuleFor(p => p.Direccion)
             .Length(1024).WithMessage("La direccion no debe superar los 1024 caracteres");

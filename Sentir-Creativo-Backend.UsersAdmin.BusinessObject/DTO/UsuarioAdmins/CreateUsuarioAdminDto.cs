@@ -30,9 +30,10 @@ public class CreateUsuarioAdminDto : CuentaBancariaDto
     public int ComunaId { get; set; }
     public int RegionId { get; set; }
     public int PaisId { get; set; }
+    public string EmailPersonal { get; set; }
+    public string Alias {  get; set; }
     
     public IReadOnlyList<RolIdDto> Roles { get; set; }
-    public IReadOnlyList<ArchivoIdDto> Archivos { get; set; }
     public IReadOnlyList<IdComentarioDto> Comentarios { get; set; }
     public IReadOnlyList<AcuerdoIdDto> Acuerdos { get; set; }
     public IReadOnlyList<PrivilegioIdDto> Privilegios { get; set; }
