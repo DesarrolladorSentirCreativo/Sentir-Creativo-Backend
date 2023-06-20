@@ -1,0 +1,12 @@
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.Entities\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.deps.json
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.Entities\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.Entities\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.Entities\obj\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.csproj.AssemblyReference.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.Entities\obj\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.Entities\obj\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.AssemblyInfoInputs.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.Entities\obj\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.AssemblyInfo.cs
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.Entities\obj\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.csproj.CoreCompileInputs.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.Entities\obj\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.Entities\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.Entities\obj\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.Entities\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.SharedKernel.Entities.dll

@@ -1,0 +1,17 @@
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.BusinessObject\bin\Release\net7.0\Sentir-Creativo-Backend.Archivos.BusinessObject.deps.json
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.BusinessObject\bin\Release\net7.0\Sentir-Creativo-Backend.Archivos.BusinessObject.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.BusinessObject\bin\Release\net7.0\Sentir-Creativo-Backend.Archivos.BusinessObject.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.BusinessObject\bin\Release\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.BusinessObject\bin\Release\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.BusinessObject\obj\Release\net7.0\Sentir-Creativo-Backend.Archivos.BusinessObject.csproj.AssemblyReference.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.BusinessObject\obj\Release\net7.0\Sentir-Creativo-Backend.Archivos.BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.BusinessObject\obj\Release\net7.0\Sentir-Creativo-Backend.Archivos.BusinessObject.AssemblyInfoInputs.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.BusinessObject\obj\Release\net7.0\Sentir-Creativo-Backend.Archivos.BusinessObject.AssemblyInfo.cs
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.BusinessObject\obj\Release\net7.0\Sentir-Creativo-Backend.Archivos.BusinessObject.csproj.CoreCompileInputs.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.BusinessObject\obj\Release\net7.0\Sentir-Creativo-Backend.Archivos.BusinessObject.csproj.CopyComplete
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.BusinessObject\obj\Release\net7.0\Sentir-Creativo-Backend.Archivos.BusinessObject.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.BusinessObject\obj\Release\net7.0\refint\Sentir-Creativo-Backend.Archivos.BusinessObject.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.BusinessObject\obj\Release\net7.0\Sentir-Creativo-Backend.Archivos.BusinessObject.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.BusinessObject\obj\Release\net7.0\ref\Sentir-Creativo-Backend.Archivos.BusinessObject.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.BusinessObject\bin\Release\net7.0\Sentir-Creativo-Backend.Archivos.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.BusinessObject\bin\Release\net7.0\Sentir-Creativo-Backend.Archivos.Entities.pdb

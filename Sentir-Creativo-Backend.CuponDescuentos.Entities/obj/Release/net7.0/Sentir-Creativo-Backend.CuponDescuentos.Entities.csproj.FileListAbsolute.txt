@@ -1,0 +1,15 @@
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.Entities\bin\Release\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.deps.json
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.Entities\bin\Release\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.Entities\bin\Release\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.Entities\bin\Release\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.Entities\bin\Release\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.Entities\obj\Release\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.csproj.AssemblyReference.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.Entities\obj\Release\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.Entities\obj\Release\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.AssemblyInfoInputs.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.Entities\obj\Release\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.AssemblyInfo.cs
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.Entities\obj\Release\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.csproj.CoreCompileInputs.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.Entities\obj\Release\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.csproj.CopyComplete
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.Entities\obj\Release\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.Entities\obj\Release\net7.0\refint\Sentir-Creativo-Backend.CuponDescuentos.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.Entities\obj\Release\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.Entities\obj\Release\net7.0\ref\Sentir-Creativo-Backend.CuponDescuentos.Entities.dll

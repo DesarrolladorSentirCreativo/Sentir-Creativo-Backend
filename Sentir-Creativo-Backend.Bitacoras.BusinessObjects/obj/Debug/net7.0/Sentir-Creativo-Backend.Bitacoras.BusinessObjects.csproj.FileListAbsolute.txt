@@ -1,0 +1,12 @@
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.deps.json
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj.AssemblyReference.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.AssemblyInfoInputs.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.AssemblyInfo.cs
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj.CoreCompileInputs.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.dll

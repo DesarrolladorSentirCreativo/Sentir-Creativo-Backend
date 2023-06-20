@@ -1,0 +1,15 @@
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Presenters.deps.json
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Presenters.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Presenters.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Presenters.csproj.AssemblyReference.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Presenters.GeneratedMSBuildEditorConfig.editorconfig
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Presenters.AssemblyInfoInputs.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Presenters.AssemblyInfo.cs
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Presenters.csproj.CoreCompileInputs.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Presenters.csproj.CopyComplete
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Presenters.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Presenters\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Bitacoras.Presenters.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Presenters.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Presenters\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Bitacoras.Presenters.dll

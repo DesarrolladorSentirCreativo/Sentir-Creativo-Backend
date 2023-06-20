@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Sentir-Creativo-Backend.WebApi.props" />
+</Project>

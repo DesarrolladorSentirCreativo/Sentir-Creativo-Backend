@@ -1,0 +1,15 @@
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Entities\bin\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.deps.json
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Entities\bin\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Entities\bin\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Entities\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Entities\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Entities\obj\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.csproj.AssemblyReference.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Entities\obj\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Entities\obj\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.AssemblyInfoInputs.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Entities\obj\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.AssemblyInfo.cs
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Entities\obj\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.csproj.CoreCompileInputs.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Entities\obj\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.csproj.CopyComplete
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Entities\obj\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Entities\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Audiencias.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Entities\obj\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Entities\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Audiencias.Entities.dll

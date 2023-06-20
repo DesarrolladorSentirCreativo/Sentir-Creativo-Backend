@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Publish Sentir-Creativo-Backend.WebApi to folder" type="DotNetFolderPublish" factoryName="Publish to folder" singleton="false">
+    <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" runtime="Portable" target_folder="$PROJECT_DIR$/Sentir-Creativo-Backend.WebApi/bin/Release/net7.0/publish" target_framework="net7.0" uuid_high="-2700910613925967410" uuid_low="-6036395548696260153" />
+    <method v="2" />
+  </configuration>
+</component>

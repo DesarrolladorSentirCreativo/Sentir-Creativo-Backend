@@ -1,0 +1,15 @@
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Entities\bin\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.Entities.deps.json
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Entities\bin\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Entities\bin\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.Entities.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Entities\bin\Release\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Entities\bin\Release\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Entities\obj\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.Entities.csproj.AssemblyReference.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Entities\obj\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Entities\obj\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.Entities.AssemblyInfoInputs.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Entities\obj\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.Entities.AssemblyInfo.cs
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Entities\obj\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.Entities.csproj.CoreCompileInputs.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Entities\obj\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.Entities.csproj.CopyComplete
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Entities\obj\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Entities\obj\Release\net7.0\refint\Sentir-Creativo-Backend.Bitacoras.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Entities\obj\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.Entities.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.Entities\obj\Release\net7.0\ref\Sentir-Creativo-Backend.Bitacoras.Entities.dll

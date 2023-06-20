@@ -1,0 +1,137 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Sentir-Creativo-Backend.Proyectos.IoC/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Sentir-Creativo-Backend.Proyectos.Controllers": "1.0.0",
+          "Sentir-Creativo-Backend.Proyectos.Presenters": "1.0.0",
+          "Sentir-Creativo-Backend.Proyectos.UseCases": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Proyectos.IoC.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0": {
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        }
+      },
+      "Sentir-Creativo-Backend.Areas.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Areas.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Proyectos.BusinessObject/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.Proyectos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Proyectos.BusinessObject.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Proyectos.Controllers/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Sentir-Creativo-Backend.Proyectos.BusinessObject": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Proyectos.Controllers.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Proyectos.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.Areas.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Proyectos.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Proyectos.Presenters/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Sentir-Creativo-Backend.Proyectos.BusinessObject": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Proyectos.Presenters.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Proyectos.UseCases/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Sentir-Creativo-Backend.Proyectos.BusinessObject": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Proyectos.UseCases.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.SharedKernel.Entities/1.0.0": {
+        "runtime": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Sentir-Creativo-Backend.Proyectos.IoC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h3j/QfmFN4S0w4C2A6X7arXij/M/OVw3uQHSOFxnND4DyAzO1F9eMX7Eti7lU/OkSthEE0WzRsfT/Dmx86jzCw==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/7.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+    },
+    "Sentir-Creativo-Backend.Areas.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Proyectos.BusinessObject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Proyectos.Controllers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Proyectos.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Proyectos.Presenters/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Proyectos.UseCases/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.SharedKernel.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\bin\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.deps.json
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\bin\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\bin\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.csproj.AssemblyReference.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.GeneratedMSBuildEditorConfig.editorconfig
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.AssemblyInfoInputs.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.AssemblyInfo.cs
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.csproj.CoreCompileInputs.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.csproj.CopyComplete
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.WebExceptionsPresenters.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.WebExceptionsPresenters.dll

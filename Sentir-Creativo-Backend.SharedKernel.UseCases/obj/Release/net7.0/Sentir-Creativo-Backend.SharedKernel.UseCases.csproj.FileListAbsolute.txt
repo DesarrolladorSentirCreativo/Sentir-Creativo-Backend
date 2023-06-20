@@ -1,0 +1,12 @@
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.UseCases\bin\Release\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.deps.json
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.UseCases\bin\Release\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.UseCases\bin\Release\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.UseCases\obj\Release\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.csproj.AssemblyReference.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.UseCases\obj\Release\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.UseCases\obj\Release\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.AssemblyInfoInputs.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.UseCases\obj\Release\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.AssemblyInfo.cs
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.UseCases\obj\Release\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.csproj.CoreCompileInputs.cache
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.UseCases\obj\Release\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.UseCases\obj\Release\net7.0\refint\Sentir-Creativo-Backend.SharedKernel.UseCases.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.UseCases\obj\Release\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.SharedKernel.UseCases\obj\Release\net7.0\ref\Sentir-Creativo-Backend.SharedKernel.UseCases.dll
