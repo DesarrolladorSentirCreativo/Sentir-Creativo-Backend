@@ -1,3 +1,4 @@
+using Sentir_Creativo_Backend.Archivos.Entities.DTO;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.AcuerdosUserAdmin;
@@ -19,15 +20,17 @@ public class GetByIdUsuarioAdminInteractor : IGetByIdUsuarioAdminInputPort
     private readonly IReadRepository<UsuarioAcuerdo, int> _acuerdoUsuarioReadRepository;
     private readonly IReadRepository<UsuarioPrivilegio,int> _privilegioUsuarioReadRepository;
     private readonly IReadRepository<UsuarioSucursal,int> _sucursalUsuarioReadRepository;
+    private readonly IReadRepository<UsuarioArchivo, int> _archivoUsuarioReadRepository;
     private readonly IGetByIdUsuarioAdminOutputPort _outputPort;
-    
+
     public GetByIdUsuarioAdminInteractor(
-        IReadRepository<UsuarioAdmin,int> usuarioAdminReadRepository,
-        IReadRepository<CuentaBancaria,int> cuentaBancariaReadRepository,
-        IReadRepository<UsuarioRol,int> rolUsuarioReadRepository,
+        IReadRepository<UsuarioAdmin, int> usuarioAdminReadRepository,
+        IReadRepository<CuentaBancaria, int> cuentaBancariaReadRepository,
+        IReadRepository<UsuarioRol, int> rolUsuarioReadRepository,
         IReadRepository<UsuarioAcuerdo, int> acuerdoUsuarioReadRepository,
-        IReadRepository<UsuarioPrivilegio,int> privilegioUsuarioReadRepository,
-        IReadRepository<UsuarioSucursal,int> sucursalUsuarioReadRepository,
+        IReadRepository<UsuarioPrivilegio, int> privilegioUsuarioReadRepository,
+        IReadRepository<UsuarioSucursal, int> sucursalUsuarioReadRepository,
+        IReadRepository<UsuarioArchivo, int> archivoUsuarioReadRepository,
         IGetByIdUsuarioAdminOutputPort outputPort)
     {
         _usuarioAdminReadRepository = usuarioAdminReadRepository;
@@ -37,6 +40,7 @@ public class GetByIdUsuarioAdminInteractor : IGetByIdUsuarioAdminInputPort
         _acuerdoUsuarioReadRepository = acuerdoUsuarioReadRepository;
         _privilegioUsuarioReadRepository = privilegioUsuarioReadRepository;
         _sucursalUsuarioReadRepository = sucursalUsuarioReadRepository;
+        _archivoUsuarioReadRepository = archivoUsuarioReadRepository;
     }
 
     public async ValueTask Handle(int usuarioAdminId)
@@ -103,6 +107,20 @@ public class GetByIdUsuarioAdminInteractor : IGetByIdUsuarioAdminInputPort
             .ToList()
             .AsReadOnly();
 
+        //buscamos los archivos
+        var usuarioArchivoSpec = new UsuarioArchivoByIdUsuarioSpecification(usuarioAdminId);
+
+        var usuariosArchivos = await _archivoUsuarioReadRepository.GetAllWithSpec(usuarioArchivoSpec);
+
+        IReadOnlyList<ArchivoIdDto> archivos = usuariosArchivos
+            .Select(p =>
+                new ArchivoIdDto()
+                {
+                    ArchivoId = p.ArchivoId
+                })
+            .ToList()
+            .AsReadOnly();
+
         var data = new GetByIdUsuarioAdminViewModel()
         {
             Id = usuario.Id,
@@ -121,8 +139,9 @@ public class GetByIdUsuarioAdminInteractor : IGetByIdUsuarioAdminInputPort
             FechaInicio = usuario.FechaInicio,
             SueldoBruto = usuario.SueldoBruto,
             EstadoId = usuario.EstadoId,
+            Alias = usuario.Alias,
             Direccion = usuario.Direccion,
-            ComunaId = usuario.ComunaId,
+            CiudadId = usuario.ComunaId,
             RegionId = usuario.RegionId,
             PaisId = usuario.PaisId,
             CuentaBancariaId = usuario.CuentaBancariaId,
@@ -132,7 +151,8 @@ public class GetByIdUsuarioAdminInteractor : IGetByIdUsuarioAdminInputPort
             Roles = roles,
             Acuerdos = acuerdos,
             Privilegios = privilegios,
-            Sucursales = sucursales
+            Sucursales = sucursales,
+            Archivos = archivos
         };
 
         await _outputPort.Handle(data);

@@ -21,6 +21,7 @@ public class GetByIdUsuarioAdminViewModel : CuentaBancariaDto
     public bool ValidaDocumento { get; set; }
     public string TipoDocumento { get; set; }
     public string NumDocumento { get; set; }
+    public string Alias { get; set; }
     public DateTime FechaPago { get; set; }
     public DateTime FechaInicio { get; set; }
     public DateTime? FechaFin { get; set; }
@@ -28,7 +29,7 @@ public class GetByIdUsuarioAdminViewModel : CuentaBancariaDto
     public int EstadoId { get; set; }
     public string Email { get; set; }
     public string? Direccion { get; set; }
-    public int ComunaId { get; set; }
+    public int CiudadId { get; set; }
     public int RegionId { get; set; }
     public int PaisId { get; set; }
     
@@ -36,4 +37,5 @@ public class GetByIdUsuarioAdminViewModel : CuentaBancariaDto
     public IReadOnlyList<AcuerdoIdDto> Acuerdos { get; set; }
     public IReadOnlyList<PrivilegioIdDto> Privilegios { get; set; }
     public IReadOnlyList<SucursalIdDto> Sucursales { get; set; }
+    public IReadOnlyList<ArchivoIdDto> Archivos { get; set; }
 }
