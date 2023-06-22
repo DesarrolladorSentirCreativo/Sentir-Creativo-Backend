@@ -70,11 +70,14 @@ public class UpdateUsuarioAdminInteractor : IUpdateUsuarioAdminInputPort
         usuario.TipoDocumento = dto.TipoDocumento; 
         usuario.NumDocumento = dto.NumDocumento;
         usuario.Direccion = dto.Direccion;
-        usuario.ComunaId = dto.ComunaId;
+        usuario.ComunaId = dto.CiudadId;
         usuario.RegionId = dto.RegionId;
         usuario.PaisId = dto.PaisId;
         usuario.UpdatedAt = DateTime.Now;
         usuario.UpdatedBy = dto.UserId;
+        usuario.PrefijoId = dto.PrefijoId;
+        usuario.Alias = dto.Alias;
+        usuario.EmailPersonal = dto.EmailPersonal;
 
         _unitOfWork.WriteRepository<UsuarioAdmin,int>().UpdateEntity(usuario);
 
@@ -171,11 +174,11 @@ public class UpdateUsuarioAdminInteractor : IUpdateUsuarioAdminInputPort
         }
 
         var result = await _unitOfWork.Complete();
-        
+       
         //se evalua si funciono correctamente
         if (result <= 0)
         {
-            throw new Exception("No se pudo insertar el record de usuarios");
+            throw new Exception("No se pudo actualizar el record de usuarios");
         }
 
         await _outputPort.Handle(usuario.Id);

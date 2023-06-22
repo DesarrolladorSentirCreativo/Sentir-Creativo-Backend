@@ -62,7 +62,7 @@ public class UpdateUsuarioAdminValidator : AbstractValidator<UpdateUsuarioAdminD
         RuleFor(p => p.Direccion)
             .Length(1024).WithMessage("La direccion no debe superar los 1024 caracteres");
         
-        RuleFor(p => p.ComunaId)
+        RuleFor(p => p.CiudadId)
             .NotNull().WithMessage("Comuna Id es requerido");
 
         RuleFor(p => p.RegionId)

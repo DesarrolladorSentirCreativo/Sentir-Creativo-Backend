@@ -2438,6 +2438,7 @@
         "dependencies": {
           "Senitr-Creativo-Backend.Comentarios.Entities": "1.0.0",
           "Sentir-Creativo-Backend.Archivos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Audiencias.BusinessObject": "1.0.0",
           "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0",
           "Sentir-Creativo-Backend.UsersAdmin.Entities": "1.0.0"
         },
@@ -2481,6 +2482,7 @@
         "dependencies": {
           "FluentValidation": "11.5.2",
           "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Sentir-Creativo-Backend.Audiencias.BusinessObject": "1.0.0",
           "Sentir-Creativo-Backend.SharedKernel.UseCases": "1.0.0",
           "Sentir-Creativo-Backend.UsersAdmin.BusinessObject": "1.0.0"
         },

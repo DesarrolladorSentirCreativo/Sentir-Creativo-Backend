@@ -10,6 +10,7 @@
     <ItemGroup>
       <ProjectReference Include="..\Senitr-Creativo-Backend.Comentarios.Entities\Senitr-Creativo-Backend.Comentarios.Entities.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.Archivos.Entities\Sentir-Creativo-Backend.Archivos.Entities.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.Audiencias.BusinessObject\Sentir-Creativo-Backend.Audiencias.BusinessObject.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.SharedKernel.Entities\Sentir-Creativo-Backend.SharedKernel.Entities.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.UsersAdmin.Entities\Sentir-Creativo-Backend.UsersAdmin.Entities.csproj" />
     </ItemGroup>

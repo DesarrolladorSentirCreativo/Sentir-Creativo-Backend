@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zJCzyJPjDq0jCNNFlhQvUosubb3zcyeD+d7D51OH6mm/wGbjw/yLh5CunZBZlWPG3nkh75o85g31C2g3B0ye1g==",
+  "dgSpecHash": "2Lu+GEIzfsSxfkuceI17iTOUW13OdhKDuH0WQKgmorl/4+Swp+b/baOOmAkdCe68sRgwYVBi40uKdL3Cfzn9kw==",
   "success": true,
   "projectFilePath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.UsersAdmin.Infrastructure.Services\\Sentir-Creativo-Backend.UsersAdmin.Infrastructure.Services.csproj",
   "expectedPackageFiles": [
@@ -27,7 +27,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'BCrypt.Net 0.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "message": "El paquete \"BCrypt.Net 0.1.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
       "libraryId": "BCrypt.Net",
       "targetGraphs": [
         "net7.0"

@@ -51,6 +51,7 @@ public class CreateUsuarioAdminInteractor : ICreateUsuarioAdminInputPort
             ModoId = dto.ModoId,
             AfpId = dto.AfpId,
             CategoriaId = dto.CategoriaId,
+            PrefijoId = dto.PrefijoId,
             FechaPago = dto.FechaPago,
             FechaFin = dto.FechaFin,
             FechaInicio = dto.FechaInicio,

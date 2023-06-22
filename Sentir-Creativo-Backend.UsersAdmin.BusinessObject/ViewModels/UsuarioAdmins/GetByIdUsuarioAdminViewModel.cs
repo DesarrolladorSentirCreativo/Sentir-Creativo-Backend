@@ -1,5 +1,6 @@
 using Senitr_Creativo_Backend.Comentarios.Entities.DTO;
 using Sentir_Creativo_Backend.Archivos.Entities.DTO;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Audiencias;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.AcuerdosUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Privilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Roles;
@@ -32,10 +33,14 @@ public class GetByIdUsuarioAdminViewModel : CuentaBancariaDto
     public int CiudadId { get; set; }
     public int RegionId { get; set; }
     public int PaisId { get; set; }
+    public int PrefijoId { get; set; }
+    public string? EmailPersonal { get; set; }
+    public string? Telefono { get; set; }
     
     public IReadOnlyList<RolIdDto> Roles { get; set; }
     public IReadOnlyList<AcuerdoIdDto> Acuerdos { get; set; }
     public IReadOnlyList<PrivilegioIdDto> Privilegios { get; set; }
     public IReadOnlyList<SucursalIdDto> Sucursales { get; set; }
-    public IReadOnlyList<ArchivoIdDto> Archivos { get; set; }
+    public IReadOnlyList<ArchivoViewModel> Archivos { get; set; }
+    public IReadOnlyList<IdComentarioDto> Comentarios { get; set; }
 }

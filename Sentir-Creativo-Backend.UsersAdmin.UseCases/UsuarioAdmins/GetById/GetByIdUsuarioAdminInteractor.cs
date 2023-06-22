@@ -1,4 +1,6 @@
+using Senitr_Creativo_Backend.Comentarios.Entities.DTO;
 using Sentir_Creativo_Backend.Archivos.Entities.DTO;
+using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Audiencias;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.AcuerdosUserAdmin;
@@ -21,6 +23,7 @@ public class GetByIdUsuarioAdminInteractor : IGetByIdUsuarioAdminInputPort
     private readonly IReadRepository<UsuarioPrivilegio,int> _privilegioUsuarioReadRepository;
     private readonly IReadRepository<UsuarioSucursal,int> _sucursalUsuarioReadRepository;
     private readonly IReadRepository<UsuarioArchivo, int> _archivoUsuarioReadRepository;
+    private readonly IReadRepository<UsuarioComentario, int> _comentarioUsuarioReadRepository;
     private readonly IGetByIdUsuarioAdminOutputPort _outputPort;
 
     public GetByIdUsuarioAdminInteractor(
@@ -31,6 +34,7 @@ public class GetByIdUsuarioAdminInteractor : IGetByIdUsuarioAdminInputPort
         IReadRepository<UsuarioPrivilegio, int> privilegioUsuarioReadRepository,
         IReadRepository<UsuarioSucursal, int> sucursalUsuarioReadRepository,
         IReadRepository<UsuarioArchivo, int> archivoUsuarioReadRepository,
+        IReadRepository<UsuarioComentario,int> comentarioUsuarioReadRepository,
         IGetByIdUsuarioAdminOutputPort outputPort)
     {
         _usuarioAdminReadRepository = usuarioAdminReadRepository;
@@ -41,6 +45,7 @@ public class GetByIdUsuarioAdminInteractor : IGetByIdUsuarioAdminInputPort
         _privilegioUsuarioReadRepository = privilegioUsuarioReadRepository;
         _sucursalUsuarioReadRepository = sucursalUsuarioReadRepository;
         _archivoUsuarioReadRepository = archivoUsuarioReadRepository;
+        _comentarioUsuarioReadRepository = comentarioUsuarioReadRepository;
     }
 
     public async ValueTask Handle(int usuarioAdminId)
@@ -112,11 +117,32 @@ public class GetByIdUsuarioAdminInteractor : IGetByIdUsuarioAdminInputPort
 
         var usuariosArchivos = await _archivoUsuarioReadRepository.GetAllWithSpec(usuarioArchivoSpec);
 
-        IReadOnlyList<ArchivoIdDto> archivos = usuariosArchivos
+        IReadOnlyList<ArchivoViewModel> archivos = usuariosArchivos
             .Select(p =>
-                new ArchivoIdDto()
+                new ArchivoViewModel()
                 {
-                    ArchivoId = p.ArchivoId
+                    Id = p.Archivo!.Id,
+                    Path = p.Archivo!.Path,
+                    Nombre = p.Archivo!.Nombre!,
+                    PublishedAt = p.Archivo.PublishedAt,
+                    TipoArchivoId = p.Archivo.TipoArchivoId,
+                    TipoArchivo = p.Archivo.TipoArchivo?.Nombre,
+                    Publico = p.Archivo?.Publico
+                })
+            .ToList()
+            .AsReadOnly();
+
+
+        //obtenemos los comentarios del usuario
+        var usuarioComentarioSpec = new UsuarioComentarioByIdUsuarioSpecification(usuarioAdminId);
+
+        var usuariosComentarios = await _comentarioUsuarioReadRepository.GetAllWithSpec(usuarioComentarioSpec);
+
+        IReadOnlyList<IdComentarioDto> comentarios = usuariosComentarios
+            .Select(p =>
+                new IdComentarioDto()
+                {
+                   ComentarioId = p.ComentarioId
                 })
             .ToList()
             .AsReadOnly();
@@ -130,6 +156,7 @@ public class GetByIdUsuarioAdminInteractor : IGetByIdUsuarioAdminInputPort
             NumDocumento = usuario.NumDocumento,
             TipoDocumento = usuario.TipoDocumento,
             PrevisionId = usuario.PrevisionId,
+            PrefijoId = usuario.PrefijoId,
             ModoId = usuario.ModoId,
             AfpId = usuario.AfpId,
             CategoriaId = usuario.CategoriaId,
@@ -152,7 +179,10 @@ public class GetByIdUsuarioAdminInteractor : IGetByIdUsuarioAdminInputPort
             Acuerdos = acuerdos,
             Privilegios = privilegios,
             Sucursales = sucursales,
-            Archivos = archivos
+            Archivos = archivos,
+            Comentarios = comentarios,
+            EmailPersonal = usuario.EmailPersonal,
+            Telefono = usuario.Telefono
         };
 
         await _outputPort.Handle(data);

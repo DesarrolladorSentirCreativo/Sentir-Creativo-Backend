@@ -29,9 +29,13 @@ public class UpdateUsuarioAdminDto : CuentaBancariaDto
     public string Email { get; set; }
     public string Password { get; set; }
     public string? Direccion { get; set; }
-    public int ComunaId { get; set; }
+    public int CiudadId { get; set; }
     public int RegionId { get; set; }
     public int PaisId { get; set; }
+    public string Alias { get; set; }
+    public string Telefono { get; set; }
+    public string EmailPersonal { get; set; }
+    public int PrefijoId { get; set; }
     
     public IReadOnlyList<RolIdDto> Roles { get; set; }
     public IReadOnlyList<ArchivoIdDto> Archivos { get; set; }
