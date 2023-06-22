@@ -11,7 +11,7 @@ public class UsuarioComentarioConfiguration : IEntityTypeConfiguration<UsuarioCo
         builder.ToTable("useradmins_comentarios");
         
         builder.HasKey(p => p.Id).HasName("id");
-        builder.Property(p => p.UsuarioId).HasColumnName("usuario");
+        builder.Property(p => p.UsuarioId).HasColumnName("useradmin");
         builder.Property(p => p.ComentarioId).HasColumnName("comentario");
 
         builder.HasOne(u => u.Usuario)

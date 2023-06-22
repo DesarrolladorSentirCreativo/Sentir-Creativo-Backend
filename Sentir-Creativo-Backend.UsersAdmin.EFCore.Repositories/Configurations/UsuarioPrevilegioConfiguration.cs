@@ -11,7 +11,7 @@ public class UsuarioPrevilegioConfiguration : IEntityTypeConfiguration<UsuarioPr
         builder.ToTable("useradmins_privilegios");
         
         builder.HasKey(p => p.Id).HasName("id");
-        builder.Property(p => p.UsuarioId).HasColumnName("usuario");
+        builder.Property(p => p.UsuarioId).HasColumnName("useradmin");
         builder.Property(p => p.PrivilegioId).HasColumnName("privilegio");
 
         builder.HasOne(u => u.Usuario)

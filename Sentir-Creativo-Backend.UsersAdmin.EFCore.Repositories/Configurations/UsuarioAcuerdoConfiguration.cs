@@ -11,7 +11,7 @@ public class UsuarioAcuerdoConfiguration : IEntityTypeConfiguration<UsuarioAcuer
         builder.ToTable("useradmins_acuerdos");
         
         builder.HasKey(p => p.Id).HasName("id");
-        builder.Property(p => p.UsuarioId).HasColumnName("usuario");
+        builder.Property(p => p.UsuarioId).HasColumnName("useradmin");
         builder.Property(p => p.AcuerdoId).HasColumnName("acuerdo");
 
         builder.HasOne(u => u.Usuario)

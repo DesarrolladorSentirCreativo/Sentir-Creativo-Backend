@@ -18,11 +18,11 @@ public class GetAllUsuarioAdminViewModel
     public DateTime FechaPago { get; set; }
     public DateTime FechaInicio { get; set; }
     public DateTime? FechaFin { get; set; }
-    public string SueldoBruto { get; set; }
+    public decimal SueldoBruto { get; set; }
     public int EstadoId { get; set; }
     public string Email { get; set; }
     public string? Direccion { get; set; }
-    public int ComunaId { get; set; }
+    public int CiudadId { get; set; }
     public int RegionId { get; set; }
     public int PaisId { get; set; }
     public DateTime? UpdatedAt { get; set; }

@@ -49,7 +49,7 @@ public class GetAllUsuarioAdminInteractor : IGetAllUsuarioAdminInputPort
                     TipoDocumento = p.TipoDocumento,
                     NumDocumento = p.NumDocumento,
                     Direccion = p.Direccion,
-                    ComunaId = p.ComunaId,
+                    CiudadId = p.ComunaId,
                     RegionId = p.RegionId,
                     PaisId = p.PaisId,
                     PublishedAt = p.PublishedAt

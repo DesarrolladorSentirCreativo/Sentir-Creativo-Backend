@@ -11,7 +11,7 @@ public class UsuarioSucursalConfiguration : IEntityTypeConfiguration<UsuarioSucu
         builder.ToTable("useradmins_sucursales");
         
         builder.HasKey(p => p.Id).HasName("id");
-        builder.Property(p => p.UsuarioId).HasColumnName("usuario");
+        builder.Property(p => p.UsuarioId).HasColumnName("useradmin");
         builder.Property(p => p.SucursalId).HasColumnName("sucursal");
 
         builder.HasOne(u => u.Usuario)

@@ -61,7 +61,7 @@ public class CreateUsuarioAdminInteractor : ICreateUsuarioAdminInputPort
             TipoDocumento = dto.TipoDocumento,
             NumDocumento = dto.NumDocumento,
             Direccion = dto.Direccion,
-            ComunaId = dto.ComunaId,
+            ComunaId = dto.CiudadId,
             RegionId = dto.RegionId,
             Alias = dto.Alias,
             PaisId = dto.PaisId,
@@ -72,20 +72,17 @@ public class CreateUsuarioAdminInteractor : ICreateUsuarioAdminInputPort
             Activo = true
         };
 
-       if(!string.IsNullOrEmpty(dto.Banco))
-        {
+        var cuentaBancaria = new CuentaBancaria();
+
             //creamos la cuenta bancaria
-            var cuentaBancaria = new CuentaBancaria()
-            {
-                Banco = dto.Banco,
-                TipoCuenta = dto.TipoCuenta,
-                NumCuenta = dto.NumCuenta,
-                Activo = true,
-                CreatedAt = DateTime.Now,
-                CreatedBy = dto.UserId,
-                PublishedAt = DateTime.Now
-            };
-        }
+            cuentaBancaria.Banco = "";
+            cuentaBancaria.TipoCuenta = "";
+            cuentaBancaria.NumCuenta = "";
+            cuentaBancaria.Activo = true;
+            cuentaBancaria.CreatedAt = DateTime.Now;
+            cuentaBancaria.CreatedBy = dto.UserId;
+            cuentaBancaria.PublishedAt = DateTime.Now;
+       
 
         _unitOfWork.WriteRepository<CuentaBancaria, int>().AddEntity(cuentaBancaria);
 

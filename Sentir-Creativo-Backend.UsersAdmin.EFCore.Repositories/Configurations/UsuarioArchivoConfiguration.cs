@@ -11,7 +11,7 @@ public class UsuarioArchivoConfiguration : IEntityTypeConfiguration<UsuarioArchi
         builder.ToTable("useradmins_archivos");
         
         builder.HasKey(p => p.Id).HasName("id");
-        builder.Property(p => p.UsuarioId).HasColumnName("usuario");
+        builder.Property(p => p.UsuarioId).HasColumnName("useradmin");
         builder.Property(p => p.ArchivoId).HasColumnName("archivo");
 
         builder.HasOne(u => u.Usuario)

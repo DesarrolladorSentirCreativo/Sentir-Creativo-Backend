@@ -21,7 +21,7 @@ public class UsuarioAdmin : BaseEntity<int>
     public DateTime FechaPago { get; set; }
     public DateTime FechaInicio { get; set; }
     public DateTime? FechaFin { get; set; }
-    public string SueldoBruto { get; set; }
+    public decimal SueldoBruto { get; set; }
     public string Alias { get; set; }
     public int EstadoId { get; set; }
     public string Email { get; set; }

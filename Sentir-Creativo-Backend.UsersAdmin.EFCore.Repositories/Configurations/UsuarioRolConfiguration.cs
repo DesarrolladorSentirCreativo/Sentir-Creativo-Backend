@@ -11,7 +11,7 @@ public class UsuarioRolConfiguration : IEntityTypeConfiguration<UsuarioRol>
         builder.ToTable("useradmins_roles");
         
         builder.HasKey(p => p.Id).HasName("id");
-        builder.Property(p => p.UsuarioId).HasColumnName("usuario");
+        builder.Property(p => p.UsuarioId).HasColumnName("useradmin");
         builder.Property(p => p.RolId).HasColumnName("rol");
 
         builder.HasOne(u => u.Usuario)
