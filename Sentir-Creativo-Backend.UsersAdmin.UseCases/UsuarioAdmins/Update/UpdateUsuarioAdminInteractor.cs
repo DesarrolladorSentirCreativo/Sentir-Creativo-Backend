@@ -2,6 +2,7 @@ using FluentValidation;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
 using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.Update;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Services;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.UsuarioAdmins;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.POCOEntities;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.UsuarioAdmins;
@@ -16,19 +17,22 @@ public class UpdateUsuarioAdminInteractor : IUpdateUsuarioAdminInputPort
     private readonly IReadRepository<CuentaBancaria,int> _cuentaBancariaReadRepository;
     private readonly IUpdateUsuarioAdminOutputPort _outputPort;
     private readonly IEnumerable<IValidator<UpdateUsuarioAdminDto>> _validators;
-    
+    private readonly IUserAdminTokenService _tokenService;
+
     public UpdateUsuarioAdminInteractor(
         IUnitOfWork unitOfWork, 
         IReadRepository<UsuarioAdmin, int> usuarioAdminReadRepository,
         IReadRepository<CuentaBancaria, int> cuentaBancariaReadRepository,
         IUpdateUsuarioAdminOutputPort outputPort,
-        IEnumerable<IValidator<UpdateUsuarioAdminDto>> validators)
+        IEnumerable<IValidator<UpdateUsuarioAdminDto>> validators,
+        IUserAdminTokenService tokenService)
     {
         _unitOfWork = unitOfWork;
         _usuarioAdminReadRepository = usuarioAdminReadRepository;
         _cuentaBancariaReadRepository = cuentaBancariaReadRepository;
         _outputPort = outputPort;
         _validators = validators;
+        _tokenService = tokenService;
     }
     
     
@@ -65,8 +69,7 @@ public class UpdateUsuarioAdminInteractor : IUpdateUsuarioAdminInputPort
         usuario.FechaInicio = dto.FechaInicio;
         usuario.SueldoBruto = dto.SueldoBruto;
         usuario.EstadoId = dto.EstadoId;
-        usuario.Password = dto.Password; 
-        usuario.ValidaDocumento = dto.ValidaDocumento;
+        usuario.Password = _tokenService.EncryptPassword(dto.Password);
         usuario.TipoDocumento = dto.TipoDocumento; 
         usuario.NumDocumento = dto.NumDocumento;
         usuario.Direccion = dto.Direccion;

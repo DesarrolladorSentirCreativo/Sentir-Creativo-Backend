@@ -77,6 +77,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioU
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.GetAll;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.GetById;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.Login;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.Select;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters;
@@ -452,6 +453,10 @@ public static class DependencyContainer
         services.AddScoped<SelectUsuarioAdminPresenter>();
         services.AddScoped<ISelectUsuarioAdminPresenter>(provider => provider.GetService<SelectUsuarioAdminPresenter>());
         services.AddScoped<ISelectUsuarioAdminOutputPort>(provider => provider.GetService<SelectUsuarioAdminPresenter>());
+
+        services.AddScoped<LoginUsuarioAdminPresenter>();
+        services.AddScoped<ILoginUsuarioAdminPresenter>(provider => provider.GetService<LoginUsuarioAdminPresenter>());
+        services.AddScoped<ILoginUsuarioAdminOutputPort>(provider => provider.GetService<LoginUsuarioAdminPresenter>());
 
         return services;
     }

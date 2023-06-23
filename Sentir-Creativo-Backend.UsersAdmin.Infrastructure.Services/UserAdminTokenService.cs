@@ -42,4 +42,30 @@ public class UserAdminTokenService : IUserAdminTokenService
     {
         return BCrypt.Net.BCrypt.Verify(password, hashedPassword);
     }
+
+    public string EncryptPassword(string password)
+    {
+       return BCrypt.Net.BCrypt.HashPassword(password);
+    }
+
+    public string GenerateTokenAdmin(UsuarioAdmin userAdmin)
+    {
+        var claims = new[]
+       {
+            new Claim(ClaimTypes.Name, userAdmin.Alias ?? "Usuario"),
+            new Claim(ClaimTypes.Email, userAdmin.Email)
+        };
+
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration.GetSection("JWT:Key").Value));
+        var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
+
+        var securityToken = new JwtSecurityToken(
+            claims: claims,
+            expires: DateTime.Now.AddDays(30),
+            signingCredentials: creds);
+
+        string token = new JwtSecurityTokenHandler().WriteToken(securityToken);
+
+        return token;
+    }
 }

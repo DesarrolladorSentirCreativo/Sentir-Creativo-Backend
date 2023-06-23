@@ -2,6 +2,7 @@ using FluentValidation;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
 using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.Create;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Services;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.UsuarioAdmins;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.POCOEntities;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.UsuarioAdmins;
@@ -15,18 +16,21 @@ public class CreateUsuarioAdminInteractor : ICreateUsuarioAdminInputPort
     private readonly IReadRepository<UsuarioAdmin,int> _readRepository;
     private readonly ICreateUsuarioAdminOutputPort _outputPort;
     private readonly IEnumerable<IValidator<CreateUsuarioAdminDto>> _validators;
+    private readonly IUserAdminTokenService _tokenService;
 
 
     public CreateUsuarioAdminInteractor(
         IUnitOfWork unitOfWork, 
         IReadRepository<UsuarioAdmin, int> readRepository,
         ICreateUsuarioAdminOutputPort outputPort,
-        IEnumerable<IValidator<CreateUsuarioAdminDto>> validators)
+        IEnumerable<IValidator<CreateUsuarioAdminDto>> validators,
+        IUserAdminTokenService tokenService)
     {
         _unitOfWork = unitOfWork;
         _readRepository = readRepository;
         _outputPort = outputPort;
         _validators = validators;
+        _tokenService = tokenService;
     }
 
 
@@ -57,7 +61,7 @@ public class CreateUsuarioAdminInteractor : ICreateUsuarioAdminInputPort
             FechaInicio = dto.FechaInicio,
             SueldoBruto = dto.SueldoBruto,
             EstadoId = dto.EstadoId,
-            Password = dto.Password,
+            Password = _tokenService.EncryptPassword(dto.Password),
             ValidaDocumento = dto.ValidaDocumento,
             TipoDocumento = dto.TipoDocumento,
             NumDocumento = dto.NumDocumento,

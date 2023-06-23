@@ -140,6 +140,7 @@ public static class DependencyContainer
         services.AddScoped<IDeleteUsuarioAdminController, DeleteUsuarioAdminController>();
         services.AddScoped<IGetByIdUsuarioAdminController, GetByIdUsuarioAdminController>();
         services.AddScoped<ISelectUsuarioAdminController, SelectUsuarioAdminController>();
+        services.AddScoped<ILoginUsuarioAdminController, LoginUsuarioAdminController>();
         
         return services;
     }
