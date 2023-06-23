@@ -48,11 +48,17 @@ namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.UsuarioAdmins.Login
             var user = users[0];
 
            
-            if (!_userAdminTokenService.ComparePassword(dto.Password, user.Password!)) throw new Exception("Las credenciales no son iguais");
+            if (!_userAdminTokenService.ComparePassword(dto.Password, user.Password!)) throw new Exception("Las credenciales no validas");
 
             var userToken = new LoginUsuarioAdminViewModel()
             {
                 Token = _userAdminTokenService.GenerateTokenAdmin(user),
+                Datos = new DatoUsuarioViewModel()
+                {
+                    Nombre = user.Nombre,
+                    Apellidos = user.Apellidos,
+                    Alias = user.Alias
+                }
 
             };
 
