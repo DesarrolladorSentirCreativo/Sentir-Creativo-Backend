@@ -70,6 +70,7 @@ public class UpdateUsuarioAdminInteractor : IUpdateUsuarioAdminInputPort
         usuario.SueldoBruto = dto.SueldoBruto;
         usuario.EstadoId = dto.EstadoId;
         usuario.Password = _tokenService.EncryptPassword(dto.Password);
+        usuario.Telefono = dto.Telefono;
         usuario.TipoDocumento = dto.TipoDocumento; 
         usuario.NumDocumento = dto.NumDocumento;
         usuario.Direccion = dto.Direccion;

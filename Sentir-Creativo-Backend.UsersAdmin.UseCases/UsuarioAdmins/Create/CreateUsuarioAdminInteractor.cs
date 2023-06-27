@@ -74,6 +74,7 @@ public class CreateUsuarioAdminInteractor : ICreateUsuarioAdminInputPort
             CreatedAt = DateTime.Now,
             CreatedBy = dto.UserId,
             EmailPersonal = dto.EmailPersonal,
+            Telefono = dto.Telefono,
             Activo = true
         };
 

@@ -19,6 +19,7 @@ public class CreateUsuarioAdminDto : CuentaBancariaDto
     public bool ValidaDocumento { get; set; }
     public string TipoDocumento { get; set; }
     public string NumDocumento { get; set; }
+    public string Telefono { get; set; }
     public DateTime FechaPago { get; set; }
     public DateTime FechaInicio { get; set; }
     public DateTime? FechaFin { get; set; }
