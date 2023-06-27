@@ -4,10 +4,11 @@ using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.Login;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Services;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.UsuarioAdmins;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.POCOEntities;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.UsuarioAdmins;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.UsuarioAdmins;
 using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
+using System.Data;
 
 
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.UsuarioAdmins.Login
@@ -15,6 +16,11 @@ namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.UsuarioAdmins.Login
     public class LoginUsuarioAdminInteractor : ILoginUsuarioAdminInputPort
     {
         private readonly IReadRepository<UsuarioAdmin, int> _readRepository;
+        private readonly IReadRepository<UsuarioPrivilegio, int> _usuarioPrivilegioRepository;
+        private readonly IReadRepository<PrivilegioAcceso, int> _privilegioAccesoRepository;
+        private readonly IReadRepository<UsuarioSucursal, int> _usuarioSucursalRepository;
+        private readonly IReadRepository<UsuarioRol, int> _usuarioRolRepository;
+        private readonly IReadRepository<RolPrivilegio, int> _rolPrivilegioReoository;
         private readonly ILoginUsuarioAdminOutputPort _outputPort;
         private readonly IEnumerable<IValidator<LoginUsuarioAdminDto>> _validators;
         private readonly IHashPassword _hashPassword;
@@ -22,6 +28,11 @@ namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.UsuarioAdmins.Login
 
         public LoginUsuarioAdminInteractor(
             IReadRepository<UsuarioAdmin, int> readRepository,
+            IReadRepository<UsuarioPrivilegio, int> usuarioPrivilegioRepository,
+            IReadRepository<PrivilegioAcceso, int> privilegioAccesoRepository,
+            IReadRepository<UsuarioSucursal, int> usuarioSucursalRepository,
+            IReadRepository<UsuarioRol, int> usuarioRolRepository,
+            IReadRepository<RolPrivilegio, int> rolPrivilegioRepository,
             ILoginUsuarioAdminOutputPort outputPort,
             IEnumerable<IValidator<LoginUsuarioAdminDto>> validators, 
             IHashPassword hashPassword, 
@@ -32,6 +43,12 @@ namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.UsuarioAdmins.Login
             _validators = validators;
             _hashPassword = hashPassword;
             _userAdminTokenService = userAdminTokenService;
+            _usuarioPrivilegioRepository = usuarioPrivilegioRepository;
+            _privilegioAccesoRepository = privilegioAccesoRepository;
+            _usuarioSucursalRepository = usuarioSucursalRepository;
+            _usuarioRolRepository = usuarioRolRepository;
+            _rolPrivilegioReoository = rolPrivilegioRepository;
+
         }
 
         public async ValueTask Handle(LoginUsuarioAdminDto dto)
@@ -46,9 +63,84 @@ namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.UsuarioAdmins.Login
             if (users.Count <= 0) throw new Exception("Las credenciales no son validas");
 
             var user = users[0];
-
+            
            
             if (!_userAdminTokenService.ComparePassword(dto.Password, user.Password!)) throw new Exception("Las credenciales no validas");
+
+            //obtenemos los roles
+            List<string> listaIds = new List<string>();
+            List<int> listaRolesIds = new List<int>();
+
+            var specRol = new UsuarioRolWithRelationsSpecification(user.Id);
+
+            var roles = await _usuarioRolRepository.GetAllWithSpec(specRol);
+
+            foreach (UsuarioRol rol in roles)
+            {
+                listaRolesIds.Add(rol.RolId);
+            }
+
+            var specRolPrivilegio = new PrivilegioUsuarioRolWithRelationsSpecification(listaRolesIds);
+            
+            var rolesPrivilegios = await _rolPrivilegioReoository.GetAllWithSpec(specRolPrivilegio);
+
+
+            foreach (RolPrivilegio rolePrivilegio in rolesPrivilegios)
+            {
+                listaIds.Add(rolePrivilegio.PrivilegioId);
+            }
+
+
+            //obtenemos los privilegios
+
+            var specUsuarioPrivilegio = new UsuarioPrivilegioWithRelationSpecification(user.Id);
+            
+            var usuarioPrivilegios = await _usuarioPrivilegioRepository.GetAllWithSpec(specUsuarioPrivilegio);
+
+         
+
+            foreach (UsuarioPrivilegio usuarioPrivilegio in usuarioPrivilegios)
+            {
+                listaIds.Add(usuarioPrivilegio.PrivilegioId);
+            }
+
+            
+            
+            //ovbtenmos los accesos del privilegio
+            var specAccesos = new UsuarioAdminByIdAccesoPrivilegioSpecification(listaIds);
+
+            var accesoPrivilegios = await _privilegioAccesoRepository.GetAllWithSpec(specAccesos);
+
+
+          IReadOnlyList<UsuarioAdminAccesoViewModel> accesos = accesoPrivilegios
+          .Select(p =>
+              new UsuarioAdminAccesoViewModel()
+              {
+                    ColeccionId = p.Acceso.ColeccionId,
+                    Crear = p.Acceso.Crear,
+                    Ver = p.Acceso.Ver,
+                    Actualizar = p.Acceso.Actualizar,
+                    Eliminar = p.Acceso.Eliminar,
+                    Listar = p.Acceso.Listar  
+              })
+          .ToList()
+          .AsReadOnly();
+
+            //obtenemos las sucursales
+            var specSucursales = new UsuarioSucursalWithRelationsSpecification(user.Id);
+
+            var usuarioSucursales = await _usuarioSucursalRepository.GetAllWithSpec(specSucursales);
+
+
+           IReadOnlyList<UsuarioAdminSucursalViewModel> sucursales = usuarioSucursales
+          .Select(p =>
+              new UsuarioAdminSucursalViewModel()
+              {
+                  SucusalId = p.SucursalId,
+                  Nombre = p.Sucursal.Nombre,
+              })
+          .ToList()
+          .AsReadOnly();
 
             var userToken = new LoginUsuarioAdminViewModel()
             {
@@ -57,8 +149,11 @@ namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.UsuarioAdmins.Login
                 {
                     Nombre = user.Nombre,
                     Apellidos = user.Apellidos,
-                    Alias = user.Alias
-                }
+                    Alias = user.Alias,
+                    Accesos = accesos,
+                    Sucursales = sucursales
+                   
+                },
 
             };
 
