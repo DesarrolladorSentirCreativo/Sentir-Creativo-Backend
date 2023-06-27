@@ -147,6 +147,7 @@ namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.UsuarioAdmins.Login
                 Token = _userAdminTokenService.GenerateTokenAdmin(user),
                 Datos = new DatoUsuarioViewModel()
                 {
+                    UserId = user.Id,
                     Nombre = user.Nombre,
                     Apellidos = user.Apellidos,
                     Alias = user.Alias,

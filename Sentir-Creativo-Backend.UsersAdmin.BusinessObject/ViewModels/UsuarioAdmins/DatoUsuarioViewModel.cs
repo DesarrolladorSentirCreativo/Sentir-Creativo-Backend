@@ -2,6 +2,7 @@
 {
     public class DatoUsuarioViewModel
     {
+        public int UserId { get; set; }
         public string Nombre { get; set; }
         public string Apellidos { get; set; }
         public string Alias { get; set; }

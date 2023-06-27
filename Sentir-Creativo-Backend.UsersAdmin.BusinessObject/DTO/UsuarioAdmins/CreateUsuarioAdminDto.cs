@@ -34,7 +34,7 @@ public class CreateUsuarioAdminDto : CuentaBancariaDto
     public string EmailPersonal { get; set; }
     public string Alias {  get; set; }
     public int PrefijoId { get; set; }
-    
+
     public IReadOnlyList<RolIdDto> Roles { get; set; }
     public IReadOnlyList<IdComentarioDto> Comentarios { get; set; }
     public IReadOnlyList<AcuerdoIdDto> Acuerdos { get; set; }
