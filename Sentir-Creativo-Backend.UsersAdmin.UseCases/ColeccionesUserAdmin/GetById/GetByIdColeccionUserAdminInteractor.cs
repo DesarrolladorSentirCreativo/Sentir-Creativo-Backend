@@ -1,4 +1,5 @@
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.ColeccionesUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.ColeccionesUserAdmin;
@@ -25,7 +26,7 @@ public class GetByIdColeccionUserAdminInteractor : IGetByIdColeccionUserAdminInp
 
         var coleccionUserAdmin = await _readRepository.GetByIdWithSpec(spec);
 
-        if (coleccionUserAdmin == null) throw new Exception("La coleccion no se encuentra registrada");
+        if (coleccionUserAdmin == null) throw new NotFoundException("La coleccion no se encuentra registrada");
 
         var data = new GetByIdColeccionUserAdminViewModel()
         {

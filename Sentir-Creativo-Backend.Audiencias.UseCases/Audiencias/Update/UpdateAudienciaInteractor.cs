@@ -10,6 +10,7 @@ using Sentir_Creativo_Backend.Bitacoras.Entities.Mappings;
 using Sentir_Creativo_Backend.CuponDescuentos.Entities.Mappings;
 using Sentir_Creativo_Backend.Difusiones.Entities.Mappings;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 
 namespace Sentir_Creativo_Backend.Audiencias.UseCases.Audiencias.Update;
@@ -46,7 +47,7 @@ public class UpdateAudienciaInteractor : IUpdateAudienciaInputPort
 
         if (audienciaUpdate == null)
         {
-            throw new Exception("La audiencia no se encuentra registrada");
+            throw new NotFoundException("La audiencia no se encuentra registrada");
         }
         
         //eliminamos las antiguas bitacoras de la audiencia

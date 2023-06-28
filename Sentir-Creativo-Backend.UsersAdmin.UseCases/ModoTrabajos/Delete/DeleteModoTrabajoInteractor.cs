@@ -1,4 +1,5 @@
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ModoTrabajos.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.ModoTrabajos;
 using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
@@ -27,7 +28,7 @@ public class DeleteModoTrabajoInteractor : IDeleteModoTrabajoInputPort
 
         var modoTrabajo = await _readRepository.GetByIdWithSpec(spec);
 
-        if (modoTrabajo == null) throw new Exception("El modo de trabajo no se encuentra registrada");
+        if (modoTrabajo == null) throw new NotFoundException("El modo de trabajo no se encuentra registrada");
 
         //cambiamos su estado a inactivo
         modoTrabajo.Activo = false;

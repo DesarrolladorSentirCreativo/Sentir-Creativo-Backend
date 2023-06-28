@@ -1,5 +1,6 @@
 using FluentValidation;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaUserAdmins.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.CategoriaUserAdmins;
@@ -36,7 +37,7 @@ public class UpdateCategoriaUserAdminInteractor : IUpdateCategoriaUserAdminInput
 
         var categoria = await _readRepository.GetByIdWithSpec(spec);
 
-        if (categoria == null) throw new Exception("La categoria no se encuentra registrada");
+        if (categoria == null) throw new NotFoundException("La categoria no se encuentra registrada");
 
         categoria.Nombre = dto.Nombre;
         categoria.Descripcion = dto.Descripcion;

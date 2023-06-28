@@ -12,7 +12,8 @@ public static class Filters
             new Dictionary<Type, IExceptionHandler>
         {
             { typeof(GeneralException), new GeneralExceptionHandler() },
-            { typeof(ValidationException), new ValidationExceptionHandler() }
+            { typeof(ValidationException), new ValidationExceptionHandler() },
+            { typeof(NotFoundException), new NotFoundExceptionHandler() }
         }
     ));
 }

@@ -1,5 +1,6 @@
 using FluentValidation;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.ColeccionesUserAdmin;
@@ -35,7 +36,7 @@ public class UpdateColeccionUserAdminInteractor : IUpdateColeccionUserAdminInput
 
         var coleccionUserAdmin = await _readRepository.GetByIdWithSpec(spec);
 
-        if (coleccionUserAdmin == null) throw new Exception("La coleccion no se encuentra registrada");
+        if (coleccionUserAdmin == null) throw new NotFoundException("La coleccion no se encuentra registrada");
 
         coleccionUserAdmin.Nombre = dto.Nombre;
         coleccionUserAdmin.ModuloId = dto.ModuloId;

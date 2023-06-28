@@ -1,5 +1,6 @@
 using FluentValidation;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.CategoriaPrivilegios;
@@ -36,7 +37,7 @@ public class UpdateCategoriaPrivilegioInteractor : IUpdateCategoriaPrivilegioInp
 
         var categoriaPrivilegio = await _readRepository.GetByIdWithSpec(spec);
 
-        if (categoriaPrivilegio == null) throw new Exception("La categoria privilegio no se encuentra registrada");
+        if (categoriaPrivilegio == null) throw new NotFoundException("La categoria privilegio no se encuentra registrada");
         
         categoriaPrivilegio.Nombre = dto.Nombre;
         categoriaPrivilegio.Descripcion = dto.Descripcion;

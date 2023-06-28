@@ -1,5 +1,6 @@
 using FluentValidation;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Privilegios.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Privilegios;
@@ -41,7 +42,7 @@ public class UpdatePrivilegioInteractor : IUpdatePrivilegioInputPort
 
         var privilegio = await _privilegioReadRepository.GetByIdWithSpec(spec);
 
-        if (privilegio == null) throw new Exception("El privilegio no se encuentra registrado");
+        if (privilegio == null) throw new NotFoundException("El privilegio no se encuentra registrado");
 
         privilegio.Nombre = dto.Nombre;
         privilegio.CategoriaId = dto.CategoriaId;

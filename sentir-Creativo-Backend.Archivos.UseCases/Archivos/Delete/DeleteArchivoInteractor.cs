@@ -1,6 +1,7 @@
 using Sentir_Creativo_Backend.Archivos.BusinessObject.Ports.Archivos.Delete;
 using Sentir_Creativo_Backend.Archivos.Entities.POCOEntities;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 
 namespace sentir_Creativo_Backend.Archivos.UseCases.Archivos.Delete;
 
@@ -23,7 +24,7 @@ public class DeleteArchivoInteractor : IDeleteArchivoInputPort
     {
         var archivo = await _readRepository.GetByIdAsync(archivoId);
         
-        if(archivo == null) throw new Exception("El archivo no existe");
+        if(archivo == null) throw new NotFoundException("El archivo no existe");
         
         archivo.Activo = false;
         

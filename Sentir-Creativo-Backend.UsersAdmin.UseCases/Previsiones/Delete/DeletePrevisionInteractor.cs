@@ -1,4 +1,5 @@
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Previsiones.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.Previsiones;
 using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
@@ -26,7 +27,7 @@ public class DeletePrevisionInteractor : IDeletePrevisionInputPort
 
         var prevision = await _readRepository.GetByIdWithSpec(spec);
 
-        if (prevision == null) throw new Exception("El prevision no se encuentra registrado");
+        if (prevision == null) throw new NotFoundException("El prevision no se encuentra registrado");
 
         prevision.Activo = false;
         

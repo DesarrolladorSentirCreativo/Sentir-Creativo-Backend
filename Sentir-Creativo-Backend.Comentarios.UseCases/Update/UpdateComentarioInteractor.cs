@@ -3,6 +3,7 @@ using Senitr_Creativo_Backend.Comentarios.Entities.POCOEntities;
 using Sentir_Creativo_Backend.Comentarios.BusinessObjects.DTO;
 using Sentir_Creativo_Backend.Comentarios.BusinessObjects.Ports.Update;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 
 namespace Sentir_Creativo_Backend.Comentarios.UseCases.Update;
@@ -33,7 +34,7 @@ public class UpdateComentarioInteractor : IUpdateComentarioInputPort
 
         var comentario = await _readRepository.GetByIdAsync(dto.Id);
 
-        if (comentario == null) throw new Exception("El comentario no se encuentra registrada");
+        if (comentario == null) throw new NotFoundException("El comentario no se encuentra registrada");
         
         comentario.Descripcion = dto.Descripcion;
         comentario.PublishedAt = DateTime.Now;

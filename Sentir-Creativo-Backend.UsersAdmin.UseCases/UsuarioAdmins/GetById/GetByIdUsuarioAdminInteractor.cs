@@ -2,6 +2,7 @@ using Senitr_Creativo_Backend.Comentarios.Entities.DTO;
 using Sentir_Creativo_Backend.Archivos.Entities.DTO;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Audiencias;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.AcuerdosUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Privilegios;
@@ -54,7 +55,7 @@ public class GetByIdUsuarioAdminInteractor : IGetByIdUsuarioAdminInputPort
 
         var usuario = await _usuarioAdminReadRepository.GetByIdWithSpec(specUsuario);
         
-        if(usuario == null) throw new Exception("No existe el usuario");
+        if(usuario == null) throw new NotFoundException("No existe el usuario");
         
         var specCuentaBancaria = new CuentaBancariaActivoByIdSpecification(usuario.CuentaBancariaId);
         

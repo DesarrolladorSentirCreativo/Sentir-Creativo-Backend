@@ -1,4 +1,5 @@
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.POCOEntities;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.UsuarioAdmins;
@@ -32,7 +33,9 @@ public class DeleteUsuarioAdminInteractor : IDeleteUsuarioAdminInputPort
         var specUsuario = new UsuarioAdminActivoByIdSpecification(usuarioAdminId);
 
         var usuario = await _usuarioAdminReadRepository.GetByIdWithSpec(specUsuario);
-        
+
+        if (usuario == null) throw new NotFoundException("El usuario no se encuntra registrado");
+
         usuario.Activo = false;
 
         _unitOfWork.WriteRepository<UsuarioAdmin,int>().UpdateEntity(usuario);

@@ -1,4 +1,5 @@
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Privilegios.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.POCOEntities;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.Privilegios;
@@ -32,7 +33,7 @@ public class GetByIdPrivilegioInteractor : IGetByIdPrivilegioInputPort
 
         var privilegio = await _privilegioReadRepository.GetByIdWithSpec(spec);
 
-        if (privilegio == null) throw new Exception("El privilegio no se encuentra registrado");
+        if (privilegio == null) throw new NotFoundException("El privilegio no se encuentra registrado");
         
         //buscamos los accesos del privilegio
         var specPrivilegioAcceso = new PrivilegioAccesoByPrivilegioIdSpecification(privilegio.Id);

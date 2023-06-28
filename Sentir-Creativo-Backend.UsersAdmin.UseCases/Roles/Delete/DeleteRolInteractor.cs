@@ -1,4 +1,5 @@
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Roles.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.POCOEntities;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.Roles;
@@ -28,7 +29,7 @@ public class DeleteRolInteractor : IDeleteRolInputPort
 
         var rol = await _readRepository.GetByIdWithSpec(spec);
 
-        if (rol == null) throw new Exception("El rol no se encuentra registrada");
+        if (rol == null) throw new NotFoundException("El rol no se encuentra registrada");
 
         //apagamos el rol
         rol.Activo = false;

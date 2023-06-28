@@ -1,5 +1,6 @@
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Audiencias.Delete;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 
 namespace Sentir_Creativo_Backend.Audiencias.UseCases.Audiencias.Delete;
 
@@ -23,7 +24,7 @@ public class DeleteAudienciaInteractor : IDeleteAudienciaInputPort
     {
         var audiencia = await _readRepository.GetByIdAsync(audienciaId);
 
-        if (audiencia == null) throw new Exception("La audiencia no se encuentra registrada");
+        if (audiencia == null) throw new NotFoundException("La audiencia no se encuentra registrada");
 
         audiencia.Activo = false;
         

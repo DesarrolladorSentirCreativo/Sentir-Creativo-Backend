@@ -12,6 +12,7 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Audiencias;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Organizaciones;
 using Sentir_Creativo_Backend.Difusiones.Entities.ViewModels;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
 
 namespace Sentir_Creativo_Backend.Audiencias.UseCases.Audiencias.GetById;
@@ -59,7 +60,7 @@ public class GetByIdAudienciaInteractor : IGetByIdAudienciaInputPort
 
         if (audiencia == null)
         {
-            throw new ApplicationException("Audiencia no encontrada");
+            throw new NotFoundException("Audiencia no encontrada");
         }
         
         //obtener los comentarios de la audiencia

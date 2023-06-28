@@ -5,6 +5,7 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.POCOEntities;
 using Sentir_Creativo_Backend.Audiencias.Entities.POCOEntities;
 using Sentir_Creativo_Backend.Direcciones.Entities.POCOEntities;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 
 namespace Sentir_Creativo_Backend.Audiencias.UseCases.Organizaciones.Update;
@@ -57,7 +58,7 @@ public class UpdateOrganizacionInteractor : IUpdateOrganizacionInputPort
         {
             var direccionUpdate = await _direccionReadRepository.GetByIdAsync(dto.DireccionId);
 
-            if (direccionUpdate == null) throw new Exception("La dirección no se encuentra registrada");
+            if (direccionUpdate == null) throw new NotFoundException("La dirección no se encuentra registrada");
 
             direccionUpdate.CiudadId = dto.CiudadId;
             direccionUpdate.RegionId = dto.RegionId;

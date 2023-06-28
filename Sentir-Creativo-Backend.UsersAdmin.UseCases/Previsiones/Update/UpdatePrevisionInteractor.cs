@@ -1,5 +1,6 @@
 using FluentValidation;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Previsiones.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Previsiones;
@@ -35,7 +36,7 @@ public class UpdatePrevisionInteractor : IUpdatePrevisionInputPort
 
         var prevision = await _readRepository.GetByIdWithSpec(spec);
 
-        if (prevision == null) throw new Exception("El prevision no se encuentra registrado");
+        if (prevision == null) throw new NotFoundException("El prevision no se encuentra registrado");
 
         prevision.Nombre = dto.Nombre;
         prevision.Descripcion = dto.Descripcion;

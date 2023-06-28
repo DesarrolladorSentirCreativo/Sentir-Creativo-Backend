@@ -1,6 +1,7 @@
 using Senitr_Creativo_Backend.Comentarios.Entities.POCOEntities;
 using Sentir_Creativo_Backend.Comentarios.BusinessObjects.Ports.Delete;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 
 namespace Sentir_Creativo_Backend.Comentarios.UseCases.Delete;
 
@@ -24,7 +25,7 @@ public class DeleteComentarioInteractor : IDeleteComentarioInputPort
     {
         var comentario = await _readRepository.GetByIdAsync(comentarioId);
 
-        if (comentario == null) throw new Exception("El comentario no se encuentra registrado");
+        if (comentario == null) throw new NotFoundException("El comentario no se encuentra registrado");
         
         _unitOfWork.WriteRepository<Comentario,int>().DeleteEntity(comentario);
 

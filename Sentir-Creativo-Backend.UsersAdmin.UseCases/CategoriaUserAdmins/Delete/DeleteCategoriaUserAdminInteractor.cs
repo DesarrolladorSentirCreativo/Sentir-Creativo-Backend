@@ -1,4 +1,5 @@
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaUserAdmins.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.CategoriaUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
@@ -29,7 +30,7 @@ public class DeleteCategoriaUserAdminInteractor : IDeleteCategoriaUserAdminInput
 
         var categoria = await _readRepository.GetByIdWithSpec(spec);
 
-        if (categoria == null) throw new Exception("La categoria no se encuentra registrada");
+        if (categoria == null) throw new NotFoundException("La categoria no se encuentra registrada");
 
         categoria.Activo = false;
         

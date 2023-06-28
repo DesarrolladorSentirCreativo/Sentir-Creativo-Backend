@@ -3,6 +3,7 @@ using Sentir_Creativo_Backend.Archivos.BusinessObject.Specifications.Archivos;
 using Sentir_Creativo_Backend.Archivos.BusinessObject.ViewModels;
 using Sentir_Creativo_Backend.Archivos.Entities.POCOEntities;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 
 namespace sentir_Creativo_Backend.Archivos.UseCases.Archivos.GetById;
 
@@ -26,7 +27,7 @@ public class GetByIdArchivoInteractor : IGetByIdArchivoInputPort
         var archivo = await _readRepository.GetByIdWithSpec(spec);
         
         //validamos si existe el archivo
-        if(archivo == null) throw new Exception("No se encontró ningún archivo.");
+        if(archivo == null) throw new NotFoundException("No se encontró ningún archivo.");
 
 
         var modelView = new GetByIdArchivoViewModel()

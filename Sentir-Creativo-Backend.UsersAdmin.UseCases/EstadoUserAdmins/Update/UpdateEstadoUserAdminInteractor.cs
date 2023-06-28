@@ -1,5 +1,6 @@
 using FluentValidation;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.EstadoUserAdmins.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.EstadoUserAdmins;
@@ -35,7 +36,7 @@ public class UpdateEstadoUserAdminInteractor : IUpdateEstadoUserAdminInputPort
 
         var estadoUserAdmin = await _readRepository.GetByIdWithSpec(spec);
 
-        if (estadoUserAdmin == null) throw new Exception("El estado de useradmin no se encuentra registrado");
+        if (estadoUserAdmin == null) throw new NotFoundException("El estado de useradmin no se encuentra registrado");
 
         //evaluo si el color cambio
         if (estadoUserAdmin.Color != dto.Color)

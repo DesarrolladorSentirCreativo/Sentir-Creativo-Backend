@@ -2,6 +2,7 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Ports.Organizac
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.Organizaciones;
 using Sentir_Creativo_Backend.Audiencias.Entities.POCOEntities;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 
 namespace Sentir_Creativo_Backend.Audiencias.UseCases.Organizaciones.Delete;
 
@@ -27,7 +28,7 @@ public class DeleteOrganizacionInteractor : IDeleteOrganizacionInputPort
 
         var organizacion = await _readRepository.GetByIdWithSpec(spec);
         
-        if (organizacion == null) throw new Exception("La organizacion no se encuentra registrada");
+        if (organizacion == null) throw new NotFoundException("La organizacion no se encuentra registrada");
         
         organizacion.Activo = false;
         

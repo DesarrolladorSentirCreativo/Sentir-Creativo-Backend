@@ -1,4 +1,5 @@
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AFP.GetById;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.AFP;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.AFP;
@@ -24,7 +25,7 @@ public class GetByIdAfpInteractor : IGetByIdAfpInputPort
 
         var afp = await _readRepository.GetByIdWithSpec(spec);
 
-        if (afp == null) throw new Exception("El afp no se encuentra registrada");
+        if (afp == null) throw new NotFoundException("El afp no se encuentra registrada");
         
         var data = new GetByIdAfpViewModel()
         {

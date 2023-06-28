@@ -3,6 +3,7 @@ using Sentir_Creativo_Backend.Archivos.BusinessObject.DTO;
 using Sentir_Creativo_Backend.Archivos.BusinessObject.Ports.Archivos.Update;
 using Sentir_Creativo_Backend.Archivos.Entities.POCOEntities;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 
 namespace sentir_Creativo_Backend.Archivos.UseCases.Archivos.Update;
@@ -33,7 +34,7 @@ public class UpdateArchivoInteractor : IUpdateArchivoInputPort
         
         var archivo = await _readRepository.GetByIdAsync(dto.Id);
         
-        if(archivo == null) throw new Exception($"No existe el archivo con id {dto.Id}");
+        if(archivo == null) throw new NotFoundException($"No existe el archivo con id {dto.Id}");
 
         archivo.Nombre = dto.Nombre;
         archivo.TipoArchivoId = dto.TipoArchivoId;  

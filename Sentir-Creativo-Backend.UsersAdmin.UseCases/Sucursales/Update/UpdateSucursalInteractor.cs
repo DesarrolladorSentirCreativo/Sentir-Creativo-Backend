@@ -1,5 +1,6 @@
 using FluentValidation;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Sucursales.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Sucursales;
@@ -36,7 +37,7 @@ public class UpdateSucursalInteractor : IUpdateSucursalInputPort
 
         var sucursal = await _readRepository.GetByIdWithSpec(spec);
 
-        if (sucursal == null) throw new Exception("La sucursal no se encuentra registrada");
+        if (sucursal == null) throw new NotFoundException("La sucursal no se encuentra registrada");
         
         sucursal.Nombre = dto.Nombre;
         sucursal.Descripcion = dto.Descripcion;

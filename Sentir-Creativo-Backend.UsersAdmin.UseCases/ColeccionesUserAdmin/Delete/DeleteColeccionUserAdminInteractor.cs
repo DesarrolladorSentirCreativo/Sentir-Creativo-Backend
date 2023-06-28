@@ -1,4 +1,5 @@
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.ColeccionesUserAdmin;
 using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
@@ -27,7 +28,7 @@ public class DeleteColeccionUserAdminInteractor : IDeleteColeccionUserAdminInput
 
         var coleccionUserAdmin = await _readRepository.GetByIdWithSpec(spec);
 
-        if (coleccionUserAdmin == null) throw new Exception("La coleccion no se encuentra registrada");
+        if (coleccionUserAdmin == null) throw new NotFoundException("La coleccion no se encuentra registrada");
         
         coleccionUserAdmin.Activo = false;
         

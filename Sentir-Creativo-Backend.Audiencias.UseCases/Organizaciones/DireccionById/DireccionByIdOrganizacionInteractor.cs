@@ -3,6 +3,7 @@ using Sentir_Creativo_Backend.Audiencia.BusinessObject.POCOEntities;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Specifications.Organizaciones;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Organizaciones;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 
 namespace Sentir_Creativo_Backend.Audiencias.UseCases.Organizaciones.DireccionById;
 
@@ -27,7 +28,7 @@ public class DireccionByIdOrganizacionInteractor : IDireccionByIdOrganizacionInp
 
         if (organizacionDireccion == null)
         {
-            throw new Exception($"La direccion de la organizacion {organizacionId} no existe");
+            throw new NotFoundException($"La direccion de la organizacion {organizacionId} no existe");
         }
         
         await _outputPort.Handle(new DireccionByIdOrganizacionViewModel()

@@ -1,4 +1,5 @@
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaPrivilegios.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.CategoriaPrivilegios;
 using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
@@ -26,7 +27,7 @@ public class DeleteCategoriaPrivilegioInteractor : IDeleteCategoriaPrivilegioInp
 
         var categoriaPrivilegio = await _readRepository.GetByIdWithSpec(spec);
 
-        if (categoriaPrivilegio == null) throw new Exception("La categoria privilegio no se encuentra registrada");
+        if (categoriaPrivilegio == null) throw new NotFoundException("La categoria privilegio no se encuentra registrada");
 
         categoriaPrivilegio.Activo = false;
         

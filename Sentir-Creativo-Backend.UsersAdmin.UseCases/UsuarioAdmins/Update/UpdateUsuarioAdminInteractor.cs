@@ -1,5 +1,6 @@
 using FluentValidation;
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.Update;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Services;
@@ -55,6 +56,8 @@ public class UpdateUsuarioAdminInteractor : IUpdateUsuarioAdminInputPort
         var specUsuario = new UsuarioAdminActivoByIdSpecification(dto.Id);
 
         var usuario = await _usuarioAdminReadRepository.GetByIdWithSpec(specUsuario);
+
+        if (usuario == null) throw new NotFoundException("El usuario no se encuentra regsitrado");
 
 
         usuario.Nombre = dto.Nombre;

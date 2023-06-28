@@ -10,10 +10,14 @@ public class BaseExceptionHandler
     {
         {
             StatusCodes.Status500InternalServerError,
-            "https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.1"
+            "https://datatracker.ietf.org/doc/html/rfc7231#section-6.6.1"
         },
         {
             StatusCodes.Status400BadRequest,
+            "https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.1"
+        },
+        {
+            StatusCodes.Status404NotFound,
             "https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4"
         }
     };

@@ -1,4 +1,5 @@
 using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.EstadoUserAdmins.Delete;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.EstadoUserAdmins;
 using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
@@ -26,7 +27,7 @@ public class DeleteEstadoUserAdminInteractor : IDeleteEstadoUserAdminInputPort
 
         var estadoUserAdmin = await _readRepository.GetByIdWithSpec(spec);
 
-        if (estadoUserAdmin == null) throw new Exception("El estado de useradmin no se encuentra registrado");
+        if (estadoUserAdmin == null) throw new NotFoundException("El estado de useradmin no se encuentra registrado");
 
         estadoUserAdmin.Activo = false;
         
