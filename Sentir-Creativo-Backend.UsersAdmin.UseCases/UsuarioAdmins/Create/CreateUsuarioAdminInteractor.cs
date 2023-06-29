@@ -70,15 +70,16 @@ public class CreateUsuarioAdminInteractor : ICreateUsuarioAdminInputPort
 
         var cuentaBancaria = new CuentaBancaria();
 
-            //creamos la cuenta bancaria
-            cuentaBancaria.Banco = "";
-            cuentaBancaria.TipoCuenta = "";
-            cuentaBancaria.NumCuenta = "";
-            cuentaBancaria.Activo = true;
-            cuentaBancaria.CreatedAt = DateTime.Now;
-            cuentaBancaria.CreatedBy = dto.UserId;
-            cuentaBancaria.PublishedAt = DateTime.Now;
-       
+        //creamos la cuenta bancaria
+        cuentaBancaria.Banco = dto.Banco;
+        cuentaBancaria.TipoCuenta = dto.TipoCuenta;
+        cuentaBancaria.NumCuenta = dto.NumCuenta;
+        cuentaBancaria.Activo = true;
+        cuentaBancaria.CreatedAt = DateTime.Now;
+        cuentaBancaria.CreatedBy = dto.UserId;
+        cuentaBancaria.PublishedAt = DateTime.Now;
+
+
 
         _unitOfWork.WriteRepository<CuentaBancaria, int>().AddEntity(cuentaBancaria);
 
