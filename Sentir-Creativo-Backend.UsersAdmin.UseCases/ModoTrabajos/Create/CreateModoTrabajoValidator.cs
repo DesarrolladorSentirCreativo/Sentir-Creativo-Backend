@@ -1,6 +1,3 @@
-using FluentValidation;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.ModoTrabajos;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.ModoTrabajos.Create;
 
 public class CreateModoTrabajoValidator : AbstractValidator<CreateModoTrabajoDto>

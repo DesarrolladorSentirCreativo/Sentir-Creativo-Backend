@@ -1,6 +1,3 @@
-using FluentValidation;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.AcuerdosUserAdmin;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.AcuerdosUserAdmin.Update;
 
 public class UpdateAcuerdoUserAdminValidator : AbstractValidator<UpdateAcuerdoUserAdminDto>

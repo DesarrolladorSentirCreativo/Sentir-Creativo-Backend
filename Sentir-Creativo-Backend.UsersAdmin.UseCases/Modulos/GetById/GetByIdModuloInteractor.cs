@@ -1,10 +1,3 @@
-using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
-using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.GetById;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.Modulos;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.Modulos;
-using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.Modulos.GetById;
 
 public class GetByIdModuloInteractor : IGetByIdModuloInputPort

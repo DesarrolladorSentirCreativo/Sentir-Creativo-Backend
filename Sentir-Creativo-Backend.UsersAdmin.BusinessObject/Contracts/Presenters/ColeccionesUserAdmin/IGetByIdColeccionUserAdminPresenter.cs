@@ -1,6 +1,3 @@
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.ColeccionesUserAdmin.GetById;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.ColeccionesUserAdmin;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.ColeccionesUserAdmin;
 
 public interface IGetByIdColeccionUserAdminPresenter : IGetByIdColeccionUserAdminOutputPort

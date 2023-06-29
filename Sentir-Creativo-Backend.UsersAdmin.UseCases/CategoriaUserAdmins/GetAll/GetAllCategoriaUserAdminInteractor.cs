@@ -1,9 +1,3 @@
-using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaUserAdmins.GetAll;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.CategoriaUserAdmins;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.CategoriaUserAdmins;
-using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.CategoriaUserAdmins.GetAll;
 
 public class GetAllCategoriaUserAdminInteractor : IGetAllCategoriaUserAdminInputPort

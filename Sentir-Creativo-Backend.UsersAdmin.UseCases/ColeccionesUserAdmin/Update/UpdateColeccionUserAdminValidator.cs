@@ -1,6 +1,3 @@
-using FluentValidation;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.ColeccionesUserAdmin;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.ColeccionesUserAdmin.Update;
 
 public class UpdateColeccionUserAdminValidator : AbstractValidator<UpdateColeccionUserAdminDto>

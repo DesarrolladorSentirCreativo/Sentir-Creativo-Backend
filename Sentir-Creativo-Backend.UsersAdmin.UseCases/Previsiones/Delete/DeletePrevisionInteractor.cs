@@ -1,9 +1,3 @@
-using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
-using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Previsiones.Delete;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.Previsiones;
-using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.Previsiones.Delete;
 
 public class DeletePrevisionInteractor : IDeletePrevisionInputPort

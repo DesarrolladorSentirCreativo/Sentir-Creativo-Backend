@@ -1,6 +1,3 @@
-using FluentValidation;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Modulos;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.Modulos.Create;
 
 public class CreateModuloValidator : AbstractValidator<CreateModuloDto>

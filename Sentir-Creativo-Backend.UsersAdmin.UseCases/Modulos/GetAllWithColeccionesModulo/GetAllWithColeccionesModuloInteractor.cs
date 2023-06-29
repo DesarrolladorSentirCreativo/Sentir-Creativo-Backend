@@ -1,11 +1,3 @@
-using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Modulos.GetAllWithColecciones;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.ColeccionesUserAdmin;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.Modulos;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.ColeccionesUserAdmin;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.Modulos;
-using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.Modulos.GetAllWithColeccionesModulo;
 
 public class GetAllWithColeccionesModuloInteractor : IGetAllWithColeccionesModuloInputPort

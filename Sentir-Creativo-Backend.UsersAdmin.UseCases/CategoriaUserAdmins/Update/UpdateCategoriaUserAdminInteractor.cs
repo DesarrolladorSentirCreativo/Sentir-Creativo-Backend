@@ -1,12 +1,3 @@
-using FluentValidation;
-using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
-using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
-using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaUserAdmins.Update;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.CategoriaUserAdmins;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.CategoriaUserAdmins;
-using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.CategoriaUserAdmins.Update;
 
 public class UpdateCategoriaUserAdminInteractor : IUpdateCategoriaUserAdminInputPort

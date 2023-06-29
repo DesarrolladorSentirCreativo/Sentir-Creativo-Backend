@@ -1,7 +1,3 @@
-using Senitr_Creativo_Backend.Comentarios.Entities.POCOEntities;
-using Sentir_Creativo_Backend.SharedKernel.Entities.POCOEntities;
-using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.BusinessObject.POCOEntities;
 
 public class UsuarioComentario : BaseEntity<int>

@@ -1,11 +1,3 @@
-using FluentValidation;
-using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
-using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Roles.Create;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Roles;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.POCOEntities;
-using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.Roles.Create;
 
 public class CreateRolInteractor : ICreateRolInputPort

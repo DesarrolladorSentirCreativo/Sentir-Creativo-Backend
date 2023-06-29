@@ -1,6 +1,3 @@
-using FluentValidation;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.UserAdmin.Login;
 
 public class LoginUserAdminValidator : AbstractValidator<LoginUserAdminDto>

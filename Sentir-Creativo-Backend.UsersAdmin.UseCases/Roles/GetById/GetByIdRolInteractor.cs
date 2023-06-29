@@ -1,13 +1,3 @@
-using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
-using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Roles.GetById;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.AcuerdosUserAdmin;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Privilegios;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.POCOEntities;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.Roles;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.Roles;
-using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.Roles.GetById;
 
 public class GetByIdRolInteractor : IGetByIdRolInputPort

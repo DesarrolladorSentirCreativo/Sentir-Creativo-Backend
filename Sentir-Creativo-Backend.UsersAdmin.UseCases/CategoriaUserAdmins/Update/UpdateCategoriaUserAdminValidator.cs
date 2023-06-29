@@ -1,6 +1,3 @@
-using FluentValidation;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.CategoriaPrivilegios;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.CategoriaUserAdmins.Update;
 
 public class UpdateCategoriaUserAdminValidator : AbstractValidator<UpdateCategoriaPrivilegioDto>

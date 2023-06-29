@@ -1,9 +1,3 @@
-using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.AFP.GetAll;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.AFP;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.AFP;
-using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.AFP.GetAll;
 
 public class GetAllAfpInteractor : IGetAllAfpInputPort

@@ -1,6 +1,3 @@
-using FluentValidation;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.AFP;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.AFP.Create;
 
 public class CreateAfpValidator : AbstractValidator<CreateAfpDto>

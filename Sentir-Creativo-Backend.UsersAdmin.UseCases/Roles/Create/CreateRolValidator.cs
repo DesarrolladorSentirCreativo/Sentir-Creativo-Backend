@@ -1,6 +1,3 @@
-using FluentValidation;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Roles;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.Roles.Create;
 
 public class CreateRolValidator : AbstractValidator<CreateRolDto>

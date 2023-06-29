@@ -1,6 +1,3 @@
-using FluentValidation;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Previsiones;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.Previsiones.Update;
 
 public class UpdatePrevisionValidator : AbstractValidator<UpdatePrevisionDto>

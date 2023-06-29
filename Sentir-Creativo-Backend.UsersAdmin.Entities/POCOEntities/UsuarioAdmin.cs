@@ -1,6 +1,3 @@
-using Sentir_Creativo_Backend.Audiencias.Entities.POCOEntities;
-using Sentir_Creativo_Backend.SharedKernel.Entities.POCOEntities;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
 
 public class UsuarioAdmin : BaseEntity<int>

@@ -1,10 +1,3 @@
-using Senitr_Creativo_Backend.Comentarios.Entities.DTO;
-using Sentir_Creativo_Backend.Archivos.Entities.DTO;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.AcuerdosUserAdmin;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Privilegios;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Roles;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Sucursales;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.UsuarioAdmins;
 
 public class CreateUsuarioAdminDto : CuentaBancariaDto

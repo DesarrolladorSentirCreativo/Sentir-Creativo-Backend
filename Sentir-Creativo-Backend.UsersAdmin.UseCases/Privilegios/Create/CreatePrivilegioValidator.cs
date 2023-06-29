@@ -1,6 +1,3 @@
-using FluentValidation;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Privilegios;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.Privilegios.Create;
 
 public class CreatePrivilegioValidator : AbstractValidator<CreatePrivilegioDto>

@@ -1,9 +1,3 @@
-using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Roles.Select;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.Roles;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.Roles;
-using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.Roles.Select;
 
 public class SelectRolInteractor : ISelectRolInputPort

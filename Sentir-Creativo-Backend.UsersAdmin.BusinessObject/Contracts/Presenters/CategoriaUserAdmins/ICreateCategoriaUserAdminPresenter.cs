@@ -1,5 +1,3 @@
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.CategoriaUserAdmins.Create;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.CategoriaUserAdmins;
 
 public interface ICreateCategoriaUserAdminPresenter : ICreateCategoriaUserAdminOutputPort

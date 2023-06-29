@@ -1,17 +1,4 @@
-﻿using FluentValidation;
-using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
-using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.UsuarioUserAdmins.Login;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Services;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.UsuarioAdmins;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.POCOEntities;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.UsuarioAdmins;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.UsuarioAdmins;
-using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
-using System.Data;
-
-
-namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.UsuarioAdmins.Login
+﻿namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.UsuarioAdmins.Login
 {
     public class LoginUsuarioAdminInteractor : ILoginUsuarioAdminInputPort
     {

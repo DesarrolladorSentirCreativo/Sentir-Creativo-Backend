@@ -1,10 +1,3 @@
-using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
-using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Ports.Roles.Delete;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.POCOEntities;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Specifications.Roles;
-using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.Roles.Delete;
 
 public class DeleteRolInteractor : IDeleteRolInputPort

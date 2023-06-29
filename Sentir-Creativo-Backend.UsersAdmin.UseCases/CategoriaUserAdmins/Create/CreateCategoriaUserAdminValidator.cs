@@ -1,6 +1,3 @@
-using FluentValidation;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.CategoriaUserAdmins;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.UseCases.CategoriaUserAdmins.Create;
 
 public class CreateCategoriaUserAdminValidator : AbstractValidator<CreateCategoriaUserAdminDto>

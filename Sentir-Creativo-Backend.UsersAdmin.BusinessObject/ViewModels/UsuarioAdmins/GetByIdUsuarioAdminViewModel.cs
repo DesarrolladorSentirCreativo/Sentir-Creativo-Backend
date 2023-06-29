@@ -1,12 +1,3 @@
-using Senitr_Creativo_Backend.Comentarios.Entities.DTO;
-using Sentir_Creativo_Backend.Archivos.Entities.DTO;
-using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Audiencias;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.AcuerdosUserAdmin;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Privilegios;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Roles;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Sucursales;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.UsuarioAdmins;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.UsuarioAdmins;
 
 public class GetByIdUsuarioAdminViewModel : CuentaBancariaDto

@@ -1,6 +1,3 @@
-using Sentir_Creativo_Backend.SharedKernel.Entities.POCOEntities;
-using Sentir_Creativo_Backend.UsersAdmin.Entities.POCOEntities;
-
 namespace Sentir_Creativo_Backend.UsersAdmin.BusinessObject.POCOEntities;
 
 public class UsuarioAcuerdo : BaseEntity<int>
