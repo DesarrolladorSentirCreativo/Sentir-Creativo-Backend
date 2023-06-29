@@ -1,4 +1,5 @@
 using System.Net;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.ModoTrabajos;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.ModoTrabajos;
@@ -7,6 +8,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.ModoTrabajos;
 
 namespace Sentir_Creativo_Backend.WebApi.Controllers.UsersAdmin;
 
+[Authorize]
 [ApiController]
 [Route("api/v1/modos-trabajos")]
 public class ModoTrabajoWrapperController : ControllerBase

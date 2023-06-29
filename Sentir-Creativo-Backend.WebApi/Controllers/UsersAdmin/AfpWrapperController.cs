@@ -1,12 +1,13 @@
 using System.Net;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.AFP;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.AFP;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.AFP;
-using Sentir_Creativo_Backend.UsersAdmins.Presenters.AFP;
 
 namespace Sentir_Creativo_Backend.WebApi.Controllers.UsersAdmin;
 
+[Authorize]
 [ApiController]
 [Route("api/v1/afp")]
 public class AfpWrapperController : ControllerBase

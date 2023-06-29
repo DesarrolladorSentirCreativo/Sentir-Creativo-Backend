@@ -1,11 +1,12 @@
 using System.Net;
-using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.Antiguedades;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Antiguedades;
 
 namespace Sentir_Creativo_Backend.WebApi.Controllers.Audiencias;
 
+[Authorize]
 [ApiController]
 [Route("api/v1/antiguedades")]
 public class AntiguedadWrapperController : ControllerBase

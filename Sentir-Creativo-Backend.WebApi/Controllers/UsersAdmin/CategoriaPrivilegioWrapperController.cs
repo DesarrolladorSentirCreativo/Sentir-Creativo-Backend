@@ -1,12 +1,13 @@
 using System.Net;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.CategoriaPrivilegios;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Presenters.CategoriaPrivilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.CategoriaPrivilegios;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.CategoriaPrivilegios;
 
 namespace Sentir_Creativo_Backend.WebApi.Controllers.UsersAdmin;
 
+[Authorize]
 [ApiController]
 [Route("api/v1/categorias-privilegios")]
 public class CategoriaPrivilegioWrapperController: ControllerBase

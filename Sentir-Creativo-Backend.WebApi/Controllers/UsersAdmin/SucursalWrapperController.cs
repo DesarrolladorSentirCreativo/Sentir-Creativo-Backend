@@ -1,4 +1,5 @@
 using System.Net;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Sucursales;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Sucursales;
@@ -6,6 +7,7 @@ using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.Sucursales;
 
 namespace Sentir_Creativo_Backend.WebApi.Controllers.UsersAdmin;
 
+[Authorize]
 [ApiController]
 [Route("api/v1/sucursales")]
 public class SucursalWrapperController : ControllerBase

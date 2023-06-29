@@ -1,4 +1,5 @@
 using System.Net;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.Archivos.BusinessObject.Controllers.Archivos;
 using Sentir_Creativo_Backend.Archivos.BusinessObject.DTO;
@@ -6,6 +7,7 @@ using Sentir_Creativo_Backend.Archivos.BusinessObject.ViewModels;
 
 namespace Sentir_Creativo_Backend.WebApi.Controllers.Archivos;
 
+[Authorize]
 [ApiController]
 [Route("api/v1/archivos")]
 public class ArchivoWrapperController : ControllerBase

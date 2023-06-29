@@ -1,4 +1,5 @@
 using System.Net;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.Contracts.Controllers.Roles;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.DTO.Roles;
@@ -7,6 +8,7 @@ using Sentir_Creativo_Backend.UsersAdmins.Presenters.Roles;
 
 namespace Sentir_Creativo_Backend.WebApi.Controllers.UsersAdmin;
 
+[Authorize]
 [ApiController]
 [Route("api/v1/roles")]
 public class RolWrapperController : ControllerBase

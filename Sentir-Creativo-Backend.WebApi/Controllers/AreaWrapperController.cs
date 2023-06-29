@@ -1,10 +1,12 @@
 using System.Net;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.Areas.BusinessObject.Contracts.Controllers.Areas;
 using Sentir_Creativo_Backend.Areas.BusinessObject.ViewModels.Areas;
 
 namespace Sentir_Creativo_Backend.WebApi.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("api/v1/areas")]
 public class AreaWrapperController : ControllerBase

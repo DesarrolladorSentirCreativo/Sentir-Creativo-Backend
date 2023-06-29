@@ -1,10 +1,12 @@
 using System.Net;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Contracts.Controllers.PublicoObjetivos;
 using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.ViewModels;
 
 namespace Sentir_Creativo_Backend.WebApi.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("api/v1/publicos-objetivos")]
 public class PublicoObjetivoWrapperController : ControllerBase

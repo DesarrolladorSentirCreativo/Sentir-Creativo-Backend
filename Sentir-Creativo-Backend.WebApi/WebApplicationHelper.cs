@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using Sentir_Creativo_Backend.Archivos.IoC;
 using Sentir_Creativo_Backend.Areas.IoC;
 using Sentir_Creativo_Backend.Audiencias.IoC;
@@ -13,6 +15,7 @@ using Sentir_Creativo_Backend.Servicios.IoC;
 using Sentir_Creativo_Backend.SharedKernel.IoC;
 using Sentir_Creativo_Backend.UsersAdmins.IoC;
 using Sentir_Creativo_Backend.WebExceptionsPresenters;
+using System.Text;
 
 namespace Sentir_Creativo_Backend.WebApi;
 
@@ -42,6 +45,18 @@ public static class WebApplicationHelper
         builder.Services.AddDireccionesServices();
         builder.Services.AddComentariosServices();
 
+        builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"])),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
+
         builder.Services.AddCors(options =>
         {
             options.AddPolicy("CorsPolicy", builder =>
@@ -63,7 +78,12 @@ public static class WebApplicationHelper
             app.UseSwagger();
             app.UseSwaggerUI();
         }
+
+
+        app.UseAuthentication();
         
+        app.UseAuthorization();
+
         app.UseHttpsRedirection();
         
         app.UseCors("CorsPolicy");

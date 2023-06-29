@@ -1,4 +1,5 @@
 using System.Net;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.ViewModels.Audiencias;
 using Sentir_Creativo_Backend.CuponesDescuentos.BusinessObject.Controllers;
@@ -6,6 +7,7 @@ using Sentir_Creativo_Backend.CuponesDescuentos.BusinessObject.ViewModels;
 
 namespace Sentir_Creativo_Backend.WebApi.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("api/v1/cupones-descuentos")]
 public class CuponDescuentoController : ControllerBase

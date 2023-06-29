@@ -1,4 +1,5 @@
 using System.Net;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.Contracts.Controllers.Audiencias;
 using Sentir_Creativo_Backend.Audiencia.BusinessObject.DTO;
@@ -8,6 +9,7 @@ using Sentir_Creativo_Backend.SharedKernel.Entities.ViewModels;
 
 namespace Sentir_Creativo_Backend.WebApi.Controllers.Audiencias;
 
+[Authorize]
 [ApiController]
 [Route("api/v1/audiencias")]
 public class AudienciaWrapperController : ControllerBase

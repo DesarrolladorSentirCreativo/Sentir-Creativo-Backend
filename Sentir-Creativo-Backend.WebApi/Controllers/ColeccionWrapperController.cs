@@ -1,10 +1,12 @@
 using System.Net;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.Colecciones.BusinessObject.Contracts.Controllers.Colecciones;
 using Sentir_Creativo_Backend.Colecciones.BusinessObject.ViewModels.Colecciones;
 
 namespace Sentir_Creativo_Backend.WebApi.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("api/v1/colecciones")]
 public class ColeccionWrapperController : ControllerBase
