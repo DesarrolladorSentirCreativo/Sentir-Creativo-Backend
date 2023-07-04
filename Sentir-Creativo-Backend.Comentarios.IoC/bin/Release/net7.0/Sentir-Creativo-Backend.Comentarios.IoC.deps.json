@@ -54,6 +54,14 @@
           "Senitr-Creativo-Backend.Comentarios.Entities.dll": {}
         }
       },
+      "Sentir-Creativo-Backend.Audiencias.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Audiencias.Entities.dll": {}
+        }
+      },
       "Sentir-Creativo-Backend.Comentarios.BusinessObjects/1.0.0": {
         "dependencies": {
           "Senitr-Creativo-Backend.Comentarios.Entities": "1.0.0"
@@ -107,6 +115,7 @@
       },
       "Sentir-Creativo-Backend.UsersAdmin.Entities/1.0.0": {
         "dependencies": {
+          "Sentir-Creativo-Backend.Audiencias.Entities": "1.0.0",
           "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
         },
         "runtime": {
@@ -143,6 +152,11 @@
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
     },
     "Senitr-Creativo-Backend.Comentarios.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Audiencias.Entities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

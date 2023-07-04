@@ -79,15 +79,14 @@ public static class WebApplicationHelper
             app.UseSwaggerUI();
         }
 
+        app.UseCors("CorsPolicy");
 
         app.UseAuthentication();
-        
         app.UseAuthorization();
 
         app.UseHttpsRedirection();
-        
-        app.UseCors("CorsPolicy");
-        
+       
+       
         app.MapControllers();
         
         

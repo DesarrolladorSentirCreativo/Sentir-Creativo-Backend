@@ -216,6 +216,116 @@
           "System.Text.Encodings.Web": "7.0.0"
         }
       },
+      "Senitr-Creativo-Backend.Comentarios.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.UsersAdmin.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Senitr-Creativo-Backend.Comentarios.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Archivos.BusinessObject/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.Archivos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Archivos.BusinessObject.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Archivos.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Archivos.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Audiencias.BusinessObject/1.0.0": {
+        "dependencies": {
+          "Senitr-Creativo-Backend.Comentarios.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Archivos.BusinessObject": "1.0.0",
+          "Sentir-Creativo-Backend.Archivos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Audiencias.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Bitacoras.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.CuponDescuentos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Difusiones.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Direcciones.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.PublicoObjetivos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Audiencias.BusinessObject.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Audiencias.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Audiencias.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Bitacoras.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Bitacoras.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Colecciones.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Colecciones.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.CuponDescuentos.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.CuponDescuentos.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Difusiones.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.Colecciones.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.CuponDescuentos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Plantillas.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Difusiones.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Direcciones.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Direcciones.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Plantillas.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Plantillas.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.PublicoObjetivos.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.PublicoObjetivos.Entities.dll": {}
+        }
+      },
       "Sentir-Creativo-Backend.SharedKernel.Entities/1.0.0": {
         "runtime": {
           "Sentir-Creativo-Backend.SharedKernel.Entities.dll": {}
@@ -223,6 +333,9 @@
       },
       "Sentir-Creativo-Backend.UsersAdmin.BusinessObject/1.0.0": {
         "dependencies": {
+          "Senitr-Creativo-Backend.Comentarios.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Archivos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Audiencias.BusinessObject": "1.0.0",
           "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0",
           "Sentir-Creativo-Backend.UsersAdmin.Entities": "1.0.0"
         },
@@ -232,6 +345,7 @@
       },
       "Sentir-Creativo-Backend.UsersAdmin.Entities/1.0.0": {
         "dependencies": {
+          "Sentir-Creativo-Backend.Audiencias.Entities": "1.0.0",
           "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
         },
         "runtime": {
@@ -392,6 +506,66 @@
       "sha512": "sha512-DaGSsVqKsn/ia6RG8frjwmJonfos0srquhw09TlT8KRw5I43E+4gs+/bZj4K0vShJ5H9imCuXupb4RmS+dBy3w==",
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
+    },
+    "Senitr-Creativo-Backend.Comentarios.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Archivos.BusinessObject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Archivos.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Audiencias.BusinessObject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Audiencias.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Bitacoras.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Colecciones.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.CuponDescuentos.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Difusiones.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Direcciones.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Plantillas.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.PublicoObjetivos.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Sentir-Creativo-Backend.SharedKernel.Entities/1.0.0": {
       "type": "project",

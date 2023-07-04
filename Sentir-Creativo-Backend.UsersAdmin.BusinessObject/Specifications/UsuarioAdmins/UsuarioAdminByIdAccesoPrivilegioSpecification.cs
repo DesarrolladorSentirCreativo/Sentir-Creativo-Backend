@@ -6,6 +6,7 @@
             : base(x => privilegiosIds.Contains(x.PrivilegioId))
         {
             AddInclude(x => x.Acceso);
+            AddInclude(x => x.Acceso.Coleccion);
         }
     }
 }

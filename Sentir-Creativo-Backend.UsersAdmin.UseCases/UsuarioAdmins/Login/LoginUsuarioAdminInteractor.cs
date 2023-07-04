@@ -104,6 +104,7 @@
               new UsuarioAdminAccesoViewModel()
               {
                     ColeccionId = p.Acceso.ColeccionId,
+                    ModuloId = p.Acceso.Coleccion.ModuloId,
                     Crear = p.Acceso.Crear,
                     Ver = p.Acceso.Ver,
                     Actualizar = p.Acceso.Actualizar,

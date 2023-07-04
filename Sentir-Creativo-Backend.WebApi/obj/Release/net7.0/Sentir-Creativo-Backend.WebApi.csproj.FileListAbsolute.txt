@@ -256,3 +256,6 @@ D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Back
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebApi\obj\Release\net7.0\Sentir-Creativo-Backend.WebApi.pdb
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebApi\obj\Release\net7.0\Sentir-Creativo-Backend.WebApi.genruntimeconfig.cache
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebApi\obj\Release\net7.0\ref\Sentir-Creativo-Backend.WebApi.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebApi\bin\Release\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebApi\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebApi\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

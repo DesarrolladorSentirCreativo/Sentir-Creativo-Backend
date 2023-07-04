@@ -19,3 +19,5 @@ D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Back
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Comentarios.EFCore.Repositories\obj\Release\net7.0\ref\Sentir-Creativo-Backend.Comentarios.EFCore.Repositories.dll
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Comentarios.EFCore.Repositories\bin\Release\net7.0\Sentir-Creativo-Backend.UsersAdmin.Entities.dll
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Comentarios.EFCore.Repositories\bin\Release\net7.0\Sentir-Creativo-Backend.UsersAdmin.Entities.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Comentarios.EFCore.Repositories\bin\Release\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Comentarios.EFCore.Repositories\bin\Release\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.pdb

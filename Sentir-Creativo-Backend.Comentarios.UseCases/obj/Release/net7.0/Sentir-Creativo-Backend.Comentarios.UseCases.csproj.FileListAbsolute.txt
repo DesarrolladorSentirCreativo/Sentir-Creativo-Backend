@@ -21,3 +21,5 @@ D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Back
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Comentarios.UseCases\obj\Release\net7.0\refint\Sentir-Creativo-Backend.Comentarios.UseCases.dll
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Comentarios.UseCases\obj\Release\net7.0\Sentir-Creativo-Backend.Comentarios.UseCases.pdb
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Comentarios.UseCases\obj\Release\net7.0\ref\Sentir-Creativo-Backend.Comentarios.UseCases.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Comentarios.UseCases\bin\Release\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Comentarios.UseCases\bin\Release\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.pdb

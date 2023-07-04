@@ -476,6 +476,9 @@
       },
       "Sentir-Creativo-Backend.UsersAdmin.BusinessObject/1.0.0": {
         "dependencies": {
+          "Senitr-Creativo-Backend.Comentarios.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Archivos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Audiencias.BusinessObject": "1.0.0",
           "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0",
           "Sentir-Creativo-Backend.UsersAdmin.Entities": "1.0.0"
         },
@@ -495,6 +498,7 @@
       },
       "Sentir-Creativo-Backend.UsersAdmin.Entities/1.0.0": {
         "dependencies": {
+          "Sentir-Creativo-Backend.Audiencias.Entities": "1.0.0",
           "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
         },
         "runtime": {

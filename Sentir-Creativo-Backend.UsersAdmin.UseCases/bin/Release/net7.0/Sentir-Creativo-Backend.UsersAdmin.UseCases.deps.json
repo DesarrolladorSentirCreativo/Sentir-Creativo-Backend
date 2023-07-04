@@ -10,6 +10,7 @@
         "dependencies": {
           "FluentValidation": "11.5.2",
           "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Sentir-Creativo-Backend.Audiencias.BusinessObject": "1.0.0",
           "Sentir-Creativo-Backend.SharedKernel.UseCases": "1.0.0",
           "Sentir-Creativo-Backend.UsersAdmin.BusinessObject": "1.0.0"
         },
@@ -53,6 +54,116 @@
           }
         }
       },
+      "Senitr-Creativo-Backend.Comentarios.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.UsersAdmin.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Senitr-Creativo-Backend.Comentarios.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Archivos.BusinessObject/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.Archivos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Archivos.BusinessObject.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Archivos.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Archivos.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Audiencias.BusinessObject/1.0.0": {
+        "dependencies": {
+          "Senitr-Creativo-Backend.Comentarios.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Archivos.BusinessObject": "1.0.0",
+          "Sentir-Creativo-Backend.Archivos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Audiencias.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Bitacoras.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.CuponDescuentos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Difusiones.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Direcciones.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.PublicoObjetivos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Audiencias.BusinessObject.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Audiencias.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Audiencias.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Bitacoras.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Bitacoras.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Colecciones.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Colecciones.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.CuponDescuentos.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.CuponDescuentos.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Difusiones.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.Colecciones.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.CuponDescuentos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Plantillas.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Difusiones.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Direcciones.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Direcciones.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.Plantillas.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.Plantillas.Entities.dll": {}
+        }
+      },
+      "Sentir-Creativo-Backend.PublicoObjetivos.Entities/1.0.0": {
+        "dependencies": {
+          "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Sentir-Creativo-Backend.PublicoObjetivos.Entities.dll": {}
+        }
+      },
       "Sentir-Creativo-Backend.SharedKernel.Entities/1.0.0": {
         "runtime": {
           "Sentir-Creativo-Backend.SharedKernel.Entities.dll": {}
@@ -69,6 +180,9 @@
       },
       "Sentir-Creativo-Backend.UsersAdmin.BusinessObject/1.0.0": {
         "dependencies": {
+          "Senitr-Creativo-Backend.Comentarios.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Archivos.Entities": "1.0.0",
+          "Sentir-Creativo-Backend.Audiencias.BusinessObject": "1.0.0",
           "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0",
           "Sentir-Creativo-Backend.UsersAdmin.Entities": "1.0.0"
         },
@@ -78,6 +192,7 @@
       },
       "Sentir-Creativo-Backend.UsersAdmin.Entities/1.0.0": {
         "dependencies": {
+          "Sentir-Creativo-Backend.Audiencias.Entities": "1.0.0",
           "Sentir-Creativo-Backend.SharedKernel.Entities": "1.0.0"
         },
         "runtime": {
@@ -119,6 +234,66 @@
       "sha512": "sha512-kmn78+LPVMOWeITUjIlfxUPDsI0R6G0RkeAMBmQxAJ7vBJn4q2dTva7pWi65ceN5vPGjJ9q/Uae2WKgvfktJAw==",
       "path": "microsoft.extensions.logging.abstractions/7.0.0",
       "hashPath": "microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512"
+    },
+    "Senitr-Creativo-Backend.Comentarios.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Archivos.BusinessObject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Archivos.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Audiencias.BusinessObject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Audiencias.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Bitacoras.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Colecciones.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.CuponDescuentos.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Difusiones.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Direcciones.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.Plantillas.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentir-Creativo-Backend.PublicoObjetivos.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Sentir-Creativo-Backend.SharedKernel.Entities/1.0.0": {
       "type": "project",

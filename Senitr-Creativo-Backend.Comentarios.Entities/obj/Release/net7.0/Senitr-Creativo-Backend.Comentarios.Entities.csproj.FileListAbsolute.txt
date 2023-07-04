@@ -15,3 +15,5 @@ D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Senitr-Creativo-Back
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Senitr-Creativo-Backend.Comentarios.Entities\obj\Release\net7.0\ref\Senitr-Creativo-Backend.Comentarios.Entities.dll
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Senitr-Creativo-Backend.Comentarios.Entities\bin\Release\net7.0\Sentir-Creativo-Backend.UsersAdmin.Entities.dll
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Senitr-Creativo-Backend.Comentarios.Entities\bin\Release\net7.0\Sentir-Creativo-Backend.UsersAdmin.Entities.pdb
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Senitr-Creativo-Backend.Comentarios.Entities\bin\Release\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Senitr-Creativo-Backend.Comentarios.Entities\bin\Release\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.pdb

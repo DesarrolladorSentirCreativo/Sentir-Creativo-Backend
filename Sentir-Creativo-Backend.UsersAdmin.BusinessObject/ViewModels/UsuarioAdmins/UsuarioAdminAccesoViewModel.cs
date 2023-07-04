@@ -3,6 +3,7 @@
     public class UsuarioAdminAccesoViewModel
     {
         public int ColeccionId { get; set; }
+        public int ModuloId { get; set; }
         public bool Crear { get; set; }
         public bool Actualizar { get; set; }
         public bool Eliminar { get; set; }
