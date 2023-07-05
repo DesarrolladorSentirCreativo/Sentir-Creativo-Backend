@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.TecnicaArtisticas;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.TecnicaArtisticas;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.TecnicaArtistica;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.AFP;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.Privilegios;
 using System.Net;
 
@@ -18,19 +19,22 @@ namespace Sentir_Creativo_Backend.WebApi.Controllers.Servicios
         private readonly IDeleteTecnicaArtisitcaController _deleteTecnicaArtisitcaController;
         private readonly IGetByIdTecnicaArtisticaController _getByIdTecnicaArtisticaController;
         private readonly IGetAllTecnicaArtisticaController _getAllTecnicaArtisticaController;
+        private readonly ISelectTecnicaArtisticaController _selectTecnicaArtisticaController;
 
         public TecnicaArtisticaWrapperController(
             ICreateTecnicaArtisticaController createTecnicaArtisticaController,
             IUpdateTecnicaArtisticaController updateTecnicaArtisticaController,
             IDeleteTecnicaArtisitcaController deleteTecnicaArtisitcaController,
             IGetByIdTecnicaArtisticaController getByIdTecnicaArtisticaController,
-            IGetAllTecnicaArtisticaController getAllTecnicaArtisticaController)
+            IGetAllTecnicaArtisticaController getAllTecnicaArtisticaController,
+            ISelectTecnicaArtisticaController selectTecnicaArtisticaController)
         {
             _createTecnicaArtisticaController = createTecnicaArtisticaController;
             _updateTecnicaArtisticaController = updateTecnicaArtisticaController;
             _deleteTecnicaArtisitcaController = deleteTecnicaArtisitcaController;
             _getByIdTecnicaArtisticaController = getByIdTecnicaArtisticaController;
             _getAllTecnicaArtisticaController = getAllTecnicaArtisticaController;
+            _selectTecnicaArtisticaController = selectTecnicaArtisticaController;
         }
 
         [HttpPost]
@@ -57,6 +61,12 @@ namespace Sentir_Creativo_Backend.WebApi.Controllers.Servicios
         [ProducesResponseType(typeof(IReadOnlyList<GetAllTecnicaArtisticaViewModel>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<IReadOnlyList<GetAllTecnicaArtisticaViewModel>>> GetAllTecnicaArtistica()
         => Ok(await _getAllTecnicaArtisticaController.Handle());
+
+        [HttpGet]
+        [Route("select")]
+        [ProducesResponseType(typeof(SelectTecnicaArtisticaViewModel), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<IReadOnlyList<SelectTecnicaArtisticaViewModel>>> SelectTecnicaArtistica()
+        => Ok(await _selectTecnicaArtisticaController.Handle());
 
     }
 }
