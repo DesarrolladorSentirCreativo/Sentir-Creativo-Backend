@@ -3,6 +3,7 @@ using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosSe
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Select;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Create;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Delete;
+using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.GetAll;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.GetById;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Update;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.EstadoServicios;
@@ -42,6 +43,10 @@ public static class DependencyContainer
         services.AddScoped<GetByIdTecnicaArtisticaPresenter>();
         services.AddScoped<IGetByIdTecnicaArtisticaPresenter>(provider => provider.GetService<GetByIdTecnicaArtisticaPresenter>());
         services.AddScoped<IGetByIdTecnicaArtisticaOutputPort>(provider => provider.GetService<GetByIdTecnicaArtisticaPresenter>());
+
+        services.AddScoped<GetAllTecnicaArtisticaPresenter>();
+        services.AddScoped<IGetAllTecnicaArtisticaPresenter>(provider => provider.GetService<GetAllTecnicaArtisticaPresenter>());
+        services.AddScoped<IGetAllTecnicaArtisticaOutputPort>(provider => provider.GetService<GetAllTecnicaArtisticaPresenter>()); ;
 
         return services;
     }

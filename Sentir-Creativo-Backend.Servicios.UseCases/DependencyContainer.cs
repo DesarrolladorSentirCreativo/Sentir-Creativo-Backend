@@ -3,12 +3,14 @@ using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosSe
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Select;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Create;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Delete;
+using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.GetAll;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.GetById;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Update;
 using Sentir_Creativo_Backend.Servicios.UseCases.EstadoServicios.Select;
 using Sentir_Creativo_Backend.Servicios.UseCases.Formatos.Select;
 using Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.Create;
 using Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.Delete;
+using Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.GetAll;
 using Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.GetById;
 using Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.Update;
 
@@ -26,6 +28,7 @@ public static class DependencyContainer
         services.AddScoped<IUpdateTecnicaArtisticaInputPort, UpdateTecnicaArtisticaInteractor>();
         services.AddScoped<IDeleteTecnicaArtisticaInputPort, DeleteTecnicaArtisticaInteractor>();
         services.AddScoped<IGetByIdTecnicaArtisticaInputPort, GetByIdTecnicaArtisticaInteractor>();
+        services.AddScoped<IGetAllTecnicaArtisticaInputPort, GetAllTecnicaArtisticaInteractor>();
 
 
         return services;

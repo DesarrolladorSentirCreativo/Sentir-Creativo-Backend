@@ -17,17 +17,20 @@ namespace Sentir_Creativo_Backend.WebApi.Controllers.Servicios
         private readonly IUpdateTecnicaArtisticaController _updateTecnicaArtisticaController;
         private readonly IDeleteTecnicaArtisitcaController _deleteTecnicaArtisitcaController;
         private readonly IGetByIdTecnicaArtisticaController _getByIdTecnicaArtisticaController;
+        private readonly IGetAllTecnicaArtisticaController _getAllTecnicaArtisticaController;
 
         public TecnicaArtisticaWrapperController(
             ICreateTecnicaArtisticaController createTecnicaArtisticaController,
             IUpdateTecnicaArtisticaController updateTecnicaArtisticaController,
             IDeleteTecnicaArtisitcaController deleteTecnicaArtisitcaController,
-            IGetByIdTecnicaArtisticaController getByIdTecnicaArtisticaController)
+            IGetByIdTecnicaArtisticaController getByIdTecnicaArtisticaController,
+            IGetAllTecnicaArtisticaController getAllTecnicaArtisticaController)
         {
             _createTecnicaArtisticaController = createTecnicaArtisticaController;
             _updateTecnicaArtisticaController = updateTecnicaArtisticaController;
             _deleteTecnicaArtisitcaController = deleteTecnicaArtisitcaController;
             _getByIdTecnicaArtisticaController = getByIdTecnicaArtisticaController;
+            _getAllTecnicaArtisticaController = getAllTecnicaArtisticaController;
         }
 
         [HttpPost]
@@ -49,6 +52,11 @@ namespace Sentir_Creativo_Backend.WebApi.Controllers.Servicios
         [ProducesResponseType(typeof(GetByIdTecnicaArtisticaViewModel), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<GetByIdPrivilegioViewModel>> GetByIdTecnicaArtistica(int id)
        => Ok(await _getByIdTecnicaArtisticaController.Handle(id));
+
+        [HttpGet]
+        [ProducesResponseType(typeof(IReadOnlyList<GetAllTecnicaArtisticaViewModel>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<IReadOnlyList<GetAllTecnicaArtisticaViewModel>>> GetAllTecnicaArtistica()
+        => Ok(await _getAllTecnicaArtisticaController.Handle());
 
     }
 }
