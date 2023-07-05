@@ -13,13 +13,16 @@ namespace Sentir_Creativo_Backend.WebApi.Controllers.Servicios
     {
         private readonly ICreateTecnicaArtisticaController _createTecnicaArtisticaController;
         private readonly IUpdateTecnicaArtisticaController _updateTecnicaArtisticaController;
+        private readonly IDeleteTecnicaArtisitcaController _deleteTecnicaArtisitcaController;
 
         public TecnicaArtisticaWrapperController(
             ICreateTecnicaArtisticaController createTecnicaArtisticaController,
-            IUpdateTecnicaArtisticaController updateTecnicaArtisticaController)
+            IUpdateTecnicaArtisticaController updateTecnicaArtisticaController,
+            IDeleteTecnicaArtisitcaController deleteTecnicaArtisitcaController)
         {
             _createTecnicaArtisticaController = createTecnicaArtisticaController;
             _updateTecnicaArtisticaController = updateTecnicaArtisticaController;
+            _deleteTecnicaArtisitcaController = deleteTecnicaArtisitcaController;
         }
 
         [HttpPost]
@@ -31,5 +34,10 @@ namespace Sentir_Creativo_Backend.WebApi.Controllers.Servicios
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<ActionResult<int>> UpdateTecnicaArtistica([FromBody] UpdateTecnicaArtisticaDto dto)
             => Ok(await _updateTecnicaArtisticaController.Handle(dto));
+
+        [HttpPut("{id}")]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        public async Task<ActionResult<int>> DeleteTecnicaArtistica(int id)
+            => Ok(await _deleteTecnicaArtisitcaController.Handle(id));
     }
 }
