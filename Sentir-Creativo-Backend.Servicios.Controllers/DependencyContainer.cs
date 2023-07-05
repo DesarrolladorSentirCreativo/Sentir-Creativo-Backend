@@ -19,6 +19,7 @@ public static class DependencyContainer
         services.AddScoped<ICreateTecnicaArtisticaController, CreateTecnicaArtisticaController>();
         services.AddScoped<IUpdateTecnicaArtisticaController, UpdateTecnicaArtisticaController>();
         services.AddScoped<IDeleteTecnicaArtisitcaController, DeleteTecnicaArtisticaController>();
+        services.AddScoped<IGetByIdTecnicaArtisticaController, GetByIdTecnicaArtisticaController>();
         
         return services;
     }

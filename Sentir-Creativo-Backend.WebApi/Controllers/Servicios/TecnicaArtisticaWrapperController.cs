@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.TecnicaArtisticas;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.TecnicaArtisticas;
+using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.TecnicaArtistica;
+using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.Privilegios;
 using System.Net;
 
 namespace Sentir_Creativo_Backend.WebApi.Controllers.Servicios
@@ -14,15 +16,18 @@ namespace Sentir_Creativo_Backend.WebApi.Controllers.Servicios
         private readonly ICreateTecnicaArtisticaController _createTecnicaArtisticaController;
         private readonly IUpdateTecnicaArtisticaController _updateTecnicaArtisticaController;
         private readonly IDeleteTecnicaArtisitcaController _deleteTecnicaArtisitcaController;
+        private readonly IGetByIdTecnicaArtisticaController _getByIdTecnicaArtisticaController;
 
         public TecnicaArtisticaWrapperController(
             ICreateTecnicaArtisticaController createTecnicaArtisticaController,
             IUpdateTecnicaArtisticaController updateTecnicaArtisticaController,
-            IDeleteTecnicaArtisitcaController deleteTecnicaArtisitcaController)
+            IDeleteTecnicaArtisitcaController deleteTecnicaArtisitcaController,
+            IGetByIdTecnicaArtisticaController getByIdTecnicaArtisticaController)
         {
             _createTecnicaArtisticaController = createTecnicaArtisticaController;
             _updateTecnicaArtisticaController = updateTecnicaArtisticaController;
             _deleteTecnicaArtisitcaController = deleteTecnicaArtisitcaController;
+            _getByIdTecnicaArtisticaController = getByIdTecnicaArtisticaController;
         }
 
         [HttpPost]
@@ -39,5 +44,11 @@ namespace Sentir_Creativo_Backend.WebApi.Controllers.Servicios
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<ActionResult<int>> DeleteTecnicaArtistica(int id)
             => Ok(await _deleteTecnicaArtisitcaController.Handle(id));
+
+        [HttpGet("{id}")]
+        [ProducesResponseType(typeof(GetByIdTecnicaArtisticaViewModel), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<GetByIdPrivilegioViewModel>> GetByIdTecnicaArtistica(int id)
+       => Ok(await _getByIdTecnicaArtisticaController.Handle(id));
+
     }
 }
