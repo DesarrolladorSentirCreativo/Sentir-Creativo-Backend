@@ -2,6 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Select;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Select;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Create;
+using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Update;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.EstadoServicios;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.Formatos;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.TecnicaArtisticas;
@@ -27,6 +28,10 @@ public static class DependencyContainer
         services.AddScoped<CreateTecnicaArtisticaPresenter>();
         services.AddScoped<ICreateTecnicaArtisticaPresenter>(provider => provider.GetService<CreateTecnicaArtisticaPresenter>());
         services.AddScoped<ICreateTecnicaArtisticaOutputPort>(provider => provider.GetService<CreateTecnicaArtisticaPresenter>());
+
+        services.AddScoped<UpdateTecnicaArtisticaPresenter>();
+        services.AddScoped<IUpdateTecnicaArtisticaPresenter>(provider => provider.GetService<UpdateTecnicaArtisticaPresenter>());
+        services.AddScoped<IUpdateTecnicaArtisticaOutputPort>(provider => provider.GetService<UpdateTecnicaArtisticaPresenter>());
 
         return services;
     }
