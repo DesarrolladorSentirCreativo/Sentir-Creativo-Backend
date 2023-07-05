@@ -17,3 +17,5 @@ D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Back
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.UseCases\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Servicios.UseCases.dll
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.Servicios.UseCases.pdb
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.UseCases\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Servicios.UseCases.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.dll
+D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.pdb

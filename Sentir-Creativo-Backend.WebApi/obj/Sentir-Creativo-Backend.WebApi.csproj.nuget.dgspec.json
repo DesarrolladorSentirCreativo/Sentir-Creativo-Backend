@@ -6155,6 +6155,9 @@
             "projectReferences": {
               "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Servicios.BusinessObject\\Sentir-Creativo-Backend.Servicios.BusinessObject.csproj": {
                 "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Servicios.BusinessObject\\Sentir-Creativo-Backend.Servicios.BusinessObject.csproj"
+              },
+              "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.UseCases\\Sentir-Creativo-Backend.SharedKernel.UseCases.csproj": {
+                "projectPath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.UseCases\\Sentir-Creativo-Backend.SharedKernel.UseCases.csproj"
               }
             }
           }
@@ -6169,6 +6172,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.2, )"
+            },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[7.0.0, )"

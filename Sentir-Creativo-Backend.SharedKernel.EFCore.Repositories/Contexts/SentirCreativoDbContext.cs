@@ -104,6 +104,7 @@ public class SentirCreativoDbContext : DbContext
         modelBuilder.ApplyConfiguration(new UsuarioSucursalConfiguration());
         modelBuilder.ApplyConfiguration(new UsuarioRolConfiguration());
         modelBuilder.ApplyConfiguration(new UsuarioPrevilegioConfiguration());
+        modelBuilder.ApplyConfiguration(new TecnicaArtisticaConfiguration());
         
         
     }
@@ -167,5 +168,6 @@ public class SentirCreativoDbContext : DbContext
     DbSet<UsuarioSucursal> UsuarioSucursales { get; set; }
     DbSet<UsuarioRol> UsuarioRoles { get; set; }
     DbSet<UsuarioPrivilegio> UsuarioPrivilegios { get; set; }
+    DbSet<TecnicaArtistica> TecnicaArtisticas { get; set; }
 
 }

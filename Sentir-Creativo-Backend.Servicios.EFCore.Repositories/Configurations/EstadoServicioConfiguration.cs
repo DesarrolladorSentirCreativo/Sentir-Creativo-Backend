@@ -11,7 +11,7 @@ public class EstadoServicioConfiguration : IEntityTypeConfiguration<EstadoServic
         builder.ToTable("estado_servicios");
         
         builder.HasKey(p => p.Id).HasName("id");
-        builder.Property(p => p.Nombre).IsRequired().HasMaxLength(255).HasColumnName("nombre");
+        builder.Property(p => p.Nombre).HasMaxLength(255).HasColumnName("nombre");
         builder.Property(p => p.PublishedAt).HasColumnName("published_at");
         builder.Property(p => p.CreatedAt).HasColumnName("created_at");
         builder.Property(p => p.UpdatedAt).HasColumnName("updated_at");
