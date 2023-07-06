@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "M7/g7XqF96aTDENBXw0IKpuvABJVlfsbUc4QB1TPNQQFvScNVDejtC6gKyaOCTu+At92sESZiKlUrlvzUArvhw==",
+  "dgSpecHash": "jyuVgmlkxM+gtBElbgKcPf63BbK0XeUHydcjmY8KPxF2iwyz0M7bxPJMN+bNEvfOv9EWnPBfkb+9D69vNacfRg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\RYZEN 3 3200G\\Desktop\\hola\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Services.Infrastructure\\Sentir-Creativo-Backend.SharedKernel.Services.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Services.Infrastructure\\Sentir-Creativo-Backend.SharedKernel.Services.Infrastructure.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\RYZEN 3 3200G\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\RYZEN 3 3200G\\.nuget\\packages\\system.formats.asn1\\5.0.0\\system.formats.asn1.5.0.0.nupkg.sha512",
-    "C:\\Users\\RYZEN 3 3200G\\.nuget\\packages\\system.security.cryptography.cng\\5.0.0\\system.security.cryptography.cng.5.0.0.nupkg.sha512"
+    "C:\\Users\\angel\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\angel\\.nuget\\packages\\system.formats.asn1\\5.0.0\\system.formats.asn1.5.0.0.nupkg.sha512",
+    "C:\\Users\\angel\\.nuget\\packages\\system.security.cryptography.cng\\5.0.0\\system.security.cryptography.cng.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
