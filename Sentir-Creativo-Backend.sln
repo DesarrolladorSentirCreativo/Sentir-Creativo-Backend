@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedKernel", "SharedKernel", "{E0387F40-EB30-46D1-8858-F6AAC9E6AA48}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Audiencias", "Audiencias", "{48983950-6EF6-4237-B1D5-58BB6EEB86C1}"
@@ -12,15 +15,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Enterprise Business Rules
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Enterprise Business Rules", "1.Enterprise Business Rules", "{B15AE11F-B281-4B61-93C5-8C8EA8A2B29D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.SharedKernel.Entities", "Sentir-Creativo-Backend.SharedKernel.Entities\Sentir-Creativo-Backend.SharedKernel.Entities.csproj", "{50C8E704-8DB3-4EE3-8386-F90FC65108EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.SharedKernel.Entities", "Sentir-Creativo-Backend.SharedKernel.Entities\Sentir-Creativo-Backend.SharedKernel.Entities.csproj", "{50C8E704-8DB3-4EE3-8386-F90FC65108EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Bitacoras.Entities", "Sentir-Creativo-Backend.Bitacoras.Entities\Sentir-Creativo-Backend.Bitacoras.Entities.csproj", "{3E634CF6-2B6F-4DD7-ADA1-60DD8B97245D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Bitacoras.Entities", "Sentir-Creativo-Backend.Bitacoras.Entities\Sentir-Creativo-Backend.Bitacoras.Entities.csproj", "{3E634CF6-2B6F-4DD7-ADA1-60DD8B97245D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Interface Adapters", "3.Interface Adapters", "{BDEFCC45-C911-4A92-BC85-AA3E5C8763FA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{EB92FFA6-385C-4579-AFDA-E9227D27CA15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.SharedKernel.EFCore.Repositories", "Sentir-Creativo-Backend.SharedKernel.EFCore.Repositories\Sentir-Creativo-Backend.SharedKernel.EFCore.Repositories.csproj", "{A749634E-6728-45F9-86D0-5219367BACD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.SharedKernel.EFCore.Repositories", "Sentir-Creativo-Backend.SharedKernel.EFCore.Repositories\Sentir-Creativo-Backend.SharedKernel.EFCore.Repositories.csproj", "{A749634E-6728-45F9-86D0-5219367BACD8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{64CE0018-FE33-4DD0-A00E-24FF36AEA850}"
 EndProject
@@ -30,11 +33,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{B7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{7D3DDA72-38DB-435C-A914-09E398A665DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories", "Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.csproj", "{85B8A41D-3844-4B6B-97AC-2768BEC7B758}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories", "Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.csproj", "{85B8A41D-3844-4B6B-97AC-2768BEC7B758}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Enterprise Business Rules", "1.Enterprise Business Rules", "{2007B2F3-C131-4A21-A884-46840922FAD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Audiencias.Entities", "Sentir-Creativo-Backend.Audiencias.Entities\Sentir-Creativo-Backend.Audiencias.Entities.csproj", "{E3D7D325-C338-4973-945B-279EE39FC3FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Audiencias.Entities", "Sentir-Creativo-Backend.Audiencias.Entities\Sentir-Creativo-Backend.Audiencias.Entities.csproj", "{E3D7D325-C338-4973-945B-279EE39FC3FC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Interface Adapters", "3.Interface Adapters", "{7D453E37-F3F0-49F5-9F2D-DDD757A736AC}"
 EndProject
@@ -42,35 +45,35 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{B3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{6FAEBCD4-123E-4438-981B-8DFB895C5699}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Audiencias.EFCore.Repositories", "Sentir-Creativo-Backend.Audiencias.EFCore.Repositories\Sentir-Creativo-Backend.Audiencias.EFCore.Repositories.csproj", "{377BB1AC-D57E-42B6-BE5F-6FC0AEEBE367}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Audiencias.EFCore.Repositories", "Sentir-Creativo-Backend.Audiencias.EFCore.Repositories\Sentir-Creativo-Backend.Audiencias.EFCore.Repositories.csproj", "{377BB1AC-D57E-42B6-BE5F-6FC0AEEBE367}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application Business Rules", "2.Application Business Rules", "{ACE283F7-B3F2-499C-9CD9-C285D1B3201D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Audiencias.BusinessObject", "Sentir-Creativo-Backend.Audiencias.BusinessObject\Sentir-Creativo-Backend.Audiencias.BusinessObject.csproj", "{60BA05AC-9029-49A3-9788-3B688DDAB1B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Audiencias.BusinessObject", "Sentir-Creativo-Backend.Audiencias.BusinessObject\Sentir-Creativo-Backend.Audiencias.BusinessObject.csproj", "{60BA05AC-9029-49A3-9788-3B688DDAB1B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Audiencias.Controllers", "Sentir-Creativo-Backend.Audiencias.Controllers\Sentir-Creativo-Backend.Audiencias.Controllers.csproj", "{A9CEB138-BC7D-4E7F-BB36-A64FFCCA71DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Audiencias.Controllers", "Sentir-Creativo-Backend.Audiencias.Controllers\Sentir-Creativo-Backend.Audiencias.Controllers.csproj", "{A9CEB138-BC7D-4E7F-BB36-A64FFCCA71DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Audiencias.UseCases", "Sentir-Creativo-Backend.Audiencias.UseCases\Sentir-Creativo-Backend.Audiencias.UseCases.csproj", "{9CB6AE3F-F78E-4FD7-AE64-B8DB582B3CCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Audiencias.UseCases", "Sentir-Creativo-Backend.Audiencias.UseCases\Sentir-Creativo-Backend.Audiencias.UseCases.csproj", "{9CB6AE3F-F78E-4FD7-AE64-B8DB582B3CCE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{D08BC864-9B01-4EEE-B0FB-0F92E5A7E6D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Audiencias.Presenters", "Sentir-Creativo-Backend.Audiencias.Presenters\Sentir-Creativo-Backend.Audiencias.Presenters.csproj", "{55F1A402-70A0-4693-99A4-23EC9C1E5DA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Audiencias.Presenters", "Sentir-Creativo-Backend.Audiencias.Presenters\Sentir-Creativo-Backend.Audiencias.Presenters.csproj", "{55F1A402-70A0-4693-99A4-23EC9C1E5DA0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{4E1298E3-6D44-4E40-9A0F-EA4962DDB3D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Audiencias.IoC", "Sentir-Creativo-Backend.Audiencias.IoC\Sentir-Creativo-Backend.Audiencias.IoC.csproj", "{3F5FD598-2DB3-4B9E-A866-AD16E010E847}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Audiencias.IoC", "Sentir-Creativo-Backend.Audiencias.IoC\Sentir-Creativo-Backend.Audiencias.IoC.csproj", "{3F5FD598-2DB3-4B9E-A866-AD16E010E847}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{FF98014D-E7A7-4469-A0EC-CBF9EE4AEABC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.WebApi", "Sentir-Creativo-Backend.WebApi\Sentir-Creativo-Backend.WebApi.csproj", "{DA84701B-4EDC-49CE-AC3A-6A3B0C35D1C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.WebApi", "Sentir-Creativo-Backend.WebApi\Sentir-Creativo-Backend.WebApi.csproj", "{DA84701B-4EDC-49CE-AC3A-6A3B0C35D1C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.SharedKernel.IoC", "Sentir-Creativo-Backend.SharedKernel.IoC\Sentir-Creativo-Backend.SharedKernel.IoC.csproj", "{C34EA67D-2BF2-49F6-9405-4843889D73E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.SharedKernel.IoC", "Sentir-Creativo-Backend.SharedKernel.IoC\Sentir-Creativo-Backend.SharedKernel.IoC.csproj", "{C34EA67D-2BF2-49F6-9405-4843889D73E8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CuponDescuentos", "CuponDescuentos", "{0AEB40FB-793C-4B3B-BEF8-916679F81A80}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Enterprise Business Rules", "1.Enterprise Business Rules", "{5C08F73B-2255-487A-A260-2E2746BD31CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.CuponDescuentos.Entities", "Sentir-Creativo-Backend.CuponDescuentos.Entities\Sentir-Creativo-Backend.CuponDescuentos.Entities.csproj", "{06125562-7EF3-4C35-96D8-3CC1E4B12FE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.CuponDescuentos.Entities", "Sentir-Creativo-Backend.CuponDescuentos.Entities\Sentir-Creativo-Backend.CuponDescuentos.Entities.csproj", "{06125562-7EF3-4C35-96D8-3CC1E4B12FE1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Interface Adapters", "3.Interface Adapters", "{289DC9B0-057A-4990-9F7C-C2D554897B00}"
 EndProject
@@ -78,7 +81,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{BC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{5F0418CC-51C1-44F4-A87F-02F290456579}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories", "Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.csproj", "{2AFDBE70-699F-4D62-993F-A768CA4B9A08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories", "Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.csproj", "{2AFDBE70-699F-4D62-993F-A768CA4B9A08}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Archivos", "Archivos", "{7AD95F75-12BB-4FF4-B1A3-762D360271EB}"
 EndProject
@@ -86,9 +89,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Enterprise Business Rules
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application Business Rules", "2.Application Business Rules", "{766F8275-681F-4E67-94A6-B5E67BC870E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Archivos.Entities", "Sentir-Creativo-Backend.Archivos.Entities\Sentir-Creativo-Backend.Archivos.Entities.csproj", "{A955D8C3-3153-4075-B8DF-5082B5DAEA31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Archivos.Entities", "Sentir-Creativo-Backend.Archivos.Entities\Sentir-Creativo-Backend.Archivos.Entities.csproj", "{A955D8C3-3153-4075-B8DF-5082B5DAEA31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Archivos.BusinessObject", "Sentir-Creativo-Backend.Archivos.BusinessObject\Sentir-Creativo-Backend.Archivos.BusinessObject.csproj", "{C3B2A417-155D-4AB0-9C30-D89E42D69648}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Archivos.BusinessObject", "Sentir-Creativo-Backend.Archivos.BusinessObject\Sentir-Creativo-Backend.Archivos.BusinessObject.csproj", "{C3B2A417-155D-4AB0-9C30-D89E42D69648}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Interface Adapters", "3. Interface Adapters", "{0E2F324C-D5BF-499E-8B5D-48BE61AFA71D}"
 EndProject
@@ -96,13 +99,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{53
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{CF23F9B1-8956-4D6B-9672-5FDD6A2DC467}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Archivos.EFCore.Repositories", "Sentir-Creativo-Backend.Archivos.EFCore.Repositories\Sentir-Creativo-Backend.Archivos.EFCore.Repositories.csproj", "{77F0AECC-9D30-45EE-B589-4D05349F1135}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Archivos.EFCore.Repositories", "Sentir-Creativo-Backend.Archivos.EFCore.Repositories\Sentir-Creativo-Backend.Archivos.EFCore.Repositories.csproj", "{77F0AECC-9D30-45EE-B589-4D05349F1135}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comentarios", "Comentarios", "{54CA7543-31DE-4B0D-A41F-44F663C1A391}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Enterprise Business Rules", "1.Enterprise Business Rules", "{D951945A-9F12-4D51-BDB8-07B5992D311A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senitr-Creativo-Backend.Comentarios.Entities", "Senitr-Creativo-Backend.Comentarios.Entities\Senitr-Creativo-Backend.Comentarios.Entities.csproj", "{458113AA-4648-4E76-A954-0759043AF704}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senitr-Creativo-Backend.Comentarios.Entities", "Senitr-Creativo-Backend.Comentarios.Entities\Senitr-Creativo-Backend.Comentarios.Entities.csproj", "{458113AA-4648-4E76-A954-0759043AF704}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Interface Adapters", "3.Interface Adapters", "{A1388E91-CC0E-4B4B-A65B-765408F22805}"
 EndProject
@@ -110,13 +113,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{F6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{F1FFB1A0-127C-4A0F-901C-D8273A6599A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Comentarios.EFCore.Repositories", "Sentir-Creativo-Backend.Comentarios.EFCore.Repositories\Sentir-Creativo-Backend.Comentarios.EFCore.Repositories.csproj", "{3B6B1B84-3139-4C99-8BC7-B61F96DC180E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Comentarios.EFCore.Repositories", "Sentir-Creativo-Backend.Comentarios.EFCore.Repositories\Sentir-Creativo-Backend.Comentarios.EFCore.Repositories.csproj", "{3B6B1B84-3139-4C99-8BC7-B61F96DC180E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublicoObjetivos", "PublicoObjetivos", "{677C5B80-E55D-45B3-82AE-4BDFE7AB01F3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Enterprise Business Rules", "1.Enterprise Business Rules", "{7D392963-3E6A-465C-B553-6E3680509903}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.PublicoObjetivos.Entities", "Sentir-Creativo-Backend.PublicoObjetivos.Entities\Sentir-Creativo-Backend.PublicoObjetivos.Entities.csproj", "{B3485699-881A-442F-8134-A5EC91398ABF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.PublicoObjetivos.Entities", "Sentir-Creativo-Backend.PublicoObjetivos.Entities\Sentir-Creativo-Backend.PublicoObjetivos.Entities.csproj", "{B3485699-881A-442F-8134-A5EC91398ABF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Interface Adapters", "3.Interface Adapters", "{4841FD5D-4B33-4691-9D79-2212FC6110F5}"
 EndProject
@@ -124,13 +127,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{F4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{2A3AA778-D2B6-4355-B1AB-61C196F2FBB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.PublicoObjetivos.EFCore.Repositories", "Sentir-Creativo-Backend.PublicoObjetivos.EFCore.Repositories\Sentir-Creativo-Backend.PublicoObjetivos.EFCore.Repositories.csproj", "{9ACA31AF-0B05-4B8E-ADE4-FB1C5D1749DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.PublicoObjetivos.EFCore.Repositories", "Sentir-Creativo-Backend.PublicoObjetivos.EFCore.Repositories\Sentir-Creativo-Backend.PublicoObjetivos.EFCore.Repositories.csproj", "{9ACA31AF-0B05-4B8E-ADE4-FB1C5D1749DF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Areas", "Areas", "{853B09A9-1234-4F54-ADEF-623277E6F844}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Enterprise Business Rules", "1.Enterprise Business Rules", "{F8DBB18A-EAB0-4D8A-B731-372CEC2CA1C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Areas.Entities", "Sentir-Creativo-Backend.Areas.Entities\Sentir-Creativo-Backend.Areas.Entities.csproj", "{B3314FAD-25A4-41DE-B1F6-53C81882DA0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Areas.Entities", "Sentir-Creativo-Backend.Areas.Entities\Sentir-Creativo-Backend.Areas.Entities.csproj", "{B3314FAD-25A4-41DE-B1F6-53C81882DA0B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Interface Adapters", "3.Interface Adapters", "{DB7C0578-BD6D-4797-A2DC-351846F27FA0}"
 EndProject
@@ -138,23 +141,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{CD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{8B88939E-EA85-4576-9A4D-ADA8BF88B9F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Areas.EFCore.Repositories", "Sentir-Creativo-Backend.Areas.EFCore.Repositories\Sentir-Creativo-Backend.Areas.EFCore.Repositories.csproj", "{7B749D74-71E9-4284-B916-7A39D598A1DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Areas.EFCore.Repositories", "Sentir-Creativo-Backend.Areas.EFCore.Repositories\Sentir-Creativo-Backend.Areas.EFCore.Repositories.csproj", "{7B749D74-71E9-4284-B916-7A39D598A1DA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Proyectos", "Proyectos", "{AD45B29D-CE87-4E6A-BB05-2369F39711A4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Enterprise Business Rules", "1.Enterprise Business Rules", "{D2F9E28C-F6AF-4844-8594-C29AEB2A9414}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Proyectos.Entities", "Sentir-Creativo-Backend.Proyectos.Entities\Sentir-Creativo-Backend.Proyectos.Entities.csproj", "{CF9FE057-E9F5-4BAC-81E5-17B6E3F15C37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Proyectos.Entities", "Sentir-Creativo-Backend.Proyectos.Entities\Sentir-Creativo-Backend.Proyectos.Entities.csproj", "{CF9FE057-E9F5-4BAC-81E5-17B6E3F15C37}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Interface Adapters", "3.Interface Adapters", "{DE6B7341-1463-473E-A5EA-252D80F0A84D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Proyectos.EFCore.Repositories", "Sentir-Creativo-Backend.Proyectos.EFCore.Repositories\Sentir-Creativo-Backend.Proyectos.EFCore.Repositories.csproj", "{4072F4EC-E7BD-433C-950A-253987845C2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Proyectos.EFCore.Repositories", "Sentir-Creativo-Backend.Proyectos.EFCore.Repositories\Sentir-Creativo-Backend.Proyectos.EFCore.Repositories.csproj", "{4072F4EC-E7BD-433C-950A-253987845C2D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application Business Rules", "2.Application Business Rules", "{3170BE30-C96D-4E98-BFDB-EF5FC8F7189E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Proyectos.BusinessObject", "Sentir-Creativo-Backend.Proyectos.BusinessObject\Sentir-Creativo-Backend.Proyectos.BusinessObject.csproj", "{0C3FD201-510E-4410-8DB5-3E43D0290CB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Proyectos.BusinessObject", "Sentir-Creativo-Backend.Proyectos.BusinessObject\Sentir-Creativo-Backend.Proyectos.BusinessObject.csproj", "{0C3FD201-510E-4410-8DB5-3E43D0290CB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Proyectos.UseCases", "Sentir-Creativo-Backend.Proyectos.UseCases\Sentir-Creativo-Backend.Proyectos.UseCases.csproj", "{234C6873-B152-40E2-ACD7-FE0B1356ECEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Proyectos.UseCases", "Sentir-Creativo-Backend.Proyectos.UseCases\Sentir-Creativo-Backend.Proyectos.UseCases.csproj", "{234C6873-B152-40E2-ACD7-FE0B1356ECEF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gateways", "gateways", "{34BA386B-9079-46E1-88CF-C56D82B41A07}"
 EndProject
@@ -164,17 +167,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{562BDCD7-4D61-49AD-B28B-BED5D3E5398F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Proyectos.Presenters", "Sentir-Creativo-Backend.Proyectos.Presenters\Sentir-Creativo-Backend.Proyectos.Presenters.csproj", "{5A6D4BC0-9A9B-44AE-A319-A431DCEF008F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Proyectos.Presenters", "Sentir-Creativo-Backend.Proyectos.Presenters\Sentir-Creativo-Backend.Proyectos.Presenters.csproj", "{5A6D4BC0-9A9B-44AE-A319-A431DCEF008F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Proyectos.Controllers", "Sentir-Creativo-Backend.Proyectos.Controllers\Sentir-Creativo-Backend.Proyectos.Controllers.csproj", "{7729EA02-C261-45E9-9035-13DCDD1EC8E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Proyectos.Controllers", "Sentir-Creativo-Backend.Proyectos.Controllers\Sentir-Creativo-Backend.Proyectos.Controllers.csproj", "{7729EA02-C261-45E9-9035-13DCDD1EC8E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Proyectos.IoC", "Sentir-Creativo-Backend.Proyectos.IoC\Sentir-Creativo-Backend.Proyectos.IoC.csproj", "{BC50B412-7C97-4A0C-A438-CD546AF6A567}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Proyectos.IoC", "Sentir-Creativo-Backend.Proyectos.IoC\Sentir-Creativo-Backend.Proyectos.IoC.csproj", "{BC50B412-7C97-4A0C-A438-CD546AF6A567}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plantillas", "Plantillas", "{6D218592-F2CD-43D2-9310-7D30A7CF2894}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Enterprise Business Rules", "1.Enterprise Business Rules", "{537B5752-8E52-408E-8214-326FF3878608}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Plantillas.Entities", "Sentir-Creativo-Backend.Plantillas.Entities\Sentir-Creativo-Backend.Plantillas.Entities.csproj", "{E1B69313-51AE-425D-B014-460D05372B31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Plantillas.Entities", "Sentir-Creativo-Backend.Plantillas.Entities\Sentir-Creativo-Backend.Plantillas.Entities.csproj", "{E1B69313-51AE-425D-B014-460D05372B31}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Interface Adapters", "3.Interface Adapters", "{B848D5BC-A8B1-4A5B-A964-5E76D517B11F}"
 EndProject
@@ -182,19 +185,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{7B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{04462249-78E5-4910-8F40-BBC7B2C68709}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Plantillas.EFCore.Repositories", "Sentir-Creativo-Backend.Plantillas.EFCore.Repositories\Sentir-Creativo-Backend.Plantillas.EFCore.Repositories.csproj", "{2420CFB8-F7A6-4774-AB51-7EE3E58BD3EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Plantillas.EFCore.Repositories", "Sentir-Creativo-Backend.Plantillas.EFCore.Repositories\Sentir-Creativo-Backend.Plantillas.EFCore.Repositories.csproj", "{2420CFB8-F7A6-4774-AB51-7EE3E58BD3EE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Difusiones", "Difusiones", "{A9C6A2F8-B7CE-44A2-8F9F-F8CD251697F9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Enterprise Business Rules", "1.Enterprise Business Rules", "{ECF1C3DC-CB4F-47DF-98EE-36461D801589}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Difusiones.Entities", "Sentir-Creativo-Backend.Difusiones.Entities\Sentir-Creativo-Backend.Difusiones.Entities.csproj", "{A6D0033B-9369-4327-A4DC-CDF256856D41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Difusiones.Entities", "Sentir-Creativo-Backend.Difusiones.Entities\Sentir-Creativo-Backend.Difusiones.Entities.csproj", "{A6D0033B-9369-4327-A4DC-CDF256856D41}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Colecciones", "Colecciones", "{1ACDE052-DF0C-4CDC-B712-91456F972915}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Enterprise Business Rules", "1.Enterprise Business Rules", "{95E0D623-539F-4D75-9FA5-A04C755EC1A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Colecciones.Entities", "Sentir-Creativo-Backend.Colecciones.Entities\Sentir-Creativo-Backend.Colecciones.Entities.csproj", "{54142114-ACE8-4AFF-8C82-2818D5BF6610}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Colecciones.Entities", "Sentir-Creativo-Backend.Colecciones.Entities\Sentir-Creativo-Backend.Colecciones.Entities.csproj", "{54142114-ACE8-4AFF-8C82-2818D5BF6610}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Interface Adapters", "3.Interface Adapters", "{32A7B5B6-BC5D-467A-99EE-6969951288D8}"
 EndProject
@@ -202,7 +205,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{A1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{089FC00F-4902-4B0B-83AF-940AA5233E01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Colecciones.EFCore.Repositories", "Sentir-Creativo-Backend.Colecciones.EFCore.Repositories\Sentir-Creativo-Backend.Colecciones.EFCore.Repositories.csproj", "{C327FA65-6CB0-45CD-98CB-20BAA13FD7E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Colecciones.EFCore.Repositories", "Sentir-Creativo-Backend.Colecciones.EFCore.Repositories\Sentir-Creativo-Backend.Colecciones.EFCore.Repositories.csproj", "{C327FA65-6CB0-45CD-98CB-20BAA13FD7E7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Interface Adapters", "3.Interface Adapters", "{35B67273-F98B-4C6A-B65D-D8155289088A}"
 EndProject
@@ -210,29 +213,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{1A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{B074E030-1B04-4D3F-A8E7-45E5A148B9AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Cretivo-Backend.Difusiones.EFCore.Repositories", "Sentir-Cretivo-Backend.Difusiones.EFCore.Repositories\Sentir-Cretivo-Backend.Difusiones.EFCore.Repositories.csproj", "{9DFAC48C-07F2-42FC-8D5A-2BF60E735D24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Cretivo-Backend.Difusiones.EFCore.Repositories", "Sentir-Cretivo-Backend.Difusiones.EFCore.Repositories\Sentir-Cretivo-Backend.Difusiones.EFCore.Repositories.csproj", "{9DFAC48C-07F2-42FC-8D5A-2BF60E735D24}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application Business Rules", "2.Application Business Rules", "{E4CD32CD-21A7-457A-BA2D-C964DF5BF1D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.PublicoObjectivos.BusinessObject", "Sentir-Creativo-Backend.PublicoObjectivos.BusinessObject\Sentir-Creativo-Backend.PublicoObjectivos.BusinessObject.csproj", "{80F557D6-D901-42D1-B2BF-28BE284E7B0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.PublicoObjectivos.BusinessObject", "Sentir-Creativo-Backend.PublicoObjectivos.BusinessObject\Sentir-Creativo-Backend.PublicoObjectivos.BusinessObject.csproj", "{80F557D6-D901-42D1-B2BF-28BE284E7B0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.PublicoObjetivos.UseCases", "Sentir-Creativo-Backend.PublicoObjetivos.UseCases\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.csproj", "{464E33DC-5C18-4E9D-A310-3A048709D3E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.PublicoObjetivos.UseCases", "Sentir-Creativo-Backend.PublicoObjetivos.UseCases\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.csproj", "{464E33DC-5C18-4E9D-A310-3A048709D3E0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{C3CC37E5-FACF-4C6B-BFE1-48D122A690EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.PublicoObjetivos.Presenters", "Sentir-Creativo-Backend.PublicoObjetivos.Presenters\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.csproj", "{A1FF8046-462E-4461-AB6A-E0E3D51E6DD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.PublicoObjetivos.Presenters", "Sentir-Creativo-Backend.PublicoObjetivos.Presenters\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.csproj", "{A1FF8046-462E-4461-AB6A-E0E3D51E6DD2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{4564CEB5-F51D-44B0-BCD5-E172ED0B4B2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.PublicoObjetivos.Controllers", "Sentir-Creativo-Backend.PublicoObjetivos.Controllers\Sentir-Creativo-Backend.PublicoObjetivos.Controllers.csproj", "{D269290F-BCC4-4FB1-99B0-4D358E604CE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.PublicoObjetivos.Controllers", "Sentir-Creativo-Backend.PublicoObjetivos.Controllers\Sentir-Creativo-Backend.PublicoObjetivos.Controllers.csproj", "{D269290F-BCC4-4FB1-99B0-4D358E604CE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.PublicoObjetivos.IoC", "Sentir-Creativo-Backend.PublicoObjetivos.IoC\Sentir-Creativo-Backend.PublicoObjetivos.IoC.csproj", "{C56B1DE5-3E69-48D5-A165-D4AC6FE1B279}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.PublicoObjetivos.IoC", "Sentir-Creativo-Backend.PublicoObjetivos.IoC\Sentir-Creativo-Backend.PublicoObjetivos.IoC.csproj", "{C56B1DE5-3E69-48D5-A165-D4AC6FE1B279}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Servicios", "Servicios", "{CFC3C412-C3F1-4833-8CD2-0B6CFCDD4727}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Enterprise Business Rules", "1.Enterprise Business Rules", "{71CF3968-3959-403F-A966-DC8240DB7583}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Servicios.Entities", "Sentir-Creativo-Backend.Servicios.Entities\Sentir-Creativo-Backend.Servicios.Entities.csproj", "{D3A57AA8-59FE-455B-AE18-69A8C0356997}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Servicios.Entities", "Sentir-Creativo-Backend.Servicios.Entities\Sentir-Creativo-Backend.Servicios.Entities.csproj", "{D3A57AA8-59FE-455B-AE18-69A8C0356997}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Interface Adapters", "3.Interface Adapters", "{29DB901D-B44C-454D-8F0F-6F24F8E550C7}"
 EndProject
@@ -240,71 +243,71 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{A9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{6495917E-098F-475E-9871-5840E9A99DD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Servicios.EFCore.Repositories", "Sentir-Creativo-Backend.Servicios.EFCore.Repositories\Sentir-Creativo-Backend.Servicios.EFCore.Repositories.csproj", "{26F3EE67-2351-4AB5-9A59-881381FFA550}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Servicios.EFCore.Repositories", "Sentir-Creativo-Backend.Servicios.EFCore.Repositories\Sentir-Creativo-Backend.Servicios.EFCore.Repositories.csproj", "{26F3EE67-2351-4AB5-9A59-881381FFA550}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application Business Rules", "2.Application Business Rules", "{B96CF9E7-9408-424F-8CFD-9E942DE6355D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Servicios.BusinessObject", "Sentir-Creativo-Backend.Servicios.BusinessObject\Sentir-Creativo-Backend.Servicios.BusinessObject.csproj", "{8D852E12-B3A3-44C4-9C9E-BD8525C8B2E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Servicios.BusinessObject", "Sentir-Creativo-Backend.Servicios.BusinessObject\Sentir-Creativo-Backend.Servicios.BusinessObject.csproj", "{8D852E12-B3A3-44C4-9C9E-BD8525C8B2E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Servicios.UseCases", "Sentir-Creativo-Backend.Servicios.UseCases\Sentir-Creativo-Backend.Servicios.UseCases.csproj", "{58BEA4B1-CBB7-4A81-A385-E4E1CB36FA00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Servicios.UseCases", "Sentir-Creativo-Backend.Servicios.UseCases\Sentir-Creativo-Backend.Servicios.UseCases.csproj", "{58BEA4B1-CBB7-4A81-A385-E4E1CB36FA00}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{C224DC93-2B2D-4026-A4D4-DBE7E844181C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Servicios.Presenters", "Sentir-Creativo-Backend.Servicios.Presenters\Sentir-Creativo-Backend.Servicios.Presenters.csproj", "{ACC595EA-F564-439E-9B67-B946EB4C9977}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Servicios.Presenters", "Sentir-Creativo-Backend.Servicios.Presenters\Sentir-Creativo-Backend.Servicios.Presenters.csproj", "{ACC595EA-F564-439E-9B67-B946EB4C9977}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{EEDDE3BE-F1CB-4F98-8CC6-6F5DDB646599}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Servicios.Controllers", "Sentir-Creativo-Backend.Servicios.Controllers\Sentir-Creativo-Backend.Servicios.Controllers.csproj", "{0FCDFF35-6936-4450-96E7-C0A6C0CD3D3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Servicios.Controllers", "Sentir-Creativo-Backend.Servicios.Controllers\Sentir-Creativo-Backend.Servicios.Controllers.csproj", "{0FCDFF35-6936-4450-96E7-C0A6C0CD3D3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Servicios.IoC", "Sentir-Creativo-Backend.Servicios.IoC\Sentir-Creativo-Backend.Servicios.IoC.csproj", "{2D3B9DF2-EF43-4969-8349-A5EC77BCC226}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Servicios.IoC", "Sentir-Creativo-Backend.Servicios.IoC\Sentir-Creativo-Backend.Servicios.IoC.csproj", "{2D3B9DF2-EF43-4969-8349-A5EC77BCC226}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application Business Rules", "2.Application Business Rules", "{F7C7E4F6-2CAE-4001-9523-3CA8234A9CB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Colecciones.BusinessObject", "Sentir-Creativo-Backend.Colecciones.BusinessObject\Sentir-Creativo-Backend.Colecciones.BusinessObject.csproj", "{A984ACA0-A742-4942-A61E-82CD58152C81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Colecciones.BusinessObject", "Sentir-Creativo-Backend.Colecciones.BusinessObject\Sentir-Creativo-Backend.Colecciones.BusinessObject.csproj", "{A984ACA0-A742-4942-A61E-82CD58152C81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Colecciones.UseCases", "Sentir-Creativo-Backend.Colecciones.UseCases\Sentir-Creativo-Backend.Colecciones.UseCases.csproj", "{E0A0E23E-1124-48CB-84E4-212BD2FD589A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Colecciones.UseCases", "Sentir-Creativo-Backend.Colecciones.UseCases\Sentir-Creativo-Backend.Colecciones.UseCases.csproj", "{E0A0E23E-1124-48CB-84E4-212BD2FD589A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{A7C46BCD-7532-49C7-99B7-D83E12376A66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Colecciones.Presenters", "Sentir-Creativo-Backend.Colecciones.Presenters\Sentir-Creativo-Backend.Colecciones.Presenters.csproj", "{E0BE1C6E-1260-4ED9-BD02-42022AFBB2D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Colecciones.Presenters", "Sentir-Creativo-Backend.Colecciones.Presenters\Sentir-Creativo-Backend.Colecciones.Presenters.csproj", "{E0BE1C6E-1260-4ED9-BD02-42022AFBB2D7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{6EF42A8E-3C69-44AE-BC37-B32709F7C67B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Colecciones.Controllers", "Sentir-Creativo-Backend.Colecciones.Controllers\Sentir-Creativo-Backend.Colecciones.Controllers.csproj", "{AF74AE5C-FDC9-42BD-8D7E-14484E5D3001}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Colecciones.Controllers", "Sentir-Creativo-Backend.Colecciones.Controllers\Sentir-Creativo-Backend.Colecciones.Controllers.csproj", "{AF74AE5C-FDC9-42BD-8D7E-14484E5D3001}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Colecciones.IoC", "Sentir-Creativo-Backend.Colecciones.IoC\Sentir-Creativo-Backend.Colecciones.IoC.csproj", "{111E976B-20ED-4324-9A4F-B30224D391FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Colecciones.IoC", "Sentir-Creativo-Backend.Colecciones.IoC\Sentir-Creativo-Backend.Colecciones.IoC.csproj", "{111E976B-20ED-4324-9A4F-B30224D391FD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application Business Rules", "2.Application Business Rules", "{8013C915-E8A2-44AD-82E3-366D10F1A0CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Areas.BusinessObject", "Sentir-Creativo-Backend.Areas.BusinessObject\Sentir-Creativo-Backend.Areas.BusinessObject.csproj", "{9E35D1D6-53D8-47D3-976E-5E559DD6FAA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Areas.BusinessObject", "Sentir-Creativo-Backend.Areas.BusinessObject\Sentir-Creativo-Backend.Areas.BusinessObject.csproj", "{9E35D1D6-53D8-47D3-976E-5E559DD6FAA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Areas.UseCases", "Sentir-Creativo-Backend.Areas.UseCases\Sentir-Creativo-Backend.Areas.UseCases.csproj", "{EF33EB0F-DAEE-408B-B522-76DDE6586C81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Areas.UseCases", "Sentir-Creativo-Backend.Areas.UseCases\Sentir-Creativo-Backend.Areas.UseCases.csproj", "{EF33EB0F-DAEE-408B-B522-76DDE6586C81}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{14A105E7-E4E5-4D61-AD8D-6FC24F81D7B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Areas.Presenters", "Sentir-Creativo-Backend.Areas.Presenters\Sentir-Creativo-Backend.Areas.Presenters.csproj", "{BD298B09-6056-42B6-B955-5276B612E528}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Areas.Presenters", "Sentir-Creativo-Backend.Areas.Presenters\Sentir-Creativo-Backend.Areas.Presenters.csproj", "{BD298B09-6056-42B6-B955-5276B612E528}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{995CA612-FF40-4D4B-93F2-131BD527A565}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Areas.Controllers", "Sentir-Creativo-Backend.Areas.Controllers\Sentir-Creativo-Backend.Areas.Controllers.csproj", "{58F4C8EE-2CA4-40B1-9A27-39F6F2130BFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Areas.Controllers", "Sentir-Creativo-Backend.Areas.Controllers\Sentir-Creativo-Backend.Areas.Controllers.csproj", "{58F4C8EE-2CA4-40B1-9A27-39F6F2130BFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Areas.IoC", "Sentir-Creativo-Backend.Areas.IoC\Sentir-Creativo-Backend.Areas.IoC.csproj", "{992CCF33-0A11-45EC-BFD3-F24227BB2DB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Areas.IoC", "Sentir-Creativo-Backend.Areas.IoC\Sentir-Creativo-Backend.Areas.IoC.csproj", "{992CCF33-0A11-45EC-BFD3-F24227BB2DB8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application Business Rules", "2.Application Business Rules", "{C448B773-650D-4962-9969-063CBDE1393A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.SharedKernel.UseCases", "Sentir-Creativo-Backend.SharedKernel.UseCases\Sentir-Creativo-Backend.SharedKernel.UseCases.csproj", "{C10B8A5D-A575-46C1-B631-958C4A222586}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.SharedKernel.UseCases", "Sentir-Creativo-Backend.SharedKernel.UseCases\Sentir-Creativo-Backend.SharedKernel.UseCases.csproj", "{C10B8A5D-A575-46C1-B631-958C4A222586}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Audiencias.Make.Repositories", "Sentir-Creativo-Backend.Audiencias.Make.Repositories\Sentir-Creativo-Backend.Audiencias.Make.Repositories.csproj", "{F1A2BBE9-661B-49E6-B06E-8EF54E1BB6F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Audiencias.Make.Repositories", "Sentir-Creativo-Backend.Audiencias.Make.Repositories\Sentir-Creativo-Backend.Audiencias.Make.Repositories.csproj", "{F1A2BBE9-661B-49E6-B06E-8EF54E1BB6F6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{3B723AB7-BED9-4D99-B0CF-22C474796750}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.WebExceptionsPresenters", "Sentir-Creativo-Backend.WebExceptionsPresenters\Sentir-Creativo-Backend.WebExceptionsPresenters.csproj", "{59E193D9-3FD5-4E89-BDE0-64EA69C55E8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.WebExceptionsPresenters", "Sentir-Creativo-Backend.WebExceptionsPresenters\Sentir-Creativo-Backend.WebExceptionsPresenters.csproj", "{59E193D9-3FD5-4E89-BDE0-64EA69C55E8B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UsersAdmin", "UsersAdmin", "{2CFC2903-4B54-4A46-95BB-1333FB61A06E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application Business Rules", "2.Application Business Rules", "{A0D23EF2-BAB0-46BA-9F42-9140C4A89495}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.UsersAdmin.BusinessObject", "Sentir-Creativo-Backend.UsersAdmin.BusinessObject\Sentir-Creativo-Backend.UsersAdmin.BusinessObject.csproj", "{4F245890-E5E9-4670-894E-579025EC3274}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.UsersAdmin.BusinessObject", "Sentir-Creativo-Backend.UsersAdmin.BusinessObject\Sentir-Creativo-Backend.UsersAdmin.BusinessObject.csproj", "{4F245890-E5E9-4670-894E-579025EC3274}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Interface Adapters", "3.Interface Adapters", "{3C0AECC3-6169-4C93-AB2A-735614DA1F3B}"
 EndProject
@@ -312,93 +315,93 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{15
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{8E4D7998-1494-415C-8FB0-E9643D45118F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.UsersAdmin.EFCore.Repositories", "Sentir-Creativo-Backend.UsersAdmin.EFCore.Repositories\Sentir-Creativo-Backend.UsersAdmin.EFCore.Repositories.csproj", "{7D241063-9E3C-458F-9E14-FC919043A38B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.UsersAdmin.EFCore.Repositories", "Sentir-Creativo-Backend.UsersAdmin.EFCore.Repositories\Sentir-Creativo-Backend.UsersAdmin.EFCore.Repositories.csproj", "{7D241063-9E3C-458F-9E14-FC919043A38B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Frameworks And Drivers", "4.Frameworks And Drivers", "{AF370155-6A7A-48B8-87ED-5D85D4915185}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.SharedKernel.Services.Infrastructure", "Sentir-Creativo-Backend.SharedKernel.Services.Infrastructure\Sentir-Creativo-Backend.SharedKernel.Services.Infrastructure.csproj", "{B1C39337-54AA-4605-8546-17C838228743}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.SharedKernel.Services.Infrastructure", "Sentir-Creativo-Backend.SharedKernel.Services.Infrastructure\Sentir-Creativo-Backend.SharedKernel.Services.Infrastructure.csproj", "{B1C39337-54AA-4605-8546-17C838228743}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.UsersAdmin.UseCases", "Sentir-Creativo-Backend.UsersAdmin.UseCases\Sentir-Creativo-Backend.UsersAdmin.UseCases.csproj", "{5707397E-6949-41C8-893B-2AB46EB85360}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.UsersAdmin.UseCases", "Sentir-Creativo-Backend.UsersAdmin.UseCases\Sentir-Creativo-Backend.UsersAdmin.UseCases.csproj", "{5707397E-6949-41C8-893B-2AB46EB85360}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Frameworks And Drivers", "4.Frameworks And Drivers", "{50FE82DC-044E-4705-9FD2-64962A10FC30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.UsersAdmin.Infrastructure.Services", "Sentir-Creativo-Backend.UsersAdmin.Infrastructure.Services\Sentir-Creativo-Backend.UsersAdmin.Infrastructure.Services.csproj", "{8AEFDDF0-EEF7-47E6-B82D-CB4D539F7C79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.UsersAdmin.Infrastructure.Services", "Sentir-Creativo-Backend.UsersAdmin.Infrastructure.Services\Sentir-Creativo-Backend.UsersAdmin.Infrastructure.Services.csproj", "{8AEFDDF0-EEF7-47E6-B82D-CB4D539F7C79}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{829D280E-C547-4887-A21D-96DD4863DFB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.UsersAdmins.Controllers", "Sentir-Creativo-Backend.UsersAdmins.Controllers\Sentir-Creativo-Backend.UsersAdmins.Controllers.csproj", "{2A385923-64E7-424B-A7A7-54FE91FDE1C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.UsersAdmins.Controllers", "Sentir-Creativo-Backend.UsersAdmins.Controllers\Sentir-Creativo-Backend.UsersAdmins.Controllers.csproj", "{2A385923-64E7-424B-A7A7-54FE91FDE1C3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{EF52AC1E-65B9-4E88-B85B-54819AC2C078}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.UsersAdmins.Presenters", "Sentir-Creativo-Backend.UsersAdmins.Presenters\Sentir-Creativo-Backend.UsersAdmins.Presenters.csproj", "{301C9F66-7520-40AA-A1F1-FD8E7AD0E072}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.UsersAdmins.Presenters", "Sentir-Creativo-Backend.UsersAdmins.Presenters\Sentir-Creativo-Backend.UsersAdmins.Presenters.csproj", "{301C9F66-7520-40AA-A1F1-FD8E7AD0E072}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.UsersAdmins.IoC", "Sentir-Creativo-Backend.UsersAdmins.IoC\Sentir-Creativo-Backend.UsersAdmins.IoC.csproj", "{B50FEE76-97D1-4D0A-B6DE-E7574AA9B712}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.UsersAdmins.IoC", "Sentir-Creativo-Backend.UsersAdmins.IoC\Sentir-Creativo-Backend.UsersAdmins.IoC.csproj", "{B50FEE76-97D1-4D0A-B6DE-E7574AA9B712}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application Business Rules", "2.Application Business Rules", "{D52000FD-403F-4FDC-A4EB-48BE3F98C46B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Difusiones.BusinessObject", "Sentir-Creativo-Backend.Difusiones.BusinessObject\Sentir-Creativo-Backend.Difusiones.BusinessObject.csproj", "{3B1103A7-D320-46AB-AF27-C584C0773B28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Difusiones.BusinessObject", "Sentir-Creativo-Backend.Difusiones.BusinessObject\Sentir-Creativo-Backend.Difusiones.BusinessObject.csproj", "{3B1103A7-D320-46AB-AF27-C584C0773B28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Difusiones.UseCases", "Sentir-Creativo-Backend.Difusiones.UseCases\Sentir-Creativo-Backend.Difusiones.UseCases.csproj", "{BFA9CF51-8F62-492D-8B7B-471E31201025}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Difusiones.UseCases", "Sentir-Creativo-Backend.Difusiones.UseCases\Sentir-Creativo-Backend.Difusiones.UseCases.csproj", "{BFA9CF51-8F62-492D-8B7B-471E31201025}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{70C5A8B7-21A1-4E08-A5E8-953A8C3ECFB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Difusiones.Presenters", "Sentir-Creativo-Backend.Difusiones.Presenters\Sentir-Creativo-Backend.Difusiones.Presenters.csproj", "{D7B1976E-BDAE-4B74-8797-4DFAD60147B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Difusiones.Presenters", "Sentir-Creativo-Backend.Difusiones.Presenters\Sentir-Creativo-Backend.Difusiones.Presenters.csproj", "{D7B1976E-BDAE-4B74-8797-4DFAD60147B8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{0932D966-BC3C-41DD-8A57-A1FBF6B04252}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Difusiones.Controllers", "Sentir-Creativo-Backend.Difusiones.Controllers\Sentir-Creativo-Backend.Difusiones.Controllers.csproj", "{2FA4A4BC-5BD1-4899-A329-F74701A3FD6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Difusiones.Controllers", "Sentir-Creativo-Backend.Difusiones.Controllers\Sentir-Creativo-Backend.Difusiones.Controllers.csproj", "{2FA4A4BC-5BD1-4899-A329-F74701A3FD6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Difusiones.IoC", "Sentir-Creativo-Backend.Difusiones.IoC\Sentir-Creativo-Backend.Difusiones.IoC.csproj", "{EAB4A767-E59F-4D37-AC83-015599E43560}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Difusiones.IoC", "Sentir-Creativo-Backend.Difusiones.IoC\Sentir-Creativo-Backend.Difusiones.IoC.csproj", "{EAB4A767-E59F-4D37-AC83-015599E43560}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application Business Rules", "2.Application Business Rules", "{558C5925-B365-459D-91E7-653B5DCBA4A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject", "Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.csproj", "{38CFD058-0F07-45D4-BBE2-044C86DD856A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject", "Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.csproj", "{38CFD058-0F07-45D4-BBE2-044C86DD856A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.CuponesDescuentos.UseCases", "Sentir-Creativo-Backend.CuponesDescuentos.UseCases\Sentir-Creativo-Backend.CuponesDescuentos.UseCases.csproj", "{74BFA66B-A4C9-45B9-ADED-D8BF31398679}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.CuponesDescuentos.UseCases", "Sentir-Creativo-Backend.CuponesDescuentos.UseCases\Sentir-Creativo-Backend.CuponesDescuentos.UseCases.csproj", "{74BFA66B-A4C9-45B9-ADED-D8BF31398679}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{8C53ADF4-0BD5-48F1-B456-5E6A69C39C7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.CuponesDescuentos.Controllers", "Sentir-Creativo-Backend.CuponesDescuentos.Controllers\Sentir-Creativo-Backend.CuponesDescuentos.Controllers.csproj", "{EC4182E9-D842-4899-96C2-A89A7E7900C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.CuponesDescuentos.Controllers", "Sentir-Creativo-Backend.CuponesDescuentos.Controllers\Sentir-Creativo-Backend.CuponesDescuentos.Controllers.csproj", "{EC4182E9-D842-4899-96C2-A89A7E7900C0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{DA7FF546-40CE-44C0-B65D-5CFE90188650}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.CuponesDescuentos.Presenters", "Sentir-Creativo-Backend.CuponesDescuentos.Presenters\Sentir-Creativo-Backend.CuponesDescuentos.Presenters.csproj", "{3CA8209C-873D-45E5-B8D7-C48796A07526}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.CuponesDescuentos.Presenters", "Sentir-Creativo-Backend.CuponesDescuentos.Presenters\Sentir-Creativo-Backend.CuponesDescuentos.Presenters.csproj", "{3CA8209C-873D-45E5-B8D7-C48796A07526}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.CuponesDescuentos.IoC", "Sentir-Creativo-Backend.CuponesDescuentos.IoC\Sentir-Creativo-Backend.CuponesDescuentos.IoC.csproj", "{650B9337-2D36-44A4-A162-9DF46DC3A37B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.CuponesDescuentos.IoC", "Sentir-Creativo-Backend.CuponesDescuentos.IoC\Sentir-Creativo-Backend.CuponesDescuentos.IoC.csproj", "{650B9337-2D36-44A4-A162-9DF46DC3A37B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sentir-Creativo-Backend.Archivos.UseCases", "sentir-Creativo-Backend.Archivos.UseCases\sentir-Creativo-Backend.Archivos.UseCases.csproj", "{A0088E1B-74B2-4159-894D-E7F1BF1093EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sentir-Creativo-Backend.Archivos.UseCases", "sentir-Creativo-Backend.Archivos.UseCases\sentir-Creativo-Backend.Archivos.UseCases.csproj", "{A0088E1B-74B2-4159-894D-E7F1BF1093EB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{B963C360-5A2D-4BB2-B760-ABB269A34DAD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{EF7360E5-1FFB-48AE-887A-9615B02C3D18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Archivos.Controllers", "Sentir-Creativo-Backend.Archivos.Controllers\Sentir-Creativo-Backend.Archivos.Controllers.csproj", "{32D694D9-6ACA-4400-9064-FCAF4328D0CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Archivos.Controllers", "Sentir-Creativo-Backend.Archivos.Controllers\Sentir-Creativo-Backend.Archivos.Controllers.csproj", "{32D694D9-6ACA-4400-9064-FCAF4328D0CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-creativo-Backend.Archivos.Presenters", "Sentir-creativo-Backend.Archivos.Presenters\Sentir-creativo-Backend.Archivos.Presenters.csproj", "{10F7771A-A38F-49C3-B553-F3FCCF2CA7E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-creativo-Backend.Archivos.Presenters", "Sentir-creativo-Backend.Archivos.Presenters\Sentir-creativo-Backend.Archivos.Presenters.csproj", "{10F7771A-A38F-49C3-B553-F3FCCF2CA7E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Archivos.IoC", "Sentir-Creativo-Backend.Archivos.IoC\Sentir-Creativo-Backend.Archivos.IoC.csproj", "{03C6DDCB-C09C-4FCD-AC5A-C1ABF4810FA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Archivos.IoC", "Sentir-Creativo-Backend.Archivos.IoC\Sentir-Creativo-Backend.Archivos.IoC.csproj", "{03C6DDCB-C09C-4FCD-AC5A-C1ABF4810FA3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application Business Rules", "2.Application Business Rules", "{0CE591DE-D17E-4FA6-9FAF-C98E8835DB49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Bitacoras.BusinessObjects", "Sentir-Creativo-Backend.Bitacoras.BusinessObjects\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj", "{B6096CAB-E48D-4437-9BAB-0FB2C40D202B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Bitacoras.BusinessObjects", "Sentir-Creativo-Backend.Bitacoras.BusinessObjects\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj", "{B6096CAB-E48D-4437-9BAB-0FB2C40D202B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Bitacoras.UseCases", "Sentir-Creativo-Backend.Bitacoras.UseCases\Sentir-Creativo-Backend.Bitacoras.UseCases.csproj", "{AF8F3849-88B6-4900-A1F3-0F63ED113A78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Bitacoras.UseCases", "Sentir-Creativo-Backend.Bitacoras.UseCases\Sentir-Creativo-Backend.Bitacoras.UseCases.csproj", "{AF8F3849-88B6-4900-A1F3-0F63ED113A78}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{0AE2B2A8-57D5-4F5F-809F-20B27CEA49D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Bitacoras.Controllers", "Sentir-Creativo-Backend.Bitacoras.Controllers\Sentir-Creativo-Backend.Bitacoras.Controllers.csproj", "{5E7C3291-85CA-4936-9CE5-6A674A65AE03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Bitacoras.Controllers", "Sentir-Creativo-Backend.Bitacoras.Controllers\Sentir-Creativo-Backend.Bitacoras.Controllers.csproj", "{5E7C3291-85CA-4936-9CE5-6A674A65AE03}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{EEDEFD94-E33F-4E0F-87C9-A954AB5390A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Bitacoras.Presenters", "Sentir-Creativo-Backend.Bitacoras.Presenters\Sentir-Creativo-Backend.Bitacoras.Presenters.csproj", "{4BC6ED1E-CB8B-483D-A5DD-F67701E1760A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Bitacoras.Presenters", "Sentir-Creativo-Backend.Bitacoras.Presenters\Sentir-Creativo-Backend.Bitacoras.Presenters.csproj", "{4BC6ED1E-CB8B-483D-A5DD-F67701E1760A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Bitacoras.IoC", "Sentir-Creativo-Backend.Bitacoras.IoC\Sentir-Creativo-Backend.Bitacoras.IoC.csproj", "{555ECEE3-3D17-4A74-8A59-9383BE6C1C54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Bitacoras.IoC", "Sentir-Creativo-Backend.Bitacoras.IoC\Sentir-Creativo-Backend.Bitacoras.IoC.csproj", "{555ECEE3-3D17-4A74-8A59-9383BE6C1C54}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Direcciones", "Direcciones", "{B937B6C5-FAC8-4907-8795-86F114562D3A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Enterprise Business Rules", "1.Enterprise Business Rules", "{F47CDD0A-8C8F-4CB5-9BBC-5ED42DBFB9ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Direcciones.Entities", "Sentir-Creativo-Backend.Direcciones.Entities\Sentir-Creativo-Backend.Direcciones.Entities.csproj", "{8CA9A353-8459-4E91-9524-9B24DA1927EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Direcciones.Entities", "Sentir-Creativo-Backend.Direcciones.Entities\Sentir-Creativo-Backend.Direcciones.Entities.csproj", "{8CA9A353-8459-4E91-9524-9B24DA1927EE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Interface Adapters", "3.Interface Adapters", "{411F9741-6944-4253-A642-93A6A6DF4CCF}"
 EndProject
@@ -406,43 +409,48 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{A5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{D80B0BFC-267F-4670-8F66-41DA1E97EED2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Direcciones.EFCore.Repositories", "Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.csproj", "{B2FD218C-06A2-4A28-931B-C749C61F5328}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Direcciones.EFCore.Repositories", "Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.csproj", "{B2FD218C-06A2-4A28-931B-C749C61F5328}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application Business Rules", "2.Application Business Rules", "{6D3375DB-C32C-4E44-98BC-CCE8C050CA0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Direcciones.BusinessObjects", "Sentir-Creativo-Backend.Direcciones.BusinessObjects\Sentir-Creativo-Backend.Direcciones.BusinessObjects.csproj", "{B61A1FBC-1AD2-469A-ABB5-73D1CE8502DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Direcciones.BusinessObjects", "Sentir-Creativo-Backend.Direcciones.BusinessObjects\Sentir-Creativo-Backend.Direcciones.BusinessObjects.csproj", "{B61A1FBC-1AD2-469A-ABB5-73D1CE8502DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Direcciones.UseCases", "Sentir-Creativo-Backend.Direcciones.UseCases\Sentir-Creativo-Backend.Direcciones.UseCases.csproj", "{CAC23753-6B01-4B07-B97B-4E3D452C3860}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Direcciones.UseCases", "Sentir-Creativo-Backend.Direcciones.UseCases\Sentir-Creativo-Backend.Direcciones.UseCases.csproj", "{CAC23753-6B01-4B07-B97B-4E3D452C3860}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{6239B79A-BE91-4755-996C-96D0AE2231AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Direcciones.Controllers", "Sentir-Creativo-Backend.Direcciones.Controllers\Sentir-Creativo-Backend.Direcciones.Controllers.csproj", "{C52F82E2-9B6A-4D02-B511-2F10E5C44151}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Direcciones.Controllers", "Sentir-Creativo-Backend.Direcciones.Controllers\Sentir-Creativo-Backend.Direcciones.Controllers.csproj", "{C52F82E2-9B6A-4D02-B511-2F10E5C44151}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{AC66CDF0-485E-4E9E-AE19-07744F5C4153}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Direcciones.Presenters", "Sentir-Creativo-Backend.Direcciones.Presenters\Sentir-Creativo-Backend.Direcciones.Presenters.csproj", "{1638A742-E543-4555-A517-1C3065D6A60B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Direcciones.Presenters", "Sentir-Creativo-Backend.Direcciones.Presenters\Sentir-Creativo-Backend.Direcciones.Presenters.csproj", "{1638A742-E543-4555-A517-1C3065D6A60B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Direcciones.IoC", "Sentir-Creativo-Backend.Direcciones.IoC\Sentir-Creativo-Backend.Direcciones.IoC.csproj", "{D8B4F236-5108-48D4-978A-0CAE372E2CDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Direcciones.IoC", "Sentir-Creativo-Backend.Direcciones.IoC\Sentir-Creativo-Backend.Direcciones.IoC.csproj", "{D8B4F236-5108-48D4-978A-0CAE372E2CDF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application Business Rules", "2.Application Business Rules", "{0925E687-1002-460F-AE75-D6FECDAE61CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Comentarios.BusinessObjects", "Sentir-Creativo-Backend.Comentarios.BusinessObjects\Sentir-Creativo-Backend.Comentarios.BusinessObjects.csproj", "{4A7F718E-9197-4FB5-9737-1F46C21F49A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Comentarios.BusinessObjects", "Sentir-Creativo-Backend.Comentarios.BusinessObjects\Sentir-Creativo-Backend.Comentarios.BusinessObjects.csproj", "{4A7F718E-9197-4FB5-9737-1F46C21F49A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Comentarios.UseCases", "Sentir-Creativo-Backend.Comentarios.UseCases\Sentir-Creativo-Backend.Comentarios.UseCases.csproj", "{E510A89A-F317-48AA-B138-BDB5B1BB0DBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Comentarios.UseCases", "Sentir-Creativo-Backend.Comentarios.UseCases\Sentir-Creativo-Backend.Comentarios.UseCases.csproj", "{E510A89A-F317-48AA-B138-BDB5B1BB0DBE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{B9BFAEB0-B8BD-49AE-B074-4AFAECD68318}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Comentarios.Controllers", "Sentir-Creativo-Backend.Comentarios.Controllers\Sentir-Creativo-Backend.Comentarios.Controllers.csproj", "{02DFFB50-D336-42E5-BA7B-F9F1F3D06BB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Comentarios.Controllers", "Sentir-Creativo-Backend.Comentarios.Controllers\Sentir-Creativo-Backend.Comentarios.Controllers.csproj", "{02DFFB50-D336-42E5-BA7B-F9F1F3D06BB1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{E866DE1E-29F1-4E25-BF3D-402ED03A178B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Comentarios.Presenters", "Sentir-Creativo-Backend.Comentarios.Presenters\Sentir-Creativo-Backend.Comentarios.Presenters.csproj", "{07561B9E-F9FA-4733-A9FE-A8441449F3FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Comentarios.Presenters", "Sentir-Creativo-Backend.Comentarios.Presenters\Sentir-Creativo-Backend.Comentarios.Presenters.csproj", "{07561B9E-F9FA-4733-A9FE-A8441449F3FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.Comentarios.IoC", "Sentir-Creativo-Backend.Comentarios.IoC\Sentir-Creativo-Backend.Comentarios.IoC.csproj", "{871ACD68-5685-463B-930B-5CBE7CFE7867}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.Comentarios.IoC", "Sentir-Creativo-Backend.Comentarios.IoC\Sentir-Creativo-Backend.Comentarios.IoC.csproj", "{871ACD68-5685-463B-930B-5CBE7CFE7867}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Enterprise Business Rules", "1.Enterprise Business Rules", "{9AB1B5E6-3BB0-4DB5-B44B-4F943BC3BD93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentir-Creativo-Backend.UsersAdmin.Entities", "Sentir-Creativo-Backend.UsersAdmin.Entities\Sentir-Creativo-Backend.UsersAdmin.Entities.csproj", "{0037B87E-2A1B-44CB-9EE1-A58C60932490}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sentir-Creativo-Backend.UsersAdmin.Entities", "Sentir-Creativo-Backend.UsersAdmin.Entities\Sentir-Creativo-Backend.UsersAdmin.Entities.csproj", "{0037B87E-2A1B-44CB-9EE1-A58C60932490}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{218B6D76-5A71-4C0D-8517-C04F06130CC0}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -859,15 +867,22 @@ Global
 		{0037B87E-2A1B-44CB-9EE1-A58C60932490}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0037B87E-2A1B-44CB-9EE1-A58C60932490}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{E0387F40-EB30-46D1-8858-F6AAC9E6AA48} = {FF98014D-E7A7-4469-A0EC-CBF9EE4AEABC}
+		{48983950-6EF6-4237-B1D5-58BB6EEB86C1} = {FF98014D-E7A7-4469-A0EC-CBF9EE4AEABC}
+		{06AAA3CE-4606-44C2-8B5D-2079427EAB08} = {FF98014D-E7A7-4469-A0EC-CBF9EE4AEABC}
+		{B94285CE-73E8-4F56-BCBD-F359734ED5A3} = {FF98014D-E7A7-4469-A0EC-CBF9EE4AEABC}
 		{AF9EBC78-BCD3-42E7-9477-9E398DD192D0} = {B94285CE-73E8-4F56-BCBD-F359734ED5A3}
 		{B15AE11F-B281-4B61-93C5-8C8EA8A2B29D} = {E0387F40-EB30-46D1-8858-F6AAC9E6AA48}
 		{50C8E704-8DB3-4EE3-8386-F90FC65108EF} = {B15AE11F-B281-4B61-93C5-8C8EA8A2B29D}
 		{3E634CF6-2B6F-4DD7-ADA1-60DD8B97245D} = {AF9EBC78-BCD3-42E7-9477-9E398DD192D0}
 		{BDEFCC45-C911-4A92-BC85-AA3E5C8763FA} = {E0387F40-EB30-46D1-8858-F6AAC9E6AA48}
 		{EB92FFA6-385C-4579-AFDA-E9227D27CA15} = {BDEFCC45-C911-4A92-BC85-AA3E5C8763FA}
-		{64CE0018-FE33-4DD0-A00E-24FF36AEA850} = {EB92FFA6-385C-4579-AFDA-E9227D27CA15}
 		{A749634E-6728-45F9-86D0-5219367BACD8} = {64CE0018-FE33-4DD0-A00E-24FF36AEA850}
+		{64CE0018-FE33-4DD0-A00E-24FF36AEA850} = {EB92FFA6-385C-4579-AFDA-E9227D27CA15}
 		{CF8030C1-8B50-453A-83AC-B6813CF03A05} = {B94285CE-73E8-4F56-BCBD-F359734ED5A3}
 		{B745778A-0A0A-4BA0-A183-53179454AD51} = {CF8030C1-8B50-453A-83AC-B6813CF03A05}
 		{7D3DDA72-38DB-435C-A914-09E398A665DF} = {B745778A-0A0A-4BA0-A183-53179454AD51}
@@ -880,16 +895,12 @@ Global
 		{377BB1AC-D57E-42B6-BE5F-6FC0AEEBE367} = {6FAEBCD4-123E-4438-981B-8DFB895C5699}
 		{ACE283F7-B3F2-499C-9CD9-C285D1B3201D} = {48983950-6EF6-4237-B1D5-58BB6EEB86C1}
 		{60BA05AC-9029-49A3-9788-3B688DDAB1B5} = {ACE283F7-B3F2-499C-9CD9-C285D1B3201D}
+		{A9CEB138-BC7D-4E7F-BB36-A64FFCCA71DC} = {4E1298E3-6D44-4E40-9A0F-EA4962DDB3D4}
 		{9CB6AE3F-F78E-4FD7-AE64-B8DB582B3CCE} = {ACE283F7-B3F2-499C-9CD9-C285D1B3201D}
 		{D08BC864-9B01-4EEE-B0FB-0F92E5A7E6D9} = {7D453E37-F3F0-49F5-9F2D-DDD757A736AC}
 		{55F1A402-70A0-4693-99A4-23EC9C1E5DA0} = {D08BC864-9B01-4EEE-B0FB-0F92E5A7E6D9}
 		{4E1298E3-6D44-4E40-9A0F-EA4962DDB3D4} = {7D453E37-F3F0-49F5-9F2D-DDD757A736AC}
-		{A9CEB138-BC7D-4E7F-BB36-A64FFCCA71DC} = {4E1298E3-6D44-4E40-9A0F-EA4962DDB3D4}
 		{3F5FD598-2DB3-4B9E-A866-AD16E010E847} = {7D453E37-F3F0-49F5-9F2D-DDD757A736AC}
-		{E0387F40-EB30-46D1-8858-F6AAC9E6AA48} = {FF98014D-E7A7-4469-A0EC-CBF9EE4AEABC}
-		{B94285CE-73E8-4F56-BCBD-F359734ED5A3} = {FF98014D-E7A7-4469-A0EC-CBF9EE4AEABC}
-		{48983950-6EF6-4237-B1D5-58BB6EEB86C1} = {FF98014D-E7A7-4469-A0EC-CBF9EE4AEABC}
-		{06AAA3CE-4606-44C2-8B5D-2079427EAB08} = {FF98014D-E7A7-4469-A0EC-CBF9EE4AEABC}
 		{DA84701B-4EDC-49CE-AC3A-6A3B0C35D1C7} = {06AAA3CE-4606-44C2-8B5D-2079427EAB08}
 		{C34EA67D-2BF2-49F6-9405-4843889D73E8} = {BDEFCC45-C911-4A92-BC85-AA3E5C8763FA}
 		{0AEB40FB-793C-4B3B-BEF8-916679F81A80} = {FF98014D-E7A7-4469-A0EC-CBF9EE4AEABC}
@@ -933,12 +944,12 @@ Global
 		{D2F9E28C-F6AF-4844-8594-C29AEB2A9414} = {AD45B29D-CE87-4E6A-BB05-2369F39711A4}
 		{CF9FE057-E9F5-4BAC-81E5-17B6E3F15C37} = {D2F9E28C-F6AF-4844-8594-C29AEB2A9414}
 		{DE6B7341-1463-473E-A5EA-252D80F0A84D} = {AD45B29D-CE87-4E6A-BB05-2369F39711A4}
+		{4072F4EC-E7BD-433C-950A-253987845C2D} = {C31ED5F9-336D-428F-8E62-6316D21BA466}
 		{3170BE30-C96D-4E98-BFDB-EF5FC8F7189E} = {AD45B29D-CE87-4E6A-BB05-2369F39711A4}
 		{0C3FD201-510E-4410-8DB5-3E43D0290CB9} = {3170BE30-C96D-4E98-BFDB-EF5FC8F7189E}
 		{234C6873-B152-40E2-ACD7-FE0B1356ECEF} = {3170BE30-C96D-4E98-BFDB-EF5FC8F7189E}
 		{34BA386B-9079-46E1-88CF-C56D82B41A07} = {DE6B7341-1463-473E-A5EA-252D80F0A84D}
 		{C31ED5F9-336D-428F-8E62-6316D21BA466} = {34BA386B-9079-46E1-88CF-C56D82B41A07}
-		{4072F4EC-E7BD-433C-950A-253987845C2D} = {C31ED5F9-336D-428F-8E62-6316D21BA466}
 		{944E6204-7F3E-4F6B-BF60-400B0EC088DF} = {DE6B7341-1463-473E-A5EA-252D80F0A84D}
 		{562BDCD7-4D61-49AD-B28B-BED5D3E5398F} = {DE6B7341-1463-473E-A5EA-252D80F0A84D}
 		{5A6D4BC0-9A9B-44AE-A319-A431DCEF008F} = {562BDCD7-4D61-49AD-B28B-BED5D3E5398F}
@@ -1081,5 +1092,8 @@ Global
 		{871ACD68-5685-463B-930B-5CBE7CFE7867} = {A1388E91-CC0E-4B4B-A65B-765408F22805}
 		{9AB1B5E6-3BB0-4DB5-B44B-4F943BC3BD93} = {2CFC2903-4B54-4A46-95BB-1333FB61A06E}
 		{0037B87E-2A1B-44CB-9EE1-A58C60932490} = {9AB1B5E6-3BB0-4DB5-B44B-4F943BC3BD93}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DCA5E1C3-19BB-4E39-B2F9-EAD2FF971EB5}
 	EndGlobalSection
 EndGlobal
