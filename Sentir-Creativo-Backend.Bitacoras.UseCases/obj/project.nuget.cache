@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "dN58HfG/+B8t1kNwd0nRH8SocGTT/duWO5uBdp8jDurFw6OfdTg2VAipA+oAuZ4JlFU7bIsUyYVXLbRzxkL6Ig==",
+  "dgSpecHash": "NEaDT5cGbmLo3qP4h6UNoy2STS0a45Rzzo8fVuuTiyzPnG7X0H9oj2MHOL11p0r2BCYmx6YuIqADqngNxjtc4g==",
   "success": true,
-  "projectFilePath": "D:\\Backend\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.UseCases\\Sentir-Creativo-Backend.Bitacoras.UseCases.csproj",
+  "projectFilePath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.UseCases\\Sentir-Creativo-Backend.Bitacoras.UseCases.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\RYZEN 3 3200G\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
-    "C:\\Users\\RYZEN 3 3200G\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.2\\fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
-    "C:\\Users\\RYZEN 3 3200G\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+    "C:\\Users\\angel\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\angel\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.2\\fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
+    "C:\\Users\\angel\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
   ],
   "logs": []
 }

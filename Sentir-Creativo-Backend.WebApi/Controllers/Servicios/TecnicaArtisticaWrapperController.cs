@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.TecnicaArtisticas;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.TecnicaArtisticas;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.TecnicaArtistica;
-using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.AFP;
 using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.Privilegios;
 using System.Net;
 
