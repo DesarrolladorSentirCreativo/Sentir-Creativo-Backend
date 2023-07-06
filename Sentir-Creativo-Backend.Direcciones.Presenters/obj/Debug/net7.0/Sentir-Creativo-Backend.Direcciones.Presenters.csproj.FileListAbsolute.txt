@@ -17,3 +17,22 @@ D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Back
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Direcciones.Presenters.dll
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Presenters.pdb
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Direcciones.Presenters.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Presenters.deps.json
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Presenters.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Presenters.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.BusinessObjects.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.BusinessObjects.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Presenters.csproj.AssemblyReference.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Presenters.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Presenters.AssemblyInfoInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Presenters.AssemblyInfo.cs
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Presenters.csproj.CoreCompileInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Presenters.csproj.CopyComplete
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Presenters.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Direcciones.Presenters.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Presenters.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.Presenters\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Direcciones.Presenters.dll

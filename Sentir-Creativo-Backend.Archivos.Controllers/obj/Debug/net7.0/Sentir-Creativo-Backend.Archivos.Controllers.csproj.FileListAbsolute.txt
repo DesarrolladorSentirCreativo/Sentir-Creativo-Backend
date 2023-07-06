@@ -17,3 +17,22 @@ D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Back
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Archivos.Controllers.dll
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Entities.dll
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Controllers.deps.json
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Controllers.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Controllers.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.Archivos.BusinessObject.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.Archivos.BusinessObject.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\obj\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Controllers.csproj.AssemblyReference.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\obj\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Controllers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\obj\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Controllers.AssemblyInfoInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\obj\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Controllers.AssemblyInfo.cs
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\obj\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Controllers.csproj.CoreCompileInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\obj\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Controllers.csproj.CopyComplete
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\obj\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Controllers.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Archivos.Controllers.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\obj\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Controllers.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Archivos.Controllers\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Archivos.Controllers.dll

@@ -17,3 +17,22 @@ D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Back
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.CuponesDescuentos.Controllers.dll
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.Controllers.pdb
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.CuponesDescuentos.Controllers.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.Controllers.deps.json
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.Controllers.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.Controllers.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.Controllers.csproj.AssemblyReference.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.Controllers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.Controllers.AssemblyInfoInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.Controllers.AssemblyInfo.cs
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.Controllers.csproj.CoreCompileInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.Controllers.csproj.CopyComplete
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.Controllers.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.CuponesDescuentos.Controllers.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.Controllers.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.Controllers\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.CuponesDescuentos.Controllers.dll

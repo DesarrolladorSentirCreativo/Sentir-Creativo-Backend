@@ -17,3 +17,22 @@ D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Back
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.pdb
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.genruntimeconfig.cache
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.deps.json
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.runtimeconfig.json
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.csproj.AssemblyReference.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.AssemblyInfoInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.AssemblyInfo.cs
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.csproj.CopyComplete
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.genruntimeconfig.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Bitacoras.EFCore.Repositories.dll

@@ -4,6 +4,7 @@ namespace Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Tecni
 {
     public interface ICreateTecnicaArtisticaInputPort 
     {
-        ValueTask Handle(CreateTecnicaArtisticaDto dto);
+        ValueTask Handle(ICreateTecnicaArtisticaDto dto);
+        
     }
 }

@@ -4,6 +4,6 @@ namespace Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers
 {
     public interface ICreateTecnicaArtisticaController
     {
-        ValueTask<int> Handle(CreateTecnicaArtisticaDto dto);
+        ValueTask<int> Handle(ICreateTecnicaArtisticaDto dto);
     }
 }

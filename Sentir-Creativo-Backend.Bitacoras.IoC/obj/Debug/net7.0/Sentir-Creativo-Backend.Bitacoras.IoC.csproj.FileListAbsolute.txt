@@ -25,3 +25,30 @@ D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Back
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Bitacoras.IoC.dll
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.IoC.pdb
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Bitacoras.IoC.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.IoC.deps.json
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.IoC.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.IoC.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Controllers.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Presenters.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.UseCases.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Controllers.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Presenters.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.UseCases.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.IoC.csproj.AssemblyReference.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.IoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.IoC.AssemblyInfoInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.IoC.AssemblyInfo.cs
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.IoC.csproj.CoreCompileInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.IoC.csproj.CopyComplete
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.IoC.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Bitacoras.IoC.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.IoC.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.IoC\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Bitacoras.IoC.dll

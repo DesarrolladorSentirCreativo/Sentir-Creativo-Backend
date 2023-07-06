@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4SBSKllQ3NAIDHw2UyaYwq1pF69nVLIiqEEorGuG4n79eFpso2xRHnfp5EGkf1fDHj7Dmt/xZPV/zyqJsf/0dw==",
+  "dgSpecHash": "E8cpVvk6F0mcsGgpZN27vVogbHmFlGJ0xR+ZVlpkGJxfYKr8CqMoFafhmU/I87nBjqL88Ha+Xj367Aj8ee1/ew==",
   "success": true,
-  "projectFilePath": "D:\\proyectos\\solucionsentircreativo\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Proyectos.UseCases\\Sentir-Creativo-Backend.Proyectos.UseCases.csproj",
+  "projectFilePath": "C:\\Users\\RYZEN 3 3200G\\Desktop\\hola\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Proyectos.UseCases\\Sentir-Creativo-Backend.Proyectos.UseCases.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\angel\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+    "C:\\Users\\RYZEN 3 3200G\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

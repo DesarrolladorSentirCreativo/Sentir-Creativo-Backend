@@ -13,6 +13,9 @@ using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.Tecn
 using Sentir_Creativo_Backend.Servicios.Presenters.EstadoServicios;
 using Sentir_Creativo_Backend.Servicios.Presenters.Formatos;
 using Sentir_Creativo_Backend.Servicios.Presenters.TecnicaArtisticas;
+using Sentir_Creativo_Backend.Servicios.Presenters.Ocacions;
+using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Create;
+using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.Ocacions;
 
 namespace Sentir_Creativo_Backend.Servicios.Presenters;
 
@@ -52,6 +55,13 @@ public static class DependencyContainer
         services.AddScoped<SelectTecnicaArtisticaPresenter>();
         services.AddScoped<ISelectTecnicaArtisticaPresenter>(provider => provider.GetService<SelectTecnicaArtisticaPresenter>());
         services.AddScoped<ISelectTecnicaArtisticaOutputPort>(provider => provider.GetService<SelectTecnicaArtisticaPresenter>());
+
+
+        //Ocacions
+
+        services.AddScoped<CreateOcacionPresenter>();
+        services.AddScoped<ICreateOcacionPresenter>(provider => provider.GetService<CreateOcacionPresenter>());
+        services.AddScoped<ICreateOcacionOutputPort>(provider => provider.GetService<CreateOcacionPresenter>());
 
         return services;
     }

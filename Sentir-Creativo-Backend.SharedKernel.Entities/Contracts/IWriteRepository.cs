@@ -12,4 +12,6 @@ public interface IWriteRepository<T,TId> where T : BaseEntity<TId>
     void UpdateEntity(T entity);
     void DeleteEntity(T entity);
     void DeleteWhere(Expression<Func<T, bool>> where);
+ 
+   
 }

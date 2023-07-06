@@ -17,3 +17,22 @@ D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Back
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.dll
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.pdb
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.deps.json
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjectivos.BusinessObject.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjectivos.BusinessObject.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.csproj.AssemblyReference.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.AssemblyInfoInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.AssemblyInfo.cs
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.csproj.CoreCompileInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.csproj.CopyComplete
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.dll

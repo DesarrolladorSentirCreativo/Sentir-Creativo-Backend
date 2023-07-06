@@ -15,3 +15,20 @@ D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Back
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.dll
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.pdb
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.deps.json
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.csproj.AssemblyReference.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.AssemblyInfoInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.AssemblyInfo.cs
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.csproj.CoreCompileInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.csproj.CopyComplete
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.dll

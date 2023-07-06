@@ -23,3 +23,28 @@ D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Back
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Areas.IoC.dll
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Areas.IoC.pdb
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Areas.IoC.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Areas.IoC.deps.json
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Areas.IoC.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Areas.IoC.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Areas.BusinessObject.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Areas.Controllers.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Areas.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Areas.Presenters.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Areas.UseCases.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Areas.Controllers.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Areas.Presenters.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Areas.UseCases.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Areas.BusinessObject.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Areas.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Areas.IoC.csproj.AssemblyReference.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Areas.IoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Areas.IoC.AssemblyInfoInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Areas.IoC.AssemblyInfo.cs
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Areas.IoC.csproj.CoreCompileInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Areas.IoC.csproj.CopyComplete
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Areas.IoC.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Areas.IoC.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Areas.IoC.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.IoC\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Areas.IoC.dll

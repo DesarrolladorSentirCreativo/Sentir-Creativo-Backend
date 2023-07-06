@@ -39,3 +39,44 @@ D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Back
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Entities.pdb
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.UsersAdmin.Entities.dll
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.UsersAdmin.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Make.Repositories.deps.json
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Make.Repositories.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Make.Repositories.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Senitr-Creativo-Backend.Comentarios.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Archivos.BusinessObject.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.BusinessObject.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Colecciones.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Difusiones.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Plantillas.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.UsersAdmin.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.BusinessObject.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Senitr-Creativo-Backend.Comentarios.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Archivos.BusinessObject.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Bitacoras.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Colecciones.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Difusiones.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Plantillas.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.UsersAdmin.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Make.Repositories.csproj.AssemblyReference.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Make.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Make.Repositories.AssemblyInfoInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Make.Repositories.AssemblyInfo.cs
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Make.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Make.Repositories.csproj.CopyComplete
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Make.Repositories.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Audiencias.Make.Repositories.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Audiencias.Make.Repositories.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Audiencias.Make.Repositories\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Audiencias.Make.Repositories.dll

@@ -11,22 +11,22 @@ namespace Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.Create
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly ICreateTecnicaArtisticaOutputPort _outputPort;
-        private readonly IEnumerable<IValidator<CreateTecnicaArtisticaDto>> _validators;
+        private readonly IEnumerable<IValidator<ICreateTecnicaArtisticaDto>> _validators;
 
         public CreateTecnicaArtisticaInteractor(
             IUnitOfWork unitOfWork, 
             ICreateTecnicaArtisticaOutputPort outputPort, 
-            IEnumerable<IValidator<CreateTecnicaArtisticaDto>> validators)
+            IEnumerable<IValidator<ICreateTecnicaArtisticaDto>> validators)
         {
             _unitOfWork = unitOfWork;
             _outputPort = outputPort;
             _validators = validators;
         }
 
-        public async ValueTask Handle(CreateTecnicaArtisticaDto dto)
+        public async ValueTask Handle(ICreateTecnicaArtisticaDto dto)
         {
             //validamos los datos de entrada (dto)
-            await Validator<CreateTecnicaArtisticaDto>.Validate(dto, _validators);
+            await Validator<ICreateTecnicaArtisticaDto>.Validate(dto, _validators);
 
             var tecnicaArtistica = new TecnicaArtistica
             {

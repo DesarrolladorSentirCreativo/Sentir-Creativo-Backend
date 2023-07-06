@@ -13,3 +13,18 @@ D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Back
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.WebExceptionsPresenters.dll
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.pdb
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.WebExceptionsPresenters.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\bin\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.deps.json
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\bin\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\bin\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.csproj.AssemblyReference.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.AssemblyInfoInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.AssemblyInfo.cs
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.csproj.CoreCompileInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.csproj.CopyComplete
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.WebExceptionsPresenters.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\Sentir-Creativo-Backend.WebExceptionsPresenters.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.WebExceptionsPresenters\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.WebExceptionsPresenters.dll

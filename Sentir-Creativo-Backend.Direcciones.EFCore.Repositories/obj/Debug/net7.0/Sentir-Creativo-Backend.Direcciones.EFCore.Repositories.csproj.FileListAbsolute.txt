@@ -17,3 +17,22 @@ D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Back
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.pdb
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.genruntimeconfig.cache
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.deps.json
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.runtimeconfig.json
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.csproj.AssemblyReference.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.AssemblyInfoInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.AssemblyInfo.cs
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.csproj.CopyComplete
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.dll
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.pdb
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.genruntimeconfig.cache
+C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Direcciones.EFCore.Repositories.dll
