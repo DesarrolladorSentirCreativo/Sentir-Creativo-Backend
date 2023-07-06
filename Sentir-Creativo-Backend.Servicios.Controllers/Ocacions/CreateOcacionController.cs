@@ -1,12 +1,18 @@
-﻿using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.Ocacions;
+﻿
+using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.Ocacions;
+using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.TecnicaArtisticas;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Create;
+using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Create;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.Ocacions;
+using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.TecnicaArtisticas;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.Ocacions;
+using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.TecnicaArtisticas;
 
 namespace Sentir_Creativo_Backend.Servicios.Controllers.Ocacions
 {
     public class CreateOcacionController : ICreateOcacionController
     {
+
         private readonly ICreateOcacionPresenter _presenter;
         private readonly ICreateOcacionInputPort _inputPort;
 
@@ -23,8 +29,7 @@ namespace Sentir_Creativo_Backend.Servicios.Controllers.Ocacions
             await _inputPort.Handle(dto);
 
             return _presenter.OcacionId;
-        }
 
-      
+        }
     }
 }

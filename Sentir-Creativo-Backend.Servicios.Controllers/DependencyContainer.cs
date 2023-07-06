@@ -3,6 +3,7 @@ using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.Est
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.Formatos;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.Ocacions;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.TecnicaArtisticas;
+using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.Ocacions;
 using Sentir_Creativo_Backend.Servicios.Controllers.EstadoServicios;
 using Sentir_Creativo_Backend.Servicios.Controllers.Formatos;
 using Sentir_Creativo_Backend.Servicios.Controllers.Ocacions;
@@ -28,7 +29,9 @@ public static class DependencyContainer
         //Ocaciones
 
         services.AddScoped<ICreateOcacionController, CreateOcacionController>();
-        
+        services.AddScoped<IUpdateOcacionController,  UpdateOcacionController>();
+
+
         return services;
     }
 }

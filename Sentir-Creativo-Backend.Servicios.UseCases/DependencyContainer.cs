@@ -1,7 +1,8 @@
-using Microsoft.Extensions.DependencyInjection;
+ using Microsoft.Extensions.DependencyInjection;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Select;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Select;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Create;
+using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Update;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Create;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Delete;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.GetAll;
@@ -17,6 +18,7 @@ using Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.GetById;
 using Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.Select;
 using Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.Update;
 using Sentir_Creativo_Backend.Servicios.UseCases.Ocacions.Create;
+using Sentir_Creativo_Backend.Servicios.UseCases.Ocacions.Update;
 
 namespace Sentir_Creativo_Backend.Servicios.UseCases;
 
@@ -39,6 +41,7 @@ public static class DependencyContainer
         //Ocacions
 
         services.AddScoped<ICreateOcacionInputPort, CreateOcacionInteractor>();
+        services.AddScoped<IUpdateOcacionInputPort, UpdateOcacionInterator>();
 
         return services;
     }

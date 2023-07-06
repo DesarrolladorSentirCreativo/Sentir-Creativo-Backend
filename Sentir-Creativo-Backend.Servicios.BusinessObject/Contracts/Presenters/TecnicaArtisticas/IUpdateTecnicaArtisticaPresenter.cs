@@ -5,5 +5,6 @@ namespace Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.
     public interface IUpdateTecnicaArtisticaPresenter : IUpdateTecnicaArtisticaOutputPort
     {
         int TecnicaArtisticaId { get; }
+      
     }
 }

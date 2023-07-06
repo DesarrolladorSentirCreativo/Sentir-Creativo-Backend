@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.Ocacions;
+using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.Ocacions;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.Ocacions;
 using System.Net;
 
@@ -13,17 +14,26 @@ namespace Sentir_Creativo_Backend.WebApi.Controllers.Servicios
 
     {
         private  readonly ICreateOcacionController _createOcacionController;
+        private readonly  IUpdateOcacionController   _updateOcacionController;
 
         public OcacionWrapperController(
-        ICreateOcacionController createOcacionController)
+        ICreateOcacionController createOcacionController,
+        IUpdateOcacionController updateOcacionController)
         {
-          _createOcacionController = createOcacionController;
+           _createOcacionController = createOcacionController;
 
+            _updateOcacionController = updateOcacionController;
         }
 
         [HttpPost]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<ActionResult<int>> CreateOcacion([FromBody] CreateOcacionDto dto)
         => Ok(await _createOcacionController.Handle(dto));
+
+
+        [HttpPut]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        public async Task<ActionResult<int>> UpdateOcacion([FromBody] UpdateOcacionDto dto)
+            => Ok(await _updateOcacionController.Handle(dto));
     }
 }

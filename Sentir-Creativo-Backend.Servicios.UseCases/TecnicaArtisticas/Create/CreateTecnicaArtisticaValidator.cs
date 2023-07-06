@@ -3,7 +3,7 @@ using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.TecnicaArtisticas;
 
 namespace Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.Create
 {
-    public class CreateTecnicaArtisticaValidator : AbstractValidator<ICreateTecnicaArtisticaDto>
+    public class CreateTecnicaArtisticaValidator : AbstractValidator<ICreateOcacionDto>
     {
         public CreateTecnicaArtisticaValidator()
         {
