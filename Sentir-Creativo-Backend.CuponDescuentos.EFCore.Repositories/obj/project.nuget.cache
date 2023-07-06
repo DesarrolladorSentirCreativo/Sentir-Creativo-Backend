@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dk+KlBVizaKEgoLCSS7n1UloXbEJ98spPbDCRdfjWqM6uqTSkvocC9KZRX68/NPhZ5+WsOCmAosz7MkMfSSWIQ==",
+  "dgSpecHash": "Jx2hzwBN6Im4v1ogXC3zJv88SQ3dADL4tfri+2tFxZU37r3gbZbFZhy15SOI2dLm0asNG0IqrBgqGvW7R9pWsg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.csproj",
+  "projectFilePath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.4\\microsoft.entityframeworkcore.7.0.4.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.4\\microsoft.entityframeworkcore.abstractions.7.0.4.nupkg.sha512",

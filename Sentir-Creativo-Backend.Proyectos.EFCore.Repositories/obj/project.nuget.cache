@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MoZcdFXe/QGmhbegOErOkjRYl9rEAjsHD+3nnGgc50xmIYu8L8yBc2A/H3wdAMTCKzv37C4EActgFRaV+kdQfA==",
+  "dgSpecHash": "8HTPaEHw/xed2mDMZR/tXFDNWS5tnAyKpYlYm1vmkarya8+ufpiT3Ec25TKT46FDAwKpsQAyG7O4/WTwqpAq5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Proyectos.EFCore.Repositories\\Sentir-Creativo-Backend.Proyectos.EFCore.Repositories.csproj",
+  "projectFilePath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Proyectos.EFCore.Repositories\\Sentir-Creativo-Backend.Proyectos.EFCore.Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\angel\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.4\\microsoft.entityframeworkcore.7.0.4.nupkg.sha512",

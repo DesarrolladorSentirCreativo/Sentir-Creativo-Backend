@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lfE3A2DnNKa5kgJZ5XOnO2hWa62dVpCt/v2mr8yhUOYhyqeaMGRg+w33wuhngrLyWKN5efNq6LzFZHYm321mNA==",
+  "dgSpecHash": "iOUkNrhfwuGiRPfr2T43+gmPTtX9hnB+fjfcK+0Pn/spaI2suic3KB2nbQIozIuwJuHB5uhjQ3zXKWLgv5V3gw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.CuponesDescuentos.IoC\\Sentir-Creativo-Backend.CuponesDescuentos.IoC.csproj",
+  "projectFilePath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.CuponesDescuentos.IoC\\Sentir-Creativo-Backend.CuponesDescuentos.IoC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],

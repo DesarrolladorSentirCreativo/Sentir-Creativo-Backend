@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Br4YylQLyJ4PXzSztu9zR5Mrgc0MxdWKPlTOTGmRzdeyGkM9m+oR5opY7UK5SfwYanMoichIvVhm7yKG4bHCQw==",
+  "dgSpecHash": "NEaDT5cGbmLo3qP4h6UNoy2STS0a45Rzzo8fVuuTiyzPnG7X0H9oj2MHOL11p0r2BCYmx6YuIqADqngNxjtc4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.UseCases\\Sentir-Creativo-Backend.Bitacoras.UseCases.csproj",
+  "projectFilePath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.UseCases\\Sentir-Creativo-Backend.Bitacoras.UseCases.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\angel\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.2\\fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",

@@ -52,11 +52,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.csproj",
+      "projectUniqueName": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.csproj",
       "projectName": "Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject",
-      "projectPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.csproj",
+      "projectPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject.csproj",
       "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\\obj\\",
+      "outputPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.CuponesDescuentos.BusinessObject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -78,11 +78,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.CuponDescuentos.Entities\\Sentir-Creativo-Backend.CuponDescuentos.Entities.csproj": {
-              "projectPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.CuponDescuentos.Entities\\Sentir-Creativo-Backend.CuponDescuentos.Entities.csproj"
+            "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.CuponDescuentos.Entities\\Sentir-Creativo-Backend.CuponDescuentos.Entities.csproj": {
+              "projectPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.CuponDescuentos.Entities\\Sentir-Creativo-Backend.CuponDescuentos.Entities.csproj"
             },
-            "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj": {
-              "projectPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj"
+            "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj": {
+              "projectPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj"
             }
           }
         }

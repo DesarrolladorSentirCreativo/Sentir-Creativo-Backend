@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Controllers\\Sentir-Creativo-Backend.Direcciones.Controllers.csproj": {}
+    "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Controllers\\Sentir-Creativo-Backend.Direcciones.Controllers.csproj": {}
   },
   "projects": {
-    "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.BusinessObjects\\Sentir-Creativo-Backend.Direcciones.BusinessObjects.csproj": {
+    "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.BusinessObjects\\Sentir-Creativo-Backend.Direcciones.BusinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.BusinessObjects\\Sentir-Creativo-Backend.Direcciones.BusinessObjects.csproj",
+        "projectUniqueName": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.BusinessObjects\\Sentir-Creativo-Backend.Direcciones.BusinessObjects.csproj",
         "projectName": "Sentir-Creativo-Backend.Direcciones.BusinessObjects",
-        "projectPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.BusinessObjects\\Sentir-Creativo-Backend.Direcciones.BusinessObjects.csproj",
+        "projectPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.BusinessObjects\\Sentir-Creativo-Backend.Direcciones.BusinessObjects.csproj",
         "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.BusinessObjects\\obj\\",
+        "outputPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.BusinessObjects\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Entities\\Sentir-Creativo-Backend.Direcciones.Entities.csproj": {
-                "projectPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Entities\\Sentir-Creativo-Backend.Direcciones.Entities.csproj"
+              "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Entities\\Sentir-Creativo-Backend.Direcciones.Entities.csproj": {
+                "projectPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Entities\\Sentir-Creativo-Backend.Direcciones.Entities.csproj"
               },
-              "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj": {
-                "projectPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj"
+              "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj": {
+                "projectPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj"
               }
             }
           }
@@ -71,14 +71,14 @@
         }
       }
     },
-    "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Controllers\\Sentir-Creativo-Backend.Direcciones.Controllers.csproj": {
+    "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Controllers\\Sentir-Creativo-Backend.Direcciones.Controllers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Controllers\\Sentir-Creativo-Backend.Direcciones.Controllers.csproj",
+        "projectUniqueName": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Controllers\\Sentir-Creativo-Backend.Direcciones.Controllers.csproj",
         "projectName": "Sentir-Creativo-Backend.Direcciones.Controllers",
-        "projectPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Controllers\\Sentir-Creativo-Backend.Direcciones.Controllers.csproj",
+        "projectPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Controllers\\Sentir-Creativo-Backend.Direcciones.Controllers.csproj",
         "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Controllers\\obj\\",
+        "outputPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Controllers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -100,8 +100,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.BusinessObjects\\Sentir-Creativo-Backend.Direcciones.BusinessObjects.csproj": {
-                "projectPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.BusinessObjects\\Sentir-Creativo-Backend.Direcciones.BusinessObjects.csproj"
+              "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.BusinessObjects\\Sentir-Creativo-Backend.Direcciones.BusinessObjects.csproj": {
+                "projectPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.BusinessObjects\\Sentir-Creativo-Backend.Direcciones.BusinessObjects.csproj"
               }
             }
           }
@@ -141,14 +141,14 @@
         }
       }
     },
-    "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Entities\\Sentir-Creativo-Backend.Direcciones.Entities.csproj": {
+    "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Entities\\Sentir-Creativo-Backend.Direcciones.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Entities\\Sentir-Creativo-Backend.Direcciones.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Entities\\Sentir-Creativo-Backend.Direcciones.Entities.csproj",
         "projectName": "Sentir-Creativo-Backend.Direcciones.Entities",
-        "projectPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Entities\\Sentir-Creativo-Backend.Direcciones.Entities.csproj",
+        "projectPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Entities\\Sentir-Creativo-Backend.Direcciones.Entities.csproj",
         "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Entities\\obj\\",
+        "outputPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Direcciones.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -170,8 +170,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj": {
-                "projectPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj"
+              "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj": {
+                "projectPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj"
               }
             }
           }
@@ -205,14 +205,14 @@
         }
       }
     },
-    "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj": {
+    "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj",
         "projectName": "Sentir-Creativo-Backend.SharedKernel.Entities",
-        "projectPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj",
+        "projectPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\Sentir-Creativo-Backend.SharedKernel.Entities.csproj",
         "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\obj\\",
+        "outputPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.SharedKernel.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

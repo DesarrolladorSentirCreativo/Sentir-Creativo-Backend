@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.Presenters\\Sentir-Creativo-Backend.Bitacoras.Presenters.csproj": {}
+    "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.Presenters\\Sentir-Creativo-Backend.Bitacoras.Presenters.csproj": {}
   },
   "projects": {
-    "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj": {
+    "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj",
+        "projectUniqueName": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj",
         "projectName": "Sentir-Creativo-Backend.Bitacoras.BusinessObjects",
-        "projectPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj",
+        "projectPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj",
         "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\\obj\\",
+        "outputPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.Presenters\\Sentir-Creativo-Backend.Bitacoras.Presenters.csproj": {
+    "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.Presenters\\Sentir-Creativo-Backend.Bitacoras.Presenters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.Presenters\\Sentir-Creativo-Backend.Bitacoras.Presenters.csproj",
+        "projectUniqueName": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.Presenters\\Sentir-Creativo-Backend.Bitacoras.Presenters.csproj",
         "projectName": "Sentir-Creativo-Backend.Bitacoras.Presenters",
-        "projectPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.Presenters\\Sentir-Creativo-Backend.Bitacoras.Presenters.csproj",
+        "projectPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.Presenters\\Sentir-Creativo-Backend.Bitacoras.Presenters.csproj",
         "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.Presenters\\obj\\",
+        "outputPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.Presenters\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,8 +93,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj": {
-                "projectPath": "C:\\Users\\angel\\Desktop\\proyecto final\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj"
+              "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj": {
+                "projectPath": "C:\\Users\\angel\\Desktop\\proyecto\\Sentir-Creativo-Backend\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj"
               }
             }
           }
