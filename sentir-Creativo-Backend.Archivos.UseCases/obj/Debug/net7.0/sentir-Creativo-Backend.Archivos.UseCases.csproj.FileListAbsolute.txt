@@ -40,3 +40,24 @@ C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\sentir-Creativo-Back
 C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\obj\Debug\net7.0\refint\sentir-Creativo-Backend.Archivos.UseCases.dll
 C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\obj\Debug\net7.0\sentir-Creativo-Backend.Archivos.UseCases.pdb
 C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\obj\Debug\net7.0\ref\sentir-Creativo-Backend.Archivos.UseCases.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\bin\Debug\net7.0\sentir-Creativo-Backend.Archivos.UseCases.deps.json
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\bin\Debug\net7.0\sentir-Creativo-Backend.Archivos.UseCases.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\bin\Debug\net7.0\sentir-Creativo-Backend.Archivos.UseCases.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.Archivos.BusinessObject.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Entities.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.Archivos.BusinessObject.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.Archivos.Entities.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\obj\Debug\net7.0\sentir-Creativo-Backend.Archivos.UseCases.csproj.AssemblyReference.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\obj\Debug\net7.0\sentir-Creativo-Backend.Archivos.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\obj\Debug\net7.0\sentir-Creativo-Backend.Archivos.UseCases.AssemblyInfoInputs.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\obj\Debug\net7.0\sentir-Creativo-Backend.Archivos.UseCases.AssemblyInfo.cs
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\obj\Debug\net7.0\sentir-Creativo-Backend.Archivos.UseCases.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\obj\Debug\net7.0\sentir-Creativo-Backend.Archivos.UseCases.csproj.CopyComplete
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\obj\Debug\net7.0\sentir-Creativo-Backend.Archivos.UseCases.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\obj\Debug\net7.0\refint\sentir-Creativo-Backend.Archivos.UseCases.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\obj\Debug\net7.0\sentir-Creativo-Backend.Archivos.UseCases.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\sentir-Creativo-Backend.Archivos.UseCases\obj\Debug\net7.0\ref\sentir-Creativo-Backend.Archivos.UseCases.dll

@@ -36,3 +36,22 @@ C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Back
 C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.dll
 C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.pdb
 C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.deps.json
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjectivos.BusinessObject.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.Entities.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjectivos.BusinessObject.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.Entities.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.csproj.AssemblyReference.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.AssemblyInfoInputs.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.AssemblyInfo.cs
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.csproj.CopyComplete
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.Presenters\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.PublicoObjetivos.Presenters.dll

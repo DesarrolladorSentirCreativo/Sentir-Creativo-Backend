@@ -36,3 +36,22 @@ C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Back
 C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Colecciones.UseCases.dll
 C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.Colecciones.UseCases.pdb
 C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Colecciones.UseCases.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.Colecciones.UseCases.deps.json
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.Colecciones.UseCases.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.Colecciones.UseCases.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.Colecciones.BusinessObject.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.Colecciones.Entities.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.Colecciones.BusinessObject.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.Colecciones.Entities.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.Colecciones.UseCases.csproj.AssemblyReference.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.Colecciones.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.Colecciones.UseCases.AssemblyInfoInputs.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.Colecciones.UseCases.AssemblyInfo.cs
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.Colecciones.UseCases.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.Colecciones.UseCases.csproj.CopyComplete
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.Colecciones.UseCases.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Colecciones.UseCases.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.Colecciones.UseCases.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Colecciones.UseCases\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Colecciones.UseCases.dll

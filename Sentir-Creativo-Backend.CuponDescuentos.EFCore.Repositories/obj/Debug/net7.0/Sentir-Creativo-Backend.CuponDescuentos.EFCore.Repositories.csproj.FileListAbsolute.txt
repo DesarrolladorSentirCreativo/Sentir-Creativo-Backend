@@ -32,3 +32,20 @@ C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Back
 C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.dll
 C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.pdb
 C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.deps.json
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.Entities.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.csproj.AssemblyReference.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.AssemblyInfoInputs.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.AssemblyInfo.cs
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.csproj.CopyComplete
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\obj\Debug\net7.0\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.CuponDescuentos.EFCore.Repositories.dll

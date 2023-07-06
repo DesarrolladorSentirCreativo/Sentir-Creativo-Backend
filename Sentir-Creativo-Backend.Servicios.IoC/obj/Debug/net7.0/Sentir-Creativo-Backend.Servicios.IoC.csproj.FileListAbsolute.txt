@@ -52,3 +52,30 @@ C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Back
 C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Servicios.IoC.dll
 C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Servicios.IoC.pdb
 C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Servicios.IoC.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Servicios.IoC.deps.json
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Servicios.IoC.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Servicios.IoC.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Servicios.BusinessObject.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Servicios.Controllers.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Servicios.Entities.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Servicios.Presenters.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Servicios.UseCases.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Servicios.Controllers.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Servicios.Presenters.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Servicios.UseCases.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Servicios.BusinessObject.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.Servicios.Entities.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Servicios.IoC.csproj.AssemblyReference.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Servicios.IoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Servicios.IoC.AssemblyInfoInputs.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Servicios.IoC.AssemblyInfo.cs
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Servicios.IoC.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Servicios.IoC.csproj.CopyComplete
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Servicios.IoC.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Servicios.IoC.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\obj\Debug\net7.0\Sentir-Creativo-Backend.Servicios.IoC.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Servicios.IoC\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Servicios.IoC.dll

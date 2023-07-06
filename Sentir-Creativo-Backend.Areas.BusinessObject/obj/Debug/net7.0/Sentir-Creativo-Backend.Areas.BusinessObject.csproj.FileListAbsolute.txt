@@ -32,3 +32,20 @@ C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Back
 C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Areas.BusinessObject.dll
 C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\obj\Debug\net7.0\Sentir-Creativo-Backend.Areas.BusinessObject.pdb
 C:\Users\RYZEN 3 3200G\Desktop\hola\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Areas.BusinessObject.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\bin\Debug\net7.0\Sentir-Creativo-Backend.Areas.BusinessObject.deps.json
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\bin\Debug\net7.0\Sentir-Creativo-Backend.Areas.BusinessObject.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\bin\Debug\net7.0\Sentir-Creativo-Backend.Areas.BusinessObject.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\bin\Debug\net7.0\Sentir-Creativo-Backend.Areas.Entities.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\bin\Debug\net7.0\Sentir-Creativo-Backend.Areas.Entities.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.Entities.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\obj\Debug\net7.0\Sentir-Creativo-Backend.Areas.BusinessObject.csproj.AssemblyReference.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\obj\Debug\net7.0\Sentir-Creativo-Backend.Areas.BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\obj\Debug\net7.0\Sentir-Creativo-Backend.Areas.BusinessObject.AssemblyInfoInputs.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\obj\Debug\net7.0\Sentir-Creativo-Backend.Areas.BusinessObject.AssemblyInfo.cs
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\obj\Debug\net7.0\Sentir-Creativo-Backend.Areas.BusinessObject.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\obj\Debug\net7.0\Sentir-Creativo-Backend.Areas.BusinessObject.csproj.CopyComplete
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\obj\Debug\net7.0\Sentir-Creativo-Backend.Areas.BusinessObject.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.Areas.BusinessObject.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\obj\Debug\net7.0\Sentir-Creativo-Backend.Areas.BusinessObject.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Areas.BusinessObject\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.Areas.BusinessObject.dll
