@@ -18,7 +18,7 @@ namespace Sentir_Creativo_Backend.Servicios.Controllers.TecnicaArtisticas
             _inputPort = inputPort;
         }
 
-        public async ValueTask<int> Handle(ICreateTecnicaArtisticaDto dto)
+        public async ValueTask<int> Handle(ICreateOcacionDto dto)
         {
             await _inputPort.Handle(dto);
 

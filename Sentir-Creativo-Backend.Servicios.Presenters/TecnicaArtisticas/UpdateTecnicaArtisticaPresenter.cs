@@ -4,6 +4,7 @@ namespace Sentir_Creativo_Backend.Servicios.Presenters.TecnicaArtisticas
 {
     public class UpdateTecnicaArtisticaPresenter : IUpdateTecnicaArtisticaPresenter
     {
+
         public int TecnicaArtisticaId { get; private set; }
 
         public ValueTask Handle(int tecnicaArtisticaId)

@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Update;
+using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.Ocacions;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.TecnicaArtisticas;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Specifications.TecnicaArtisticas;
 using Sentir_Creativo_Backend.Servicios.Entities.POCOEntities;
@@ -59,5 +60,5 @@ namespace Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.Update
             //MANDAMOS EL ID CON EL BUS DE SALIDA
             await _outputPort.Handle(tecnicaArtistica.Id);
         }
-    }
+}
 }
