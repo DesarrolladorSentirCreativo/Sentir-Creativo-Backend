@@ -1,4 +1,6 @@
-﻿namespace Sentir_Creativo_Backend.WebApi.Controllers.Servicios
+﻿using Sentir_Creativo_Backend.UsersAdmin.BusinessObject.ViewModels.AFP;
+
+namespace Sentir_Creativo_Backend.WebApi.Controllers.Servicios
 {
     [Authorize]
     [ApiController]
@@ -11,19 +13,22 @@
         private readonly IDeleteOcacionController _deleteOcacionController;
         private readonly IGetAllOcacionController _getAllOcacionController;
         private readonly ISelectOcacionController _selectOcacionController;
+        private readonly IGetByIdOcacionController _getByIdOcacionController;
 
         public OcacionWrapperController(
         ICreateOcacionController createOcacionController,
         IUpdateOcacionController updateOcacionController,
         IDeleteOcacionController deleteOcacionController,
         IGetAllOcacionController getAllOcacionController,
-        ISelectOcacionController selectOcacionController)
+        ISelectOcacionController selectOcacionController,
+        IGetByIdOcacionController getByIdOcacionController)
         {
             _createOcacionController = createOcacionController;
             _updateOcacionController = updateOcacionController;
             _deleteOcacionController = deleteOcacionController;
             _getAllOcacionController = getAllOcacionController;
             _selectOcacionController = selectOcacionController;
+            _getByIdOcacionController = getByIdOcacionController;
         }
 
         [HttpPost]
@@ -54,6 +59,11 @@
         [ProducesResponseType(typeof(SelectOcacionModelView), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<IReadOnlyList<SelectOcacionModelView>>> SelectOcacion()
             => Ok(await _selectOcacionController.Handle());
+
+        [HttpGet("{id}")]
+        [ProducesResponseType(typeof(GetByIdOcacionViewModel), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<GetByIdOcacionViewModel>> GetByIdOcacion(int id)
+       => Ok(await _getByIdOcacionController.Handle(id));
 
 
     }

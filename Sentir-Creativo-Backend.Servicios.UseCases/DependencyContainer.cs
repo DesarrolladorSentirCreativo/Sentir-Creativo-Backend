@@ -22,6 +22,7 @@ public static class DependencyContainer
         services.AddScoped<IDeleteOcacionInputPort, DeleteOcacionInteractor>();
         services.AddScoped<IGetAllOcacionInputPort, GetAllOcacionInteractor>();
         services.AddScoped<ISelectOcacionInputPort, SelectOcacionInteractor>();
+        services.AddScoped<IGetByIdOcacionInputPort, GetByIdOcacionInteractor>();
 
 
         return services;

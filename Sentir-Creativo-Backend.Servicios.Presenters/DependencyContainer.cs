@@ -59,6 +59,11 @@ public static class DependencyContainer
         services.AddScoped<ISelectOcacionPresenter>(provider => provider.GetService<SelectOcacionPresenter>());
         services.AddScoped<ISelectOcacionOutputPort>(provider => provider.GetService<SelectOcacionPresenter>());
 
+
+        services.AddScoped<GetByIdOcacionPresenter>();
+        services.AddScoped<IGetByIdOcacionPresenter>(provider => provider.GetService<GetByIdOcacionPresenter>());
+        services.AddScoped<IGetByIdOcacionOutputPort>(provider => provider.GetService<GetByIdOcacionPresenter>());
+
         return services;
     }
 }

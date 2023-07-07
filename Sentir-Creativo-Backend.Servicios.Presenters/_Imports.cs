@@ -23,6 +23,7 @@ global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Oc
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.Ocaciones;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.GetAll;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Select;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.GetById;
 
 
 //tecnicas artisticas
