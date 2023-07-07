@@ -1,0 +1,1 @@
+﻿global using Sentir_Creativo_Backend.SharedKernel.Entities.POCOEntities;

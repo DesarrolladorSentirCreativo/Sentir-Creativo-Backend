@@ -1,8 +1,4 @@
-﻿
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.Ocacions;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.Ocacions;
-
-namespace Sentir_Creativo_Backend.Servicios.Presenters.Ocacions
+﻿namespace Sentir_Creativo_Backend.Servicios.Presenters.Ocacions
 {
     public class UpdateOcacionPresenter : IUpdateOcacionPresenter
     {

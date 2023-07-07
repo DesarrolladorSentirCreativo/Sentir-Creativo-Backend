@@ -1,7 +1,4 @@
-﻿using FluentValidation;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.TecnicaArtisticas;
-
-namespace Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.Update
+﻿namespace Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.Update
 {
     public class UpdateTecnicaArtisticaValidator : AbstractValidator<UpdateTecnicaArtisticaDto>
     {

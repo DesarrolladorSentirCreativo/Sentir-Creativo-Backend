@@ -1,8 +1,5 @@
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Select;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Specifications.Formatos;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.Formatos;
-using Sentir_Creativo_Backend.Servicios.Entities.POCOEntities;
-using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
 
 namespace Sentir_Creativo_Backend.Servicios.UseCases.Formatos.Select;
 

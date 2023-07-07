@@ -1,7 +1,4 @@
-﻿using FluentValidation;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.Ocacions;
-
-namespace Sentir_Creativo_Backend.Servicios.UseCases.Ocacions.Create
+﻿namespace Sentir_Creativo_Backend.Servicios.UseCases.Ocacions.Create
 {
     public class CreateOcacionValidator : AbstractValidator<CreateOcacionDto>
     {

@@ -1,6 +1,4 @@
-﻿using Sentir_Creativo_Backend.SharedKernel.Entities.POCOEntities;
-
-namespace Sentir_Creativo_Backend.Servicios.Entities.POCOEntities
+﻿namespace Sentir_Creativo_Backend.Servicios.Entities.POCOEntities
 {
     public class TecnicaArtistica : BaseEntity<int>
     {

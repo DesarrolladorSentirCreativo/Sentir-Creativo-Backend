@@ -1,7 +1,4 @@
-﻿using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.Ocacions;
-
-
-namespace Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Create
+﻿namespace Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Create
 {
     public interface ICreateOcacionInputPort
     {

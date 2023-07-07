@@ -2402,8 +2402,10 @@
       },
       "Sentir-Creativo-Backend.Servicios.UseCases/1.0.0": {
         "dependencies": {
+          "FluentValidation": "11.5.2",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
-          "Sentir-Creativo-Backend.Servicios.BusinessObject": "1.0.0"
+          "Sentir-Creativo-Backend.Servicios.BusinessObject": "1.0.0",
+          "Sentir-Creativo-Backend.SharedKernel.UseCases": "1.0.0"
         },
         "runtime": {
           "Sentir-Creativo-Backend.Servicios.UseCases.dll": {}

@@ -1,11 +1,4 @@
-﻿using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.Ocacions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sentir_Creativo_Backend.Servicios.Presenters.Ocacions
+﻿namespace Sentir_Creativo_Backend.Servicios.Presenters.Ocacions
 {
     public class CreateOcacionPresenter : ICreateOcacionPresenter
     {

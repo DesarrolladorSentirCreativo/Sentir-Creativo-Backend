@@ -1,11 +1,4 @@
-﻿using FluentValidation;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Create;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.Ocacions;
-using Sentir_Creativo_Backend.Servicios.Entities.POCOEntities;
-using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
-using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
-
-namespace Sentir_Creativo_Backend.Servicios.UseCases.Ocacions.Create
+﻿namespace Sentir_Creativo_Backend.Servicios.UseCases.Ocacions.Create
 {
     public class CreateOcacionInteractor : ICreateOcacionInputPort
     {

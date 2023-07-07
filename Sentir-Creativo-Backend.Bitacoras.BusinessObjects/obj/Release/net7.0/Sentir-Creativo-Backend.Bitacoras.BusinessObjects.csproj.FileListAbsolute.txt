@@ -10,3 +10,15 @@ D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Back
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Release\net7.0\refint\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.dll
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.pdb
 D:\proyectos\solucionsentircreativo\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Release\net7.0\ref\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\bin\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.deps.json
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\bin\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\bin\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj.AssemblyReference.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.AssemblyInfoInputs.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.AssemblyInfo.cs
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Release\net7.0\refint\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Release\net7.0\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.pdb
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.Bitacoras.BusinessObjects\obj\Release\net7.0\ref\Sentir-Creativo-Backend.Bitacoras.BusinessObjects.dll

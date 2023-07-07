@@ -1,8 +1,5 @@
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Select;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Specifications.EstadoServicios;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.EstadoServicios;
-using Sentir_Creativo_Backend.Servicios.Entities.POCOEntities;
-using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
 
 namespace Sentir_Creativo_Backend.Servicios.UseCases.EstadoServicios.Select;
 

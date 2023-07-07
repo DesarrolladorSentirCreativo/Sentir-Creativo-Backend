@@ -1,9 +1,4 @@
-﻿using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.Ocacions;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Update;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.Ocacions;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.Ocacions;
-
-namespace Sentir_Creativo_Backend.Servicios.Controllers.Ocacions
+﻿namespace Sentir_Creativo_Backend.Servicios.Controllers.Ocacions
 {
 
 

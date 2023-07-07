@@ -1,10 +1,4 @@
-﻿using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Delete;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Specifications.TecnicaArtisticas;
-using Sentir_Creativo_Backend.Servicios.Entities.POCOEntities;
-using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
-using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
-
-namespace Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.Delete
+﻿namespace Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.Delete
 {
     public class DeleteTecnicaArtisticaInteractor : IDeleteTecnicaArtisticaInputPort
     {

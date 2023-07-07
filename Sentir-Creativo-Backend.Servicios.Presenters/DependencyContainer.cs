@@ -1,23 +1,3 @@
-using Microsoft.Extensions.DependencyInjection;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Select;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Select;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Create;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Delete;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.GetAll;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.GetById;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Select;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Update;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.EstadoServicios;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.Formatos;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.TecnicaArtisticas;
-using Sentir_Creativo_Backend.Servicios.Presenters.EstadoServicios;
-using Sentir_Creativo_Backend.Servicios.Presenters.Formatos;
-using Sentir_Creativo_Backend.Servicios.Presenters.TecnicaArtisticas;
-using Sentir_Creativo_Backend.Servicios.Presenters.Ocacions;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Create;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.Ocacions;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Update;
-
 namespace Sentir_Creativo_Backend.Servicios.Presenters;
 
 public static class DependencyContainer
@@ -59,16 +39,17 @@ public static class DependencyContainer
 
 
         //Ocacions
-
         services.AddScoped<CreateOcacionPresenter>();
         services.AddScoped<ICreateOcacionPresenter>(provider => provider.GetService<CreateOcacionPresenter>());
         services.AddScoped<ICreateOcacionOutputPort>(provider => provider.GetService<CreateOcacionPresenter>());
 
-
-
         services.AddScoped<UpdateOcacionPresenter>();
         services.AddScoped<IUpdateOcacionPresenter>(provider => provider.GetService<UpdateOcacionPresenter>());
         services.AddScoped<IUpdateOcacionOutputPort>(provider => provider.GetService<UpdateOcacionPresenter>());
+
+        services.AddScoped<DeleteOcacionPresenter>();
+        services.AddScoped<IDeleteOcacionPresenter>(provider => provider.GetService<DeleteOcacionPresenter>());
+        services.AddScoped<IDeleteOcacionOutputPort>(provider => provider.GetService<DeleteOcacionPresenter>());
 
         return services;
     }
