@@ -13,3 +13,4 @@ global using System;
 //ocaciones
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.Ocaciones;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.GetAll;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Select;

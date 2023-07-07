@@ -1,5 +1,3 @@
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.GetAll;
-
 namespace Sentir_Creativo_Backend.Servicios.Presenters;
 
 public static class DependencyContainer
@@ -56,6 +54,10 @@ public static class DependencyContainer
         services.AddScoped<GetAllOcacionPresenter>();
         services.AddScoped<IGetAllOcacionPresenter>(provider => provider.GetService<GetAllOcacionPresenter>());
         services.AddScoped<IGetAllOcacionOutputPort>(provider => provider.GetService<GetAllOcacionPresenter>());
+
+        services.AddScoped<SelectOcacionPresenter>();
+        services.AddScoped<ISelectOcacionPresenter>(provider => provider.GetService<SelectOcacionPresenter>());
+        services.AddScoped<ISelectOcacionOutputPort>(provider => provider.GetService<SelectOcacionPresenter>());
 
         return services;
     }

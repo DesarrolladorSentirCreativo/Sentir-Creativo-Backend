@@ -38,6 +38,9 @@ global using Sentir_Creativo_Backend.Servicios.UseCases.Ocacions.Create;
 global using Sentir_Creativo_Backend.Servicios.UseCases.Ocacions.Update;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Delete;
 global using Sentir_Creativo_Backend.Servicios.UseCases.Ocacions.Delete;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Select;
+global using Sentir_Creativo_Backend.Servicios.UseCases.Ocacions.GetAll;
+global using Sentir_Creativo_Backend.Servicios.UseCases.Ocacions.Select;
 
 
 

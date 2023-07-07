@@ -2,16 +2,14 @@
 {
     public class GetAllOcacionInteractor : IGetAllOcacionInputPort
     {
-        private readonly IUnitOfWork _unitOfWork;
         private readonly IGetAllOcacionOutputPort _outputPort;
         private readonly IReadRepository<Ocacion, int> _readRepository;
 
-        public GetAllOcacionInteractor(
-            IUnitOfWork unitOfWork, 
+        public GetAllOcacionInteractor( 
             IGetAllOcacionOutputPort outputPort,
             IReadRepository<Ocacion, int> readRepository)
         {
-            _unitOfWork = unitOfWork;
+          
             _outputPort = outputPort;
             _readRepository = readRepository;
         }
