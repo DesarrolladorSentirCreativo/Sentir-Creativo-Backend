@@ -5,3 +5,5 @@ global using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.Ocacions;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Update;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Delete;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.Ocaciones;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.GetAll;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.Ocaciones;

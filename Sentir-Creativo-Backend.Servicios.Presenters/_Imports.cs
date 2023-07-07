@@ -20,6 +20,7 @@ global using Sentir_Creativo_Backend.Servicios.Presenters.Ocacions;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Create;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Update;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Delete;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.Ocaciones;
 
 //tecnicas artisticas
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Create;

@@ -5,3 +5,11 @@ global using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.EstadoS
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Select;
 global using Sentir_Creativo_Backend.Servicios.Entities.POCOEntities;
 global using Sentir_Creativo_Backend.SharedKernel.Entities.Specifications;
+
+//shared
+global using System;
+
+
+//ocaciones
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.Ocaciones;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.GetAll;

@@ -1,3 +1,5 @@
+using Sentir_Creativo_Backend.Servicios.UseCases.Ocacions.GetAll;
+
 namespace Sentir_Creativo_Backend.Servicios.UseCases;
 
 public static class DependencyContainer
@@ -16,11 +18,12 @@ public static class DependencyContainer
         services.AddScoped<ISelectTecnicaArtisticaInputPort, SelectTecnicaArtisticaInteractor>();
 
 
-        //Ocacions
-
+        //Ocaciones
         services.AddScoped<ICreateOcacionInputPort, CreateOcacionInteractor>();
         services.AddScoped<IUpdateOcacionInputPort, UpdateOcacionInterator>();
         services.AddScoped<IDeleteOcacionInputPort, DeleteOcacionInteractor>();
+        services.AddScoped<IGetAllOcacionInputPort, GetAllOcacionInteractor>();
+
 
         return services;
     }

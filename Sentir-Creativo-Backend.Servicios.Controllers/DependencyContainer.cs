@@ -28,6 +28,7 @@ public static class DependencyContainer
         services.AddScoped<ICreateOcacionController, CreateOcacionController>();
         services.AddScoped<IUpdateOcacionController,  UpdateOcacionController>();
         services.AddScoped<IDeleteOcacionController, DeleteOcacionController>();
+        services.AddScoped<IGetAllOcacionController, GetAllOcacionController>();
 
 
         return services;

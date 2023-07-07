@@ -29,6 +29,11 @@ global using Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.GetAll
 global using Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.GetById;
 global using Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.Select;
 global using Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.Update;
+
+
+//ocaciones
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.GetAll;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.Ocaciones;
 global using Sentir_Creativo_Backend.Servicios.UseCases.Ocacions.Create;
 global using Sentir_Creativo_Backend.Servicios.UseCases.Ocacions.Update;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Delete;
