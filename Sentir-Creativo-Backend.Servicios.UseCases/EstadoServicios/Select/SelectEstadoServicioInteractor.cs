@@ -8,12 +8,15 @@ public class SelectEstadoServicioInteractor : ISelectEstadoServicioInputPort
     private readonly IReadRepository<EstadoServicio, int> _readRepository;
     private readonly ISelectEstadoServicioOutputPort _outputPort;
 
-    public SelectEstadoServicioInteractor(IReadRepository<EstadoServicio, int> readRepository, ISelectEstadoServicioOutputPort outputPort)
+    public SelectEstadoServicioInteractor(
+        IReadRepository<EstadoServicio, int> readRepository,
+        ISelectEstadoServicioOutputPort outputPort
+       )
     {
         _readRepository = readRepository;
         _outputPort = outputPort;
     }
-    
+
     public async ValueTask Handle()
     {
         var spec = new EstadoServicioActivosSpecification();

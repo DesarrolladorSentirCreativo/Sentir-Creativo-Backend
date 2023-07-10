@@ -1,7 +1,3 @@
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Sentir_Creativo_Backend.Servicios.Entities.POCOEntities;
-
 namespace Sentir_Creativo_Backend.Servicios.EFCore.Repositories.Configurations;
 
 public class FormatoConfiguration : IEntityTypeConfiguration<Formato>

@@ -11,7 +11,8 @@ global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presente
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.EstadoServicios;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Select;
 global using Sentir_Creativo_Backend.Servicios.Presenters.EstadoServicios;
-
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Create;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Update;
 
 //ocaciones
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.Ocacions;

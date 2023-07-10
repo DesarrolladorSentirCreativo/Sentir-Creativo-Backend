@@ -1,7 +1,3 @@
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Sentir_Creativo_Backend.Servicios.Entities.POCOEntities;
-
 namespace Sentir_Creativo_Backend.Servicios.EFCore.Repositories.Configurations;
 
 public class EstadoServicioConfiguration : IEntityTypeConfiguration<EstadoServicio>
@@ -12,6 +8,8 @@ public class EstadoServicioConfiguration : IEntityTypeConfiguration<EstadoServic
         
         builder.HasKey(p => p.Id).HasName("id");
         builder.Property(p => p.Nombre).HasMaxLength(255).HasColumnName("nombre");
+        builder.Property(p => p.Color).HasMaxLength(8).HasColumnName("color");
+        builder.Property(p => p.Descripcion).HasColumnName("descripcion").HasMaxLength(1024);
         builder.Property(p => p.PublishedAt).HasColumnName("published_at");
         builder.Property(p => p.CreatedAt).HasColumnName("created_at");
         builder.Property(p => p.UpdatedAt).HasColumnName("updated_at");

@@ -4,7 +4,14 @@ public static class DependencyContainer
 {
     public static IServiceCollection AddServiciosUseCasesServices(this IServiceCollection services)
     {
+
+        //estados servicios
         services.AddScoped<ISelectEstadoServicioInputPort, SelectEstadoServicioInteractor>();
+        services.AddScoped<ICreateEstadoServicioInputPort, CreateEstadoServicioInteractor>();
+        services.AddScoped<IUpdateEstadoServicioInputPort, UpdateEstadoServicioInteractor>();
+
+
+
         services.AddScoped<ISelectFormatoInputPort, SelectFormatoInteractor>();
 
         //tecnica artisticas
@@ -23,6 +30,7 @@ public static class DependencyContainer
         services.AddScoped<IGetAllOcacionInputPort, GetAllOcacionInteractor>();
         services.AddScoped<ISelectOcacionInputPort, SelectOcacionInteractor>();
         services.AddScoped<IGetByIdOcacionInputPort, GetByIdOcacionInteractor>();
+
 
 
         return services;

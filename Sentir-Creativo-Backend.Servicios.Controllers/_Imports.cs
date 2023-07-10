@@ -17,3 +17,9 @@ global using Sentir_Creativo_Backend.Servicios.Controllers.Formatos;
 global using Sentir_Creativo_Backend.Servicios.Controllers.Ocacions;
 global using Sentir_Creativo_Backend.Servicios.Controllers.TecnicaArtisticas;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.GetById;
+
+//estados servicios
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Create;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.EstadoServicios;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.EstadosServicios;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Update;

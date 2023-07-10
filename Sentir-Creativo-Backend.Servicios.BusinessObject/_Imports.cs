@@ -15,3 +15,7 @@ global using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.Ocacion
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.GetAll;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Select;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.GetById;
+
+//estados servicios
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.EstadosServicios;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Create;

@@ -4,7 +4,12 @@ public static class DependencyContainer
 {
     public static IServiceCollection AddServiciosControllers(this IServiceCollection services)
     {
+        //estados servicios
         services.AddScoped<ISelectEstadoServicioController, SelectEstadoServicioController>();
+        services.AddScoped<ICreateEstadoServicioController, CreateEstadoServicioController>();
+        services.AddScoped<IUpdateEstadoServicioController, UpdateEstadoServicioController>();
+
+
         services.AddScoped<ISelectFormatoController, SelectFormatoController>();
 
         //tecnicas artisticas

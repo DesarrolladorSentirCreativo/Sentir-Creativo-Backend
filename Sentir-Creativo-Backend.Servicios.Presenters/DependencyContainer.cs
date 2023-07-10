@@ -4,10 +4,22 @@ public static class DependencyContainer
 {
     public static IServiceCollection AddServiciosPresenters(this IServiceCollection services)
     {
+
+        //estados servicios
+
         services.AddScoped<SelectEstadoServicioPresenter>();
         services.AddScoped<ISelectEstadoServicioPresenter>(provider => provider.GetService<SelectEstadoServicioPresenter>());
-        services.AddScoped<ISelectEstadoServicioOutputPort>(provider => provider.GetService<SelectEstadoServicioPresenter>());   
-        
+        services.AddScoped<ISelectEstadoServicioOutputPort>(provider => provider.GetService<SelectEstadoServicioPresenter>());
+
+        services.AddScoped<UpdateEstadoServicioPresenter>();
+        services.AddScoped<IUpdateEstadoServicioPresenter>(provider => provider.GetService<UpdateEstadoServicioPresenter>());
+        services.AddScoped<IUpdateEstadoServicioOutputPort>(provider => provider.GetService<UpdateEstadoServicioPresenter>());
+
+
+        services.AddScoped<CreateEstadoServicioPresenter>();
+        services.AddScoped<ICreateEstadoServicioPresenter>(provider => provider.GetService<CreateEstadoServicioPresenter>());
+        services.AddScoped<ICreateEstadoServicioOutputPort>(provider => provider.GetService<CreateEstadoServicioPresenter>());
+
         services.AddScoped<SelectFormatoPresenter>();
         services.AddScoped<ISelectFormatoPresenter>(provider => provider.GetService<SelectFormatoPresenter>());
         services.AddScoped<ISelectFormatoOutputPort>(provider => provider.GetService<SelectFormatoPresenter>());
