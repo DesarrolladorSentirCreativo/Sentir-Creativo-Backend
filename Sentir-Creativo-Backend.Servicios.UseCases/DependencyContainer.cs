@@ -11,7 +11,7 @@ public static class DependencyContainer
         services.AddScoped<IUpdateEstadoServicioInputPort, UpdateEstadoServicioInteractor>();
         services.AddScoped<IDeleteEstadoServicioInputPort, DeleteEstadoServicioInteractor>();
         services.AddScoped<IGetAllEstadoServicioInputPort, GetAllEstadoServicioInteractor>();
-
+        services.AddScoped<IGetByIdEstadoServicioInputPort, GetByIdEstadoServicioInteractor>();
 
 
 

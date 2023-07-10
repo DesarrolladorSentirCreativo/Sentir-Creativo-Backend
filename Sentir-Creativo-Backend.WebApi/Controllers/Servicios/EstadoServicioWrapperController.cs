@@ -14,19 +14,22 @@ public class EstadoServicioWrapperController : ControllerBase
     private readonly IUpdateEstadoServicioController _updateEstadoServicioController;
     private readonly IDeleteEstadoServicioController _deleteEstadoServicioController;
     private readonly IGetAllEstadoServicioController _getAllEstadoServicioController;
+    private readonly IGetByIdEstadoServicioController _getByIdEstadoServicioController;
     
     public EstadoServicioWrapperController(
         ISelectEstadoServicioController selectEstadoServicioController,
         ICreateEstadoServicioController createEstadoServicioController,
         IUpdateEstadoServicioController updateEstadoServicioController,
         IDeleteEstadoServicioController deleteEstadoServicioController,
-        IGetAllEstadoServicioController getAllEstadoServicioController)
+        IGetAllEstadoServicioController getAllEstadoServicioController,
+        IGetByIdEstadoServicioController getByIdEstadoServicioController)
     {
         _selectEstadoServicioController = selectEstadoServicioController;
         _createEstadoServicioController = createEstadoServicioController;
         _updateEstadoServicioController = updateEstadoServicioController;
         _deleteEstadoServicioController = deleteEstadoServicioController;
         _getAllEstadoServicioController = getAllEstadoServicioController;
+        _getByIdEstadoServicioController = getByIdEstadoServicioController;
     }
 
     [HttpGet]
@@ -54,5 +57,10 @@ public class EstadoServicioWrapperController : ControllerBase
     [ProducesResponseType(typeof(IReadOnlyList<GetAllEstadoServicioViewModel>), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<GetAllEstadoServicioViewModel>>> GetAllEstadoServicio()
     => Ok(await _getAllEstadoServicioController.Handle());
+
+    [HttpGet("{id}")]
+    [ProducesResponseType(typeof(GetByIdEstadoServicioViewModel), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<GetByIdEstadoServicioViewModel>> GetByIdEstadoServicio(int id)
+     => Ok(await _getByIdEstadoServicioController.Handle(id));
 
 }

@@ -27,6 +27,10 @@ public static class DependencyContainer
         services.AddScoped<IGetAllEstadoServicioPresenter>(provider => provider.GetService<GetAllEstadoServicioPresenter>());
         services.AddScoped<IGetAllEstadoServicioOutputPort>(provider => provider.GetService<GetAllEstadoServicioPresenter>());
 
+        services.AddScoped<GetByIdEstadoServicioPresenter>();
+        services.AddScoped<IGetByIdEstadoServicioPresenter>(provider => provider.GetService<GetByIdEstadoServicioPresenter>());
+        services.AddScoped<IGetByIdEstadoServicioOutputPort>(provider => provider.GetService<GetByIdEstadoServicioPresenter>());
+
         services.AddScoped<SelectFormatoPresenter>();
         services.AddScoped<ISelectFormatoPresenter>(provider => provider.GetService<SelectFormatoPresenter>());
         services.AddScoped<ISelectFormatoOutputPort>(provider => provider.GetService<SelectFormatoPresenter>());

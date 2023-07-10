@@ -21,7 +21,7 @@
             IReadOnlyList<GetAllEstadoServicioViewModel> viewModels = estadoServicios
                 .Select(p => new GetAllEstadoServicioViewModel()
                 {
-                    Id = p.Id,
+                   Id = p.Id,
                    Nombre = p.Nombre,
                    Color = p.Color,
                    Descripcion = p.Descripcion,

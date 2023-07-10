@@ -38,6 +38,7 @@ global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Te
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Update;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.TecnicaArtisticas;
 global using Sentir_Creativo_Backend.Servicios.Presenters.TecnicaArtisticas;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.GetById;
 
 //shared
 global using Microsoft.Extensions.DependencyInjection;

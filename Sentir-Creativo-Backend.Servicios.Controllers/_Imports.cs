@@ -26,3 +26,4 @@ global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Es
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Delete;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.GetAll;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.EstadoServicios;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.GetById;
