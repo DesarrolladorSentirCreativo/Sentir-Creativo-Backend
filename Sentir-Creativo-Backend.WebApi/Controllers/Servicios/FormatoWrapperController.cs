@@ -1,6 +1,7 @@
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.Formatos;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.Formatos;
 using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.Formatos;
+using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.TecnicaArtistica;
 
 namespace Sentir_Creativo_Backend.WebApi.Controllers.Servicios;
 
@@ -13,17 +14,20 @@ public class FormatoWrapperController : ControllerBase
     private readonly ICreateFormatoController _createFormatoController;
     private readonly IUpdateFormatoController _updateFormatoController;
     private readonly IDeleteFormatoController _deleteFormatoController;
+    private readonly IGetAllFormatoController _getAllFormatoController;
     
     public FormatoWrapperController(
         ISelectFormatoController selectFormatoController,
         ICreateFormatoController createFormatoController,
         IUpdateFormatoController updateFormatoController,
-        IDeleteFormatoController deleteFormatoController)
+        IDeleteFormatoController deleteFormatoController,
+        IGetAllFormatoController getAllFormatoController)
     {
         _selectFormatoController = selectFormatoController;
         _createFormatoController = createFormatoController;
         _updateFormatoController = updateFormatoController;
         _deleteFormatoController = deleteFormatoController;
+        _getAllFormatoController = getAllFormatoController;
     }
     
     [HttpGet("/select-formatos")]
@@ -46,6 +50,11 @@ public class FormatoWrapperController : ControllerBase
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> DeleteFormato(int id)
            => Ok(await _deleteFormatoController.Handle(id));
+
+    [HttpGet]
+    [ProducesResponseType(typeof(IReadOnlyList<GetAllFormatoViewModel>), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IReadOnlyList<GetAllFormatoViewModel>>> GetAllFormato()
+        => Ok(await _getAllFormatoController.Handle());
 
 }
 

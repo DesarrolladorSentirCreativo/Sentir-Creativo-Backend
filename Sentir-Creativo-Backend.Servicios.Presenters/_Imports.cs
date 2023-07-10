@@ -7,6 +7,7 @@ global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Fo
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Create;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Update;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Delete;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.GetAll;
 
 
 //estados de servicios

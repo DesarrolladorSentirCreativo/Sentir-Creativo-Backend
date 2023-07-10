@@ -68,5 +68,8 @@ global using Sentir_Creativo_Backend.Servicios.BusinessObject.Specifications.For
 global using Sentir_Creativo_Backend.Servicios.UseCases.Formatos.Update;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Delete;
 global using Sentir_Creativo_Backend.Servicios.UseCases.Formatos.Delete;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.GetAll;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.Formatos;
+global using Sentir_Creativo_Backend.Servicios.UseCases.Formatos.GetAll;
 
 

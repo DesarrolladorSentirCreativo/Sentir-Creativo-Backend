@@ -49,6 +49,10 @@ public static class DependencyContainer
         services.AddScoped<IDeleteFormatoPresenter>(provider => provider.GetService<DeleteFormatoPresenter>());
         services.AddScoped<IDeleteFormatoOutputPort>(provider => provider.GetService<DeleteFormatoPresenter>());
 
+        services.AddScoped<GetAllFormatoPresenter>();
+        services.AddScoped<IGetAllFormatoPresenter>(provider => provider.GetService<GetAllFormatoPresenter>());
+        services.AddScoped<IGetAllFormatoOutputPort>(provider => provider.GetService<GetAllFormatoPresenter>());
+
         //tecnicas artisticas
         services.AddScoped<CreateTecnicaArtisticaPresenter>();
         services.AddScoped<ICreateTecnicaArtisticaPresenter>(provider => provider.GetService<CreateTecnicaArtisticaPresenter>());
