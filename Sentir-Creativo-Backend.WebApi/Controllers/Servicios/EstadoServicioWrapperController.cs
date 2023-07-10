@@ -6,25 +6,31 @@ namespace Sentir_Creativo_Backend.WebApi.Controllers.Servicios;
 
 [Authorize]
 [ApiController]
-[Route("api/v1/[controller]")]
+[Route("api/v1/estados-servicios")]
 public class EstadoServicioWrapperController : ControllerBase
 {
     private readonly ISelectEstadoServicioController _selectEstadoServicioController;
     private readonly ICreateEstadoServicioController _createEstadoServicioController;
     private readonly IUpdateEstadoServicioController _updateEstadoServicioController;
+    private readonly IDeleteEstadoServicioController _deleteEstadoServicioController;
+    private readonly IGetAllEstadoServicioController _getAllEstadoServicioController;
     
     public EstadoServicioWrapperController(
         ISelectEstadoServicioController selectEstadoServicioController,
         ICreateEstadoServicioController createEstadoServicioController,
-        IUpdateEstadoServicioController updateEstadoServicioController)
+        IUpdateEstadoServicioController updateEstadoServicioController,
+        IDeleteEstadoServicioController deleteEstadoServicioController,
+        IGetAllEstadoServicioController getAllEstadoServicioController)
     {
         _selectEstadoServicioController = selectEstadoServicioController;
         _createEstadoServicioController = createEstadoServicioController;
         _updateEstadoServicioController = updateEstadoServicioController;
+        _deleteEstadoServicioController = deleteEstadoServicioController;
+        _getAllEstadoServicioController = getAllEstadoServicioController;
     }
 
     [HttpGet]
-    [Route("/select-estado-servicio")] 
+    [Route("select")]
     [ProducesResponseType(typeof(SelectEstadoServicioViewModel), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<SelectEstadoServicioViewModel>>> SelectEstadoServicio()
         => Ok(await _selectEstadoServicioController.Handle());
@@ -38,4 +44,15 @@ public class EstadoServicioWrapperController : ControllerBase
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> UpdateEstadoServicio([FromBody] UpdateEstadoServicioDto dto)
     => Ok(await _updateEstadoServicioController.Handle(dto));
+
+    [HttpPut("{id}")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> DeleteEstadoServicio(int id)
+           => Ok(await _deleteEstadoServicioController.Handle(id));
+
+    [HttpGet]
+    [ProducesResponseType(typeof(IReadOnlyList<GetAllEstadoServicioViewModel>), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IReadOnlyList<GetAllEstadoServicioViewModel>>> GetAllEstadoServicio()
+    => Ok(await _getAllEstadoServicioController.Handle());
+
 }

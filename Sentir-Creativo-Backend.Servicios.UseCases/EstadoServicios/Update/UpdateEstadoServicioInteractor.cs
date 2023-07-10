@@ -3,13 +3,13 @@
     public class UpdateEstadoServicioInteractor : IUpdateEstadoServicioInputPort
     {
         private readonly IReadRepository<EstadoServicio, int> _readRepository;
-        private readonly ICreateEstadoServicioOutputPort _outputPort;
+        private readonly IDeleteEstadoServicioOutputPort _outputPort;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IEnumerable<IValidator<UpdateEstadoServicioDto>> _validators;
 
         public UpdateEstadoServicioInteractor(
             IReadRepository<EstadoServicio, int> readRepository, 
-            ICreateEstadoServicioOutputPort outputPort, IUnitOfWork unitOfWork,
+            IDeleteEstadoServicioOutputPort outputPort, IUnitOfWork unitOfWork,
             IEnumerable<IValidator<UpdateEstadoServicioDto>> validators)
         {
             _readRepository = readRepository;

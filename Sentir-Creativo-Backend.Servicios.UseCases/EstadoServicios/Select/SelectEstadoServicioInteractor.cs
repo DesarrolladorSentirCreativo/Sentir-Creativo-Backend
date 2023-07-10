@@ -1,5 +1,3 @@
-using Sentir_Creativo_Backend.Servicios.BusinessObject.Specifications.EstadoServicios;
-using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.EstadoServicios;
 
 namespace Sentir_Creativo_Backend.Servicios.UseCases.EstadoServicios.Select;
 

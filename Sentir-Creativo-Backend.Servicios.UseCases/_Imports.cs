@@ -51,6 +51,10 @@ global using Sentir_Creativo_Backend.Servicios.BusinessObject.Specifications.Est
 global using Sentir_Creativo_Backend.Servicios.UseCases.EstadoServicios.Create;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Update;
 global using Sentir_Creativo_Backend.Servicios.UseCases.EstadoServicios.Update;
-
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Delete;
+global using Sentir_Creativo_Backend.Servicios.UseCases.EstadoServicios.Delete;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.EstadoServicios;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.GetAll;
+global using Sentir_Creativo_Backend.Servicios.UseCases.EstadoServicios.GetAll;
 
 

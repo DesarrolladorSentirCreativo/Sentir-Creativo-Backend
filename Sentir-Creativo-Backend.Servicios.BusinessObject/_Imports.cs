@@ -19,3 +19,7 @@ global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Oc
 //estados servicios
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.EstadosServicios;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Create;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Update;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Delete;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.GetAll;
+

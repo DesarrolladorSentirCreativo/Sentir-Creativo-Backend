@@ -13,6 +13,8 @@ global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Es
 global using Sentir_Creativo_Backend.Servicios.Presenters.EstadoServicios;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Create;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Update;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Delete;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.GetAll;
 
 //ocaciones
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.Ocacions;

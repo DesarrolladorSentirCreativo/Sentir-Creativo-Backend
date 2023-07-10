@@ -8,6 +8,8 @@ public static class DependencyContainer
         services.AddScoped<ISelectEstadoServicioController, SelectEstadoServicioController>();
         services.AddScoped<ICreateEstadoServicioController, CreateEstadoServicioController>();
         services.AddScoped<IUpdateEstadoServicioController, UpdateEstadoServicioController>();
+        services.AddScoped<IDeleteEstadoServicioController, DeleteEstadoServicioController>();
+        services.AddScoped<IGetAllEstadoServicioController, GetAllEstadoServicioController>();
 
 
         services.AddScoped<ISelectFormatoController, SelectFormatoController>();

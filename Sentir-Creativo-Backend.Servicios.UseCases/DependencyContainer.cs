@@ -9,6 +9,9 @@ public static class DependencyContainer
         services.AddScoped<ISelectEstadoServicioInputPort, SelectEstadoServicioInteractor>();
         services.AddScoped<ICreateEstadoServicioInputPort, CreateEstadoServicioInteractor>();
         services.AddScoped<IUpdateEstadoServicioInputPort, UpdateEstadoServicioInteractor>();
+        services.AddScoped<IDeleteEstadoServicioInputPort, DeleteEstadoServicioInteractor>();
+        services.AddScoped<IGetAllEstadoServicioInputPort, GetAllEstadoServicioInteractor>();
+
 
 
 
