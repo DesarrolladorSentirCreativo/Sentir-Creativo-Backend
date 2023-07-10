@@ -10,10 +10,8 @@ global using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.Ocacion
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.Select;
 global using Microsoft.Extensions.DependencyInjection;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.EstadoServicios;
-global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.Formatos;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.TecnicaArtisticas;
 global using Sentir_Creativo_Backend.Servicios.Controllers.EstadoServicios;
-global using Sentir_Creativo_Backend.Servicios.Controllers.Formatos;
 global using Sentir_Creativo_Backend.Servicios.Controllers.Ocacions;
 global using Sentir_Creativo_Backend.Servicios.Controllers.TecnicaArtisticas;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Ocacions.GetById;
@@ -27,3 +25,10 @@ global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Es
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.GetAll;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.EstadoServicios;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.GetById;
+
+//formatos
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Create;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presenters.Formatos;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.Formatos;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.Formatos;
+global using Sentir_Creativo_Backend.Servicios.Controllers.Formatos;

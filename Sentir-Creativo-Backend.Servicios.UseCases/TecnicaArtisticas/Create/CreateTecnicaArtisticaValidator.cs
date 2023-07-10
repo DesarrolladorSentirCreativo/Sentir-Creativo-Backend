@@ -1,6 +1,6 @@
 ﻿namespace Sentir_Creativo_Backend.Servicios.UseCases.TecnicaArtisticas.Create
 {
-    public class CreateTecnicaArtisticaValidator : AbstractValidator<ICreateOcacionDto>
+    public class CreateTecnicaArtisticaValidator : AbstractValidator<CreateTecnicaArtisticaDto>
     {
         public CreateTecnicaArtisticaValidator()
         {

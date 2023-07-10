@@ -4,22 +4,22 @@
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly ICreateTecnicaArtisticaOutputPort _outputPort;
-        private readonly IEnumerable<IValidator<ICreateOcacionDto>> _validators;
+        private readonly IEnumerable<IValidator<CreateTecnicaArtisticaDto>> _validators;
 
         public CreateTecnicaArtisticaInteractor(
             IUnitOfWork unitOfWork, 
             ICreateTecnicaArtisticaOutputPort outputPort, 
-            IEnumerable<IValidator<ICreateOcacionDto>> validators)
+            IEnumerable<IValidator<CreateTecnicaArtisticaDto>> validators)
         {
             _unitOfWork = unitOfWork;
             _outputPort = outputPort;
             _validators = validators;
         }
 
-        public async ValueTask Handle(ICreateOcacionDto dto)
+        public async ValueTask Handle(CreateTecnicaArtisticaDto dto)
         {
             //validamos los datos de entrada (dto)
-            await Validator<ICreateOcacionDto>.Validate(dto, _validators);
+            await Validator<CreateTecnicaArtisticaDto>.Validate(dto, _validators);
 
             var tecnicaArtistica = new TecnicaArtistica
             {

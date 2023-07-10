@@ -13,9 +13,9 @@ public static class DependencyContainer
         services.AddScoped<IGetAllEstadoServicioInputPort, GetAllEstadoServicioInteractor>();
         services.AddScoped<IGetByIdEstadoServicioInputPort, GetByIdEstadoServicioInteractor>();
 
-
-
+        //formatos
         services.AddScoped<ISelectFormatoInputPort, SelectFormatoInteractor>();
+        services.AddScoped<ICreateFormatoInputPort, CreateFormatoInteractor>();
 
         //tecnica artisticas
         services.AddScoped<ICreateTecnicaArtisticaInputPort, CreateTecnicaArtisticaInteractor>();

@@ -4,6 +4,7 @@ global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presente
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.Formatos;
 global using Sentir_Creativo_Backend.Servicios.Presenters.Formatos;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Select;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Create;
 
 
 //estados de servicios

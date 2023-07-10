@@ -18,7 +18,6 @@ global using Sentir_Creativo_Backend.Servicios.BusinessObject.ViewModels.Tecnica
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Update;
 global using Microsoft.Extensions.DependencyInjection;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.Select;
-global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Select;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.GetById;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.TecnicaArtistica.Select;
 global using Sentir_Creativo_Backend.Servicios.UseCases.EstadoServicios.Select;
@@ -58,5 +57,11 @@ global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Es
 global using Sentir_Creativo_Backend.Servicios.UseCases.EstadoServicios.GetAll;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.EstadosServicios.GetById;
 global using Sentir_Creativo_Backend.Servicios.UseCases.EstadoServicios.GetById;
+
+//formatos
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.Formatos;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Select;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Create;
+global using Sentir_Creativo_Backend.Servicios.UseCases.Formatos.Create;
 
 

@@ -35,7 +35,7 @@ namespace Sentir_Creativo_Backend.WebApi.Controllers.Servicios
 
         [HttpPost]
         [ProducesResponseType((int)HttpStatusCode.OK)]
-        public async Task<ActionResult<int>> CreateTecnicaArtistica([FromBody] ICreateOcacionDto dto)
+        public async Task<ActionResult<int>> CreateTecnicaArtistica([FromBody] CreateTecnicaArtisticaDto dto)
         => Ok(await _createTecnicaArtisticaController.Handle(dto));
 
         [HttpPut]
