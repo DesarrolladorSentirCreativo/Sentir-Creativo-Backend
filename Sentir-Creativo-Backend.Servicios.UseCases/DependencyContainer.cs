@@ -16,6 +16,8 @@ public static class DependencyContainer
         //formatos
         services.AddScoped<ISelectFormatoInputPort, SelectFormatoInteractor>();
         services.AddScoped<ICreateFormatoInputPort, CreateFormatoInteractor>();
+        services.AddScoped<IUpdateFormatoInputPort, UpdateFormatoInteractor>();
+        services.AddScoped<IDeleteFormatoInputPort, DeleteFormatoInteractor>();
 
         //tecnica artisticas
         services.AddScoped<ICreateTecnicaArtisticaInputPort, CreateTecnicaArtisticaInteractor>();

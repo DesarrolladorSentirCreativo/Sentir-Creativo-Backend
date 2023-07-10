@@ -11,13 +11,19 @@ public class FormatoWrapperController : ControllerBase
 {
     private readonly ISelectFormatoController _selectFormatoController;
     private readonly ICreateFormatoController _createFormatoController;
+    private readonly IUpdateFormatoController _updateFormatoController;
+    private readonly IDeleteFormatoController _deleteFormatoController;
     
     public FormatoWrapperController(
         ISelectFormatoController selectFormatoController,
-        ICreateFormatoController createFormatoController)
+        ICreateFormatoController createFormatoController,
+        IUpdateFormatoController updateFormatoController,
+        IDeleteFormatoController deleteFormatoController)
     {
         _selectFormatoController = selectFormatoController;
         _createFormatoController = createFormatoController;
+        _updateFormatoController = updateFormatoController;
+        _deleteFormatoController = deleteFormatoController;
     }
     
     [HttpGet("/select-formatos")]
@@ -29,6 +35,17 @@ public class FormatoWrapperController : ControllerBase
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> CreateFormato([FromBody] CreateFormatoDto dto)
      => Ok(await _createFormatoController.Handle(dto));
+
+
+    [HttpPut]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> UpdateFormato([FromBody] UpdateFormatoDto dto)
+        => Ok(await _updateFormatoController.Handle(dto));
+
+    [HttpPut("{id}")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<int>> DeleteFormato(int id)
+           => Ok(await _deleteFormatoController.Handle(id));
 
 }
 

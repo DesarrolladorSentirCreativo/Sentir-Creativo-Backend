@@ -32,3 +32,5 @@ global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Presente
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Dtos.Formatos;
 global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Controllers.Formatos;
 global using Sentir_Creativo_Backend.Servicios.Controllers.Formatos;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Update;
+global using Sentir_Creativo_Backend.Servicios.BusinessObject.Contracts.Ports.Formatos.Delete;
