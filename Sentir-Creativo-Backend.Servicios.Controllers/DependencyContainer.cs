@@ -18,6 +18,7 @@ public static class DependencyContainer
         services.AddScoped<IUpdateFormatoController, UpdateFormatoController>();
         services.AddScoped<IDeleteFormatoController, DeleteFormatoController>();
         services.AddScoped<IGetAllFormatoController, GetAllFormatoController>();
+        services.AddScoped<IGetByIdFormatoController, GetByIdFormatoController>();
 
         //tecnicas artisticas
         services.AddScoped<ICreateTecnicaArtisticaController, CreateTecnicaArtisticaController>();

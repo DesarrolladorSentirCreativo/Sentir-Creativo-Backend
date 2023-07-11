@@ -15,22 +15,25 @@ public class FormatoWrapperController : ControllerBase
     private readonly IUpdateFormatoController _updateFormatoController;
     private readonly IDeleteFormatoController _deleteFormatoController;
     private readonly IGetAllFormatoController _getAllFormatoController;
+    private readonly IGetByIdFormatoController _getByIdFormatoController;
     
     public FormatoWrapperController(
         ISelectFormatoController selectFormatoController,
         ICreateFormatoController createFormatoController,
         IUpdateFormatoController updateFormatoController,
         IDeleteFormatoController deleteFormatoController,
-        IGetAllFormatoController getAllFormatoController)
+        IGetAllFormatoController getAllFormatoController,
+        IGetByIdFormatoController getByIdFormatoController)
     {
         _selectFormatoController = selectFormatoController;
         _createFormatoController = createFormatoController;
         _updateFormatoController = updateFormatoController;
         _deleteFormatoController = deleteFormatoController;
         _getAllFormatoController = getAllFormatoController;
+        _getByIdFormatoController = getByIdFormatoController;
     }
     
-    [HttpGet("/select-formatos")]
+    [HttpGet("/select")]
     [ProducesResponseType(typeof(SelectFormatoViewModel), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<SelectFormatoViewModel>>> SelectFormato() 
         => Ok(await _selectFormatoController.Handle());
@@ -55,6 +58,12 @@ public class FormatoWrapperController : ControllerBase
     [ProducesResponseType(typeof(IReadOnlyList<GetAllFormatoViewModel>), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IReadOnlyList<GetAllFormatoViewModel>>> GetAllFormato()
         => Ok(await _getAllFormatoController.Handle());
+
+
+    [HttpGet("{id}")]
+    [ProducesResponseType(typeof(GetByIdFormatoViewModel), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<GetByIdFormatoViewModel>> GetByIdOcacion(int id)
+   => Ok(await _getByIdFormatoController.Handle(id));
 
 }
 

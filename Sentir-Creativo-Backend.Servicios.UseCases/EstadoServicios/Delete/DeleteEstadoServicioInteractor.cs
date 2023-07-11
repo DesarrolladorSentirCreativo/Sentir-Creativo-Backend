@@ -25,7 +25,7 @@
 
             if (estadoServicio == null) throw new NotFoundException("El estado servicio no se encuentra registrado");
 
-            estadoServicio.Activo = true;
+            estadoServicio.Activo = false;
 
             _unitOfWork.WriteRepository<EstadoServicio, int>().UpdateEntity(estadoServicio);
 
