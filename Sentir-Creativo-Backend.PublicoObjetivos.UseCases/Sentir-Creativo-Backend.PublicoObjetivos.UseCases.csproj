@@ -9,9 +9,11 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Sentir-Creativo-Backend.PublicoObjectivos.BusinessObject\Sentir-Creativo-Backend.PublicoObjectivos.BusinessObject.csproj" />
+      <ProjectReference Include="..\Sentir-Creativo-Backend.SharedKernel.UseCases\Sentir-Creativo-Backend.SharedKernel.UseCases.csproj" />
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="11.5.2" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
     </ItemGroup>
 

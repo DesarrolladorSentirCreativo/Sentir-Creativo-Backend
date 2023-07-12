@@ -1,8 +1,3 @@
-using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Contracts.Controllers.PublicoObjetivos;
-using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Contracts.Ports.PublicoObjetivos.Select;
-using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Contracts.Presenters.PublicoObjetivos;
-using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.ViewModels;
-
 namespace Sentir_Creativo_Backend.PublicoObjetivos.Controllers.PublicoObjetivos;
 
 public class SelectPublicoObjetivoController : ISelectPublicoObjetivoController

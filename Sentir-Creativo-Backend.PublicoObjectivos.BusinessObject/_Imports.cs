@@ -1,0 +1,2 @@
+﻿global using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Dtos;
+global using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Contracts.Ports.PublicoObjetivos.Create;

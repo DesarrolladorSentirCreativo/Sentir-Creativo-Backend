@@ -8,10 +8,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Contracts\Ports\PublicoObjetivos" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\Sentir-Creativo-Backend.PublicoObjetivos.Entities\Sentir-Creativo-Backend.PublicoObjetivos.Entities.csproj" />
       <ProjectReference Include="..\Sentir-Creativo-Backend.SharedKernel.Entities\Sentir-Creativo-Backend.SharedKernel.Entities.csproj" />
     </ItemGroup>

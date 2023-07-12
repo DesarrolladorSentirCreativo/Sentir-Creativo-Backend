@@ -74,3 +74,5 @@ D:\Backend\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseC
 D:\Backend\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\obj\Debug\net7.0\refint\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.dll
 D:\Backend\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\obj\Debug\net7.0\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.pdb
 D:\Backend\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\obj\Debug\net7.0\ref\Sentir-Creativo-Backend.PublicoObjetivos.UseCases.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.dll
+C:\Users\angel\Desktop\proyecto\Sentir-Creativo-Backend\Sentir-Creativo-Backend.PublicoObjetivos.UseCases\bin\Debug\net7.0\Sentir-Creativo-Backend.SharedKernel.UseCases.pdb
