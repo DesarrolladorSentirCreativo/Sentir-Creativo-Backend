@@ -6,6 +6,8 @@ public static class DependencyContainer
     {
         services.AddScoped<ISelectPublicoObjetivoController, SelectPublicoObjetivoController>();
         services.AddScoped<ICreatePublicoObjetivoController, CreatePublicoObjetivoController>();
+        services.AddScoped<IUpdatePublicoObjetivoController, UpdatePublicoObjetivoController>();
+        services.AddScoped<IDeletePublicoObjetivoController, DeletePublicoObjetivoController>();
 
         return services;
     }

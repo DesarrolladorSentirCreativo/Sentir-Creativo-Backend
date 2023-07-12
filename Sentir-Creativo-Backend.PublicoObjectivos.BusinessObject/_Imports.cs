@@ -1,2 +1,6 @@
 ﻿global using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Dtos;
 global using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Contracts.Ports.PublicoObjetivos.Create;
+global using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Contracts.Ports.PublicoObjetivos.Update;
+global using Sentir_Creativo_Backend.PublicoObjetivos.Entities.POCOEntities;
+global using Sentir_Creativo_Backend.SharedKernel.Entities.Specifications;
+global using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Contracts.Ports.PublicoObjetivos.Delete;

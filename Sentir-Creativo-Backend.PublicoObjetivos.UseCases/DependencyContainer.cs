@@ -6,6 +6,8 @@ public static class DependencyContainer
     {
         services.AddScoped<ISelectPublicoObjetivoInputPort, SelectPublicoObjetivoInteractor>();
         services.AddScoped<ICreatePublicoObjetivoInputPort, CreatePublicoObjetivoInteractor>();
+        services.AddScoped<IUpdatePublicoObjetivoInputPort, UpdatePublicoObjetivoInteractor>();
+        services.AddScoped<IDeletePublicoObjetivoInputPort, DeletePublicoObjetivoInteractor>();
 
         return services;
     }

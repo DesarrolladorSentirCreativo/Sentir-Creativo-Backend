@@ -2,6 +2,7 @@
 //shared
 global using FluentValidation;
 global using Microsoft.Extensions.DependencyInjection;
+global using Sentir_Creativo_Backend.SharedKernel.Entities.Exceptions;
 
 //publicos objetivos
 global using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Dtos;
@@ -12,3 +13,8 @@ global using Sentir_Creativo_Backend.SharedKernel.UseCases.Validators;
 global using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Contracts.Ports.PublicoObjetivos.Select;
 global using Sentir_Creativo_Backend.PublicoObjetivos.UseCases.PublicoObjetivos.Create;
 global using Sentir_Creativo_Backend.PublicoObjetivos.UseCases.PublicoObjetivos.Select;
+global using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Contracts.Ports.PublicoObjetivos.Update;
+global using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Specifications.PublicoObjetivos;
+global using Sentir_Creativo_Backend.PublicoObjetivos.UseCases.PublicoObjetivos.Update;
+global using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Contracts.Ports.PublicoObjetivos.Delete;
+global using Sentir_Creativo_Backend.PublicoObjetivos.UseCases.PublicoObjetivos.Delete;
