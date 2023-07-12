@@ -18,3 +18,8 @@ global using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Specificat
 global using Sentir_Creativo_Backend.PublicoObjetivos.UseCases.PublicoObjetivos.Update;
 global using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Contracts.Ports.PublicoObjetivos.Delete;
 global using Sentir_Creativo_Backend.PublicoObjetivos.UseCases.PublicoObjetivos.Delete;
+global using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Contracts.Ports.PublicoObjetivos.GetAll;
+global using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.ViewModels.PublicoObjetivos;
+global using Sentir_Creativo_Backend.PublicoObjetivos.UseCases.PublicoObjetivos.GetAll;
+global using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Contracts.Ports.PublicoObjetivos.GetById;
+global using Sentir_Creativo_Backend.PublicoObjetivos.UseCases.PublicoObjetivos.GetById;

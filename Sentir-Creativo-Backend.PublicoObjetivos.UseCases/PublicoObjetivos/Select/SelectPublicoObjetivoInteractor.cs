@@ -1,8 +1,5 @@
-using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Contracts.Ports.PublicoObjetivos.Select;
-using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.Specifications.PublicoObjetivos;
 using Sentir_Creativo_Backend.PublicoObjectivos.BusinessObject.ViewModels;
-using Sentir_Creativo_Backend.PublicoObjetivos.Entities.POCOEntities;
-using Sentir_Creativo_Backend.SharedKernel.Entities.Contracts;
+
 
 namespace Sentir_Creativo_Backend.PublicoObjetivos.UseCases.PublicoObjetivos.Select;
 

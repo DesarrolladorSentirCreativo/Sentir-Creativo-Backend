@@ -20,6 +20,14 @@ public static class DependencyContainer
         services.AddScoped<IDeletePublicoObjetivoPresenter>(provider => provider.GetService<DeletePublicoObjetivoPresenter>());
         services.AddScoped<IDeletePublicoObjetivoOutputPort>(provider => provider.GetService<DeletePublicoObjetivoPresenter>());
 
+        services.AddScoped<GetAllPublicoObjetivoPresenter>();
+        services.AddScoped<IGetAllPublicoObjetivoPresenter>(provider => provider.GetService<GetAllPublicoObjetivoPresenter>());
+        services.AddScoped<IGetAllPublicoObjetivoOutputPort>(provider => provider.GetService<GetAllPublicoObjetivoPresenter>());
+
+        services.AddScoped<GetByIdPublicoObjetivoPresenter>();
+        services.AddScoped<IGetByIdPublicoObjetivoPresenter>(provider => provider.GetService<GetByIdPublicoObjetivoPresenter>());
+        services.AddScoped<IGetByIdPublicoObjetivoOutputPort>(provider => provider.GetService<GetByIdPublicoObjetivoPresenter>());
+
         return services;
     }
 }
